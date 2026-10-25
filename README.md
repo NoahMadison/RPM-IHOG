@@ -1,7 +1,6 @@
 # RPM-IHOG: Ridge-Point Matched Incoherent Higher-Order Generators
 ### Zero-Disk Streaming Compression & Sub-2-Bit Kronecker-Hadamard Inference for 180B+ MoE & Dense LLMs
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-ee4c2c.svg)](https://pytorch.org/)
 [![Hardware](https://img.shields.io/badge/Hardware-Single%2032GB%20V100%20%7C%20Consumer%20GPU-76b900.svg)](#hardware-memory--scaling-budgets)
 [![Compression](https://img.shields.io/badge/Compression-0.5%20to%201.75%20bpw%20(9x--32x)-purple.svg)](#empirical-benchmarks)
