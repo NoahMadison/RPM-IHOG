@@ -67,7 +67,30 @@ CUDA_VISIBLE_DEVICES=1 python3 ./v100_moe_entropy_generator_ablation.py --mode s
 }
 
 
-CUDA_VISIBLE_DEVICES=1 python3 ./v100_moe_entropy_generator_ablation.py --mode stage6_qwen27b_benchmark
+CUDA_VISIBLE_DEVICES=1 python3 ./v100_moe_entropy_generator_ablation_backup.py --mode stage6_qwen27b_benchmark
+[*] Stage 6 (v8 Closed-Loop): Benchmarking 27B Dense Model 'Qwen/Qwen3.8-27B' layers [4, 28, 52] on cuda...
+[*] Loading cached Hugging Face tensor from './hf_expert_cache_Qwen_Qwen3.8-27B_L4_E1_D1024.pt'...
+  -> Qwen 27B Layer  4: {"layer": 4, "tensor": "model.language_model.layers.4.mlp.up_proj.weight", "base_svd_rank": 251.32, "base_kron_rank": 256.38, "dist_kron_rank": 14.88, "cascaded_oneshot_r2_pct": 97.64, "cascaded_distilled_r2_pct": 99.89, "cascaded_distilled_cos_sim": 0.99946, "distill_sec": 1.35}
+[*] Loading cached Hugging Face tensor from './hf_expert_cache_Qwen_Qwen3.8-27B_L28_E1_D1024.pt'...
+  -> Qwen 27B Layer 28: {"layer": 28, "tensor": "model.language_model.layers.28.mlp.up_proj.weight", "base_svd_rank": 243.14, "base_kron_rank": 258.94, "dist_kron_rank": 14.88, "cascaded_oneshot_r2_pct": 95.63, "cascaded_distilled_r2_pct": 99.82, "cascaded_distilled_cos_sim": 0.9991, "distill_sec": 0.63}
+[*] Loading cached Hugging Face tensor from './hf_expert_cache_Qwen_Qwen3.8-27B_L52_E1_D1024.pt'...
+  -> Qwen 27B Layer 52: {"layer": 52, "tensor": "model.language_model.layers.52.mlp.up_proj.weight", "base_svd_rank": 244.76, "base_kron_rank": 258.93, "dist_kron_rank": 15.03, "cascaded_oneshot_r2_pct": 94.02, "cascaded_distilled_r2_pct": 99.76, "cascaded_distilled_cos_sim": 0.99885, "distill_sec": 0.64}
+
+=== STAGE 6 (v8): QWEN 27B CLOSED-LOOP SUMMARY ===
+{
+  "model_id": "Qwen/Qwen3.8-27B",
+  "layers_audited": [
+    4,
+    28,
+    52
+  ],
+  "final_cascaded_oneshot_r2_pct": 94.02,
+  "final_cascaded_distilled_r2_pct": 99.76,
+  "final_cascaded_distilled_cosine_sim": 0.99885,
+  "end_to_end_top1_token_match_oneshot_pct": 57.62,
+  "end_to_end_top1_token_match_distilled_pct": 89.06,
+  "end_to_end_top5_token_recall_distilled_pct": 100.0
+}
 
 CUDA_VISIBLE_DEVICES=1 python3 ./v100_moe_entropy_generator_ablation.py --mode stage7_flash_next_moe
 [*] Stage 7 (v9): Streaming & Auditing Ultra-Sparse MoE 'Qwen/Qwen3.8-Flash-Next' Layer 8 on cuda...
@@ -95,3 +118,4 @@ CUDA_VISIBLE_DEVICES=1 python3 ./v100_moe_entropy_generator_ablation.py --mode s
   "flash_next_125b_moe_awq_kron_15bpw_gb": 27.0,
   "fits_125b_moe_backbone_in_32gb_v100": true
 }
+
