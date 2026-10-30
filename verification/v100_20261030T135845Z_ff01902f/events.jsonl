@@ -610,3 +610,8 @@
 {"utc": "2026-10-30T18:53:52.641657+00:00", "event": "stage_publication_prepared", "result": "results/1793385135727180545_train-select_f739d9", "parent": "a228efb15f236574990e0ed45d8e0e4f35cea237", "progress": "progress/stage_1793385135727180545_train-select_f739d9_1793386432641510850.json"}
 {"utc": "2026-10-30T18:54:03.768582+00:00", "event": "published_stage", "commit": "87bb957fc038ddaab6de31976c085c5e64de3a43", "result": "results/1793385135727180545_train-select_f739d9"}
 {"utc": "2026-10-30T18:54:03.900039+00:00", "event": "stage_publication_prepared", "result": "results/1793385142485113730_train-select_aa5109", "parent": "87bb957fc038ddaab6de31976c085c5e64de3a43", "progress": "progress/stage_1793385142485113730_train-select_aa5109_1793386443899892095.json"}
+{"utc": "2026-10-30T18:54:08.845121+00:00", "event": "stage_exit", "stage": "native-runtime", "exit_code": 0, "result": "results/1793386350678058389_native-runtime_7b6dae"}
+{"utc": "2026-10-30T18:54:08.861120+00:00", "event": "native_runtime_campaign_complete", "returncode": 0}
+{"utc": "2026-10-30T18:54:10.860204+00:00", "event": "stage_start", "stage": "interleaved-runtime", "result": "results/1793386450860009760_interleaved-runtime_1ea86c"}
+{"utc": "2026-10-30T18:54:13.858327+00:00", "event": "published_stage", "commit": "e16a4cf9c7bf0598005e3e4582e11d2b9d2f5ba4", "result": "results/1793385142485113730_train-select_aa5109"}
+{"utc": "2026-10-30T18:54:13.996792+00:00", "event": "stage_publication_prepared", "result": "results/1793385149549488923_train-select_c4947c", "parent": "e16a4cf9c7bf0598005e3e4582e11d2b9d2f5ba4", "progress": "progress/stage_1793385149549488923_train-select_c4947c_1793386453996639493.json"}
