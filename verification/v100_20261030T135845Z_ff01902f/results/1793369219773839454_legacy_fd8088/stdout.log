@@ -1,0 +1,82 @@
+[*] Initializing Step 1 Rigorous 3-Way Optimizer & Generator Ablation on cuda...
+[*] Loaded 'TinyShakespeare (Bigram-512 Tokenized); pinned source' into VRAM: 900,000 train tokens, 100,000 val tokens.
+
+--- Running 1_Standard_AdamW (300 steps) ---
+  Step 100/300 | Train Loss: 3.9744
+  Step 200/300 | Train Loss: 2.8833
+  Step 300/300 | Train Loss: 2.7560
+[+] 1_Standard_AdamW Summary:
+{
+  "final_train_loss": 2.756,
+  "wall_time_sec": 13.3,
+  "shannon_entropy_body_bits": 7.448,
+  "svd_stable_rank": 25.45,
+  "kronecker_stable_rank": 64.95,
+  "incoherence_mu": 4.38,
+  "pure_kronecker_bpw": 1.125,
+  "rpm_ihog_ternary_bpw": 2.7725,
+  "sqnr_pure_kronecker_db": 0.52,
+  "sqnr_rpm_ihog_ternary_db": 7.74,
+  "val_loss_fp16": 2.7448,
+  "val_ppl_fp16": 15.56,
+  "val_loss_pure_kron_053bpw": 8.7492,
+  "val_loss_delta_pure_kron": 6.0044,
+  "token_match_pure_kron_053bpw_pct": 2.67,
+  "val_loss_rpm_ihog_212bpw": 3.0993,
+  "val_loss_delta_rpm_ihog": 0.3545,
+  "token_match_rpm_ihog_212bpw_pct": 62.24
+}
+
+--- Running 2_EntropyConstrained_Kronecker_AdamW (300 steps) ---
+  Step 100/300 | Train Loss: 4.1097
+  Step 200/300 | Train Loss: 3.4610
+  Step 300/300 | Train Loss: 3.3436
+[+] 2_EntropyConstrained_Kronecker_AdamW Summary:
+{
+  "final_train_loss": 3.3436,
+  "wall_time_sec": 14.2,
+  "shannon_entropy_body_bits": 7.412,
+  "svd_stable_rank": 45.11,
+  "kronecker_stable_rank": 7.03,
+  "incoherence_mu": 5.64,
+  "pure_kronecker_bpw": 1.125,
+  "rpm_ihog_ternary_bpw": 2.7725,
+  "sqnr_pure_kronecker_db": 23.2,
+  "sqnr_rpm_ihog_ternary_db": 30.48,
+  "val_loss_fp16": 3.2818,
+  "val_ppl_fp16": 26.62,
+  "val_loss_pure_kron_053bpw": 3.2712,
+  "val_loss_delta_pure_kron": -0.0106,
+  "token_match_pure_kron_053bpw_pct": 91.35,
+  "val_loss_rpm_ihog_212bpw": 3.276,
+  "val_loss_delta_rpm_ihog": -0.0058,
+  "token_match_rpm_ihog_212bpw_pct": 95.38
+}
+
+--- Running 3_Native_RPM_IHOG_Generator (300 steps) ---
+  Step 100/300 | Train Loss: 4.6452
+  Step 200/300 | Train Loss: 3.5853
+  Step 300/300 | Train Loss: 3.3727
+[+] 3_Native_RPM_IHOG_Generator Summary:
+{
+  "final_train_loss": 3.3727,
+  "wall_time_sec": 6.23,
+  "shannon_entropy_body_bits": 7.409,
+  "svd_stable_rank": 50.63,
+  "kronecker_stable_rank": 5.41,
+  "incoherence_mu": 5.64,
+  "pure_kronecker_bpw": 1.125,
+  "rpm_ihog_ternary_bpw": 2.7725,
+  "sqnr_pure_kronecker_db": 24.8,
+  "sqnr_rpm_ihog_ternary_db": 32.01,
+  "val_loss_fp16": 3.3066,
+  "val_ppl_fp16": 27.29,
+  "val_loss_pure_kron_053bpw": 3.3094,
+  "val_loss_delta_pure_kron": 0.0027,
+  "token_match_pure_kron_053bpw_pct": 97.39,
+  "val_loss_rpm_ihog_212bpw": 3.307,
+  "val_loss_delta_rpm_ihog": 0.0003,
+  "token_match_rpm_ihog_212bpw_pct": 99.24
+}
+
+[+] Saved complete JSON telemetry to ./step1_ablation_results.json

@@ -1,0 +1,415 @@
+{"event": "plan_frozen_before_test_results", "utc": "2026-10-30T14:00:15.475515+00:00", "base": "d50eec79832e6b3ec9ee943f45ac63d7e3f38b50"}
+{"utc": "2026-10-30T14:03:37.797290+00:00", "event": "stage_start", "stage": "data", "result": "results/1793369017797097725_data_eb73ea"}
+{"utc": "2026-10-30T14:03:40.899960+00:00", "event": "stage_start", "stage": "audit", "result": "results/1793369020899782371_audit_3a7613"}
+{"utc": "2026-10-30T14:03:42.467124+00:00", "event": "stage_exit", "stage": "audit", "exit_code": 0, "result": "results/1793369020899782371_audit_3a7613"}
+{"utc": "2026-10-30T14:03:50.955057+00:00", "event": "stage_exit", "stage": "data", "exit_code": 0, "result": "results/1793369017797097725_data_eb73ea"}
+{"utc": "2026-10-30T14:04:18.620640+00:00", "event": "stage_start", "stage": "correctness", "result": "results/1793369058620452898_correctness_6b01f6"}
+{"utc": "2026-10-30T14:04:58.950810+00:00", "event": "restart_recovery", "completed": ["audit", "data"], "prior_correctness": "worker raised invalid code on zero INT4 FP16 scale underflow; parent exit record interrupted by restart; source fixed before rerun"}
+{"utc": "2026-10-30T14:05:02.043973+00:00", "event": "stage_start", "stage": "correctness", "result": "results/1793369102043787258_correctness_7441d7"}
+{"utc": "2026-10-30T14:05:20.510475+00:00", "event": "stage_exit", "stage": "correctness", "exit_code": 0, "result": "results/1793369102043787258_correctness_7441d7"}
+{"utc": "2026-10-30T14:05:34.584356+00:00", "event": "stage_start", "stage": "legacy", "result": "results/1793369134584164656_legacy_751c9e"}
+{"utc": "2026-10-30T14:05:49.050713+00:00", "event": "stage_exit", "stage": "legacy", "exit_code": 0, "result": "results/1793369134584164656_legacy_751c9e"}
+{"utc": "2026-10-30T14:06:59.774030+00:00", "event": "stage_start", "stage": "legacy", "result": "results/1793369219773839454_legacy_fd8088"}
+{"utc": "2026-10-30T14:07:02.895313+00:00", "event": "stage_start", "stage": "train", "result": "results/1793369222895118345_train_605319"}
+{"utc": "2026-10-30T14:07:35.220990+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793369222895118345_train_605319"}
+{"utc": "2026-10-30T14:07:50.903700+00:00", "event": "stage_exit", "stage": "legacy", "exit_code": 0, "result": "results/1793369219773839454_legacy_fd8088"}
+{"utc": "2026-10-30T14:08:24.155079+00:00", "event": "stage_start", "stage": "mechanism", "result": "results/1793369304154885202_mechanism_b1979c"}
+{"utc": "2026-10-30T14:08:41.024690+00:00", "event": "stage_exit", "stage": "mechanism", "exit_code": 0, "result": "results/1793369304154885202_mechanism_b1979c"}
+{"utc": "2026-10-30T14:09:02.281569+00:00", "event": "campaign_job_start", "index": 0, "spec": {"phase": "tuning", "arm": "adamw", "seed": 11, "lr": 0.0001, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:09:02.341479+00:00", "event": "stage_start", "stage": "train", "result": "results/1793369342341280621_train_850e6f"}
+{"utc": "2026-10-30T14:09:28.837384+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793369342341280621_train_850e6f"}
+{"utc": "2026-10-30T14:09:28.846216+00:00", "event": "campaign_job_exit", "index": 0, "returncode": 0}
+{"utc": "2026-10-30T14:09:28.846307+00:00", "event": "campaign_job_start", "index": 1, "spec": {"phase": "tuning", "arm": "adamw", "seed": 11, "lr": 0.0003, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:09:28.898425+00:00", "event": "stage_start", "stage": "train", "result": "results/1793369368898195504_train_4c1590"}
+{"utc": "2026-10-30T14:09:56.472229+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793369368898195504_train_4c1590"}
+{"utc": "2026-10-30T14:09:56.489557+00:00", "event": "campaign_job_exit", "index": 1, "returncode": 0}
+{"utc": "2026-10-30T14:09:56.489934+00:00", "event": "campaign_job_start", "index": 2, "spec": {"phase": "tuning", "arm": "row", "seed": 11, "lr": 0.0001, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:09:56.558614+00:00", "event": "stage_start", "stage": "train", "result": "results/1793369396558384333_train_cafde2"}
+{"utc": "2026-10-30T14:10:24.140812+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793369396558384333_train_cafde2"}
+{"utc": "2026-10-30T14:10:24.149788+00:00", "event": "campaign_job_exit", "index": 2, "returncode": 0}
+{"utc": "2026-10-30T14:10:24.149915+00:00", "event": "campaign_job_start", "index": 3, "spec": {"phase": "tuning", "arm": "row", "seed": 11, "lr": 0.0003, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:10:24.200748+00:00", "event": "stage_start", "stage": "train", "result": "results/1793369424200546946_train_165cf6"}
+{"utc": "2026-10-30T14:10:38.399489+00:00", "event": "model_download", "id": "ibm-granite/granite-3.1-1b-a400m-base", "revision": "408b6e90baab8cf24f4aa9f8e19703ffa0a53b29", "path": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/cache/hf/hub/models--ibm-granite--granite-3.1-1b-a400m-base/snapshots/408b6e90baab8cf24f4aa9f8e19703ffa0a53b29", "seconds": 65.52436608500011}
+{"utc": "2026-10-30T14:10:51.873599+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793369424200546946_train_165cf6"}
+{"utc": "2026-10-30T14:10:51.883613+00:00", "event": "campaign_job_exit", "index": 3, "returncode": 0}
+{"utc": "2026-10-30T14:10:51.883691+00:00", "event": "campaign_job_start", "index": 4, "spec": {"phase": "tuning", "arm": "tail", "seed": 11, "lr": 0.0001, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:10:51.931406+00:00", "event": "stage_start", "stage": "train", "result": "results/1793369451931199893_train_81ded7"}
+{"utc": "2026-10-30T14:11:20.361985+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793369451931199893_train_81ded7"}
+{"utc": "2026-10-30T14:11:20.368802+00:00", "event": "campaign_job_exit", "index": 4, "returncode": 0}
+{"utc": "2026-10-30T14:11:20.368888+00:00", "event": "campaign_job_start", "index": 5, "spec": {"phase": "tuning", "arm": "tail", "seed": 11, "lr": 0.0003, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:11:20.414681+00:00", "event": "stage_start", "stage": "train", "result": "results/1793369480414480621_train_5b8ded"}
+{"utc": "2026-10-30T14:11:49.788545+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793369480414480621_train_5b8ded"}
+{"utc": "2026-10-30T14:11:49.795059+00:00", "event": "campaign_job_exit", "index": 5, "returncode": 0}
+{"utc": "2026-10-30T14:11:49.795130+00:00", "event": "campaign_job_start", "index": 6, "spec": {"phase": "tuning", "arm": "row_tail", "seed": 11, "lr": 0.0001, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:11:49.849492+00:00", "event": "stage_start", "stage": "train", "result": "results/1793369509849283529_train_00eb69"}
+{"utc": "2026-10-30T14:12:04.346761+00:00", "event": "model_download", "id": "HuggingFaceTB/SmolLM2-1.7B", "revision": "effd688a12921b4cc83e3312b6feb579f70f9c71", "path": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/cache/hf/hub/models--HuggingFaceTB--SmolLM2-1.7B/snapshots/effd688a12921b4cc83e3312b6feb579f70f9c71", "seconds": 85.94714156099963}
+{"utc": "2026-10-30T14:12:19.083227+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793369509849283529_train_00eb69"}
+{"utc": "2026-10-30T14:12:19.091226+00:00", "event": "campaign_job_exit", "index": 6, "returncode": 0}
+{"utc": "2026-10-30T14:12:19.091333+00:00", "event": "campaign_job_start", "index": 7, "spec": {"phase": "tuning", "arm": "row_tail", "seed": 11, "lr": 0.0003, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:12:19.155287+00:00", "event": "stage_start", "stage": "train", "result": "results/1793369539155073804_train_f11513"}
+{"utc": "2026-10-30T14:12:28.854067+00:00", "event": "stage_start", "stage": "pretrained", "result": "results/1793369548853853178_pretrained_b0df7b"}
+{"utc": "2026-10-30T14:12:31.965812+00:00", "event": "stage_start", "stage": "pretrained", "result": "results/1793369551965609827_pretrained_f6c544"}
+{"utc": "2026-10-30T14:12:35.063019+00:00", "event": "stage_start", "stage": "streaming", "result": "results/1793369555062805627_streaming_2b5c87"}
+{"utc": "2026-10-30T14:12:48.512906+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793369539155073804_train_f11513"}
+{"utc": "2026-10-30T14:12:48.520885+00:00", "event": "campaign_job_exit", "index": 7, "returncode": 0}
+{"utc": "2026-10-30T14:12:48.520959+00:00", "event": "campaign_job_start", "index": 8, "spec": {"phase": "tuning", "arm": "native", "seed": 11, "lr": 0.0001, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:12:48.567182+00:00", "event": "stage_start", "stage": "train", "result": "results/1793369568566977627_train_e38e94"}
+{"utc": "2026-10-30T14:13:49.397626+00:00", "event": "stage_exit", "stage": "pretrained", "exit_code": 1, "result": "results/1793369548853853178_pretrained_b0df7b"}
+{"utc": "2026-10-30T14:14:33.216628+00:00", "event": "stage_exit", "stage": "pretrained", "exit_code": 1, "result": "results/1793369551965609827_pretrained_f6c544"}
+{"utc": "2026-10-30T14:14:45.659176+00:00", "event": "stage_exit", "stage": "streaming", "exit_code": 0, "result": "results/1793369555062805627_streaming_2b5c87"}
+{"utc": "2026-10-30T14:15:11.508035+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793369568566977627_train_e38e94"}
+{"utc": "2026-10-30T14:15:11.515366+00:00", "event": "campaign_job_exit", "index": 8, "returncode": 0}
+{"utc": "2026-10-30T14:15:11.515456+00:00", "event": "campaign_job_start", "index": 9, "spec": {"phase": "tuning", "arm": "native", "seed": 11, "lr": 0.0003, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:15:11.606538+00:00", "event": "stage_start", "stage": "train", "result": "results/1793369711606231971_train_b23fd5"}
+{"utc": "2026-10-30T14:15:38.203678+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793369711606231971_train_b23fd5"}
+{"utc": "2026-10-30T14:15:38.213846+00:00", "event": "campaign_job_exit", "index": 9, "returncode": 0}
+{"utc": "2026-10-30T14:15:38.213913+00:00", "event": "campaign_job_start", "index": 10, "spec": {"phase": "tuning", "arm": "lowrank", "seed": 11, "lr": 0.0001, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:15:38.289687+00:00", "event": "stage_start", "stage": "train", "result": "results/1793369738289475220_train_65c1d8"}
+{"utc": "2026-10-30T14:15:57.955421+00:00", "event": "protocol_amendment", "file": "configs/002_pretrained_precision_amendment.json"}
+{"utc": "2026-10-30T14:15:59.921199+00:00", "event": "stage_start", "stage": "pretrained", "result": "results/1793369759921020449_pretrained_5f19ee"}
+{"utc": "2026-10-30T14:16:03.094825+00:00", "event": "stage_start", "stage": "pretrained", "result": "results/1793369763093764329_pretrained_fe6d9c"}
+{"utc": "2026-10-30T14:16:03.973856+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793369738289475220_train_65c1d8"}
+{"utc": "2026-10-30T14:16:03.984010+00:00", "event": "campaign_job_exit", "index": 10, "returncode": 0}
+{"utc": "2026-10-30T14:16:03.984080+00:00", "event": "campaign_job_start", "index": 11, "spec": {"phase": "tuning", "arm": "lowrank", "seed": 11, "lr": 0.0003, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:16:04.035075+00:00", "event": "stage_start", "stage": "train", "result": "results/1793369764034908703_train_01b269"}
+{"utc": "2026-10-30T14:16:56.128638+00:00", "event": "stage_start", "stage": "bitrate", "result": "results/1793369816128440199_bitrate_9b7ee8"}
+{"utc": "2026-10-30T14:17:00.044461+00:00", "event": "stage_start", "stage": "distributed", "result": "results/1793369820044289807_distributed_af0c37"}
+{"utc": "2026-10-30T14:17:02.996238+00:00", "event": "stage_start", "stage": "runtime", "result": "results/1793369822996075360_runtime_a8a6aa"}
+{"utc": "2026-10-30T14:19:17.924660+00:00", "event": "recoverable_checkpoint", "path": "progress/002_recovery_checkpoint.json"}
+{"utc": "2026-10-30T14:21:25.789904+00:00", "event": "protocol_amendment", "file": "configs/003_runtime_bank_protocol.json"}
+{"utc": "2026-10-30T14:25:28.621722+00:00", "event": "stage_exit", "stage": "pretrained", "exit_code": 0, "result": "results/1793369759921020449_pretrained_5f19ee"}
+{"utc": "2026-10-30T14:26:11.990080+00:00", "event": "stage_start", "stage": "train", "result": "results/1793370371989775880_train_f7eb19"}
+{"utc": "2026-10-30T14:28:07.760106+00:00", "event": "stage_exit", "stage": "pretrained", "exit_code": 0, "result": "results/1793369763093764329_pretrained_fe6d9c"}
+{"utc": "2026-10-30T14:28:24.582887+00:00", "event": "resource_and_accounting_amendment", "file": "configs/004_checkpoint_resource_policy.json"}
+{"utc": "2026-10-30T14:28:33.201079+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793369764034908703_train_01b269"}
+{"utc": "2026-10-30T14:28:33.209888+00:00", "event": "campaign_job_exit", "index": 11, "returncode": 0}
+{"utc": "2026-10-30T14:28:33.210057+00:00", "event": "campaign_job_start", "index": 12, "spec": {"phase": "tuning", "arm": "legacy_blend", "seed": 11, "lr": 0.0001, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:28:33.259444+00:00", "event": "stage_start", "stage": "train", "result": "results/1793370513259263703_train_d2606b"}
+{"utc": "2026-10-30T14:28:34.427887+00:00", "event": "stage_exit", "stage": "bitrate", "exit_code": 0, "result": "results/1793369816128440199_bitrate_9b7ee8"}
+{"utc": "2026-10-30T14:28:39.099968+00:00", "event": "stage_exit", "stage": "distributed", "exit_code": 0, "result": "results/1793369820044289807_distributed_af0c37"}
+{"utc": "2026-10-30T14:28:40.103505+00:00", "event": "stage_exit", "stage": "runtime", "exit_code": 0, "result": "results/1793369822996075360_runtime_a8a6aa"}
+{"utc": "2026-10-30T14:28:44.750427+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793370371989775880_train_f7eb19"}
+{"utc": "2026-10-30T14:28:44.813578+00:00", "event": "stage_start", "stage": "train", "result": "results/1793370524813393695_train_ba6742"}
+{"utc": "2026-10-30T14:29:13.906795+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793370513259263703_train_d2606b"}
+{"utc": "2026-10-30T14:29:13.914568+00:00", "event": "campaign_job_exit", "index": 12, "returncode": 0}
+{"utc": "2026-10-30T14:29:13.914702+00:00", "event": "campaign_job_start", "index": 13, "spec": {"phase": "tuning", "arm": "legacy_blend", "seed": 11, "lr": 0.0003, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:29:13.965782+00:00", "event": "stage_start", "stage": "train", "result": "results/1793370553965600821_train_b811db"}
+{"utc": "2026-10-30T14:29:18.434997+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793370524813393695_train_ba6742"}
+{"utc": "2026-10-30T14:29:18.494691+00:00", "event": "stage_start", "stage": "train", "result": "results/1793370558494515549_train_6a51ce"}
+{"utc": "2026-10-30T14:29:48.220820+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793370553965600821_train_b811db"}
+{"utc": "2026-10-30T14:29:48.229530+00:00", "event": "campaign_job_exit", "index": 13, "returncode": 0}
+{"utc": "2026-10-30T14:29:48.229672+00:00", "event": "campaign_job_start", "index": 14, "spec": {"phase": "rank_pilot", "arm": "native", "seed": 11, "lr": 0.0003, "rank": 4, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:29:48.279752+00:00", "event": "stage_start", "stage": "train", "result": "results/1793370588279570644_train_dceddf"}
+{"utc": "2026-10-30T14:29:52.846064+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793370558494515549_train_6a51ce"}
+{"utc": "2026-10-30T14:29:53.456541+00:00", "event": "resume_equivalence_passed", "runs": [{"result": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/results/1793370371989775880_train_f7eb19", "checkpoint": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/artifacts/training_1793370371989775880_train_f7eb19/checkpoint_000005.pt"}, {"result": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/results/1793370524813393695_train_ba6742", "checkpoint": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/artifacts/training_1793370524813393695_train_ba6742/checkpoint_000010.pt"}, {"result": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/results/1793370558494515549_train_6a51ce", "checkpoint": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/artifacts/training_1793370558494515549_train_6a51ce/checkpoint_000010.pt"}]}
+{"utc": "2026-10-30T14:29:57.661604+00:00", "event": "recoverable_checkpoint", "path": "progress/003_pretrained_complete.json"}
+{"utc": "2026-10-30T14:30:11.290036+00:00", "event": "stage_start", "stage": "runtime", "result": "results/1793370611289862592_runtime_46bbbe"}
+{"utc": "2026-10-30T14:30:14.115707+00:00", "event": "stage_start", "stage": "distributed", "result": "results/1793370614115522989_distributed_22a182"}
+{"utc": "2026-10-30T14:30:16.826735+00:00", "event": "stage_start", "stage": "correctness", "result": "results/1793370616826531192_correctness_0c6313"}
+{"utc": "2026-10-30T14:30:19.566107+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793370588279570644_train_dceddf"}
+{"utc": "2026-10-30T14:30:19.575948+00:00", "event": "campaign_job_exit", "index": 14, "returncode": 0}
+{"utc": "2026-10-30T14:30:19.576089+00:00", "event": "campaign_job_start", "index": 15, "spec": {"phase": "rank_pilot", "arm": "lowrank", "seed": 11, "lr": 0.0003, "rank": 4, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:30:19.627874+00:00", "event": "stage_start", "stage": "train", "result": "results/1793370619627693911_train_5a89ad"}
+{"utc": "2026-10-30T14:31:51.635443+00:00", "event": "stage_exit", "stage": "runtime", "exit_code": 0, "result": "results/1793370611289862592_runtime_46bbbe"}
+{"utc": "2026-10-30T14:31:54.276787+00:00", "event": "stage_exit", "stage": "distributed", "exit_code": 0, "result": "results/1793370614115522989_distributed_22a182"}
+{"utc": "2026-10-30T14:32:13.232384+00:00", "event": "stage_exit", "stage": "correctness", "exit_code": 0, "result": "results/1793370616826531192_correctness_0c6313"}
+{"utc": "2026-10-30T14:32:19.086665+00:00", "event": "handoff_written", "path": "RESUME_PROMPT.md"}
+{"utc": "2026-10-30T14:32:39.055123+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793370619627693911_train_5a89ad"}
+{"utc": "2026-10-30T14:32:39.066960+00:00", "event": "campaign_job_exit", "index": 15, "returncode": 0}
+{"utc": "2026-10-30T14:32:39.067102+00:00", "event": "campaign_job_start", "index": 16, "spec": {"phase": "penalty_pilot", "arm": "tail", "seed": 11, "lr": 0.0003, "tail_decay": 0, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:32:39.124244+00:00", "event": "stage_start", "stage": "train", "result": "results/1793370759123896032_train_2fe605"}
+{"utc": "2026-10-30T14:33:07.415875+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793370759123896032_train_2fe605"}
+{"utc": "2026-10-30T14:33:07.426299+00:00", "event": "campaign_job_exit", "index": 16, "returncode": 0}
+{"utc": "2026-10-30T14:33:07.426471+00:00", "event": "campaign_job_start", "index": 17, "spec": {"phase": "penalty_pilot", "arm": "tail", "seed": 11, "lr": 0.0003, "tail_decay": 0.0003, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:33:07.487188+00:00", "event": "stage_start", "stage": "train", "result": "results/1793370787486994201_train_aaa3a4"}
+{"utc": "2026-10-30T14:33:36.291390+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793370787486994201_train_aaa3a4"}
+{"utc": "2026-10-30T14:33:36.301532+00:00", "event": "campaign_job_exit", "index": 17, "returncode": 0}
+{"utc": "2026-10-30T14:33:36.301660+00:00", "event": "campaign_job_start", "index": 18, "spec": {"phase": "penalty_pilot", "arm": "row_tail", "seed": 11, "lr": 0.0003, "tail_decay": 0, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:33:36.366561+00:00", "event": "stage_start", "stage": "train", "result": "results/1793370816366385094_train_afdf5d"}
+{"utc": "2026-10-30T14:34:03.762217+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793370816366385094_train_afdf5d"}
+{"utc": "2026-10-30T14:34:03.791949+00:00", "event": "campaign_job_exit", "index": 18, "returncode": 0}
+{"utc": "2026-10-30T14:34:03.792358+00:00", "event": "campaign_job_start", "index": 19, "spec": {"phase": "penalty_pilot", "arm": "row_tail", "seed": 11, "lr": 0.0003, "tail_decay": 0.0003, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:34:03.859669+00:00", "event": "stage_start", "stage": "train", "result": "results/1793370843859495561_train_cd6978"}
+{"utc": "2026-10-30T14:34:10.701599+00:00", "event": "stage_start", "stage": "report", "result": "results/1793370850701415415_report_d6c793"}
+{"utc": "2026-10-30T14:34:10.916397+00:00", "event": "report_written", "path": "reports/001_20261030T143410Z.md"}
+{"utc": "2026-10-30T14:34:10.966762+00:00", "event": "stage_exit", "stage": "report", "exit_code": 0, "result": "results/1793370850701415415_report_d6c793"}
+{"utc": "2026-10-30T14:34:33.117808+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793370843859495561_train_cd6978"}
+{"utc": "2026-10-30T14:34:33.132082+00:00", "event": "campaign_job_exit", "index": 19, "returncode": 0}
+{"utc": "2026-10-30T14:34:33.144866+00:00", "event": "campaign_job_start", "index": 20, "spec": {"phase": "common_recipe", "arm": "adamw", "seed": 11, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T14:34:33.212965+00:00", "event": "stage_start", "stage": "train", "result": "results/1793370873212762834_train_510c39"}
+{"utc": "2026-10-30T14:34:38.877838+00:00", "event": "stage_start", "stage": "legacy", "result": "results/1793370878877666800_legacy_487b39"}
+{"utc": "2026-10-30T14:35:44.266083+00:00", "event": "runtime_protocol_addition", "file": "configs/005_runtime_fp16_input.json"}
+{"utc": "2026-10-30T14:35:46.123307+00:00", "event": "stage_start", "stage": "runtime", "result": "results/1793370946123120303_runtime_fec9cb"}
+{"utc": "2026-10-30T14:35:48.506480+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793370873212762834_train_510c39"}
+{"utc": "2026-10-30T14:35:48.513994+00:00", "event": "campaign_job_exit", "index": 20, "returncode": 0}
+{"utc": "2026-10-30T14:35:48.514139+00:00", "event": "campaign_job_start", "index": 21, "spec": {"phase": "common_recipe", "arm": "row", "seed": 11, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T14:35:48.567729+00:00", "event": "stage_start", "stage": "train", "result": "results/1793370948567535613_train_e5a26f"}
+{"utc": "2026-10-30T14:36:23.192994+00:00", "event": "stage_exit", "stage": "legacy", "exit_code": 0, "result": "results/1793370878877666800_legacy_487b39"}
+{"utc": "2026-10-30T14:37:00.953332+00:00", "event": "stage_start", "stage": "streaming", "result": "results/1793371020953143857_streaming_7da6a8"}
+{"utc": "2026-10-30T14:37:17.219311+00:00", "event": "stage_exit", "stage": "runtime", "exit_code": 0, "result": "results/1793370946123120303_runtime_fec9cb"}
+{"utc": "2026-10-30T14:37:55.926995+00:00", "event": "integrity_verified", "path": "reports/integrity_1793371075926795190.json", "staged": false}
+{"utc": "2026-10-30T14:38:34.247025+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793370948567535613_train_e5a26f"}
+{"utc": "2026-10-30T14:38:34.256198+00:00", "event": "campaign_job_exit", "index": 21, "returncode": 0}
+{"utc": "2026-10-30T14:38:34.256357+00:00", "event": "campaign_job_start", "index": 22, "spec": {"phase": "common_recipe", "arm": "tail", "seed": 11, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T14:38:34.320201+00:00", "event": "stage_start", "stage": "train", "result": "results/1793371114319938563_train_a94d7a"}
+{"utc": "2026-10-30T14:38:48.789457+00:00", "event": "stage_exit", "stage": "streaming", "exit_code": 0, "result": "results/1793371020953143857_streaming_7da6a8"}
+{"utc": "2026-10-30T14:40:09.594523+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793371114319938563_train_a94d7a"}
+{"utc": "2026-10-30T14:40:09.602781+00:00", "event": "campaign_job_exit", "index": 22, "returncode": 0}
+{"utc": "2026-10-30T14:40:09.603721+00:00", "event": "campaign_job_start", "index": 23, "spec": {"phase": "common_recipe", "arm": "row_tail", "seed": 11, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T14:40:09.673394+00:00", "event": "stage_start", "stage": "train", "result": "results/1793371209673206740_train_79cc6a"}
+{"utc": "2026-10-30T14:41:31.232314+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793371209673206740_train_79cc6a"}
+{"utc": "2026-10-30T14:41:31.248460+00:00", "event": "campaign_job_exit", "index": 23, "returncode": 0}
+{"utc": "2026-10-30T14:41:31.248629+00:00", "event": "campaign_job_start", "index": 24, "spec": {"phase": "common_recipe", "arm": "native", "seed": 11, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T14:41:31.314284+00:00", "event": "stage_start", "stage": "train", "result": "results/1793371291314106526_train_a66e09"}
+{"utc": "2026-10-30T14:42:10.043965+00:00", "event": "distillation_plan_frozen", "file": "configs/006_distillation_protocol.json"}
+{"utc": "2026-10-30T14:42:12.075032+00:00", "event": "stage_start", "stage": "distillation", "result": "results/1793371332074859684_distillation_f62605"}
+{"utc": "2026-10-30T14:42:50.354571+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793371291314106526_train_a66e09"}
+{"utc": "2026-10-30T14:42:50.375524+00:00", "event": "campaign_job_exit", "index": 24, "returncode": 0}
+{"utc": "2026-10-30T14:42:50.375715+00:00", "event": "campaign_job_start", "index": 25, "spec": {"phase": "common_recipe", "arm": "lowrank", "seed": 11, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T14:42:50.423897+00:00", "event": "stage_start", "stage": "train", "result": "results/1793371370423721380_train_b2a1e6"}
+{"utc": "2026-10-30T14:42:57.535679+00:00", "event": "stage_exit", "stage": "distillation", "exit_code": 0, "result": "results/1793371332074859684_distillation_f62605"}
+{"utc": "2026-10-30T14:44:10.667972+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793371370423721380_train_b2a1e6"}
+{"utc": "2026-10-30T14:44:10.681150+00:00", "event": "campaign_job_exit", "index": 25, "returncode": 0}
+{"utc": "2026-10-30T14:44:10.681303+00:00", "event": "campaign_job_start", "index": 26, "spec": {"phase": "common_recipe", "arm": "legacy_blend", "seed": 11, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T14:44:10.743612+00:00", "event": "stage_start", "stage": "train", "result": "results/1793371450743432772_train_c7135f"}
+{"utc": "2026-10-30T14:45:08.260853+00:00", "event": "stage_start", "stage": "distillation", "result": "results/1793371508260674874_distillation_519e84"}
+{"utc": "2026-10-30T14:45:33.009347+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793371450743432772_train_c7135f"}
+{"utc": "2026-10-30T14:45:33.018361+00:00", "event": "campaign_job_exit", "index": 26, "returncode": 0}
+{"utc": "2026-10-30T14:45:33.029264+00:00", "event": "campaign_job_start", "index": 27, "spec": {"phase": "common_recipe", "arm": "adamw", "seed": 22, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T14:45:33.084719+00:00", "event": "stage_start", "stage": "train", "result": "results/1793371533084526906_train_4ae25c"}
+{"utc": "2026-10-30T14:47:21.835144+00:00", "event": "large_streaming_plan_frozen", "file": "configs/007_large_streaming_samples.json"}
+{"utc": "2026-10-30T14:47:24.106215+00:00", "event": "stage_start", "stage": "large-streaming", "result": "results/1793371644106045825_large-streaming_634166"}
+{"utc": "2026-10-30T14:50:12.135594+00:00", "event": "software_metadata_correction", "path": "configs/008_numpy_metadata_correction.json"}
+{"utc": "2026-10-30T14:52:15.210880+00:00", "event": "downstream_plan_frozen", "file": "configs/009_downstream_protocol.json"}
+{"utc": "2026-10-30T14:52:19.017084+00:00", "event": "downstream_sources_pinned", "sources": [{"task": "piqa", "revision": "142f6d7367fd9877f0fb3b5734ea6a545f54cdd1", "status": "available"}, {"task": "arc_easy", "revision": "210d026faf9955653af8916fad021475a3f00453", "status": "available"}]}
+{"utc": "2026-10-30T14:52:43.993437+00:00", "event": "stage_start", "stage": "downstream", "result": "results/1793371963993256212_downstream_08866f"}
+{"utc": "2026-10-30T14:54:24.929702+00:00", "event": "stage_exit", "stage": "distillation", "exit_code": 0, "result": "results/1793371508260674874_distillation_519e84"}
+{"utc": "2026-10-30T14:54:28.937203+00:00", "event": "calibration_ablation_plan_frozen", "file": "configs/010_calibration_component_ablation.json"}
+{"utc": "2026-10-30T14:54:31.319657+00:00", "event": "stage_start", "stage": "calibration-ablation", "result": "results/1793372071319472348_calibration-ablation_a31659"}
+{"utc": "2026-10-30T14:55:37.752020+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793371533084526906_train_4ae25c"}
+{"utc": "2026-10-30T14:55:37.760021+00:00", "event": "campaign_job_exit", "index": 27, "returncode": 0}
+{"utc": "2026-10-30T14:55:37.773064+00:00", "event": "campaign_job_start", "index": 28, "spec": {"phase": "common_recipe", "arm": "row", "seed": 22, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T14:55:37.825087+00:00", "event": "stage_start", "stage": "train", "result": "results/1793372137824912469_train_8f1302"}
+{"utc": "2026-10-30T14:56:03.453255+00:00", "event": "stage_exit", "stage": "large-streaming", "exit_code": 0, "result": "results/1793371644106045825_large-streaming_634166"}
+{"utc": "2026-10-30T14:56:16.251143+00:00", "event": "stage_exit", "stage": "downstream", "exit_code": 0, "result": "results/1793371963993256212_downstream_08866f"}
+{"utc": "2026-10-30T14:56:25.997635+00:00", "event": "stage_exit", "stage": "calibration-ablation", "exit_code": 1, "result": "results/1793372071319472348_calibration-ablation_a31659"}
+{"utc": "2026-10-30T14:57:40.824278+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793372137824912469_train_8f1302"}
+{"utc": "2026-10-30T14:57:40.834881+00:00", "event": "campaign_job_exit", "index": 28, "returncode": 0}
+{"utc": "2026-10-30T14:57:40.834947+00:00", "event": "campaign_job_start", "index": 29, "spec": {"phase": "common_recipe", "arm": "tail", "seed": 22, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T14:57:40.910866+00:00", "event": "stage_start", "stage": "train", "result": "results/1793372260910693237_train_ae9854"}
+{"utc": "2026-10-30T14:59:01.928288+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793372260910693237_train_ae9854"}
+{"utc": "2026-10-30T14:59:01.934975+00:00", "event": "campaign_job_exit", "index": 29, "returncode": 0}
+{"utc": "2026-10-30T14:59:01.946037+00:00", "event": "campaign_job_start", "index": 30, "spec": {"phase": "common_recipe", "arm": "row_tail", "seed": 22, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T14:59:02.010036+00:00", "event": "stage_start", "stage": "train", "result": "results/1793372342009852540_train_46416a"}
+{"utc": "2026-10-30T14:59:21.616592+00:00", "event": "stage_start", "stage": "calibration-ablation", "result": "results/1793372361616414378_calibration-ablation_3f961c"}
+{"utc": "2026-10-30T14:59:25.132781+00:00", "event": "stage_start", "stage": "downstream", "result": "results/1793372365132606450_downstream_fcb689"}
+{"utc": "2026-10-30T14:59:26.279886+00:00", "event": "numerical_validation_checkpoint", "file": "configs/011_numerical_payload_rejection.json"}
+{"utc": "2026-10-30T15:00:23.623529+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793372342009852540_train_46416a"}
+{"utc": "2026-10-30T15:00:23.630975+00:00", "event": "campaign_job_exit", "index": 30, "returncode": 0}
+{"utc": "2026-10-30T15:00:23.642645+00:00", "event": "campaign_job_start", "index": 31, "spec": {"phase": "common_recipe", "arm": "native", "seed": 22, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T15:00:23.696040+00:00", "event": "stage_start", "stage": "train", "result": "results/1793372423695853623_train_70567e"}
+{"utc": "2026-10-30T15:01:19.007339+00:00", "event": "stage_exit", "stage": "calibration-ablation", "exit_code": 0, "result": "results/1793372361616414378_calibration-ablation_3f961c"}
+{"utc": "2026-10-30T15:04:55.825306+00:00", "event": "training_data_lineage_pinned", "file": "configs/013_training_data_pin.json"}
+{"utc": "2026-10-30T15:06:26.405093+00:00", "event": "stage_exit", "stage": "downstream", "exit_code": 0, "result": "results/1793372365132606450_downstream_fcb689"}
+{"utc": "2026-10-30T15:06:26.412107+00:00", "event": "downstream_campaign_job_exit", "model": "ibm-granite/granite-3.1-1b-a400m-base", "codec": "original", "returncode": 0}
+{"utc": "2026-10-30T15:06:26.460644+00:00", "event": "stage_start", "stage": "downstream", "result": "results/1793372786460469486_downstream_a5d3fb"}
+{"utc": "2026-10-30T15:07:44.282460+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793372423695853623_train_70567e"}
+{"utc": "2026-10-30T15:07:44.289674+00:00", "event": "campaign_job_exit", "index": 31, "returncode": 0}
+{"utc": "2026-10-30T15:07:44.289740+00:00", "event": "campaign_job_start", "index": 32, "spec": {"phase": "common_recipe", "arm": "lowrank", "seed": 22, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T15:07:44.353368+00:00", "event": "stage_start", "stage": "train", "result": "results/1793372864353189640_train_8913f4"}
+{"utc": "2026-10-30T15:12:52.099923+00:00", "event": "complete_direct_runtime_plan_frozen", "file": "configs/014_complete_direct_runtime_protocol.json"}
+{"utc": "2026-10-30T15:12:54.773951+00:00", "event": "stage_start", "stage": "full-runtime", "result": "results/1793373174773770240_full-runtime_49a5ec"}
+{"utc": "2026-10-30T15:12:58.701885+00:00", "event": "stage_exit", "stage": "downstream", "exit_code": 0, "result": "results/1793372786460469486_downstream_a5d3fb"}
+{"utc": "2026-10-30T15:12:58.709189+00:00", "event": "downstream_campaign_job_exit", "model": "ibm-granite/granite-3.1-1b-a400m-base", "codec": "int4", "returncode": 0}
+{"utc": "2026-10-30T15:12:58.761775+00:00", "event": "stage_start", "stage": "downstream", "result": "results/1793373178761603423_downstream_410f68"}
+{"utc": "2026-10-30T15:14:10.445131+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793372864353189640_train_8913f4"}
+{"utc": "2026-10-30T15:14:10.452783+00:00", "event": "campaign_job_exit", "index": 32, "returncode": 0}
+{"utc": "2026-10-30T15:14:10.463714+00:00", "event": "campaign_job_start", "index": 33, "spec": {"phase": "common_recipe", "arm": "legacy_blend", "seed": 22, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T15:14:10.514068+00:00", "event": "stage_start", "stage": "train", "result": "results/1793373250513891972_train_53f552"}
+{"utc": "2026-10-30T15:23:12.250651+00:00", "event": "recoverable_checkpoint", "path": "progress/005_live_checkpoint.json", "handoff": "RESUME_PROMPT_002.md"}
+{"utc": "2026-10-30T15:30:17.038330+00:00", "event": "validation_checkpoint_selection_frozen", "file": "configs/015_validation_checkpoint_selection.json"}
+{"utc": "2026-10-30T15:32:17.046065+00:00", "event": "closecall_replication_plan_frozen", "file": "configs/016_closecall_replication.json"}
+{"utc": "2026-10-30T15:34:41.310832+00:00", "event": "matched_direct_factor_export_plan_frozen", "file": "configs/017_matched_direct_factor_containers.json"}
+{"utc": "2026-10-30T15:43:12.593079+00:00", "event": "stage_exit", "stage": "full-runtime", "exit_code": 0, "result": "results/1793373174773770240_full-runtime_49a5ec"}
+{"utc": "2026-10-30T15:48:37.330372+00:00", "event": "stage_exit", "stage": "downstream", "exit_code": 0, "result": "results/1793373178761603423_downstream_410f68"}
+{"utc": "2026-10-30T15:48:37.342744+00:00", "event": "downstream_campaign_job_exit", "model": "ibm-granite/granite-3.1-1b-a400m-base", "codec": "int2_sign", "returncode": 0}
+{"utc": "2026-10-30T15:48:37.394848+00:00", "event": "stage_start", "stage": "downstream", "result": "results/1793375317394641110_downstream_f905e4"}
+{"utc": "2026-10-30T15:50:02.739176+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793373250513891972_train_53f552"}
+{"utc": "2026-10-30T15:50:02.751116+00:00", "event": "campaign_job_exit", "index": 33, "returncode": 0}
+{"utc": "2026-10-30T15:50:02.751210+00:00", "event": "campaign_job_start", "index": 34, "spec": {"phase": "common_recipe", "arm": "adamw", "seed": 33, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T15:50:02.813130+00:00", "event": "stage_start", "stage": "train", "result": "results/1793375402812871815_train_ef703a"}
+{"utc": "2026-10-30T15:52:17.753342+00:00", "event": "fused_transform_followup_plan_frozen", "file": "configs/018_fused_transform_followup.json"}
+{"utc": "2026-10-30T15:52:19.727756+00:00", "event": "stage_start", "stage": "fused-checks", "result": "results/1793375539727582007_fused-checks_09864f"}
+{"utc": "2026-10-30T15:55:20.440205+00:00", "event": "stage_exit", "stage": "downstream", "exit_code": 0, "result": "results/1793375317394641110_downstream_f905e4"}
+{"utc": "2026-10-30T15:55:20.448034+00:00", "event": "downstream_campaign_job_exit", "model": "ibm-granite/granite-3.1-1b-a400m-base", "codec": "distilled", "returncode": 0}
+{"utc": "2026-10-30T15:55:20.500538+00:00", "event": "stage_start", "stage": "downstream", "result": "results/1793375720500354414_downstream_94a857"}
+{"utc": "2026-10-30T15:56:33.911949+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793375402812871815_train_ef703a"}
+{"utc": "2026-10-30T15:56:33.922959+00:00", "event": "campaign_job_exit", "index": 34, "returncode": 0}
+{"utc": "2026-10-30T15:56:33.923046+00:00", "event": "campaign_job_start", "index": 35, "spec": {"phase": "common_recipe", "arm": "row", "seed": 33, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T15:56:33.976943+00:00", "event": "stage_start", "stage": "train", "result": "results/1793375793976758821_train_abd3e2"}
+{"utc": "2026-10-30T15:57:11.887417+00:00", "event": "stage_exit", "stage": "fused-checks", "exit_code": 0, "result": "results/1793375539727582007_fused-checks_09864f"}
+{"utc": "2026-10-30T15:58:13.219745+00:00", "event": "stage_exit", "stage": "downstream", "exit_code": 0, "result": "results/1793375720500354414_downstream_94a857"}
+{"utc": "2026-10-30T15:58:13.227014+00:00", "event": "downstream_campaign_job_exit", "model": "HuggingFaceTB/SmolLM2-1.7B", "codec": "original", "returncode": 0}
+{"utc": "2026-10-30T15:58:13.275607+00:00", "event": "stage_start", "stage": "downstream", "result": "results/1793375893275426300_downstream_d23d5d"}
+{"utc": "2026-10-30T15:59:26.343360+00:00", "event": "whole_model_precision_baselines_frozen", "file": "configs/019_whole_model_precision_baselines.json"}
+{"utc": "2026-10-30T15:59:26.939401+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793375793976758821_train_abd3e2"}
+{"utc": "2026-10-30T15:59:26.946747+00:00", "event": "campaign_job_exit", "index": 35, "returncode": 0}
+{"utc": "2026-10-30T15:59:26.946810+00:00", "event": "campaign_job_start", "index": 36, "spec": {"phase": "common_recipe", "arm": "tail", "seed": 33, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T15:59:27.006214+00:00", "event": "stage_start", "stage": "train", "result": "results/1793375967006030090_train_0ce728"}
+{"utc": "2026-10-30T16:00:44.581028+00:00", "event": "stage_exit", "stage": "downstream", "exit_code": 0, "result": "results/1793375893275426300_downstream_d23d5d"}
+{"utc": "2026-10-30T16:00:44.588556+00:00", "event": "downstream_campaign_job_exit", "model": "HuggingFaceTB/SmolLM2-1.7B", "codec": "int4", "returncode": 0}
+{"utc": "2026-10-30T16:00:44.641982+00:00", "event": "stage_start", "stage": "downstream", "result": "results/1793376044641814458_downstream_9e1d5e"}
+{"utc": "2026-10-30T16:02:04.517056+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793375967006030090_train_0ce728"}
+{"utc": "2026-10-30T16:02:04.524027+00:00", "event": "campaign_job_exit", "index": 36, "returncode": 0}
+{"utc": "2026-10-30T16:02:04.524101+00:00", "event": "campaign_job_start", "index": 37, "spec": {"phase": "common_recipe", "arm": "row_tail", "seed": 33, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T16:02:04.575609+00:00", "event": "stage_start", "stage": "train", "result": "results/1793376124575423225_train_17eaa3"}
+{"utc": "2026-10-30T16:03:22.083645+00:00", "event": "stage_exit", "stage": "downstream", "exit_code": 0, "result": "results/1793376044641814458_downstream_9e1d5e"}
+{"utc": "2026-10-30T16:03:22.092585+00:00", "event": "downstream_campaign_job_exit", "model": "HuggingFaceTB/SmolLM2-1.7B", "codec": "int2_sign", "returncode": 0}
+{"utc": "2026-10-30T16:03:22.092685+00:00", "event": "downstream_campaign_complete"}
+{"utc": "2026-10-30T16:04:43.083369+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793376124575423225_train_17eaa3"}
+{"utc": "2026-10-30T16:04:43.098431+00:00", "event": "campaign_job_exit", "index": 37, "returncode": 0}
+{"utc": "2026-10-30T16:04:43.098670+00:00", "event": "campaign_job_start", "index": 38, "spec": {"phase": "common_recipe", "arm": "native", "seed": 33, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T16:04:43.173209+00:00", "event": "stage_start", "stage": "train", "result": "results/1793376283172987651_train_277ab0"}
+{"utc": "2026-10-30T16:06:02.252775+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793376283172987651_train_277ab0"}
+{"utc": "2026-10-30T16:06:02.261908+00:00", "event": "campaign_job_exit", "index": 38, "returncode": 0}
+{"utc": "2026-10-30T16:06:02.261977+00:00", "event": "campaign_job_start", "index": 39, "spec": {"phase": "common_recipe", "arm": "lowrank", "seed": 33, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T16:06:02.352891+00:00", "event": "stage_start", "stage": "train", "result": "results/1793376362352712796_train_f7d08e"}
+{"utc": "2026-10-30T16:07:16.541878+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793376362352712796_train_f7d08e"}
+{"utc": "2026-10-30T16:07:16.551004+00:00", "event": "campaign_job_exit", "index": 39, "returncode": 0}
+{"utc": "2026-10-30T16:07:16.551072+00:00", "event": "campaign_job_start", "index": 40, "spec": {"phase": "common_recipe", "arm": "legacy_blend", "seed": 33, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T16:07:16.630771+00:00", "event": "stage_start", "stage": "train", "result": "results/1793376436630585768_train_8f8e0e"}
+{"utc": "2026-10-30T16:07:55.849710+00:00", "event": "stage_start", "stage": "runtime", "result": "results/1793376475849530707_runtime_326021"}
+{"utc": "2026-10-30T16:08:01.250174+00:00", "event": "stage_start", "stage": "full-runtime", "result": "results/1793376481249984697_full-runtime_9f4c36"}
+{"utc": "2026-10-30T16:08:02.448029+00:00", "event": "stage_start", "stage": "report", "result": "results/1793376482447839102_report_db9719"}
+{"utc": "2026-10-30T16:08:04.557678+00:00", "event": "report_written", "path": "reports/002_20261030T160802Z.md"}
+{"utc": "2026-10-30T16:08:04.722061+00:00", "event": "stage_exit", "stage": "report", "exit_code": 0, "result": "results/1793376482447839102_report_db9719"}
+{"utc": "2026-10-30T16:08:38.811253+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793376436630585768_train_8f8e0e"}
+{"utc": "2026-10-30T16:08:38.829553+00:00", "event": "campaign_job_exit", "index": 40, "returncode": 0}
+{"utc": "2026-10-30T16:08:38.829656+00:00", "event": "campaign_job_start", "index": 41, "spec": {"phase": "function_matched", "arm": "adamw", "seed": 11, "lr": 0.0003, "steps": 1500, "function_matched": true}}
+{"utc": "2026-10-30T16:08:38.882827+00:00", "event": "stage_start", "stage": "train", "result": "results/1793376518882637020_train_6b76df"}
+{"utc": "2026-10-30T16:09:21.565968+00:00", "event": "stage_exit", "stage": "runtime", "exit_code": 0, "result": "results/1793376475849530707_runtime_326021"}
+{"utc": "2026-10-30T16:13:55.333478+00:00", "event": "complete_int4_control_frozen", "file": "configs/020_complete_int4_control.json"}
+{"utc": "2026-10-30T16:13:57.793285+00:00", "event": "stage_start", "stage": "full-int4-runtime", "result": "results/1793376837793103804_full-int4-runtime_66c6d9"}
+{"utc": "2026-10-30T16:17:38.917299+00:00", "event": "real_gradient_audit_corrected", "file": "configs/021_real_gradient_nonzero_audit.json"}
+{"utc": "2026-10-30T16:17:40.825470+00:00", "event": "stage_start", "stage": "distributed", "result": "results/1793377060825279344_distributed_c9a9a3"}
+{"utc": "2026-10-30T16:25:34.983216+00:00", "event": "quality_diagnostic_plan_frozen", "file": "configs/022_quality_diagnostics.json"}
+{"utc": "2026-10-30T16:25:36.969138+00:00", "event": "stage_start", "stage": "quality-diagnostics", "result": "results/1793377536968959136_quality-diagnostics_11a4f9"}
+{"utc": "2026-10-30T16:25:40.150887+00:00", "event": "stage_start", "stage": "quality-diagnostics", "result": "results/1793377540132978288_quality-diagnostics_9bbb91"}
+{"utc": "2026-10-30T16:30:03.073301+00:00", "event": "stage_exit", "stage": "full-runtime", "exit_code": 0, "result": "results/1793376481249984697_full-runtime_9f4c36"}
+{"utc": "2026-10-30T16:31:17.259759+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793376518882637020_train_6b76df"}
+{"utc": "2026-10-30T16:31:17.267221+00:00", "event": "campaign_job_exit", "index": 41, "returncode": 0}
+{"utc": "2026-10-30T16:31:17.267298+00:00", "event": "campaign_job_start", "index": 42, "spec": {"phase": "function_matched", "arm": "row_tail", "seed": 11, "lr": 0.0003, "steps": 1500, "function_matched": true}}
+{"utc": "2026-10-30T16:31:17.320852+00:00", "event": "stage_start", "stage": "train", "result": "results/1793377877320667218_train_341647"}
+{"utc": "2026-10-30T16:32:44.268238+00:00", "event": "context_handoff", "path": "RESUME_PROMPT_003.md", "state": "paired training continuation pending; full fused actual model completed"}
+{"utc": "2026-10-30T16:37:50.561439+00:00", "event": "residual_only_control_frozen", "file": "configs/023_residual_only_control.json"}
+{"utc": "2026-10-30T16:37:50.618636+00:00", "event": "stage_start", "stage": "residual-control", "result": "results/1793378270618459664_residual-control_b2ec52"}
+{"utc": "2026-10-30T16:39:44.443982+00:00", "event": "stage_start", "stage": "report", "result": "results/1793378384443793380_report_81c8df"}
+{"utc": "2026-10-30T16:39:45.956095+00:00", "event": "report_written", "path": "reports/003_20261030T163944Z.md"}
+{"utc": "2026-10-30T16:39:46.063269+00:00", "event": "stage_exit", "stage": "report", "exit_code": 0, "result": "results/1793378384443793380_report_81c8df"}
+{"utc": "2026-10-30T16:49:32.276963+00:00", "event": "stage_exit", "stage": "full-int4-runtime", "exit_code": 0, "result": "results/1793376837793103804_full-int4-runtime_66c6d9"}
+{"utc": "2026-10-30T16:49:36.962744+00:00", "event": "stage_exit", "stage": "distributed", "exit_code": 0, "result": "results/1793377060825279344_distributed_c9a9a3"}
+{"utc": "2026-10-30T16:50:27.788607+00:00", "event": "stage_exit", "stage": "quality-diagnostics", "exit_code": 0, "result": "results/1793377536968959136_quality-diagnostics_11a4f9"}
+{"utc": "2026-10-30T16:51:12.111034+00:00", "event": "stage_exit", "stage": "quality-diagnostics", "exit_code": 0, "result": "results/1793377540132978288_quality-diagnostics_9bbb91"}
+{"utc": "2026-10-30T16:52:32.509122+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793377877320667218_train_341647"}
+{"utc": "2026-10-30T16:52:32.517485+00:00", "event": "campaign_job_exit", "index": 42, "returncode": 0}
+{"utc": "2026-10-30T16:52:32.517562+00:00", "event": "campaign_job_start", "index": 43, "spec": {"phase": "function_matched", "arm": "adamw", "seed": 22, "lr": 0.0003, "steps": 1500, "function_matched": true}}
+{"utc": "2026-10-30T16:52:32.568899+00:00", "event": "stage_start", "stage": "train", "result": "results/1793379152568683227_train_d5ce42"}
+{"utc": "2026-10-30T16:53:20.320066+00:00", "event": "stage_exit", "stage": "residual-control", "exit_code": 0, "result": "results/1793378270618459664_residual-control_b2ec52"}
+{"utc": "2026-10-30T16:53:21.235450+00:00", "event": "major_stage_checkpoint", "scope": "complete pretrained quality/downstream/directruntimes and nonzero-gradientaudit", "pending": "pairedtraining continuation and final publication"}
+{"utc": "2026-10-30T16:54:34.721160+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793379152568683227_train_d5ce42"}
+{"utc": "2026-10-30T16:54:34.733272+00:00", "event": "campaign_job_exit", "index": 43, "returncode": 0}
+{"utc": "2026-10-30T16:54:34.733348+00:00", "event": "campaign_job_start", "index": 44, "spec": {"phase": "function_matched", "arm": "row_tail", "seed": 22, "lr": 0.0003, "steps": 1500, "function_matched": true}}
+{"utc": "2026-10-30T16:54:34.817079+00:00", "event": "stage_start", "stage": "train", "result": "results/1793379274816903422_train_435926"}
+{"utc": "2026-10-30T16:55:57.138361+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793379274816903422_train_435926"}
+{"utc": "2026-10-30T16:55:57.153064+00:00", "event": "campaign_job_exit", "index": 44, "returncode": 0}
+{"utc": "2026-10-30T16:55:57.153159+00:00", "event": "campaign_job_start", "index": 45, "spec": {"phase": "function_matched", "arm": "adamw", "seed": 33, "lr": 0.0003, "steps": 1500, "function_matched": true}}
+{"utc": "2026-10-30T16:55:57.212907+00:00", "event": "stage_start", "stage": "train", "result": "results/1793379357212719552_train_c346b3"}
+{"utc": "2026-10-30T16:57:11.856665+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793379357212719552_train_c346b3"}
+{"utc": "2026-10-30T16:57:11.867714+00:00", "event": "campaign_job_exit", "index": 45, "returncode": 0}
+{"utc": "2026-10-30T16:57:11.867780+00:00", "event": "campaign_job_start", "index": 46, "spec": {"phase": "function_matched", "arm": "row_tail", "seed": 33, "lr": 0.0003, "steps": 1500, "function_matched": true}}
+{"utc": "2026-10-30T16:57:11.935261+00:00", "event": "stage_start", "stage": "train", "result": "results/1793379431935062591_train_9bec5b"}
+{"utc": "2026-10-30T16:58:20.411103+00:00", "event": "integrity_verified", "path": "reports/integrity_1793379500410815937.json", "staged": false}
+{"utc": "2026-10-30T16:58:33.713142+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793379431935062591_train_9bec5b"}
+{"utc": "2026-10-30T16:58:33.720374+00:00", "event": "campaign_job_exit", "index": 46, "returncode": 0}
+{"utc": "2026-10-30T16:58:33.733592+00:00", "event": "campaign_complete", "path": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/artifacts/campaign_1793369342280972329"}
+{"utc": "2026-10-30T16:58:38.604661+00:00", "event": "continuation_started", "trigger": [{"kind": "row_tail", "seed": 11, "improvement": 0.0829692855477333}, {"kind": "native", "seed": 11, "improvement": 0.09274670481681824}, {"kind": "row_tail", "seed": 22, "improvement": 0.0860271230340004}, {"kind": "native", "seed": 22, "improvement": 0.06530607491731644}, {"kind": "row_tail", "seed": 33, "improvement": 0.08797022700309753}, {"kind": "native", "seed": 33, "improvement": 0.08720565587282181}], "endpoint_steps": 6000}
+{"utc": "2026-10-30T16:58:38.674239+00:00", "event": "stage_start", "stage": "train", "result": "results/1793379518674050373_train_9777dd"}
+{"utc": "2026-10-30T17:01:46.219662+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793379518674050373_train_9777dd"}
+{"utc": "2026-10-30T17:01:46.229744+00:00", "event": "continuation_job_exit", "index": 0, "kind": "adamw", "seed": 11, "returncode": 0}
+{"utc": "2026-10-30T17:01:46.313883+00:00", "event": "stage_start", "stage": "train", "result": "results/1793379706313697319_train_87887b"}
+{"utc": "2026-10-30T17:04:50.891194+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793379706313697319_train_87887b"}
+{"utc": "2026-10-30T17:04:50.902537+00:00", "event": "continuation_job_exit", "index": 1, "kind": "row", "seed": 11, "returncode": 0}
+{"utc": "2026-10-30T17:04:50.978015+00:00", "event": "stage_start", "stage": "train", "result": "results/1793379890977817036_train_1bd3d2"}
+{"utc": "2026-10-30T17:04:59.620052+00:00", "event": "budget_refined_from_continuation_pilot", "observed_first_continuation_stage_seconds": 187.54183532699972, "cumulative6000_training_seconds": 227.20553914099946, "additional_updates": 4500, "remaining_equal_budget_continuations": 26, "estimated_remaining_continuation_wall_seconds": 4876.087718501993, "additional_selection_exports_estimate_seconds": 1200, "maximum_conditional_extra_seed_training_estimate_seconds": 3000, "conservative_charged_completed_stage_seconds": 32176.073924037006, "ceiling_seconds": 86400, "note": "wall estimates include observed validation/checkpoint/reload; source/library setup completed; shared GPU lock waits inflate conservative charged budget. Estimates are not scientific speed results."}
+{"utc": "2026-10-30T17:08:26.876270+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793379890977817036_train_1bd3d2"}
+{"utc": "2026-10-30T17:08:26.895096+00:00", "event": "continuation_job_exit", "index": 2, "kind": "tail", "seed": 11, "returncode": 0}
+{"utc": "2026-10-30T17:08:26.976112+00:00", "event": "stage_start", "stage": "train", "result": "results/1793380106975909798_train_05f5e7"}
+{"utc": "2026-10-30T17:12:03.127019+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793380106975909798_train_05f5e7"}
+{"utc": "2026-10-30T17:12:03.136111+00:00", "event": "continuation_job_exit", "index": 3, "kind": "row_tail", "seed": 11, "returncode": 0}
+{"utc": "2026-10-30T17:12:03.214842+00:00", "event": "stage_start", "stage": "train", "result": "results/1793380323214633758_train_524d4d"}
+{"utc": "2026-10-30T17:15:30.515110+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793380323214633758_train_524d4d"}
+{"utc": "2026-10-30T17:15:30.525034+00:00", "event": "continuation_job_exit", "index": 4, "kind": "native", "seed": 11, "returncode": 0}
+{"utc": "2026-10-30T17:15:30.607799+00:00", "event": "stage_start", "stage": "train", "result": "results/1793380530607602925_train_45c938"}
+{"utc": "2026-10-30T17:18:48.849047+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793380530607602925_train_45c938"}
+{"utc": "2026-10-30T17:18:48.873613+00:00", "event": "continuation_job_exit", "index": 5, "kind": "lowrank", "seed": 11, "returncode": 0}
+{"utc": "2026-10-30T17:18:48.980346+00:00", "event": "stage_start", "stage": "train", "result": "results/1793380728980142234_train_818e92"}
+{"utc": "2026-10-30T17:19:53.326935+00:00", "event": "training_continuation_checkpoint", "completed": 6, "planned": 27}
+{"utc": "2026-10-30T17:22:31.836067+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793380728980142234_train_818e92"}
+{"utc": "2026-10-30T17:22:31.846494+00:00", "event": "continuation_job_exit", "index": 6, "kind": "legacy_blend", "seed": 11, "returncode": 0}
+{"utc": "2026-10-30T17:22:31.934840+00:00", "event": "stage_start", "stage": "train", "result": "results/1793380951934609726_train_3d76f2"}
+{"utc": "2026-10-30T17:25:53.645438+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793380951934609726_train_3d76f2"}
+{"utc": "2026-10-30T17:25:53.667093+00:00", "event": "continuation_job_exit", "index": 7, "kind": "adamw", "seed": 22, "returncode": 0}
+{"utc": "2026-10-30T17:25:53.752828+00:00", "event": "stage_start", "stage": "train", "result": "results/1793381153752628915_train_7c6f35"}
+{"utc": "2026-10-30T17:27:14.431625+00:00", "event": "context_handoff", "path": "RESUME_PROMPT_004.md", "state": "all initial training complete; longpairedcontinuations running; all independent supported stages collected"}
+{"utc": "2026-10-30T17:29:02.970969+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793381153752628915_train_7c6f35"}
+{"utc": "2026-10-30T17:29:02.993706+00:00", "event": "continuation_job_exit", "index": 8, "kind": "row", "seed": 22, "returncode": 0}
+{"utc": "2026-10-30T17:29:03.062553+00:00", "event": "stage_start", "stage": "train", "result": "results/1793381343062363512_train_f941fb"}
+{"utc": "2026-10-30T17:32:41.760936+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793381343062363512_train_f941fb"}
+{"utc": "2026-10-30T17:32:41.768642+00:00", "event": "continuation_job_exit", "index": 9, "kind": "tail", "seed": 22, "returncode": 0}
+{"utc": "2026-10-30T17:32:41.845724+00:00", "event": "stage_start", "stage": "train", "result": "results/1793381561845530087_train_c3c390"}
+{"utc": "2026-10-30T17:36:15.826966+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793381561845530087_train_c3c390"}
+{"utc": "2026-10-30T17:36:15.833724+00:00", "event": "continuation_job_exit", "index": 10, "kind": "row_tail", "seed": 22, "returncode": 0}
+{"utc": "2026-10-30T17:36:15.909477+00:00", "event": "stage_start", "stage": "train", "result": "results/1793381775909269375_train_4ea8b7"}
+{"utc": "2026-10-30T17:39:33.972316+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793381775909269375_train_4ea8b7"}
+{"utc": "2026-10-30T17:39:33.986093+00:00", "event": "continuation_job_exit", "index": 11, "kind": "native", "seed": 22, "returncode": 0}
+{"utc": "2026-10-30T17:39:34.060601+00:00", "event": "stage_start", "stage": "train", "result": "results/1793381974060417625_train_643d9e"}
+{"utc": "2026-10-30T17:42:47.307627+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793381974060417625_train_643d9e"}
+{"utc": "2026-10-30T17:42:47.321033+00:00", "event": "continuation_job_exit", "index": 12, "kind": "lowrank", "seed": 22, "returncode": 0}
+{"utc": "2026-10-30T17:42:47.400556+00:00", "event": "stage_start", "stage": "train", "result": "results/1793382167400368896_train_6bf8b8"}
+{"utc": "2026-10-30T17:46:00.132320+00:00", "event": "native_full_runtime_plan_frozen", "file": "configs/024_native_complete_runtime.json"}
+{"utc": "2026-10-30T17:46:24.885471+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793382167400368896_train_6bf8b8"}
+{"utc": "2026-10-30T17:46:24.899394+00:00", "event": "continuation_job_exit", "index": 13, "kind": "legacy_blend", "seed": 22, "returncode": 0}
+{"utc": "2026-10-30T17:46:24.987391+00:00", "event": "stage_start", "stage": "train", "result": "results/1793382384987191480_train_f32726"}
+{"utc": "2026-10-30T17:49:33.787301+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793382384987191480_train_f32726"}
+{"utc": "2026-10-30T17:49:33.801917+00:00", "event": "continuation_job_exit", "index": 14, "kind": "adamw", "seed": 33, "returncode": 0}
+{"utc": "2026-10-30T17:49:33.878281+00:00", "event": "stage_start", "stage": "train", "result": "results/1793382573878086265_train_0c4249"}
+{"utc": "2026-10-30T17:49:43.259890+00:00", "event": "native_runtime_precision_amendment_frozen", "file": "configs/025_native_runtime_precision_amendment.json"}
+{"utc": "2026-10-30T17:52:28.744209+00:00", "event": "native_payload_checks_frozen", "file": "configs/026_native_runtime_saved_payload_checks.json"}
+{"utc": "2026-10-30T17:52:43.305012+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793382573878086265_train_0c4249"}
+{"utc": "2026-10-30T17:52:43.318987+00:00", "event": "continuation_job_exit", "index": 15, "kind": "row", "seed": 33, "returncode": 0}
+{"utc": "2026-10-30T17:52:43.395016+00:00", "event": "stage_start", "stage": "train", "result": "results/1793382763394816386_train_bf1755"}
+{"utc": "2026-10-30T17:56:19.107507+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793382763394816386_train_bf1755"}
+{"utc": "2026-10-30T17:56:19.114371+00:00", "event": "continuation_job_exit", "index": 16, "kind": "tail", "seed": 33, "returncode": 0}
+{"utc": "2026-10-30T17:56:19.194991+00:00", "event": "stage_start", "stage": "train", "result": "results/1793382979194802153_train_4dbb6f"}
+{"utc": "2026-10-30T17:59:52.609759+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793382979194802153_train_4dbb6f"}
+{"utc": "2026-10-30T17:59:52.624294+00:00", "event": "continuation_job_exit", "index": 17, "kind": "row_tail", "seed": 33, "returncode": 0}
+{"utc": "2026-10-30T17:59:52.699227+00:00", "event": "stage_start", "stage": "train", "result": "results/1793383192699014029_train_ba24c5"}
+{"utc": "2026-10-30T18:03:11.530690+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793383192699014029_train_ba24c5"}
+{"utc": "2026-10-30T18:03:11.540076+00:00", "event": "continuation_job_exit", "index": 18, "kind": "native", "seed": 33, "returncode": 0}
+{"utc": "2026-10-30T18:03:11.621366+00:00", "event": "stage_start", "stage": "train", "result": "results/1793383391621178562_train_a5a220"}
+{"utc": "2026-10-30T18:06:24.437285+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793383391621178562_train_a5a220"}
+{"utc": "2026-10-30T18:06:24.452594+00:00", "event": "continuation_job_exit", "index": 19, "kind": "lowrank", "seed": 33, "returncode": 0}
+{"utc": "2026-10-30T18:06:24.531987+00:00", "event": "stage_start", "stage": "train", "result": "results/1793383584531803466_train_baecbb"}
+{"utc": "2026-10-30T18:09:20.440784+00:00", "event": "interleaved_fullruntime_plan_frozen", "file": "configs/027_interleaved_complete_runtime.json"}
+{"utc": "2026-10-30T18:10:06.508627+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793383584531803466_train_baecbb"}
+{"utc": "2026-10-30T18:10:06.519836+00:00", "event": "continuation_job_exit", "index": 20, "kind": "legacy_blend", "seed": 33, "returncode": 0}
+{"utc": "2026-10-30T18:10:06.603006+00:00", "event": "stage_start", "stage": "train", "result": "results/1793383806602814849_train_7bc781"}
+{"utc": "2026-10-30T18:12:28.101787+00:00", "event": "stage_start", "stage": "report", "result": "results/1793383948101591826_report_8f00c6"}
+{"utc": "2026-10-30T18:12:29.778703+00:00", "event": "report_written", "path": "reports/004_20261030T181228Z.md"}
+{"utc": "2026-10-30T18:12:29.919990+00:00", "event": "stage_exit", "stage": "report", "exit_code": 0, "result": "results/1793383948101591826_report_8f00c6"}
+{"utc": "2026-10-30T18:13:17.154613+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793383806602814849_train_7bc781"}
+{"utc": "2026-10-30T18:13:17.161295+00:00", "event": "continuation_job_exit", "index": 21, "kind": "adamw", "seed": 11, "returncode": 0}
+{"utc": "2026-10-30T18:13:17.243150+00:00", "event": "stage_start", "stage": "train", "result": "results/1793383997242959817_train_ed0f4e"}
+{"utc": "2026-10-30T18:14:20.046791+00:00", "event": "draft_publication_requested", "progress": "progress/011_publication_1793384060046304165.json"}
+{"utc": "2026-10-30T18:14:23.394477+00:00", "event": "publication_stage_prepared", "files": 1657, "excluded": 117}
+{"utc": "2026-10-30T18:14:27.668202+00:00", "event": "integrity_verified", "path": "reports/integrity_1793384067666795281.json", "staged": true}

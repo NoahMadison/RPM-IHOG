@@ -1,0 +1,14 @@
+{
+  "base_sha": "d50eec79832e6b3ec9ee943f45ac63d7e3f38b50",
+  "experiment_id": "v100_20261030T135845Z_ff01902f",
+  "task_root": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f",
+  "repository": "https://github.com/NoahMadison/RPM-IHOG",
+  "original_local_inputs": {
+    "/models/Project/generators/workingdir/RPM_IHOG_V100_Verification_Prompt.md": "b80468d3d98ec35f76309c53f4bd296b9686cd19f15225bc7bad378b0582361e"
+  },
+  "pdfs": "not supplied",
+  "step1_script": "not present among supplied local files or base commit",
+  "gpu_uuid": "GPU-b1e26f14-9243-49b6-c5a7-51f7ce39672d",
+  "gpu_pci": "00000000:06:00.0",
+  "created_utc": "2026-10-30T14:00:15.475515+00:00"
+}

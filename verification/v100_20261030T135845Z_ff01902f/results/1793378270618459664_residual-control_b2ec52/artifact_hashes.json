@@ -1,0 +1,16 @@
+{
+  "layer_000_rank8_core_plus_rotated_2bit.json": "8fc8cf27183c506948b6f3a16f68bef6c47456a2dbd7abfef2762fbf0d6051e0",
+  "residual_control.json": "3b3209db0a322b873481bc7b61e1f8bb1073df8338d005ba60121a432636e123",
+  "layer_012_rank0_rotated_2bit_only.json": "732fa0c424edecb471f6e4b6e7409c218d9176441d7ddefc2a8fdc306041278a",
+  "stdout.log": "ac0f4f543fd28704e41ac43508042d5abd0d83641b2995a917b2bed90dac29a8",
+  "gpu.json": "baab3679e7271620ca95485e1ed6e0dd19ca61748780fcd1af5bdd6fcf946af8",
+  "process.json": "650705f1ea3b90125b07679a71c58668ccc19cf9c25b5b4c7149333fca0340e1",
+  "layer_000_rank0_rotated_2bit_only.json": "fa88cb8d8df7602e07a9aa9668e449d95dafcf6445c0bbc44836692ecdbf27e0",
+  "config.json": "b33ee5816c499dfb31e950627fb2c4af741e9e30d70128841d38d23f675c7a19",
+  "stderr.log": "845898f49bfce501ca03141f53093cc2e7d18971bf8d90c9df16926551274c1e",
+  "layer_012_rank8_core_plus_rotated_2bit.json": "118a4df2cf19d52ace256419411280f3b96455a377b07c746fced2d28d158f61",
+  "layer_023_rank8_core_plus_rotated_2bit.json": "4abae028aac66a27072384c69be9ad1355eaaa39fe356d02a1f9cc8c1e343e42",
+  "exit.json": "200fab4fe2830db42aacf7fb8d771894cd7cbd3cb1a029ebbc31719e277c7d81",
+  "worker_identity.json": "e066b34e361ac70a904ca64a27f20b4156a689ec283f12a8ff8d26c1013fa1b3",
+  "layer_023_rank0_rotated_2bit_only.json": "e66784a04d837a812fa8bc137e2cfe565c5a11125d54f8e13309cd4fcf21ad93"
+}

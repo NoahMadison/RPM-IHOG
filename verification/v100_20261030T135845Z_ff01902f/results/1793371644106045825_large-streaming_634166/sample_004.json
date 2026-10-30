@@ -1,0 +1,36 @@
+{
+  "model": "Qwen/Qwen3.8-Flash-Next",
+  "revision": "de4b8e4d43b917e7706784d8bb445c9af86a3540",
+  "status": "completed",
+  "source_tensor": "model.language_model.layers.0.mlp.experts.gate_up_proj",
+  "bank_or_tensor_shape": [
+    512,
+    1280,
+    2560
+  ],
+  "complete_matrix_shape": [
+    1280,
+    2560
+  ],
+  "expert_id": 7,
+  "projection_selector": "gate",
+  "source_dtype": "BF16",
+  "source_range_inclusive": [
+    45875368,
+    52428967
+  ],
+  "source_bytes": 6553600,
+  "source_sha256": "9536f54ece41bd96a543fdda0cbbf92bbcf15c24fdecb6973e61b50e3b2182c5",
+  "codec": "int2_sign",
+  "tensor_payload_bytes": 1450504,
+  "tensor_payload_bpw": 3.54126953125,
+  "serialized_bytes": 1453833,
+  "archive_sha256": "6d87c3e7ba1fecccc7a196788e64aacc21a3456e0de485205d9eeddcd8e1d3d9",
+  "weight_sqnr_db": 13.987227079270363,
+  "gpu_peak_allocated": 210833408,
+  "gpu_peak_reserved": 257949696,
+  "host_peak_rss_kib": 1645984,
+  "scope": "actual complete dense projection or expert matrix; no full language-model quality/archive/residency",
+  "max_live_HTTP_response_bytes": 6553600,
+  "conversion_memory_note": "source buffer plus per-matrix dtype/device conversions and SVD/codec workspace included in RSS/GPU peaks; range bytes are not total process memory"
+}

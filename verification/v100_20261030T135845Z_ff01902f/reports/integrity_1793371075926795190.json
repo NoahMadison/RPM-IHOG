@@ -1,0 +1,28 @@
+{
+  "base_sha": "d50eec79832e6b3ec9ee943f45ac63d7e3f38b50",
+  "all_original_inputs_unchanged": true,
+  "original_input_checks": {
+    "RPM_IHOG_V100_Verification_Prompt.md": true,
+    "step1_optimizer_entropy_ablation.py": true,
+    "Optimization of Model Inference Architecture - Google Gemini pt1.pdf": true,
+    "Model Quantization and Compression Comparison - Google Gemini.pdf": true
+  },
+  "all_base_commit_paths_unchanged_including_ignored": true,
+  "base_tracked_file_count": 8,
+  "base_tracked_sha256": {
+    "EVIDENCE.md": "12e06ca2375f5f8f50be5522462af73d716a9945ec96a2cf5b2dbafa6c6fbfb0",
+    "README.md": "96f71b159dee0bd135ed9866fe0710e8d8347dacc8e9f7e3183e0dd09017c814",
+    "outputs.txt": "aef086497e98da887836090cf24d4dbb2516a249f6a4b9a15b694e18e9e7a557",
+    "run_all_benchmarks_and_evidence.py": "34a190f583f0fdeaacf481e25ce72b198596581926188b44d66f523e16587550",
+    "stream_compress_v100_overnight_v2.py": "efa63dfb779575004e962a596927e756e5d1f5ce95c13301c02fd733fd08d96c",
+    "stream_compress_v100_overnight_v3.py": "841158361c42408b48307a8b830fa630768185befcc8d137e22518d37153ef83",
+    "technical_whitepaper.md": "67c0a0002bc7efccda892415b1331b857818a22f583b5b9732f9cd7d8f37c038",
+    "v100_moe_entropy_generator_ablation_backup.py": "f25d283be89faf03b2ae928b4122d5868b23cd47f3b3c084d9ecf94bd94d9d33"
+  },
+  "independent_clone_no_alternates": true,
+  "additions_only_prefix": "verification/v100_20261030T135845Z_ff01902f/",
+  "git_diff_name_status": "",
+  "staged_files": [],
+  "credential_and_private_history_findings": [],
+  "checked_staged": false
+}

@@ -1,0 +1,7 @@
+{
+  "finding": "fixed expert0 in earlier trained-gradient collector was cold and had zero norm; those rows are zero-gradient correctness diagnostics, not evidence of compressibility",
+  "updated_rule": "collect full middle-layer up-bank gradients on both realmicrobatches; choose expert withlargest weighted-mean Frobenius norm, assertnonzero, recordall norms andchosenID",
+  "comparison": "ordinary sharedbasis versus Kronecker-unfolded sharedbasis atmatched rank8/payload; same selectedrealgradient; zero-gradient test retained separately",
+  "bias_limit": "activity-based sample selection, not representativegradient population; no multi-GPU convergence/performance claim",
+  "preserve": "old zero-gradient observations remain in prior runs; newrunreports nonzero sample andweightdelta"
+}

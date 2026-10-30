@@ -1,0 +1,22 @@
+{
+  "layer_000_no_activation_weighting.json": "080f3efe80c23db978de3b211ae7f1eecc8d75c64f2dc667702a2c98325ae293",
+  "layer_023_no_rotation.json": "a0035cff6a542d166292df64bd731c21f8752fb4be136ebc344a860d6a70cfe5",
+  "stdout.log": "ed10a340085804b765714835c799ca9ce120eb79198fd96dea9d63b6b4a56660",
+  "layer_023_no_balancing.json": "ca8b42bcdfcf2bcce98d079d810c3f8a0ce72ab3ec4db0d276dd08ce5069ed27",
+  "gpu.json": "baab3679e7271620ca95485e1ed6e0dd19ca61748780fcd1af5bdd6fcf946af8",
+  "layer_023_no_activation_weighting.json": "479132ba179ecfa517a45f9fc960d1b3d3179c12d5d4f5033dcb2a8698795922",
+  "process.json": "e4106737415cf79907349506afebfb2500b39787ecad674ac96eec3e9bf2a45a",
+  "layer_000_no_rotation.json": "a77c7108d0996a20c6f1143ca3d0c80ba55a0dec9179f20150b80ce533801bb1",
+  "config.json": "b2b01526b77f827c54c34ce13ea30930d9a948f4f181cbc5ffe52d25b70e0992",
+  "stderr.log": "7c8724ab4fc73651b2ca94a2e096a0050f5e828a3a51125ebe74e96a35e45900",
+  "layer_012_activation_balance_rotation.json": "496f147f767a255db4bd89f9651211f57d5851a63662cd8c4bdc313f17f3a678",
+  "layer_012_no_rotation.json": "723abacb8238134df1eee5f79104a83feecba635927ff95ae39a532a9ff7106b",
+  "layer_000_no_balancing.json": "aa6e6bc921b407f4775300278fa3937d16a2e33e37a648c3b2a2e4b7e6a48c83",
+  "layer_012_no_balancing.json": "cd837dfb6ce33b761f052a661e527df0464a527e56252a9d5c2472810c7a1b42",
+  "layer_012_no_activation_weighting.json": "5eaddd1ea7236345a8b5b64fad07a51763478a866f56d1c983912a38af7808de",
+  "layer_023_activation_balance_rotation.json": "3d814d3de50d0958546dadcef629c9ffaaf5cf0affd96bcbee9be46adfc210d1",
+  "exit.json": "16ba56ca0a8258b10a3f717c7e58ed30e4c0d55752723b04758e6bd5230adb7b",
+  "worker_identity.json": "9c92cfe07ab089f778460de1ba91e1b967ac8a8bcb49403e7657188a72fbdf82",
+  "layer_000_activation_balance_rotation.json": "999e1e3efacf94a1d9b28648c8e14190e4958b4e9b993b8ec34586d5883fefbf",
+  "calibration_ablation.json": "937210924961ca9bacc1a858aa1a7fa661bc6b6a06c3122867e47fdf6b5b96cf"
+}

@@ -1,0 +1,6 @@
+{
+  "status": "blocked",
+  "stage": "optimized_sm70_kernel_compilation",
+  "error": "RuntimeError: Ninja is required to load C++ extensions (pip install ninja to get it)",
+  "fallback": "reference correctness and quality stages remain independently valid"
+}

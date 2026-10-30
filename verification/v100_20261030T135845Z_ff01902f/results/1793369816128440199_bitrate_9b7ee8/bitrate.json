@@ -1,0 +1,133 @@
+{
+  "actual_real_matrix_codecs": [
+    {
+      "kind": "pure",
+      "shape": [
+        512,
+        1024
+      ],
+      "actual_rank": 8,
+      "tensor_payload_bytes": 39936,
+      "serialized_bytes": 42269,
+      "serialized_bpw": 0.6449737548828125,
+      "tensor_payload_bpw": 0.609375,
+      "weight_sqnr_db": 0.29271302284758205,
+      "matched_payload_lowrank_rank": 13,
+      "matched_payload_lowrank_bytes": 39936,
+      "matched_payload_lowrank_sqnr_db": 0.839239685804515,
+      "source_model": "ibm-granite/granite-3.1-1b-a400m-base",
+      "source_revision": "408b6e90baab8cf24f4aa9f8e19703ffa0a53b29",
+      "source_tensor": "model.layers.0.block_sparse_moe.input_linear.weight",
+      "scope": "complete gate matrix of expert 0, layer 0; not full-model fidelity"
+    },
+    {
+      "kind": "ternary",
+      "shape": [
+        512,
+        1024
+      ],
+      "actual_rank": 8,
+      "tensor_payload_bytes": 172038,
+      "serialized_bytes": 174993,
+      "serialized_bpw": 2.6701812744140625,
+      "tensor_payload_bpw": 2.625091552734375,
+      "weight_sqnr_db": 7.506995648025434,
+      "matched_payload_lowrank_rank": 56,
+      "matched_payload_lowrank_bytes": 172032,
+      "matched_payload_lowrank_sqnr_db": 2.3382785950766234,
+      "source_model": "ibm-granite/granite-3.1-1b-a400m-base",
+      "source_revision": "408b6e90baab8cf24f4aa9f8e19703ffa0a53b29",
+      "source_tensor": "model.layers.0.block_sparse_moe.input_linear.weight",
+      "scope": "complete gate matrix of expert 0, layer 0; not full-model fidelity"
+    },
+    {
+      "kind": "int2",
+      "shape": [
+        512,
+        1024
+      ],
+      "actual_rank": 8,
+      "tensor_payload_bytes": 172040,
+      "serialized_bytes": 174993,
+      "serialized_bpw": 2.6701812744140625,
+      "tensor_payload_bpw": 2.6251220703125,
+      "weight_sqnr_db": 9.604428808252125,
+      "matched_payload_lowrank_rank": 56,
+      "matched_payload_lowrank_bytes": 172032,
+      "matched_payload_lowrank_sqnr_db": 2.3382785950766234,
+      "source_model": "ibm-granite/granite-3.1-1b-a400m-base",
+      "source_revision": "408b6e90baab8cf24f4aa9f8e19703ffa0a53b29",
+      "source_tensor": "model.layers.0.block_sparse_moe.input_linear.weight",
+      "scope": "complete gate matrix of expert 0, layer 0; not full-model fidelity"
+    },
+    {
+      "kind": "int2_sign",
+      "shape": [
+        512,
+        1024
+      ],
+      "actual_rank": 8,
+      "tensor_payload_bytes": 238600,
+      "serialized_bytes": 241993,
+      "serialized_bpw": 3.6925201416015625,
+      "tensor_payload_bpw": 3.6407470703125,
+      "weight_sqnr_db": 14.102481906189901,
+      "matched_payload_lowrank_rank": 77,
+      "matched_payload_lowrank_bytes": 236544,
+      "matched_payload_lowrank_sqnr_db": 2.990457553119568,
+      "source_model": "ibm-granite/granite-3.1-1b-a400m-base",
+      "source_revision": "408b6e90baab8cf24f4aa9f8e19703ffa0a53b29",
+      "source_tensor": "model.layers.0.block_sparse_moe.input_linear.weight",
+      "scope": "complete gate matrix of expert 0, layer 0; not full-model fidelity"
+    },
+    {
+      "kind": "int4",
+      "shape": [
+        512,
+        1024
+      ],
+      "actual_rank": 0,
+      "tensor_payload_bytes": 278528,
+      "serialized_bytes": 280421,
+      "serialized_bpw": 4.2788848876953125,
+      "tensor_payload_bpw": 4.25,
+      "weight_sqnr_db": 18.38593385734344,
+      "matched_payload_lowrank_rank": 90,
+      "matched_payload_lowrank_bytes": 276480,
+      "matched_payload_lowrank_sqnr_db": 3.3897295174800455,
+      "source_model": "ibm-granite/granite-3.1-1b-a400m-base",
+      "source_revision": "408b6e90baab8cf24f4aa9f8e19703ffa0a53b29",
+      "source_tensor": "model.layers.0.block_sparse_moe.input_linear.weight",
+      "scope": "complete gate matrix of expert 0, layer 0; not full-model fidelity"
+    }
+  ],
+  "native_direct_synthetic_fixture": {
+    "shape": [
+      256,
+      256
+    ],
+    "rank": 8,
+    "learned_scalars": 4352,
+    "FP16_payload_bytes": 8704,
+    "FP16_payload_bpw": 1.0625,
+    "serialized_bytes": 10657,
+    "serialized_bpw": 1.3009033203125,
+    "rounding_relative_l2": 0.0002994838869199157
+  },
+  "legacy_shape_analytical": {
+    "shape": [
+      256,
+      256
+    ],
+    "rank": 8,
+    "generic_core_bpw": 1.125,
+    "ideal_ternary_core_bpw": 2.772462500721156,
+    "actual_2bit_ternary_core_bpw_before_framing": 3.1875,
+    "int2_plus_sign_residual_bits": 3
+  },
+  "dense_baselines": {
+    "FP16_bytes": 1048576,
+    "FP32_bytes": 2097152
+  },
+  "counting_notes": "unique backing storage including scales/levels; file framing measured separately; metadata and manifests included in full pretrained archive totals; direct native synthetic fixture independent from trained exports"
+}

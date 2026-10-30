@@ -1,0 +1,1925 @@
+{
+  "training": {
+    "adamw": {
+      "seed_count": 3,
+      "nll": {
+        "mean": 6.008544385689618,
+        "n": 3,
+        "ci95": [
+          5.968842453759738,
+          6.048246317619498
+        ]
+      },
+      "compression_delta": {
+        "pure": {
+          "mean": 3.539854298251935,
+          "n": 3,
+          "ci95": [
+            0.12353647516711153,
+            6.956172121336759
+          ]
+        },
+        "ternary": {
+          "mean": 0.09996693248547898,
+          "n": 3,
+          "ci95": [
+            0.04879261455821537,
+            0.1511412504127426
+          ]
+        }
+      },
+      "parameters": [
+        22360832,
+        22360832,
+        22360832
+      ],
+      "expert_parameters": [
+        8388608,
+        8388608,
+        8388608
+      ],
+      "optimizer_bytes": [
+        178886848,
+        178886848,
+        178886848
+      ],
+      "successful_updates": [
+        1500,
+        1500,
+        1500
+      ],
+      "skipped_updates": [
+        0,
+        0,
+        0
+      ],
+      "sources": [
+        "results/1793370873212762834_train_510c39",
+        "results/1793371533084526906_train_4ae25c",
+        "results/1793375402812871815_train_ef703a"
+      ]
+    },
+    "row": {
+      "seed_count": 3,
+      "nll": {
+        "mean": 6.03101958292667,
+        "n": 3,
+        "ci95": [
+          6.005867149156368,
+          6.056172016696972
+        ]
+      },
+      "compression_delta": {
+        "pure": {
+          "mean": 3.085430149613989,
+          "n": 3,
+          "ci95": [
+            1.652947259549934,
+            4.517913039678044
+          ]
+        },
+        "ternary": {
+          "mean": 0.09534882056113621,
+          "n": 3,
+          "ci95": [
+            0.07052155267065818,
+            0.12017608845161423
+          ]
+        }
+      },
+      "parameters": [
+        22360832,
+        22360832,
+        22360832
+      ],
+      "expert_parameters": [
+        8388608,
+        8388608,
+        8388608
+      ],
+      "optimizer_bytes": [
+        145463296,
+        145463296,
+        145463296
+      ],
+      "successful_updates": [
+        1500,
+        1500,
+        1500
+      ],
+      "skipped_updates": [
+        0,
+        0,
+        0
+      ],
+      "sources": [
+        "results/1793370948567535613_train_e5a26f",
+        "results/1793372137824912469_train_8f1302",
+        "results/1793375793976758821_train_abd3e2"
+      ]
+    },
+    "tail": {
+      "seed_count": 3,
+      "nll": {
+        "mean": 6.02511307754992,
+        "n": 3,
+        "ci95": [
+          5.988283999111856,
+          6.0619421559879845
+        ]
+      },
+      "compression_delta": {
+        "pure": {
+          "mean": 0.6772291583559348,
+          "n": 3,
+          "ci95": [
+            0.60217992479152,
+            0.7522783919203495
+          ]
+        },
+        "ternary": {
+          "mean": 0.023955221753360217,
+          "n": 3,
+          "ci95": [
+            0.011902300537821594,
+            0.03600814296889884
+          ]
+        }
+      },
+      "parameters": [
+        22360832,
+        22360832,
+        22360832
+      ],
+      "expert_parameters": [
+        8388608,
+        8388608,
+        8388608
+      ],
+      "optimizer_bytes": [
+        178886848,
+        178886848,
+        178886848
+      ],
+      "successful_updates": [
+        1500,
+        1500,
+        1500
+      ],
+      "skipped_updates": [
+        0,
+        0,
+        0
+      ],
+      "sources": [
+        "results/1793371114319938563_train_a94d7a",
+        "results/1793372260910693237_train_ae9854",
+        "results/1793375967006030090_train_0ce728"
+      ]
+    },
+    "row_tail": {
+      "seed_count": 3,
+      "nll": {
+        "mean": 6.041972694473368,
+        "n": 3,
+        "ci95": [
+          6.021398905026348,
+          6.062546483920388
+        ]
+      },
+      "compression_delta": {
+        "pure": {
+          "mean": 0.6327352777041663,
+          "n": 3,
+          "ci95": [
+            0.45462271481471495,
+            0.8108478405936176
+          ]
+        },
+        "ternary": {
+          "mean": 0.021972253403594877,
+          "n": 3,
+          "ci95": [
+            0.015393373846580698,
+            0.028551132960609057
+          ]
+        }
+      },
+      "parameters": [
+        22360832,
+        22360832,
+        22360832
+      ],
+      "expert_parameters": [
+        8388608,
+        8388608,
+        8388608
+      ],
+      "optimizer_bytes": [
+        145463296,
+        145463296,
+        145463296
+      ],
+      "successful_updates": [
+        1500,
+        1500,
+        1500
+      ],
+      "skipped_updates": [
+        0,
+        0,
+        0
+      ],
+      "sources": [
+        "results/1793371209673206740_train_79cc6a",
+        "results/1793372342009852540_train_46416a",
+        "results/1793376124575423225_train_17eaa3"
+      ]
+    },
+    "native": {
+      "seed_count": 3,
+      "nll": {
+        "mean": 6.097726108624308,
+        "n": 3,
+        "ci95": [
+          6.094952826718068,
+          6.1004993905305485
+        ]
+      },
+      "compression_delta": {
+        "pure": {
+          "mean": 0.0022044065461598685,
+          "n": 3,
+          "ci95": [
+            -0.005548349729289873,
+            0.00995716282160961
+          ]
+        },
+        "ternary": {
+          "mean": 0.0004862666289223346,
+          "n": 3,
+          "ci95": [
+            -0.001406673852454281,
+            0.00237920711029895
+          ]
+        },
+        "native_direct": {
+          "mean": -4.7567000057332126e-07,
+          "n": 3,
+          "ci95": [
+            -3.046826734067394e-05,
+            2.95169273395273e-05
+          ]
+        }
+      },
+      "parameters": [
+        14529280,
+        14529280,
+        14529280
+      ],
+      "expert_parameters": [
+        557056,
+        557056,
+        557056
+      ],
+      "optimizer_bytes": [
+        116234496,
+        116234496,
+        116234496
+      ],
+      "successful_updates": [
+        1500,
+        1500,
+        1500
+      ],
+      "skipped_updates": [
+        0,
+        0,
+        0
+      ],
+      "sources": [
+        "results/1793371291314106526_train_a66e09",
+        "results/1793372423695853623_train_70567e",
+        "results/1793376283172987651_train_277ab0"
+      ]
+    },
+    "lowrank": {
+      "seed_count": 3,
+      "nll": {
+        "mean": 6.14365739034379,
+        "n": 3,
+        "ci95": [
+          6.108109663165242,
+          6.179205117522339
+        ]
+      },
+      "compression_delta": {
+        "pure": {
+          "mean": 0.8404455553475554,
+          "n": 3,
+          "ci95": [
+            0.39655325534794966,
+            1.2843378553471612
+          ]
+        },
+        "ternary": {
+          "mean": 0.09461448893245035,
+          "n": 3,
+          "ci95": [
+            0.05143376376020058,
+            0.1377952141047001
+          ]
+        }
+      },
+      "parameters": [
+        14529280,
+        14529280,
+        14529280
+      ],
+      "expert_parameters": [
+        557056,
+        557056,
+        557056
+      ],
+      "optimizer_bytes": [
+        116234496,
+        116234496,
+        116234496
+      ],
+      "successful_updates": [
+        1500,
+        1500,
+        1500
+      ],
+      "skipped_updates": [
+        0,
+        0,
+        0
+      ],
+      "sources": [
+        "results/1793371370423721380_train_b2a1e6",
+        "results/1793372864353189640_train_8913f4",
+        "results/1793376362352712796_train_f7d08e"
+      ]
+    },
+    "legacy_blend": {
+      "seed_count": 2,
+      "nll": {
+        "mean": 6.1342948179643955,
+        "n": 2,
+        "ci95": [
+          6.036854916740953,
+          6.231734719187838
+        ]
+      },
+      "compression_delta": {
+        "pure": {
+          "mean": -0.005258896746633823,
+          "n": 2,
+          "ci95": [
+            -0.049978291924820416,
+            0.03946049843155277
+          ]
+        },
+        "ternary": {
+          "mean": -0.002011212180018873,
+          "n": 2,
+          "ci95": [
+            -0.010879003780556479,
+            0.0068565794205187325
+          ]
+        }
+      },
+      "parameters": [
+        22360832,
+        22360832
+      ],
+      "expert_parameters": [
+        8388608,
+        8388608
+      ],
+      "optimizer_bytes": [
+        178886848,
+        178886848
+      ],
+      "successful_updates": [
+        1500,
+        1500
+      ],
+      "skipped_updates": [
+        0,
+        0
+      ],
+      "sources": [
+        "results/1793371450743432772_train_c7135f",
+        "results/1793373250513891972_train_53f552"
+      ]
+    }
+  },
+  "paired_equal_quality": {
+    "row": {
+      "mean": 0.022475197237051898,
+      "n": 3,
+      "ci95": [
+        -0.0007374936811376451,
+        0.04568788815524144
+      ],
+      "ppl_ratio": 1.0227296673283646,
+      "status": "inconclusive"
+    },
+    "tail": {
+      "mean": 0.01656869186030156,
+      "n": 3,
+      "ci95": [
+        0.011505791694047345,
+        0.021631592026555773
+      ],
+      "ppl_ratio": 1.016706713862965,
+      "status": "inconclusive"
+    },
+    "row_tail": {
+      "mean": 0.03342830878375036,
+      "n": 3,
+      "ci95": [
+        0.014298142177764466,
+        0.05255847538973625
+      ],
+      "ppl_ratio": 1.0339933128308525,
+      "status": "inconclusive"
+    },
+    "native": {
+      "mean": 0.08918172293469102,
+      "n": 3,
+      "ci95": [
+        0.049129574895053735,
+        0.1292338709743283
+      ],
+      "ppl_ratio": 1.0932793122006694,
+      "status": "contradicted_in_tested_scope"
+    },
+    "lowrank": {
+      "mean": 0.13511300465417295,
+      "n": 3,
+      "ci95": [
+        0.09918100095383131,
+        0.17104500835451458
+      ],
+      "ppl_ratio": 1.1446661296429907,
+      "status": "contradicted_in_tested_scope"
+    },
+    "legacy_blend": {
+      "mean": 0.12056387675089741,
+      "n": 2,
+      "ci95": [
+        -0.14483309156877006,
+        0.3859608450705649
+      ],
+      "ppl_ratio": 1.12813280012214,
+      "status": "inconclusive"
+    }
+  },
+  "tuning": {
+    "adamw": {
+      "selected_lr": 0.0003,
+      "selection_validation_nll": 6.357734817318136,
+      "tuning_runs": 2,
+      "source": "results/1793369368898195504_train_4c1590"
+    },
+    "row": {
+      "selected_lr": 0.0003,
+      "selection_validation_nll": 6.371341054868722,
+      "tuning_runs": 2,
+      "source": "results/1793369424200546946_train_165cf6"
+    },
+    "tail": {
+      "selected_lr": 0.0003,
+      "selection_validation_nll": 6.360989633109848,
+      "tuning_runs": 2,
+      "source": "results/1793369480414480621_train_5b8ded"
+    },
+    "row_tail": {
+      "selected_lr": 0.0003,
+      "selection_validation_nll": 6.374963925724915,
+      "tuning_runs": 2,
+      "source": "results/1793369539155073804_train_f11513"
+    },
+    "native": {
+      "selected_lr": 0.0003,
+      "selection_validation_nll": 6.433610258632506,
+      "tuning_runs": 2,
+      "source": "results/1793369711606231971_train_b23fd5"
+    },
+    "lowrank": {
+      "selected_lr": 0.0003,
+      "selection_validation_nll": 6.455472660210593,
+      "tuning_runs": 2,
+      "source": "results/1793369764034908703_train_01b269"
+    },
+    "legacy_blend": {
+      "selected_lr": 0.0003,
+      "selection_validation_nll": 6.480220571213508,
+      "tuning_runs": 2,
+      "source": "results/1793370553965600821_train_b811db"
+    }
+  },
+  "function_matched": {},
+  "time_to_quality": {
+    "adamw": {
+      "target_nll": 7.0,
+      "measured_times_seconds": [
+        11.126613446000192,
+        10.928778845000124,
+        10.935041541999453
+      ],
+      "status": "reached"
+    },
+    "row": {
+      "target_nll": 7.0,
+      "measured_times_seconds": [
+        11.332751244000065,
+        11.237039286999789,
+        10.993177104999631
+      ],
+      "status": "reached"
+    },
+    "tail": {
+      "target_nll": 7.0,
+      "measured_times_seconds": [
+        11.021911009999712,
+        10.933113379000133,
+        10.971062013000846
+      ],
+      "status": "reached"
+    },
+    "row_tail": {
+      "target_nll": 7.0,
+      "measured_times_seconds": [
+        11.132925662000162,
+        11.044171055999868,
+        11.067562680000265
+      ],
+      "status": "reached"
+    },
+    "native": {
+      "target_nll": 7.0,
+      "measured_times_seconds": [
+        10.922683666999546,
+        10.889228577000722,
+        11.032865399000002
+      ],
+      "status": "reached"
+    },
+    "lowrank": {
+      "target_nll": 7.0,
+      "measured_times_seconds": [
+        10.765840740000385,
+        10.639080005001233,
+        10.772731176000889
+      ],
+      "status": "reached"
+    },
+    "legacy_blend": {
+      "target_nll": 7.0,
+      "measured_times_seconds": [
+        12.69886835699981,
+        13.082450579000579
+      ],
+      "status": "reached"
+    }
+  },
+  "claims": [
+    {
+      "id": "A",
+      "statement": "Training induces useful compressibility at equal quality",
+      "primary_metric": "paired test NLL and compression delta",
+      "acceptance_criterion": "upper 95% paired CI <= +0.02 NLL; compressed delta <= +0.01",
+      "protocol": "EXPERIMENT_PLAN.json",
+      "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+      "status": "inconclusive",
+      "evidence": [
+        "results/1793370873212762834_train_510c39/training_results.json",
+        "results/1793370948567535613_train_e5a26f/training_results.json",
+        "results/1793371114319938563_train_a94d7a/training_results.json",
+        "results/1793371209673206740_train_79cc6a/training_results.json",
+        "results/1793371291314106526_train_a66e09/training_results.json",
+        "results/1793371370423721380_train_b2a1e6/training_results.json",
+        "results/1793371450743432772_train_c7135f/training_results.json",
+        "results/1793371533084526906_train_4ae25c/training_results.json",
+        "results/1793372137824912469_train_8f1302/training_results.json",
+        "results/1793372260910693237_train_ae9854/training_results.json",
+        "results/1793372342009852540_train_46416a/training_results.json",
+        "results/1793372423695853623_train_70567e/training_results.json",
+        "results/1793372864353189640_train_8913f4/training_results.json",
+        "results/1793373250513891972_train_53f552/training_results.json",
+        "results/1793375402812871815_train_ef703a/training_results.json",
+        "results/1793375793976758821_train_abd3e2/training_results.json",
+        "results/1793375967006030090_train_0ce728/training_results.json",
+        "results/1793376124575423225_train_17eaa3/training_results.json",
+        "results/1793376283172987651_train_277ab0/training_results.json",
+        "results/1793376362352712796_train_f7d08e/training_results.json"
+      ],
+      "reason": "See paired main-training table: compressibility and equal-quality are reported separately; common recipe, bounded tuning, and plateau/continuation coverage limit generalization"
+    },
+    {
+      "id": "B",
+      "statement": "AdamW entropy/null-space explanation is causal",
+      "primary_metric": "projected gradients and actual updates",
+      "acceptance_criterion": "controlled null-space effects across geometry/init/optimizer controls; marginal entropy alone insufficient",
+      "protocol": "EXPERIMENT_PLAN.json",
+      "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+      "status": "inconclusive",
+      "evidence": [
+        "results/1793369304154885202_mechanism_b1979c/mechanism.json"
+      ],
+      "reason": "The limited preconditioning/null-update mechanism is observed; the stronger universal entropy/useless-null-space causal explanation is not established"
+    },
+    {
+      "id": "C",
+      "statement": "Competitive pretrained compression fidelity",
+      "primary_metric": "same-model test NLL delta",
+      "acceptance_criterion": "upper block-bootstrap 95% CI <= +0.01 vs untouched; matched-byte INT4 and lowrank controls",
+      "protocol": "EXPERIMENT_PLAN.json",
+      "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+      "status": "contradicted_in_tested_scope",
+      "evidence": [
+        "results/1793371508260674874_distillation_519e84/distillation_results.json"
+      ],
+      "reason": "One-shot plus bounded full Granite functional fitting were tested. Fitting improves NLL, but acceptance concerns the same-model +.01 tolerance; this is not a universal verdict on stronger PTQ recipes"
+    },
+    {
+      "id": "D",
+      "statement": "Advertised bitrates match storage and memory",
+      "primary_metric": "measured serialized/resident bytes",
+      "acceptance_criterion": "all factors/codes/scales/metadata counted; historical names not budgets",
+      "protocol": "EXPERIMENT_PLAN.json",
+      "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+      "status": "contradicted_in_tested_scope",
+      "evidence": [
+        "results/1793369816128440199_bitrate_9b7ee8/bitrate.json"
+      ],
+      "reason": "Measured payload/framing and complete archive totals differ from historical bitrate labels; native/generic/ternary/sign budgets are explicitly distinguished"
+    },
+    {
+      "id": "E",
+      "statement": "Complete compressed inference is faster",
+      "primary_metric": "full-path paired latency CI",
+      "acceptance_criterion": "CI resolves lower latency for same payload with fidelity reported jointly",
+      "protocol": "EXPERIMENT_PLAN.json",
+      "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+      "status": "contradicted_in_tested_scope",
+      "evidence": [
+        "results/1793373174773770240_full-runtime_49a5ec/full_runtime_results.json"
+      ],
+      "reason": "Actual complete direct-packed Granite forward/generation and same-payload reference measured; see quality, resident storage, latency and fixed-process-order limit jointly"
+    },
+    {
+      "id": "F",
+      "statement": "Streaming bounds memory and covers sources",
+      "primary_metric": "peak memory, range/coverage/hash checks",
+      "acceptance_criterion": "complete manifest restoration and bounded live source buffer as source size increases",
+      "protocol": "EXPERIMENT_PLAN.json",
+      "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+      "status": "supported_in_tested_scope",
+      "evidence": [
+        "results/1793371020953143857_streaming_7da6a8/streaming.json"
+      ],
+      "reason": "Complete fixture archives have full manifest coverage, bounded per-tensor source ranges, interruption/resume, raw fallback and fresh-process restoration; remote real matrices remain samples"
+    },
+    {
+      "id": "G",
+      "statement": "Distributed training reduces time to quality",
+      "primary_metric": "actual multi-GPU time to common quality",
+      "acceptance_criterion": "measured complete training with identical global batches; single GPU cannot satisfy",
+      "protocol": "EXPERIMENT_PLAN.json",
+      "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+      "status": "blocked",
+      "evidence": [
+        "results/1793370614115522989_distributed_22a182/distributed.json"
+      ],
+      "reason": "Actual multi-GPU time-to-quality requires additional authorized devices; single-GPU algebra and bandwidth projections do not satisfy it"
+    },
+    {
+      "id": "H13",
+      "statement": "Historical 13x stable-rank reduction",
+      "primary_metric": "paired multi-layer spectra",
+      "acceptance_criterion": "reproduce on declared task; separate quality",
+      "protocol": "EXPERIMENT_PLAN.json",
+      "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+      "status": "inconclusive",
+      "evidence": [
+        "results/1793370878877666800_legacy_487b39/legacy_results.json"
+      ],
+      "reason": "Legacy diagnostics reproduce improved Kronecker compressibility with worse uncompressed NLL; exact historical 13x configuration differs and one middle bank is not a multi-layer equal-quality result"
+    },
+    {
+      "id": "H05",
+      "statement": "Historical 0.5 bpw without degradation",
+      "primary_metric": "actual bytes + NLL",
+      "acceptance_criterion": "measured complete payload plus +0.01 tolerance",
+      "protocol": "EXPERIMENT_PLAN.json",
+      "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+      "status": "contradicted_in_tested_scope",
+      "evidence": [
+        "results/1793369816128440199_bitrate_9b7ee8/bitrate.json"
+      ],
+      "reason": "At the supplied 256x256 rank-8 shapes, generic/native factors alone exceed 0.5 bpw before framing; no 0.5-bpw no-loss result was reproduced"
+    },
+    {
+      "id": "H998",
+      "statement": "Historical 99.8% activation R-squared",
+      "primary_metric": "real held-out block activations",
+      "acceptance_criterion": "same configuration and actual expert computation",
+      "protocol": "EXPERIMENT_PLAN.json",
+      "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+      "status": "inconclusive",
+      "evidence": [
+        "results/1793371508260674874_distillation_519e84/distillation_results.json"
+      ],
+      "reason": "Some individual fitted banks approach/exceed99.8% R\u00b2; the all-layer values vary and complete-model NLL still changes. Historical full-cascade fidelity is not established"
+    },
+    {
+      "id": "HCPU",
+      "statement": "Historical 5x-10x CPU core speedup",
+      "primary_metric": "core timing",
+      "acceptance_criterion": "core-only scope explicitly",
+      "protocol": "EXPERIMENT_PLAN.json",
+      "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+      "status": "inconclusive",
+      "evidence": [
+        "results/1793370946123120303_runtime_fec9cb/runtime.json"
+      ],
+      "reason": "CPU component ratios measured at actual shapes; no full-path 5x\u201310x claim or historical-workload identity established"
+    },
+    {
+      "id": "H83",
+      "statement": "Historical 8.3x GPU cascade speedup",
+      "primary_metric": "complete-model latency",
+      "acceptance_criterion": "same fidelity representation, full forward",
+      "protocol": "EXPERIMENT_PLAN.json",
+      "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+      "status": "contradicted_in_tested_scope",
+      "evidence": [
+        "results/1793373174773770240_full-runtime_49a5ec/full_runtime_results.json"
+      ],
+      "reason": "No8.3x complete-model speed claim supported by this actual saved payload/implementation; different historical synthetic cascades are not equivalent workloads"
+    },
+    {
+      "id": "H27",
+      "statement": "Historical 27 GB large MoE GPU footprint",
+      "primary_metric": "full archive residency",
+      "acceptance_criterion": "verified actual complete model resident",
+      "protocol": "EXPERIMENT_PLAN.json",
+      "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+      "status": "not_run",
+      "evidence": [
+        "results/1793369017797097725_data_eb73ea/model_identities.json"
+      ],
+      "reason": "Large-model identities/configs verified, but full archive/coverage/load/residency and full execution were not produced"
+    }
+  ],
+  "additional": {
+    "distillation": {
+      "tier": "main",
+      "model": "ibm-granite/granite-3.1-1b-a400m-base",
+      "revision": "408b6e90baab8cf24f4aa9f8e19703ffa0a53b29",
+      "codec": "int2_sign_closed_loop_functional_fit",
+      "baseline_nll": 2.2219454315401714,
+      "one_shot_nll": 2.461294271173796,
+      "distilled_nll": 2.350255367491398,
+      "delta_to_original_nll": 0.12830993595122653,
+      "ppl_ratio_to_original": 1.1369053159275184,
+      "block_bootstrap_delta": {
+        "mean": 0.12830993595122647,
+        "ci95": [
+          0.12428025067768285,
+          0.13242413268781977
+        ],
+        "unit": "contiguous512-token context block; token-weighted ratio of sums",
+        "blocks": 696,
+        "bootstrap_replications": 2000,
+        "seed": 919
+      },
+      "serialized_bytes_including_all_partial_manifests": 1064184988,
+      "tensor_bytes": 1057970176,
+      "expert_bpw": 3.6511637369791665,
+      "whole_model_bpw": 6.3416762254046315,
+      "archive": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/artifacts/distillation_1793371508260674874_distillation_519e84/packed_int2_sign",
+      "archive_manifest_sha256": "9612b59e5b8de9c77ae0bf6306dbb32dfb5aea517c790114d44981bc2e6888d6",
+      "elapsed_seconds": 526.1297492440008,
+      "execution": "reference_decompressed",
+      "fresh_process_evaluation": true,
+      "causal_ablation_limit": "independent one-shot versus closed-loop plus fitting changes two interventions; cannot isolate closed-loop effect without matched independently fitted control",
+      "not_run": [
+        "distilled direct-kernel runtime",
+        "downstream task accuracy",
+        "matched independent-distillation full-model control"
+      ]
+    },
+    "calibration_ablation": {
+      "model": "ibm-granite/granite-3.1-1b-a400m-base",
+      "revision": "408b6e90baab8cf24f4aa9f8e19703ffa0a53b29",
+      "rows": [
+        {
+          "layer": 0,
+          "variant": "activation_balance_rotation",
+          "status": "completed",
+          "codec": "rank8_int2_sign",
+          "activation_weighting": true,
+          "balancing": true,
+          "rotation": true,
+          "real_expert_token_coverage": [
+            4303,
+            2013,
+            3942,
+            6289,
+            2820,
+            2687,
+            5421,
+            5160,
+            2929,
+            3267,
+            5588,
+            3831,
+            5093,
+            5037,
+            5323,
+            2804,
+            2641,
+            3996,
+            1332,
+            5016,
+            749,
+            4015,
+            4430,
+            3769,
+            4538,
+            6144,
+            2726,
+            3754,
+            2223,
+            5506,
+            3325,
+            10401
+          ],
+          "heldout_real_gated_bank": {
+            "mse": 0.030252257362008095,
+            "target_variance": 0.6395720839500427,
+            "r_squared": 0.9526992216808964,
+            "cosine_mean": 0.9881484508514404,
+            "relative_l2": 0.2174869179725647
+          },
+          "payload_bytes": 22971136,
+          "seconds": 1.3745585260003281,
+          "calibration": "128 train-only length128 sequences; true routed gate/up inputs and true nonlinear down inputs",
+          "validation": "16 untouched-for-fitting validation sequences length128",
+          "prefix": "original independent prefix; all other weights unchanged",
+          "scope": "complete gated/routed bank at selected layer; no full-model test or downstream claim"
+        },
+        {
+          "layer": 0,
+          "variant": "no_activation_weighting",
+          "status": "completed",
+          "codec": "rank8_int2_sign",
+          "activation_weighting": false,
+          "balancing": true,
+          "rotation": true,
+          "real_expert_token_coverage": [
+            4303,
+            2013,
+            3942,
+            6289,
+            2820,
+            2687,
+            5421,
+            5160,
+            2929,
+            3267,
+            5588,
+            3831,
+            5093,
+            5037,
+            5323,
+            2804,
+            2641,
+            3996,
+            1332,
+            5016,
+            749,
+            4015,
+            4430,
+            3769,
+            4538,
+            6144,
+            2726,
+            3754,
+            2223,
+            5506,
+            3325,
+            10401
+          ],
+          "heldout_real_gated_bank": {
+            "mse": 0.03225947171449661,
+            "target_variance": 0.6395720839500427,
+            "r_squared": 0.949560850881327,
+            "cosine_mean": 0.9860244989395142,
+            "relative_l2": 0.2245860993862152
+          },
+          "payload_bytes": 22971136,
+          "seconds": 1.3076966990001893,
+          "calibration": "128 train-only length128 sequences; true routed gate/up inputs and true nonlinear down inputs",
+          "validation": "16 untouched-for-fitting validation sequences length128",
+          "prefix": "original independent prefix; all other weights unchanged",
+          "scope": "complete gated/routed bank at selected layer; no full-model test or downstream claim"
+        },
+        {
+          "layer": 0,
+          "variant": "no_balancing",
+          "status": "unsupported_numerical_configuration",
+          "codec": "rank8_int2_sign",
+          "activation_weighting": true,
+          "balancing": false,
+          "rotation": true,
+          "real_expert_token_coverage": [
+            4303,
+            2013,
+            3942,
+            6289,
+            2820,
+            2687,
+            5421,
+            5160,
+            2929,
+            3267,
+            5588,
+            3831,
+            5093,
+            5037,
+            5323,
+            2804,
+            2641,
+            3996,
+            1332,
+            5016,
+            749,
+            4015,
+            4430,
+            3769,
+            4538,
+            6144,
+            2726,
+            3754,
+            2223,
+            5506,
+            3325,
+            10401
+          ],
+          "heldout_real_gated_bank": {
+            "r_squared": null,
+            "error": "nonfinite stored tensor col; unsupported storage dynamic range"
+          },
+          "payload_bytes": 22971136,
+          "seconds": 1.1573238660002971,
+          "calibration": "128 train-only length128 sequences; true routed gate/up inputs and true nonlinear down inputs",
+          "validation": "16 untouched-for-fitting validation sequences length128",
+          "prefix": "original independent prefix; all other weights unchanged",
+          "scope": "complete gated/routed bank at selected layer; no full-model test or downstream claim"
+        },
+        {
+          "layer": 0,
+          "variant": "no_rotation",
+          "status": "completed",
+          "codec": "rank8_int2_sign",
+          "activation_weighting": true,
+          "balancing": true,
+          "rotation": false,
+          "real_expert_token_coverage": [
+            4303,
+            2013,
+            3942,
+            6289,
+            2820,
+            2687,
+            5421,
+            5160,
+            2929,
+            3267,
+            5588,
+            3831,
+            5093,
+            5037,
+            5323,
+            2804,
+            2641,
+            3996,
+            1332,
+            5016,
+            749,
+            4015,
+            4430,
+            3769,
+            4538,
+            6144,
+            2726,
+            3754,
+            2223,
+            5506,
+            3325,
+            10401
+          ],
+          "heldout_real_gated_bank": {
+            "mse": 0.03537905216217041,
+            "target_variance": 0.6395720839500427,
+            "r_squared": 0.9446832451728242,
+            "cosine_mean": 0.9829473495483398,
+            "relative_l2": 0.2351946085691452
+          },
+          "payload_bytes": 22971136,
+          "seconds": 1.2491384400000243,
+          "calibration": "128 train-only length128 sequences; true routed gate/up inputs and true nonlinear down inputs",
+          "validation": "16 untouched-for-fitting validation sequences length128",
+          "prefix": "original independent prefix; all other weights unchanged",
+          "scope": "complete gated/routed bank at selected layer; no full-model test or downstream claim"
+        },
+        {
+          "layer": 12,
+          "variant": "activation_balance_rotation",
+          "status": "completed",
+          "codec": "rank8_int2_sign",
+          "activation_weighting": true,
+          "balancing": true,
+          "rotation": true,
+          "real_expert_token_coverage": [
+            4416,
+            3338,
+            2750,
+            6712,
+            968,
+            739,
+            6230,
+            3076,
+            2283,
+            3992,
+            397,
+            7494,
+            3154,
+            4018,
+            2066,
+            3038,
+            6409,
+            6913,
+            5752,
+            9770,
+            3188,
+            2702,
+            5940,
+            2386,
+            5477,
+            1730,
+            6863,
+            2235,
+            4212,
+            3696,
+            6902,
+            2226
+          ],
+          "heldout_real_gated_bank": {
+            "mse": 0.0027930981013923883,
+            "target_variance": 0.03096286579966545,
+            "r_squared": 0.9097920031219279,
+            "cosine_mean": 0.9549033045768738,
+            "relative_l2": 0.3003401458263397
+          },
+          "payload_bytes": 22971136,
+          "seconds": 1.2983642640001563,
+          "calibration": "128 train-only length128 sequences; true routed gate/up inputs and true nonlinear down inputs",
+          "validation": "16 untouched-for-fitting validation sequences length128",
+          "prefix": "original independent prefix; all other weights unchanged",
+          "scope": "complete gated/routed bank at selected layer; no full-model test or downstream claim"
+        },
+        {
+          "layer": 12,
+          "variant": "no_activation_weighting",
+          "status": "completed",
+          "codec": "rank8_int2_sign",
+          "activation_weighting": false,
+          "balancing": true,
+          "rotation": true,
+          "real_expert_token_coverage": [
+            4416,
+            3338,
+            2750,
+            6712,
+            968,
+            739,
+            6230,
+            3076,
+            2283,
+            3992,
+            397,
+            7494,
+            3154,
+            4018,
+            2066,
+            3038,
+            6409,
+            6913,
+            5752,
+            9770,
+            3188,
+            2702,
+            5940,
+            2386,
+            5477,
+            1730,
+            6863,
+            2235,
+            4212,
+            3696,
+            6902,
+            2226
+          ],
+          "heldout_real_gated_bank": {
+            "mse": 0.002944856882095337,
+            "target_variance": 0.03096286579966545,
+            "r_squared": 0.9048906874076509,
+            "cosine_mean": 0.9546194076538086,
+            "relative_l2": 0.3083914816379547
+          },
+          "payload_bytes": 22971136,
+          "seconds": 1.296743518999392,
+          "calibration": "128 train-only length128 sequences; true routed gate/up inputs and true nonlinear down inputs",
+          "validation": "16 untouched-for-fitting validation sequences length128",
+          "prefix": "original independent prefix; all other weights unchanged",
+          "scope": "complete gated/routed bank at selected layer; no full-model test or downstream claim"
+        },
+        {
+          "layer": 12,
+          "variant": "no_balancing",
+          "status": "completed",
+          "codec": "rank8_int2_sign",
+          "activation_weighting": true,
+          "balancing": false,
+          "rotation": true,
+          "real_expert_token_coverage": [
+            4416,
+            3338,
+            2750,
+            6712,
+            968,
+            739,
+            6230,
+            3076,
+            2283,
+            3992,
+            397,
+            7494,
+            3154,
+            4018,
+            2066,
+            3038,
+            6409,
+            6913,
+            5752,
+            9770,
+            3188,
+            2702,
+            5940,
+            2386,
+            5477,
+            1730,
+            6863,
+            2235,
+            4212,
+            3696,
+            6902,
+            2226
+          ],
+          "heldout_real_gated_bank": {
+            "mse": 0.004170252941548824,
+            "target_variance": 0.03096286579966545,
+            "r_squared": 0.8653143746922197,
+            "cosine_mean": 0.9369049072265625,
+            "relative_l2": 0.3669877052307129
+          },
+          "payload_bytes": 22971136,
+          "seconds": 1.2741403889995127,
+          "calibration": "128 train-only length128 sequences; true routed gate/up inputs and true nonlinear down inputs",
+          "validation": "16 untouched-for-fitting validation sequences length128",
+          "prefix": "original independent prefix; all other weights unchanged",
+          "scope": "complete gated/routed bank at selected layer; no full-model test or downstream claim"
+        },
+        {
+          "layer": 12,
+          "variant": "no_rotation",
+          "status": "completed",
+          "codec": "rank8_int2_sign",
+          "activation_weighting": true,
+          "balancing": true,
+          "rotation": false,
+          "real_expert_token_coverage": [
+            4416,
+            3338,
+            2750,
+            6712,
+            968,
+            739,
+            6230,
+            3076,
+            2283,
+            3992,
+            397,
+            7494,
+            3154,
+            4018,
+            2066,
+            3038,
+            6409,
+            6913,
+            5752,
+            9770,
+            3188,
+            2702,
+            5940,
+            2386,
+            5477,
+            1730,
+            6863,
+            2235,
+            4212,
+            3696,
+            6902,
+            2226
+          ],
+          "heldout_real_gated_bank": {
+            "mse": 0.008333717472851276,
+            "target_variance": 0.03096286579966545,
+            "r_squared": 0.7308479929870922,
+            "cosine_mean": 0.927182674407959,
+            "relative_l2": 0.5187877416610718
+          },
+          "payload_bytes": 22971136,
+          "seconds": 1.2498919650006428,
+          "calibration": "128 train-only length128 sequences; true routed gate/up inputs and true nonlinear down inputs",
+          "validation": "16 untouched-for-fitting validation sequences length128",
+          "prefix": "original independent prefix; all other weights unchanged",
+          "scope": "complete gated/routed bank at selected layer; no full-model test or downstream claim"
+        },
+        {
+          "layer": 23,
+          "variant": "activation_balance_rotation",
+          "status": "completed",
+          "codec": "rank8_int2_sign",
+          "activation_weighting": true,
+          "balancing": true,
+          "rotation": true,
+          "real_expert_token_coverage": [
+            4048,
+            7737,
+            5639,
+            1081,
+            1940,
+            4411,
+            3219,
+            1307,
+            3448,
+            3164,
+            5735,
+            2717,
+            6770,
+            1613,
+            3034,
+            1685,
+            11854,
+            3084,
+            6544,
+            2481,
+            4007,
+            2581,
+            1818,
+            2609,
+            3394,
+            2924,
+            5571,
+            4800,
+            2751,
+            1595,
+            12636,
+            4875
+          ],
+          "heldout_real_gated_bank": {
+            "mse": 650.7196655273438,
+            "target_variance": 1293.9486083984375,
+            "r_squared": 0.4971054790709495,
+            "cosine_mean": 0.9878593683242798,
+            "relative_l2": 0.7091388702392578
+          },
+          "payload_bytes": 22971136,
+          "seconds": 1.295879215000241,
+          "calibration": "128 train-only length128 sequences; true routed gate/up inputs and true nonlinear down inputs",
+          "validation": "16 untouched-for-fitting validation sequences length128",
+          "prefix": "original independent prefix; all other weights unchanged",
+          "scope": "complete gated/routed bank at selected layer; no full-model test or downstream claim"
+        },
+        {
+          "layer": 23,
+          "variant": "no_activation_weighting",
+          "status": "completed",
+          "codec": "rank8_int2_sign",
+          "activation_weighting": false,
+          "balancing": true,
+          "rotation": true,
+          "real_expert_token_coverage": [
+            4048,
+            7737,
+            5639,
+            1081,
+            1940,
+            4411,
+            3219,
+            1307,
+            3448,
+            3164,
+            5735,
+            2717,
+            6770,
+            1613,
+            3034,
+            1685,
+            11854,
+            3084,
+            6544,
+            2481,
+            4007,
+            2581,
+            1818,
+            2609,
+            3394,
+            2924,
+            5571,
+            4800,
+            2751,
+            1595,
+            12636,
+            4875
+          ],
+          "heldout_real_gated_bank": {
+            "mse": 701.5796508789062,
+            "target_variance": 1293.9486083984375,
+            "r_squared": 0.45779944711461584,
+            "cosine_mean": 0.9898495078086853,
+            "relative_l2": 0.7363305687904358
+          },
+          "payload_bytes": 22971136,
+          "seconds": 1.2967821410002216,
+          "calibration": "128 train-only length128 sequences; true routed gate/up inputs and true nonlinear down inputs",
+          "validation": "16 untouched-for-fitting validation sequences length128",
+          "prefix": "original independent prefix; all other weights unchanged",
+          "scope": "complete gated/routed bank at selected layer; no full-model test or downstream claim"
+        },
+        {
+          "layer": 23,
+          "variant": "no_balancing",
+          "status": "completed",
+          "codec": "rank8_int2_sign",
+          "activation_weighting": true,
+          "balancing": false,
+          "rotation": true,
+          "real_expert_token_coverage": [
+            4048,
+            7737,
+            5639,
+            1081,
+            1940,
+            4411,
+            3219,
+            1307,
+            3448,
+            3164,
+            5735,
+            2717,
+            6770,
+            1613,
+            3034,
+            1685,
+            11854,
+            3084,
+            6544,
+            2481,
+            4007,
+            2581,
+            1818,
+            2609,
+            3394,
+            2924,
+            5571,
+            4800,
+            2751,
+            1595,
+            12636,
+            4875
+          ],
+          "heldout_real_gated_bank": {
+            "mse": 72.1794204711914,
+            "target_variance": 1293.9486083984375,
+            "r_squared": 0.9442177069454635,
+            "cosine_mean": 0.9792693853378296,
+            "relative_l2": 0.23617886006832123
+          },
+          "payload_bytes": 22971136,
+          "seconds": 1.2546901770001568,
+          "calibration": "128 train-only length128 sequences; true routed gate/up inputs and true nonlinear down inputs",
+          "validation": "16 untouched-for-fitting validation sequences length128",
+          "prefix": "original independent prefix; all other weights unchanged",
+          "scope": "complete gated/routed bank at selected layer; no full-model test or downstream claim"
+        },
+        {
+          "layer": 23,
+          "variant": "no_rotation",
+          "status": "completed",
+          "codec": "rank8_int2_sign",
+          "activation_weighting": true,
+          "balancing": true,
+          "rotation": false,
+          "real_expert_token_coverage": [
+            4048,
+            7737,
+            5639,
+            1081,
+            1940,
+            4411,
+            3219,
+            1307,
+            3448,
+            3164,
+            5735,
+            2717,
+            6770,
+            1613,
+            3034,
+            1685,
+            11854,
+            3084,
+            6544,
+            2481,
+            4007,
+            2581,
+            1818,
+            2609,
+            3394,
+            2924,
+            5571,
+            4800,
+            2751,
+            1595,
+            12636,
+            4875
+          ],
+          "heldout_real_gated_bank": {
+            "mse": 429.7574768066406,
+            "target_variance": 1293.9486083984375,
+            "r_squared": 0.6678712941014207,
+            "cosine_mean": 0.9591369032859802,
+            "relative_l2": 0.5762966275215149
+          },
+          "payload_bytes": 22971136,
+          "seconds": 1.248417958000573,
+          "calibration": "128 train-only length128 sequences; true routed gate/up inputs and true nonlinear down inputs",
+          "validation": "16 untouched-for-fitting validation sequences length128",
+          "prefix": "original independent prefix; all other weights unchanged",
+          "scope": "complete gated/routed bank at selected layer; no full-model test or downstream claim"
+        }
+      ],
+      "selected_depths": [
+        0,
+        12,
+        23
+      ],
+      "task_accuracy_claim": false,
+      "full_model_fidelity_claim": false
+    },
+    "large_streaming": {
+      "samples": [
+        {
+          "model": "Qwen/Qwen3.8-27B",
+          "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+          "status": "completed",
+          "source_tensor": "model.language_model.layers.4.mlp.gate_proj.weight",
+          "bank_or_tensor_shape": [
+            17408,
+            5120
+          ],
+          "complete_matrix_shape": [
+            17408,
+            5120
+          ],
+          "expert_id": null,
+          "projection_selector": "gate",
+          "source_dtype": "BF16",
+          "source_range_inclusive": [
+            408951048,
+            587208967
+          ],
+          "source_bytes": 178257920,
+          "source_sha256": "06f98bd48072e7c80dffaa6c135cb08f0fb4026d929334e859e0b91d936bae24",
+          "codec": "int2_sign",
+          "tensor_payload_bytes": 39112712,
+          "tensor_payload_bpw": 3.510662482766544,
+          "serialized_bytes": 39116041,
+          "archive_sha256": "33dbcbe5d531be5c014ba4a8f6ad5b8435f448fa86bf7cc646e5f497ee5e4084",
+          "weight_sqnr_db": 13.952358391302958,
+          "gpu_peak_allocated": 5474428416,
+          "gpu_peak_reserved": 6513754112,
+          "host_peak_rss_kib": 1298060,
+          "scope": "actual complete dense projection or expert matrix; no full language-model quality/archive/residency",
+          "max_live_HTTP_response_bytes": 178257920,
+          "conversion_memory_note": "source buffer plus per-matrix dtype/device conversions and SVD/codec workspace included in RSS/GPU peaks; range bytes are not total process memory"
+        },
+        {
+          "model": "Qwen/Qwen3.8-27B",
+          "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+          "status": "completed",
+          "source_tensor": "model.language_model.layers.28.mlp.up_proj.weight",
+          "bank_or_tensor_shape": [
+            17408,
+            5120
+          ],
+          "complete_matrix_shape": [
+            17408,
+            5120
+          ],
+          "expert_id": null,
+          "projection_selector": "up",
+          "source_dtype": "BF16",
+          "source_range_inclusive": [
+            3632437728,
+            3810695647
+          ],
+          "source_bytes": 178257920,
+          "source_sha256": "73883fb30e803225a96286810da05922cfc3206fde5d05dee0f56a4826f18f64",
+          "codec": "int2_sign",
+          "tensor_payload_bytes": 39112712,
+          "tensor_payload_bpw": 3.510662482766544,
+          "serialized_bytes": 39116041,
+          "archive_sha256": "78e7152e92c5d7d20a2be6268449d065d3f7ec8a8dfe2703cfb18fbec79c013c",
+          "weight_sqnr_db": 13.941362569922989,
+          "gpu_peak_allocated": 5474428416,
+          "gpu_peak_reserved": 6603931648,
+          "host_peak_rss_kib": 1610360,
+          "scope": "actual complete dense projection or expert matrix; no full language-model quality/archive/residency",
+          "max_live_HTTP_response_bytes": 178257920,
+          "conversion_memory_note": "source buffer plus per-matrix dtype/device conversions and SVD/codec workspace included in RSS/GPU peaks; range bytes are not total process memory"
+        },
+        {
+          "model": "Qwen/Qwen3.8-27B",
+          "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+          "status": "completed",
+          "source_tensor": "model.language_model.layers.52.mlp.down_proj.weight",
+          "bank_or_tensor_shape": [
+            5120,
+            17408
+          ],
+          "complete_matrix_shape": [
+            5120,
+            17408
+          ],
+          "expert_id": null,
+          "projection_selector": "down",
+          "source_dtype": "BF16",
+          "source_range_inclusive": [
+            3275921888,
+            3454179807
+          ],
+          "source_bytes": 178257920,
+          "source_sha256": "7e4bb5bc2b8512e5fa2167fe91daa7da5ad364a13ba7df0ceefd84ca39364a9c",
+          "codec": "int2_sign",
+          "tensor_payload_bytes": 39063560,
+          "tensor_payload_bpw": 3.5062507180606617,
+          "serialized_bytes": 39066889,
+          "archive_sha256": "4ad4fc0447288db4451162d66badd3bb5ebfa1286fde992fc87fc7d584b30846",
+          "weight_sqnr_db": 13.93582858959843,
+          "gpu_peak_allocated": 5474428416,
+          "gpu_peak_reserved": 6603931648,
+          "host_peak_rss_kib": 1645984,
+          "scope": "actual complete dense projection or expert matrix; no full language-model quality/archive/residency",
+          "max_live_HTTP_response_bytes": 178257920,
+          "conversion_memory_note": "source buffer plus per-matrix dtype/device conversions and SVD/codec workspace included in RSS/GPU peaks; range bytes are not total process memory"
+        },
+        {
+          "model": "Qwen/Qwen3.8-Flash-Next",
+          "revision": "de4b8e4d43b917e7706784d8bb445c9af86a3540",
+          "status": "completed",
+          "source_tensor": "model.language_model.layers.0.mlp.experts.gate_up_proj",
+          "bank_or_tensor_shape": [
+            512,
+            1280,
+            2560
+          ],
+          "complete_matrix_shape": [
+            1280,
+            2560
+          ],
+          "expert_id": 7,
+          "projection_selector": "gate",
+          "source_dtype": "BF16",
+          "source_range_inclusive": [
+            45875368,
+            52428967
+          ],
+          "source_bytes": 6553600,
+          "source_sha256": "9536f54ece41bd96a543fdda0cbbf92bbcf15c24fdecb6973e61b50e3b2182c5",
+          "codec": "int2_sign",
+          "tensor_payload_bytes": 1450504,
+          "tensor_payload_bpw": 3.54126953125,
+          "serialized_bytes": 1453833,
+          "archive_sha256": "6d87c3e7ba1fecccc7a196788e64aacc21a3456e0de485205d9eeddcd8e1d3d9",
+          "weight_sqnr_db": 13.987227079270363,
+          "gpu_peak_allocated": 210833408,
+          "gpu_peak_reserved": 257949696,
+          "host_peak_rss_kib": 1645984,
+          "scope": "actual complete dense projection or expert matrix; no full language-model quality/archive/residency",
+          "max_live_HTTP_response_bytes": 6553600,
+          "conversion_memory_note": "source buffer plus per-matrix dtype/device conversions and SVD/codec workspace included in RSS/GPU peaks; range bytes are not total process memory"
+        },
+        {
+          "model": "Qwen/Qwen3.8-Flash-Next",
+          "revision": "de4b8e4d43b917e7706784d8bb445c9af86a3540",
+          "status": "completed",
+          "source_tensor": "model.language_model.layers.24.mlp.experts.gate_up_proj",
+          "bank_or_tensor_shape": [
+            512,
+            1280,
+            2560
+          ],
+          "complete_matrix_shape": [
+            1280,
+            2560
+          ],
+          "expert_id": 319,
+          "projection_selector": "up",
+          "source_dtype": "BF16",
+          "source_range_inclusive": [
+            2090598576,
+            2097152175
+          ],
+          "source_bytes": 6553600,
+          "source_sha256": "f53389125508d09ba40df3ecd581c5c6059b58208328941575d7c1de3f3c64fd",
+          "codec": "int2_sign",
+          "tensor_payload_bytes": 1450504,
+          "tensor_payload_bpw": 3.54126953125,
+          "serialized_bytes": 1453833,
+          "archive_sha256": "1f972e3e33d955dd81819e325054c78d6565997dee353009239be3c86d08f89e",
+          "weight_sqnr_db": 13.985791587840602,
+          "gpu_peak_allocated": 210833408,
+          "gpu_peak_reserved": 257949696,
+          "host_peak_rss_kib": 1645984,
+          "scope": "actual complete dense projection or expert matrix; no full language-model quality/archive/residency",
+          "max_live_HTTP_response_bytes": 6553600,
+          "conversion_memory_note": "source buffer plus per-matrix dtype/device conversions and SVD/codec workspace included in RSS/GPU peaks; range bytes are not total process memory"
+        },
+        {
+          "model": "Qwen/Qwen3.8-Flash-Next",
+          "revision": "de4b8e4d43b917e7706784d8bb445c9af86a3540",
+          "status": "completed",
+          "source_tensor": "model.language_model.layers.47.mlp.experts.down_proj",
+          "bank_or_tensor_shape": [
+            512,
+            2560,
+            640
+          ],
+          "complete_matrix_shape": [
+            2560,
+            640
+          ],
+          "expert_id": 106,
+          "projection_selector": "down",
+          "source_dtype": "BF16",
+          "source_range_inclusive": [
+            347345376,
+            350622175
+          ],
+          "source_bytes": 3276800,
+          "source_sha256": "d254ef540185cab4c2a53b3ab929fdd6944dfd2b7000caf9ebd61a8c4fd91b0d",
+          "codec": "int2_sign",
+          "tensor_payload_bytes": 737544,
+          "tensor_payload_bpw": 3.6012890625,
+          "serialized_bytes": 740873,
+          "archive_sha256": "005db618dffc0ebcba65b7b4e204146232d202304bfce79b66e316c168f72fa3",
+          "weight_sqnr_db": 14.012636306888488,
+          "gpu_peak_allocated": 111096320,
+          "gpu_peak_reserved": 146800640,
+          "host_peak_rss_kib": 1645984,
+          "scope": "actual complete dense projection or expert matrix; no full language-model quality/archive/residency",
+          "max_live_HTTP_response_bytes": 3276800,
+          "conversion_memory_note": "source buffer plus per-matrix dtype/device conversions and SVD/codec workspace included in RSS/GPU peaks; range bytes are not total process memory"
+        }
+      ],
+      "actual_downloaded_bytes": 551188736,
+      "full_large_model_archive_status": "not_run",
+      "large_model_full_quality_status": "not_run",
+      "large_model_residency_status": "not_run"
+    },
+    "downstream_comparisons": [
+      {
+        "model": "ibm-granite/granite-3.1-1b-a400m-base",
+        "codec": "int4",
+        "task": "piqa",
+        "normalized_accuracy_delta": -0.009249183895538629,
+        "ci95": [
+          -0.019042437431991296,
+          0.001088139281828074
+        ],
+        "questions": 1838,
+        "unit": "question/document"
+      },
+      {
+        "model": "ibm-granite/granite-3.1-1b-a400m-base",
+        "codec": "int4",
+        "task": "arc_easy",
+        "normalized_accuracy_delta": -0.017255892255892257,
+        "ci95": [
+          -0.0281986531986532,
+          -0.006734006734006734
+        ],
+        "questions": 2376,
+        "unit": "question/document"
+      },
+      {
+        "model": "ibm-granite/granite-3.1-1b-a400m-base",
+        "codec": "int2_sign",
+        "task": "piqa",
+        "normalized_accuracy_delta": -0.021218715995647442,
+        "ci95": [
+          -0.03536452665941241,
+          -0.007616974972796518
+        ],
+        "questions": 1838,
+        "unit": "question/document"
+      },
+      {
+        "model": "ibm-granite/granite-3.1-1b-a400m-base",
+        "codec": "int2_sign",
+        "task": "arc_easy",
+        "normalized_accuracy_delta": -0.04755892255892256,
+        "ci95": [
+          -0.06272095959595961,
+          -0.03156565656565657
+        ],
+        "questions": 2376,
+        "unit": "question/document"
+      },
+      {
+        "model": "ibm-granite/granite-3.1-1b-a400m-base",
+        "codec": "distilled",
+        "task": "piqa",
+        "normalized_accuracy_delta": -0.021218715995647442,
+        "ci95": [
+          -0.03427638737758433,
+          -0.008705114254624592
+        ],
+        "questions": 1838,
+        "unit": "question/document"
+      },
+      {
+        "model": "ibm-granite/granite-3.1-1b-a400m-base",
+        "codec": "distilled",
+        "task": "arc_easy",
+        "normalized_accuracy_delta": -0.04882154882154882,
+        "ci95": [
+          -0.06313131313131314,
+          -0.034511784511784514
+        ],
+        "questions": 2376,
+        "unit": "question/document"
+      },
+      {
+        "model": "HuggingFaceTB/SmolLM2-1.7B",
+        "codec": "int4",
+        "task": "piqa",
+        "normalized_accuracy_delta": -0.005984766050054407,
+        "ci95": [
+          -0.01632208922742111,
+          0.003808487486398259
+        ],
+        "questions": 1838,
+        "unit": "question/document"
+      },
+      {
+        "model": "HuggingFaceTB/SmolLM2-1.7B",
+        "codec": "int4",
+        "task": "arc_easy",
+        "normalized_accuracy_delta": -0.006734006734006734,
+        "ci95": [
+          -0.016835016835016835,
+          0.003367003367003367
+        ],
+        "questions": 2376,
+        "unit": "question/document"
+      },
+      {
+        "model": "HuggingFaceTB/SmolLM2-1.7B",
+        "codec": "int2_sign",
+        "task": "piqa",
+        "normalized_accuracy_delta": -0.22415669205658323,
+        "ci95": [
+          -0.2486398258977149,
+          -0.1969532100108814
+        ],
+        "questions": 1838,
+        "unit": "question/document"
+      },
+      {
+        "model": "HuggingFaceTB/SmolLM2-1.7B",
+        "codec": "int2_sign",
+        "task": "arc_easy",
+        "normalized_accuracy_delta": -0.3728956228956229,
+        "ci95": [
+          -0.3952020202020202,
+          -0.35058922558922556
+        ],
+        "questions": 2376,
+        "unit": "question/document"
+      }
+    ],
+    "full_runtime": {
+      "model": "ibm-granite/granite-3.1-1b-a400m-base",
+      "revision": "408b6e90baab8cf24f4aa9f8e19703ffa0a53b29",
+      "codec": "int2_sign_closed_loop_functional_fit",
+      "archive_manifest_sha256": "9612b59e5b8de9c77ae0bf6306dbb32dfb5aea517c790114d44981bc2e6888d6",
+      "quality_direct_minus_same_payload_decompressed": {
+        "mean": 9.941522328077316e-07,
+        "ci95": [
+          -1.240972490009858e-06,
+          3.5633067440120204e-06
+        ],
+        "unit": "contiguous512-token context block; token-weighted ratio of sums",
+        "blocks": 696,
+        "bootstrap_replications": 2000,
+        "seed": 919
+      },
+      "comparisons": [
+        {
+          "prompt_length": 32,
+          "teacher_forced": false,
+          "decode_seconds_direct_minus_reference_ci": {
+            "mean": 3.389325259800171,
+            "n": 20,
+            "ci95": [
+              3.3623733339046162,
+              3.416277185695726
+            ]
+          },
+          "same_generated_token_hash_groups": 20,
+          "groups": 20
+        },
+        {
+          "prompt_length": 32,
+          "teacher_forced": true,
+          "decode_seconds_direct_minus_reference_ci": {
+            "mean": 3.3812180022001486,
+            "n": 20,
+            "ci95": [
+              3.3494354263149653,
+              3.413000578085332
+            ]
+          },
+          "same_generated_token_hash_groups": 20,
+          "groups": 20
+        },
+        {
+          "prompt_length": 128,
+          "teacher_forced": false,
+          "decode_seconds_direct_minus_reference_ci": {
+            "mean": 3.412879408000026,
+            "n": 20,
+            "ci95": [
+              3.383883120397919,
+              3.441875695602133
+            ]
+          },
+          "same_generated_token_hash_groups": 20,
+          "groups": 20
+        },
+        {
+          "prompt_length": 128,
+          "teacher_forced": true,
+          "decode_seconds_direct_minus_reference_ci": {
+            "mean": 3.372832607449618,
+            "n": 20,
+            "ci95": [
+              3.3642114524214817,
+              3.3814537624777543
+            ]
+          },
+          "same_generated_token_hash_groups": 20,
+          "groups": 20
+        }
+      ],
+      "scope": "complete actual24-layer Granite forward, prefill, KV-cached greedy and identical-token teacher-forced decode; direct packed experts, unmodified shared weights; source checkpoint absent fromdecoder",
+      "limits": "one fixed validation prompt at context32/128,16 generated tokens; mode order not interleaved across fresh processes; no vendor-optimized packedINT4 whole-model comparator; does not establish universal speed",
+      "acceptance_reference_nll_tolerance": 0.001
+    },
+    "validation_selected_training": {}
+  },
+  "completed_training_common_runs": 20,
+  "completed_function_matched_runs": 0
+}

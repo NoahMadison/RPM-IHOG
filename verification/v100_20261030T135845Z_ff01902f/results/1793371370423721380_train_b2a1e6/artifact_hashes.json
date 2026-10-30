@@ -1,0 +1,15 @@
+{
+  "checkpoint_001000.json": "719f3927126f069d9d2054576e72a33d3b1ba57970517aa2187fb6d40cdd2fe6",
+  "stdout.log": "88d9ae42c1e88ebf8670350653e6359e0aa2f5056a6bb6fa1e04aa705f35c30f",
+  "gpu.json": "baab3679e7271620ca95485e1ed6e0dd19ca61748780fcd1af5bdd6fcf946af8",
+  "process.json": "57558d74a2488272cfa82be4e3000ffb055ed94a5ec484cda5993fd5ee19b458",
+  "training_results.json": "53f7b696f4e52117d75a15800eb3eae0afe5d4a143884c7bba8eaf12892a37ef",
+  "checkpoint_000500.json": "b9bf06cff4e541aab844b119de3064868e2ed57d1a7cf4ae391164ad967af0ac",
+  "config.json": "faf48e8a0d8751834e0a679592d14fabdfe58bcf0f345c683aba1dd4de605533",
+  "stderr.log": "3cd166831df44b919698fbe55d1dde54ec62559a8eac6e079a6e28510c6fabbf",
+  "checkpoint_001500.json": "366d4d3da14e469c8203b34f2db8c5b29c364398218c4b95cd60e45cf7650cf8",
+  "exit.json": "0741864e58fce8e7c687361f1936f3883637c194be5cb2c08e435c2649a33709",
+  "curve.jsonl": "aa39706eba4d066710f19b6a6f97b48cb1f23395492b79968178ae43af555eeb",
+  "fresh_reload_ternary.json": "055002a13c7b9c4cbcb4cadaea12a78d92552daaa9669ac4f56d25dc09c57380",
+  "fresh_reload_pure.json": "a8b639c68bc0d9e749091fc25793dd0d763637e41a1539fb35daaaf9723079ec"
+}

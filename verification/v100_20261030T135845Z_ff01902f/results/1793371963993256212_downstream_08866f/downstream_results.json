@@ -1,0 +1,300 @@
+{
+  "model": "ibm-granite/granite-3.1-1b-a400m-base",
+  "revision": "408b6e90baab8cf24f4aa9f8e19703ffa0a53b29",
+  "codec": "original",
+  "tier": "smoke",
+  "status": "completed",
+  "results": {
+    "piqa": {
+      "name": "piqa",
+      "alias": "piqa",
+      "sample_len": 4,
+      "acc,none": 0.5,
+      "acc_stderr,none": 0.28867513459481287,
+      "acc_norm,none": 0.5,
+      "acc_norm_stderr,none": 0.28867513459481287
+    },
+    "arc_easy": {
+      "name": "arc_easy",
+      "alias": "arc_easy",
+      "sample_len": 4,
+      "acc,none": 0.75,
+      "acc_stderr,none": 0.25,
+      "acc_norm,none": 0.75,
+      "acc_norm_stderr,none": 0.25
+    }
+  },
+  "n_samples": {
+    "piqa": {
+      "original": 1838,
+      "effective": 4
+    },
+    "arc_easy": {
+      "original": 2376,
+      "effective": 4
+    }
+  },
+  "decisions": {
+    "piqa": [
+      {
+        "doc_id": 0,
+        "doc_hash": "ab177c9b9ad0fd48149e873e3d4804752991338a90c2072f52b975f86a7ca78e",
+        "acc": 1.0,
+        "acc_norm": 1.0,
+        "filtered_resps": [
+          [
+            -97.49626159667969,
+            false
+          ],
+          [
+            -103.73619842529297,
+            false
+          ]
+        ]
+      },
+      {
+        "doc_id": 1,
+        "doc_hash": "efca48ba31552995499f4b6dd5d2a0cf39296941ffad6e951b7840b6a3b01795",
+        "acc": 0.0,
+        "acc_norm": 0.0,
+        "filtered_resps": [
+          [
+            -37.3345832824707,
+            false
+          ],
+          [
+            -60.27178955078125,
+            false
+          ]
+        ]
+      },
+      {
+        "doc_id": 2,
+        "doc_hash": "4abd7fecc2810cf1a912698be93697ef8d0930074475a6f07cf541e934cda3aa",
+        "acc": 1.0,
+        "acc_norm": 0.0,
+        "filtered_resps": [
+          [
+            -37.35456848144531,
+            false
+          ],
+          [
+            -36.26869201660156,
+            false
+          ]
+        ]
+      },
+      {
+        "doc_id": 3,
+        "doc_hash": "96feb64b66ada8ee9b5e62a227494c70d7b18a5f1298cff287aad79a0fffbc91",
+        "acc": 0.0,
+        "acc_norm": 1.0,
+        "filtered_resps": [
+          [
+            -41.307132720947266,
+            false
+          ],
+          [
+            -41.513702392578125,
+            false
+          ]
+        ]
+      }
+    ],
+    "arc_easy": [
+      {
+        "doc_id": 0,
+        "doc_hash": "b91fe1a8fdc40a80b9364f6256ac729d010ba076b02e75a362c2cf7ad3303bdf",
+        "acc": 1.0,
+        "acc_norm": 1.0,
+        "filtered_resps": [
+          [
+            -23.862571716308594,
+            false
+          ],
+          [
+            -28.507631301879883,
+            false
+          ],
+          [
+            -27.336109161376953,
+            false
+          ],
+          [
+            -24.889495849609375,
+            false
+          ]
+        ]
+      },
+      {
+        "doc_id": 1,
+        "doc_hash": "864be3c890aba1a77f2d3e9592fa7ec90942afb66250f0e99ac11b30a1330e5a",
+        "acc": 1.0,
+        "acc_norm": 1.0,
+        "filtered_resps": [
+          [
+            -8.455719947814941,
+            false
+          ],
+          [
+            -8.414806365966797,
+            false
+          ],
+          [
+            -9.429553985595703,
+            false
+          ],
+          [
+            -12.923487663269043,
+            false
+          ]
+        ]
+      },
+      {
+        "doc_id": 2,
+        "doc_hash": "c79937cfecd9c1d852b0a65a6816710ce98507019ed48c57239077092a4963b6",
+        "acc": 0.0,
+        "acc_norm": 0.0,
+        "filtered_resps": [
+          [
+            -12.57424259185791,
+            false
+          ],
+          [
+            -10.625024795532227,
+            false
+          ],
+          [
+            -9.967219352722168,
+            false
+          ],
+          [
+            -13.973038673400879,
+            false
+          ]
+        ]
+      },
+      {
+        "doc_id": 3,
+        "doc_hash": "0b1d32d8fff63c6f801aa24ea0d27d565a4433b59fa7720e7d2682c8b772594f",
+        "acc": 1.0,
+        "acc_norm": 1.0,
+        "filtered_resps": [
+          [
+            -11.075817108154297,
+            false
+          ],
+          [
+            -8.018954277038574,
+            false
+          ],
+          [
+            -5.430697441101074,
+            false
+          ],
+          [
+            -3.6901063919067383,
+            false
+          ]
+        ]
+      }
+    ]
+  },
+  "sources": [
+    {
+      "task": "piqa",
+      "dataset": "baber/piqa",
+      "revision": "142f6d7367fd9877f0fb3b5734ea6a545f54cdd1",
+      "harness_yaml_sha256": "e874f7956ccac325b888d4a5dc600bad867b79fba2bd358fe8761ab8263270fb",
+      "config": {
+        "task": "piqa",
+        "dataset_path": "baber/piqa",
+        "dataset_name": null,
+        "output_type": "multiple_choice",
+        "training_split": "train",
+        "validation_split": "validation",
+        "test_split": null,
+        "doc_to_text": "Question: {{goal}}\nAnswer:",
+        "doc_to_target": "label",
+        "doc_to_choice": "{{[sol1, sol2]}}",
+        "should_decontaminate": true,
+        "doc_to_decontamination_query": "goal",
+        "metric_list": [
+          {
+            "metric": "acc",
+            "aggregation": "mean",
+            "higher_is_better": true
+          },
+          {
+            "metric": "acc_norm",
+            "aggregation": "mean",
+            "higher_is_better": true
+          }
+        ],
+        "metadata": {
+          "version": 1.0
+        },
+        "dataset_kwargs": {
+          "revision": "142f6d7367fd9877f0fb3b5734ea6a545f54cdd1"
+        }
+      },
+      "status": "available",
+      "evaluation_documents": 1838,
+      "content_sha256": "c85e341b3fa35066f64f5e7838116fe1421484424e9ce20abb54496b69970ee2",
+      "split": "validation"
+    },
+    {
+      "task": "arc_easy",
+      "dataset": "allenai/ai2_arc",
+      "revision": "210d026faf9955653af8916fad021475a3f00453",
+      "harness_yaml_sha256": "96da1d9efe1df88659481cedc13985cb347dc068554a2eae561303fa39bfab3f",
+      "config": {
+        "tag": [
+          "ai2_arc"
+        ],
+        "task": "arc_easy",
+        "dataset_path": "allenai/ai2_arc",
+        "dataset_name": "ARC-Easy",
+        "output_type": "multiple_choice",
+        "training_split": "train",
+        "validation_split": "validation",
+        "test_split": "test",
+        "doc_to_text": "Question: {{question}}\nAnswer:",
+        "doc_to_target": "{{choices.label.index(answerKey)}}",
+        "doc_to_choice": "{{choices.text}}",
+        "should_decontaminate": true,
+        "doc_to_decontamination_query": "Question: {{question}}\nAnswer:",
+        "metric_list": [
+          {
+            "metric": "acc",
+            "aggregation": "mean",
+            "higher_is_better": true
+          },
+          {
+            "metric": "acc_norm",
+            "aggregation": "mean",
+            "higher_is_better": true
+          }
+        ],
+        "metadata": {
+          "version": 1.0
+        },
+        "dataset_kwargs": {
+          "revision": "210d026faf9955653af8916fad021475a3f00453"
+        }
+      },
+      "status": "available",
+      "evaluation_documents": 2376,
+      "content_sha256": "09ab01ecb7493f88ebe45f4183360b102937d3879f566216e62f4ddeececdf56",
+      "split": "test"
+    }
+  ],
+  "blocked_tasks": [],
+  "harness_version": "0.4.13",
+  "zero_shot": true,
+  "max_length": 512,
+  "batch_size": 8,
+  "seconds": 4.978656473000228,
+  "execution": "original",
+  "archive_manifest_sha256": null
+}

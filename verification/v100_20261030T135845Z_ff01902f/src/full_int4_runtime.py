@@ -1,0 +1,13 @@
+"""Complete-model packed INT4 control, same full-runtime measurement protocol."""
+import json,pathlib,subprocess,sys
+from common import PREFIX,ROOT,write_json,digest,paired_ci
+from analysis_stats import weighted_block_delta
+def main(out,args):
+    source=next(p for p in sorted((PREFIX/'results').glob('*_pretrained_*/pretrained_results.json')) if 'granite' in json.loads(p.read_text())['model']);d=json.loads(source.read_text());r=d['results']['int4'];directory=pathlib.Path(r['artifact']);assert digest(directory/'manifest.json')==r['archive_sha256'];tokenroot=directory.parent;artifact=ROOT/'artifacts'/('full_int4_runtime_'+out.name);artifact.mkdir(exist_ok=False);runs={}
+    for mode in ['reference_decompressed','direct']:
+        path=out/(mode+'.json');subprocess.run([sys.executable,'-B','-c','import sys;from full_runtime import child;child(*sys.argv[1:])',str(directory),mode,str(tokenroot),str(path),str(artifact),'fused'],check=True);runs[mode]=json.loads(path.read_text());runs[mode]['precision']='FP32 shared weights/accumulation; actual groupwise INT4 codes and FP16 scales; no Kronecker factors or FWHT'
+    direct=runs['direct']['full_test_quality'];reference=json.loads((source.parent/'fresh_reload_int4.json').read_text());comparisons=[]
+    for length in [32,128]:
+        for forced in [False,True]:
+            baseline=[s for s in runs['reference_decompressed']['samples'] if s['prompt_length']==length and s['teacher_forced']==forced];actual=[s for s in runs['direct']['samples'] if s['prompt_length']==length and s['teacher_forced']==forced];comparisons.append({'prompt_length':length,'teacher_forced':forced,'decode_seconds_direct_minus_reference_ci':paired_ci([a['host_decode_seconds_for_15_steps']-b['host_decode_seconds_for_15_steps'] for a,b in zip(actual,baseline)]),'groups':20,'same_generated_token_hash_groups':sum(a['generated_token_sha256']==b['generated_token_sha256'] for a,b in zip(actual,baseline))})
+    write_json(out/'full_runtime_results.json',{'model':d['model'],'revision':d['revision'],'codec':'int4_group64_control','archive_manifest_sha256':r['archive_sha256'],'runs':runs,'quality_direct_minus_same_payload_decompressed':weighted_block_delta(reference['rows'],direct['rows']),'comparisons':comparisons,'scope':'complete actual Granite packedINT4 control; same cached-generation and full-test protocol as core+residual, reference kernel not vendor-optimized','limits':'one fixed prompt, contexts32/128,16 tokens,20groups; fixed fresh-process method order; no universal performance claim','original_baseline_nll':d['baseline']['test']['nll'],'codec_reference_nll':reference['nll'],'acceptance_reference_nll_tolerance':.001})

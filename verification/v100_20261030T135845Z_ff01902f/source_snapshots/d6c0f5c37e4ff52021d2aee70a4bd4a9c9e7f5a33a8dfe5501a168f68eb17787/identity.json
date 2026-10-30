@@ -1,0 +1,5 @@
+{
+  "original_path": "src/full_runtime.py",
+  "sha256": "d6c0f5c37e4ff52021d2aee70a4bd4a9c9e7f5a33a8dfe5501a168f68eb17787",
+  "purpose": "exact readable full-model implementation before fused-transform follow-up; originalrun results retained"
+}

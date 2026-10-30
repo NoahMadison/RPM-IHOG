@@ -1,0 +1,8 @@
+{
+  "scope": "validation-selected nativeKronecker and ordinarylowrank controls, same learnedexpertparameter budget",
+  "export": "original learned A/B and row scalars directly in FP16; same completebank tensor container; shared tensors unchangedFP32",
+  "why": "do not penalize ordinarylowrank control by judging only a separate Kroneckerrefit; compare exactnative and ordinaryfactor export at matchedtensorbytes andcountactualframing",
+  "primary": "freshprocess NLLdelta vs same selectedmodel; actualexpert andwholebytes",
+  "expected_expert_bpw": 1.0625,
+  "no_optimized_inference_claim": true
+}

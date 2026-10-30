@@ -1,0 +1,12 @@
+{
+  "before_timing": "freshprocess usesonlysavedallFP16factorarchive;144matrixchecks over4layers,2projections,experts0/7/15,batch1/4/16 andFP32/FP16;stridedinputs",
+  "reference": "materialize same storedfactors/rows inFP32; compareactualdirectoperatoroutputs",
+  "tolerances": {
+    "FP32_relativeL2": 5e-05,
+    "FP16_relativeL2": 0.01,
+    "full_model_samepayload_NLL_absolute_CI": 0.001
+  },
+  "random_stream": "CUDAgenerator seed811; separatecorrectnessprocess, no trainingbatch/timing RNG change",
+  "acceptance": "all finite andwithinpredeclared numericaltolerance before performance; complete-modelNLL and generated hashes testedseparately",
+  "status": "not_run"
+}

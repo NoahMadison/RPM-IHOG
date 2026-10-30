@@ -1,0 +1,262 @@
+[
+  {
+    "codec": "pure",
+    "validation": {
+      "nll": 8.067136283023483,
+      "ppl": 3187.9593313048517,
+      "tokens_scored": 4088,
+      "rows": [
+        {
+          "block": 0,
+          "nll_sum": 4049.21240234375,
+          "count": 511
+        },
+        {
+          "block": 1,
+          "nll_sum": 4042.376708984375,
+          "count": 511
+        },
+        {
+          "block": 2,
+          "nll_sum": 4309.6328125,
+          "count": 511
+        },
+        {
+          "block": 3,
+          "nll_sum": 4236.3095703125,
+          "count": 511
+        },
+        {
+          "block": 4,
+          "nll_sum": 4144.4501953125,
+          "count": 511
+        },
+        {
+          "block": 5,
+          "nll_sum": 3700.55078125,
+          "count": 511
+        },
+        {
+          "block": 6,
+          "nll_sum": 4095.773193359375,
+          "count": 511
+        },
+        {
+          "block": 7,
+          "nll_sum": 4400.1474609375,
+          "count": 511
+        }
+      ],
+      "protocol": "512-token disjoint context blocks; first token per block not scored; eager attention; FP32 cross entropy",
+      "weight_dtype": "torch.float32"
+    }
+  },
+  {
+    "codec": "ternary",
+    "validation": {
+      "nll": 2.1458457304773497,
+      "ppl": 8.549268557659017,
+      "tokens_scored": 4088,
+      "rows": [
+        {
+          "block": 0,
+          "nll_sum": 921.954833984375,
+          "count": 511
+        },
+        {
+          "block": 1,
+          "nll_sum": 1080.7392578125,
+          "count": 511
+        },
+        {
+          "block": 2,
+          "nll_sum": 1111.6204833984375,
+          "count": 511
+        },
+        {
+          "block": 3,
+          "nll_sum": 1250.02001953125,
+          "count": 511
+        },
+        {
+          "block": 4,
+          "nll_sum": 1148.1240234375,
+          "count": 511
+        },
+        {
+          "block": 5,
+          "nll_sum": 966.9081420898438,
+          "count": 511
+        },
+        {
+          "block": 6,
+          "nll_sum": 1148.57177734375,
+          "count": 511
+        },
+        {
+          "block": 7,
+          "nll_sum": 1144.27880859375,
+          "count": 511
+        }
+      ],
+      "protocol": "512-token disjoint context blocks; first token per block not scored; eager attention; FP32 cross entropy",
+      "weight_dtype": "torch.float32"
+    }
+  },
+  {
+    "codec": "int2",
+    "validation": {
+      "nll": 2.0210459460950876,
+      "ppl": 7.5462137401037355,
+      "tokens_scored": 4088,
+      "rows": [
+        {
+          "block": 0,
+          "nll_sum": 849.8511352539062,
+          "count": 511
+        },
+        {
+          "block": 1,
+          "nll_sum": 1024.50439453125,
+          "count": 511
+        },
+        {
+          "block": 2,
+          "nll_sum": 1046.7119140625,
+          "count": 511
+        },
+        {
+          "block": 3,
+          "nll_sum": 1134.4390869140625,
+          "count": 511
+        },
+        {
+          "block": 4,
+          "nll_sum": 1121.4478759765625,
+          "count": 511
+        },
+        {
+          "block": 5,
+          "nll_sum": 917.419189453125,
+          "count": 511
+        },
+        {
+          "block": 6,
+          "nll_sum": 1097.6591796875,
+          "count": 511
+        },
+        {
+          "block": 7,
+          "nll_sum": 1070.0030517578125,
+          "count": 511
+        }
+      ],
+      "protocol": "512-token disjoint context blocks; first token per block not scored; eager attention; FP32 cross entropy",
+      "weight_dtype": "torch.float32"
+    }
+  },
+  {
+    "codec": "int2_sign",
+    "validation": {
+      "nll": 1.9867417546401052,
+      "ppl": 7.291736747682356,
+      "tokens_scored": 4088,
+      "rows": [
+        {
+          "block": 0,
+          "nll_sum": 825.15087890625,
+          "count": 511
+        },
+        {
+          "block": 1,
+          "nll_sum": 1014.9547119140625,
+          "count": 511
+        },
+        {
+          "block": 2,
+          "nll_sum": 1033.872802734375,
+          "count": 511
+        },
+        {
+          "block": 3,
+          "nll_sum": 1121.108154296875,
+          "count": 511
+        },
+        {
+          "block": 4,
+          "nll_sum": 1097.66845703125,
+          "count": 511
+        },
+        {
+          "block": 5,
+          "nll_sum": 901.60595703125,
+          "count": 511
+        },
+        {
+          "block": 6,
+          "nll_sum": 1073.295654296875,
+          "count": 511
+        },
+        {
+          "block": 7,
+          "nll_sum": 1054.1436767578125,
+          "count": 511
+        }
+      ],
+      "protocol": "512-token disjoint context blocks; first token per block not scored; eager attention; FP32 cross entropy",
+      "weight_dtype": "torch.float32"
+    }
+  },
+  {
+    "codec": "int4",
+    "validation": {
+      "nll": 1.9760588554486835,
+      "ppl": 7.214254463674182,
+      "tokens_scored": 4088,
+      "rows": [
+        {
+          "block": 0,
+          "nll_sum": 815.5283203125,
+          "count": 511
+        },
+        {
+          "block": 1,
+          "nll_sum": 1013.290771484375,
+          "count": 511
+        },
+        {
+          "block": 2,
+          "nll_sum": 1033.1976318359375,
+          "count": 511
+        },
+        {
+          "block": 3,
+          "nll_sum": 1109.37548828125,
+          "count": 511
+        },
+        {
+          "block": 4,
+          "nll_sum": 1092.867919921875,
+          "count": 511
+        },
+        {
+          "block": 5,
+          "nll_sum": 887.8766479492188,
+          "count": 511
+        },
+        {
+          "block": 6,
+          "nll_sum": 1067.7061767578125,
+          "count": 511
+        },
+        {
+          "block": 7,
+          "nll_sum": 1058.28564453125,
+          "count": 511
+        }
+      ],
+      "protocol": "512-token disjoint context blocks; first token per block not scored; eager attention; FP32 cross entropy",
+      "weight_dtype": "torch.float32"
+    }
+  }
+]

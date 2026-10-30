@@ -1,0 +1,132 @@
+[
+  {
+    "id": "A",
+    "statement": "Training induces useful compressibility at equal quality",
+    "primary_metric": "paired test NLL and compression delta",
+    "acceptance_criterion": "upper 95% paired CI <= +0.02 NLL; compressed delta <= +0.01",
+    "protocol": "EXPERIMENT_PLAN.json",
+    "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+    "status": "not_run",
+    "evidence": []
+  },
+  {
+    "id": "B",
+    "statement": "AdamW entropy/null-space explanation is causal",
+    "primary_metric": "projected gradients and actual updates",
+    "acceptance_criterion": "controlled null-space effects across geometry/init/optimizer controls; marginal entropy alone insufficient",
+    "protocol": "EXPERIMENT_PLAN.json",
+    "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+    "status": "not_run",
+    "evidence": []
+  },
+  {
+    "id": "C",
+    "statement": "Competitive pretrained compression fidelity",
+    "primary_metric": "same-model test NLL delta",
+    "acceptance_criterion": "upper block-bootstrap 95% CI <= +0.01 vs untouched; matched-byte INT4 and lowrank controls",
+    "protocol": "EXPERIMENT_PLAN.json",
+    "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+    "status": "not_run",
+    "evidence": []
+  },
+  {
+    "id": "D",
+    "statement": "Advertised bitrates match storage and memory",
+    "primary_metric": "measured serialized/resident bytes",
+    "acceptance_criterion": "all factors/codes/scales/metadata counted; historical names not budgets",
+    "protocol": "EXPERIMENT_PLAN.json",
+    "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+    "status": "not_run",
+    "evidence": []
+  },
+  {
+    "id": "E",
+    "statement": "Complete compressed inference is faster",
+    "primary_metric": "full-path paired latency CI",
+    "acceptance_criterion": "CI resolves lower latency for same payload with fidelity reported jointly",
+    "protocol": "EXPERIMENT_PLAN.json",
+    "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+    "status": "not_run",
+    "evidence": []
+  },
+  {
+    "id": "F",
+    "statement": "Streaming bounds memory and covers sources",
+    "primary_metric": "peak memory, range/coverage/hash checks",
+    "acceptance_criterion": "complete manifest restoration and bounded live source buffer as source size increases",
+    "protocol": "EXPERIMENT_PLAN.json",
+    "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+    "status": "not_run",
+    "evidence": []
+  },
+  {
+    "id": "G",
+    "statement": "Distributed training reduces time to quality",
+    "primary_metric": "actual multi-GPU time to common quality",
+    "acceptance_criterion": "measured complete training with identical global batches; single GPU cannot satisfy",
+    "protocol": "EXPERIMENT_PLAN.json",
+    "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+    "status": "not_run",
+    "evidence": []
+  },
+  {
+    "id": "H13",
+    "statement": "Historical 13x stable-rank reduction",
+    "primary_metric": "paired multi-layer spectra",
+    "acceptance_criterion": "reproduce on declared task; separate quality",
+    "protocol": "EXPERIMENT_PLAN.json",
+    "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+    "status": "not_run",
+    "evidence": []
+  },
+  {
+    "id": "H05",
+    "statement": "Historical 0.5 bpw without degradation",
+    "primary_metric": "actual bytes + NLL",
+    "acceptance_criterion": "measured complete payload plus +0.01 tolerance",
+    "protocol": "EXPERIMENT_PLAN.json",
+    "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+    "status": "not_run",
+    "evidence": []
+  },
+  {
+    "id": "H998",
+    "statement": "Historical 99.8% activation R-squared",
+    "primary_metric": "real held-out block activations",
+    "acceptance_criterion": "same configuration and actual expert computation",
+    "protocol": "EXPERIMENT_PLAN.json",
+    "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+    "status": "not_run",
+    "evidence": []
+  },
+  {
+    "id": "HCPU",
+    "statement": "Historical 5x-10x CPU core speedup",
+    "primary_metric": "core timing",
+    "acceptance_criterion": "core-only scope explicitly",
+    "protocol": "EXPERIMENT_PLAN.json",
+    "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+    "status": "not_run",
+    "evidence": []
+  },
+  {
+    "id": "H83",
+    "statement": "Historical 8.3x GPU cascade speedup",
+    "primary_metric": "complete-model latency",
+    "acceptance_criterion": "same fidelity representation, full forward",
+    "protocol": "EXPERIMENT_PLAN.json",
+    "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+    "status": "not_run",
+    "evidence": []
+  },
+  {
+    "id": "H27",
+    "statement": "Historical 27 GB large MoE GPU footprint",
+    "primary_metric": "full archive residency",
+    "acceptance_criterion": "verified actual complete model resident",
+    "protocol": "EXPERIMENT_PLAN.json",
+    "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+    "status": "not_run",
+    "evidence": []
+  }
+]

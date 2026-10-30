@@ -1,0 +1,11 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/218 [00:00<?, ?it/s]Loading weights:  42%|████▏     | 92/218 [00:00<00:00, 850.81it/s]Loading weights:  92%|█████████▏| 200/218 [00:00<00:00, 938.60it/s]Loading weights: 100%|██████████| 218/218 [00:00<00:00, 980.53it/s]
+`pretrained` model kwarg is not of type `str`. Many other model arguments may be ignored. Please do not launch via accelerate or use `parallelize=True` if passing an existing model this way.
+Passed an already-initialized model through `pretrained`, assuming single-process call to evaluate() or custom distributed integration
+Overwriting default num_fewshot of piqa from None to 0
+Overwriting default num_fewshot of arc_easy from None to 0
+  0%|          | 0/4 [00:00<?, ?it/s]100%|██████████| 4/4 [00:00<00:00, 1121.10it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]100%|██████████| 4/4 [00:00<00:00, 858.30it/s]
+Tokenizing inputs:   0%|          | 0/24 [00:00<?, ?it/s][transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+Tokenizing inputs: 100%|██████████| 24/24 [00:00<00:00, 8840.19it/s]
+Running loglikelihood requests:   0%|          | 0/24 [00:00<?, ?it/s]Running loglikelihood requests:   4%|▍         | 1/24 [00:00<00:10,  2.29it/s]Running loglikelihood requests:  38%|███▊      | 9/24 [00:00<00:00, 17.61it/s]Running loglikelihood requests:  71%|███████   | 17/24 [00:00<00:00, 27.74it/s]Running loglikelihood requests: 100%|██████████| 24/24 [00:00<00:00, 30.46it/s]

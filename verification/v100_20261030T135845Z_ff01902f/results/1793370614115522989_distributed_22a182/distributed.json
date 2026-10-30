@@ -1,0 +1,789 @@
+{
+  "aggregation_checks": [
+    {
+      "kind": "adamw",
+      "microbatch_shards": [
+        2,
+        1
+      ],
+      "global_sequences": 3,
+      "tokens_per_sequence": 16,
+      "gradient_max_abs_error": 1.4156103134155273e-07,
+      "gradient_relative_l2_error": 6.333639251155833e-07,
+      "optimizer": "SGD lr=.001 decoupled decay .001",
+      "optimizer_update_max_abs_error": 1.4901161193847656e-08,
+      "stochastic_effects": "dropout disabled, fixed inputs, FP32"
+    },
+    {
+      "kind": "native",
+      "microbatch_shards": [
+        2,
+        1
+      ],
+      "global_sequences": 3,
+      "tokens_per_sequence": 16,
+      "gradient_max_abs_error": 1.043081283569336e-07,
+      "gradient_relative_l2_error": 5.788617829523129e-07,
+      "optimizer": "SGD lr=.001 decoupled decay .001",
+      "optimizer_update_max_abs_error": 1.4901161193847656e-08,
+      "stochastic_effects": "dropout disabled, fixed inputs, FP32"
+    },
+    {
+      "kind": "lowrank",
+      "microbatch_shards": [
+        2,
+        1
+      ],
+      "global_sequences": 3,
+      "tokens_per_sequence": 16,
+      "gradient_max_abs_error": 1.471489667892456e-07,
+      "gradient_relative_l2_error": 6.885080211804136e-07,
+      "optimizer": "SGD lr=.001 decoupled decay .001",
+      "optimizer_update_max_abs_error": 2.9802322387695312e-08,
+      "stochastic_effects": "dropout disabled, fixed inputs, FP32"
+    }
+  ],
+  "payloads": {
+    "adamw": {
+      "whole_parameter_count": 22360832,
+      "whole_gradient_bytes_fp32": 89443328,
+      "expert_gradient_bytes_fp32": 33554432,
+      "adam_moments_bytes_fp32": 178886656,
+      "ddp_optimizer_state_synchronized": false
+    },
+    "native": {
+      "whole_parameter_count": 14529280,
+      "whole_gradient_bytes_fp32": 58117120,
+      "expert_gradient_bytes_fp32": 2228224,
+      "adam_moments_bytes_fp32": 116234240,
+      "ddp_optimizer_state_synchronized": false
+    },
+    "lowrank": {
+      "whole_parameter_count": 14529280,
+      "whole_gradient_bytes_fp32": 58117120,
+      "expert_gradient_bytes_fp32": 2228224,
+      "adam_moments_bytes_fp32": 116234240,
+      "ddp_optimizer_state_synchronized": false
+    }
+  },
+  "gradient_source_checkpoint": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/artifacts/training_1793370558494515549_train_6a51ce/checkpoint_000010.pt",
+  "real_weight_gradient_delta_spectra": {
+    "real_gradient": {
+      "ordinary_stable_rank": 0.0,
+      "kron_stable_rank": 0.0,
+      "kron_energy_at_rank": 0.0,
+      "histogram_body_bits": -0.0,
+      "histogram_full_bits": -0.0,
+      "body_clipped_fraction": 0.0,
+      "weight_std": 9.999999960041972e-13,
+      "frobenius": 0.0
+    },
+    "trained_weight": {
+      "ordinary_stable_rank": 65.85218048095703,
+      "kron_stable_rank": 64.94189453125,
+      "kron_energy_at_rank": 0.11186438053846359,
+      "histogram_body_bits": 7.444365501403809,
+      "histogram_full_bits": 6.842279434204102,
+      "body_clipped_fraction": 0.002777099609375,
+      "weight_std": 0.06245947629213333,
+      "frobenius": 15.989521980285645
+    }
+  },
+  "compressor_diagnostics": [
+    {
+      "name": "ordinary_shared_PowerSGD_style",
+      "rank": 8,
+      "coefficient_bytes_per_worker": 8192,
+      "shared_basis_bytes": 262144,
+      "basis_refresh_protocol": "centralized exact SVD of initial weighted pilot gradient; full gradient aggregate plus one basis broadcast, then frozen for20 repeated-gradient diagnostic steps; no claim of deployable distributed basis training",
+      "basis_SVD_seconds": 0.004629082999599632,
+      "basis_refresh_full_gradient_bytes_per_worker": 262144,
+      "basis_refresh_collective_rounds": 2,
+      "coefficient_collectives_per_step": 1,
+      "payload_dtype": "FP32 numeric coefficients, never uint8 code summation",
+      "gpu_compression_aggregation_seconds": 0.0007810867999978654,
+      "relative_error_final": 0.0,
+      "local_error_feedback_bytes_per_worker": 262144,
+      "projection_changes_with_error_feedback": true
+    },
+    {
+      "name": "shared_Kronecker_unfolded_projection",
+      "rank": 8,
+      "coefficient_bytes_per_worker": 8192,
+      "shared_basis_bytes": 262144,
+      "basis_refresh_protocol": "centralized exact SVD of initial weighted pilot gradient; full gradient aggregate plus one basis broadcast, then frozen for20 repeated-gradient diagnostic steps; no claim of deployable distributed basis training",
+      "basis_SVD_seconds": 0.00033376299961673794,
+      "basis_refresh_full_gradient_bytes_per_worker": 262144,
+      "basis_refresh_collective_rounds": 2,
+      "coefficient_collectives_per_step": 1,
+      "payload_dtype": "FP32 numeric coefficients, never uint8 code summation",
+      "gpu_compression_aggregation_seconds": 0.00022833765001450956,
+      "relative_error_final": 0.0,
+      "local_error_feedback_bytes_per_worker": 262144,
+      "projection_changes_with_error_feedback": true
+    },
+    {
+      "name": "int8_error_feedback_allgather_decode",
+      "payload_bytes_per_worker": 65540,
+      "collective_rounds_per_step": 1,
+      "worker_scaling": "all-gather P*(P-1)*payload total bytes; each worker decodes P local scales",
+      "gpu_seconds": 0.0004395355999804451,
+      "relative_error_final": 0.0,
+      "zero_scale_floor": 1e-12
+    }
+  ],
+  "independent_factor_averaging_counterexample_l2": 0.6512693166732788,
+  "sensitivity_projections": [
+    {
+      "workers": 2,
+      "link_gbps": 1,
+      "hop_latency_us": 10,
+      "kind": "adamw",
+      "ring_bytes_per_worker": 89443328.0,
+      "projected_collective_seconds": 0.715566624,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 2,
+      "link_gbps": 1,
+      "hop_latency_us": 10,
+      "kind": "native",
+      "ring_bytes_per_worker": 58117120.0,
+      "projected_collective_seconds": 0.46495696000000003,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 2,
+      "link_gbps": 1,
+      "hop_latency_us": 10,
+      "kind": "lowrank",
+      "ring_bytes_per_worker": 58117120.0,
+      "projected_collective_seconds": 0.46495696000000003,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 2,
+      "link_gbps": 1,
+      "hop_latency_us": 100,
+      "kind": "adamw",
+      "ring_bytes_per_worker": 89443328.0,
+      "projected_collective_seconds": 0.715746624,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 2,
+      "link_gbps": 1,
+      "hop_latency_us": 100,
+      "kind": "native",
+      "ring_bytes_per_worker": 58117120.0,
+      "projected_collective_seconds": 0.46513696,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 2,
+      "link_gbps": 1,
+      "hop_latency_us": 100,
+      "kind": "lowrank",
+      "ring_bytes_per_worker": 58117120.0,
+      "projected_collective_seconds": 0.46513696,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 2,
+      "link_gbps": 10,
+      "hop_latency_us": 10,
+      "kind": "adamw",
+      "ring_bytes_per_worker": 89443328.0,
+      "projected_collective_seconds": 0.0715746624,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 2,
+      "link_gbps": 10,
+      "hop_latency_us": 10,
+      "kind": "native",
+      "ring_bytes_per_worker": 58117120.0,
+      "projected_collective_seconds": 0.046513696,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 2,
+      "link_gbps": 10,
+      "hop_latency_us": 10,
+      "kind": "lowrank",
+      "ring_bytes_per_worker": 58117120.0,
+      "projected_collective_seconds": 0.046513696,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 2,
+      "link_gbps": 10,
+      "hop_latency_us": 100,
+      "kind": "adamw",
+      "ring_bytes_per_worker": 89443328.0,
+      "projected_collective_seconds": 0.0717546624,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 2,
+      "link_gbps": 10,
+      "hop_latency_us": 100,
+      "kind": "native",
+      "ring_bytes_per_worker": 58117120.0,
+      "projected_collective_seconds": 0.046693696,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 2,
+      "link_gbps": 10,
+      "hop_latency_us": 100,
+      "kind": "lowrank",
+      "ring_bytes_per_worker": 58117120.0,
+      "projected_collective_seconds": 0.046693696,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 2,
+      "link_gbps": 25,
+      "hop_latency_us": 10,
+      "kind": "adamw",
+      "ring_bytes_per_worker": 89443328.0,
+      "projected_collective_seconds": 0.02864186496,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 2,
+      "link_gbps": 25,
+      "hop_latency_us": 10,
+      "kind": "native",
+      "ring_bytes_per_worker": 58117120.0,
+      "projected_collective_seconds": 0.018617478399999998,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 2,
+      "link_gbps": 25,
+      "hop_latency_us": 10,
+      "kind": "lowrank",
+      "ring_bytes_per_worker": 58117120.0,
+      "projected_collective_seconds": 0.018617478399999998,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 2,
+      "link_gbps": 25,
+      "hop_latency_us": 100,
+      "kind": "adamw",
+      "ring_bytes_per_worker": 89443328.0,
+      "projected_collective_seconds": 0.02882186496,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 2,
+      "link_gbps": 25,
+      "hop_latency_us": 100,
+      "kind": "native",
+      "ring_bytes_per_worker": 58117120.0,
+      "projected_collective_seconds": 0.018797478399999998,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 2,
+      "link_gbps": 25,
+      "hop_latency_us": 100,
+      "kind": "lowrank",
+      "ring_bytes_per_worker": 58117120.0,
+      "projected_collective_seconds": 0.018797478399999998,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 2,
+      "link_gbps": 100,
+      "hop_latency_us": 10,
+      "kind": "adamw",
+      "ring_bytes_per_worker": 89443328.0,
+      "projected_collective_seconds": 0.00717546624,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 2,
+      "link_gbps": 100,
+      "hop_latency_us": 10,
+      "kind": "native",
+      "ring_bytes_per_worker": 58117120.0,
+      "projected_collective_seconds": 0.0046693696,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 2,
+      "link_gbps": 100,
+      "hop_latency_us": 10,
+      "kind": "lowrank",
+      "ring_bytes_per_worker": 58117120.0,
+      "projected_collective_seconds": 0.0046693696,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 2,
+      "link_gbps": 100,
+      "hop_latency_us": 100,
+      "kind": "adamw",
+      "ring_bytes_per_worker": 89443328.0,
+      "projected_collective_seconds": 0.00735546624,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 2,
+      "link_gbps": 100,
+      "hop_latency_us": 100,
+      "kind": "native",
+      "ring_bytes_per_worker": 58117120.0,
+      "projected_collective_seconds": 0.004849369599999999,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 2,
+      "link_gbps": 100,
+      "hop_latency_us": 100,
+      "kind": "lowrank",
+      "ring_bytes_per_worker": 58117120.0,
+      "projected_collective_seconds": 0.004849369599999999,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 4,
+      "link_gbps": 1,
+      "hop_latency_us": 10,
+      "kind": "adamw",
+      "ring_bytes_per_worker": 134164992.0,
+      "projected_collective_seconds": 1.073379936,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 4,
+      "link_gbps": 1,
+      "hop_latency_us": 10,
+      "kind": "native",
+      "ring_bytes_per_worker": 87175680.0,
+      "projected_collective_seconds": 0.69746544,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 4,
+      "link_gbps": 1,
+      "hop_latency_us": 10,
+      "kind": "lowrank",
+      "ring_bytes_per_worker": 87175680.0,
+      "projected_collective_seconds": 0.69746544,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 4,
+      "link_gbps": 1,
+      "hop_latency_us": 100,
+      "kind": "adamw",
+      "ring_bytes_per_worker": 134164992.0,
+      "projected_collective_seconds": 1.073919936,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 4,
+      "link_gbps": 1,
+      "hop_latency_us": 100,
+      "kind": "native",
+      "ring_bytes_per_worker": 87175680.0,
+      "projected_collective_seconds": 0.6980054400000001,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 4,
+      "link_gbps": 1,
+      "hop_latency_us": 100,
+      "kind": "lowrank",
+      "ring_bytes_per_worker": 87175680.0,
+      "projected_collective_seconds": 0.6980054400000001,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 4,
+      "link_gbps": 10,
+      "hop_latency_us": 10,
+      "kind": "adamw",
+      "ring_bytes_per_worker": 134164992.0,
+      "projected_collective_seconds": 0.1073919936,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 4,
+      "link_gbps": 10,
+      "hop_latency_us": 10,
+      "kind": "native",
+      "ring_bytes_per_worker": 87175680.0,
+      "projected_collective_seconds": 0.069800544,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 4,
+      "link_gbps": 10,
+      "hop_latency_us": 10,
+      "kind": "lowrank",
+      "ring_bytes_per_worker": 87175680.0,
+      "projected_collective_seconds": 0.069800544,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 4,
+      "link_gbps": 10,
+      "hop_latency_us": 100,
+      "kind": "adamw",
+      "ring_bytes_per_worker": 134164992.0,
+      "projected_collective_seconds": 0.1079319936,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 4,
+      "link_gbps": 10,
+      "hop_latency_us": 100,
+      "kind": "native",
+      "ring_bytes_per_worker": 87175680.0,
+      "projected_collective_seconds": 0.070340544,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 4,
+      "link_gbps": 10,
+      "hop_latency_us": 100,
+      "kind": "lowrank",
+      "ring_bytes_per_worker": 87175680.0,
+      "projected_collective_seconds": 0.070340544,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 4,
+      "link_gbps": 25,
+      "hop_latency_us": 10,
+      "kind": "adamw",
+      "ring_bytes_per_worker": 134164992.0,
+      "projected_collective_seconds": 0.04299279744,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 4,
+      "link_gbps": 25,
+      "hop_latency_us": 10,
+      "kind": "native",
+      "ring_bytes_per_worker": 87175680.0,
+      "projected_collective_seconds": 0.0279562176,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 4,
+      "link_gbps": 25,
+      "hop_latency_us": 10,
+      "kind": "lowrank",
+      "ring_bytes_per_worker": 87175680.0,
+      "projected_collective_seconds": 0.0279562176,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 4,
+      "link_gbps": 25,
+      "hop_latency_us": 100,
+      "kind": "adamw",
+      "ring_bytes_per_worker": 134164992.0,
+      "projected_collective_seconds": 0.04353279744000001,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 4,
+      "link_gbps": 25,
+      "hop_latency_us": 100,
+      "kind": "native",
+      "ring_bytes_per_worker": 87175680.0,
+      "projected_collective_seconds": 0.0284962176,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 4,
+      "link_gbps": 25,
+      "hop_latency_us": 100,
+      "kind": "lowrank",
+      "ring_bytes_per_worker": 87175680.0,
+      "projected_collective_seconds": 0.0284962176,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 4,
+      "link_gbps": 100,
+      "hop_latency_us": 10,
+      "kind": "adamw",
+      "ring_bytes_per_worker": 134164992.0,
+      "projected_collective_seconds": 0.01079319936,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 4,
+      "link_gbps": 100,
+      "hop_latency_us": 10,
+      "kind": "native",
+      "ring_bytes_per_worker": 87175680.0,
+      "projected_collective_seconds": 0.0070340544,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 4,
+      "link_gbps": 100,
+      "hop_latency_us": 10,
+      "kind": "lowrank",
+      "ring_bytes_per_worker": 87175680.0,
+      "projected_collective_seconds": 0.0070340544,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 4,
+      "link_gbps": 100,
+      "hop_latency_us": 100,
+      "kind": "adamw",
+      "ring_bytes_per_worker": 134164992.0,
+      "projected_collective_seconds": 0.01133319936,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 4,
+      "link_gbps": 100,
+      "hop_latency_us": 100,
+      "kind": "native",
+      "ring_bytes_per_worker": 87175680.0,
+      "projected_collective_seconds": 0.0075740543999999995,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 4,
+      "link_gbps": 100,
+      "hop_latency_us": 100,
+      "kind": "lowrank",
+      "ring_bytes_per_worker": 87175680.0,
+      "projected_collective_seconds": 0.0075740543999999995,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 8,
+      "link_gbps": 1,
+      "hop_latency_us": 10,
+      "kind": "adamw",
+      "ring_bytes_per_worker": 156525824.0,
+      "projected_collective_seconds": 1.252346592,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 8,
+      "link_gbps": 1,
+      "hop_latency_us": 10,
+      "kind": "native",
+      "ring_bytes_per_worker": 101704960.0,
+      "projected_collective_seconds": 0.81377968,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 8,
+      "link_gbps": 1,
+      "hop_latency_us": 10,
+      "kind": "lowrank",
+      "ring_bytes_per_worker": 101704960.0,
+      "projected_collective_seconds": 0.81377968,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 8,
+      "link_gbps": 1,
+      "hop_latency_us": 100,
+      "kind": "adamw",
+      "ring_bytes_per_worker": 156525824.0,
+      "projected_collective_seconds": 1.2536065920000001,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 8,
+      "link_gbps": 1,
+      "hop_latency_us": 100,
+      "kind": "native",
+      "ring_bytes_per_worker": 101704960.0,
+      "projected_collective_seconds": 0.8150396799999999,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 8,
+      "link_gbps": 1,
+      "hop_latency_us": 100,
+      "kind": "lowrank",
+      "ring_bytes_per_worker": 101704960.0,
+      "projected_collective_seconds": 0.8150396799999999,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 8,
+      "link_gbps": 10,
+      "hop_latency_us": 10,
+      "kind": "adamw",
+      "ring_bytes_per_worker": 156525824.0,
+      "projected_collective_seconds": 0.1253606592,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 8,
+      "link_gbps": 10,
+      "hop_latency_us": 10,
+      "kind": "native",
+      "ring_bytes_per_worker": 101704960.0,
+      "projected_collective_seconds": 0.081503968,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 8,
+      "link_gbps": 10,
+      "hop_latency_us": 10,
+      "kind": "lowrank",
+      "ring_bytes_per_worker": 101704960.0,
+      "projected_collective_seconds": 0.081503968,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 8,
+      "link_gbps": 10,
+      "hop_latency_us": 100,
+      "kind": "adamw",
+      "ring_bytes_per_worker": 156525824.0,
+      "projected_collective_seconds": 0.1266206592,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 8,
+      "link_gbps": 10,
+      "hop_latency_us": 100,
+      "kind": "native",
+      "ring_bytes_per_worker": 101704960.0,
+      "projected_collective_seconds": 0.082763968,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 8,
+      "link_gbps": 10,
+      "hop_latency_us": 100,
+      "kind": "lowrank",
+      "ring_bytes_per_worker": 101704960.0,
+      "projected_collective_seconds": 0.082763968,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 8,
+      "link_gbps": 25,
+      "hop_latency_us": 10,
+      "kind": "adamw",
+      "ring_bytes_per_worker": 156525824.0,
+      "projected_collective_seconds": 0.05022826368,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 8,
+      "link_gbps": 25,
+      "hop_latency_us": 10,
+      "kind": "native",
+      "ring_bytes_per_worker": 101704960.0,
+      "projected_collective_seconds": 0.0326855872,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 8,
+      "link_gbps": 25,
+      "hop_latency_us": 10,
+      "kind": "lowrank",
+      "ring_bytes_per_worker": 101704960.0,
+      "projected_collective_seconds": 0.0326855872,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 8,
+      "link_gbps": 25,
+      "hop_latency_us": 100,
+      "kind": "adamw",
+      "ring_bytes_per_worker": 156525824.0,
+      "projected_collective_seconds": 0.05148826368,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 8,
+      "link_gbps": 25,
+      "hop_latency_us": 100,
+      "kind": "native",
+      "ring_bytes_per_worker": 101704960.0,
+      "projected_collective_seconds": 0.033945587199999995,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 8,
+      "link_gbps": 25,
+      "hop_latency_us": 100,
+      "kind": "lowrank",
+      "ring_bytes_per_worker": 101704960.0,
+      "projected_collective_seconds": 0.033945587199999995,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 8,
+      "link_gbps": 100,
+      "hop_latency_us": 10,
+      "kind": "adamw",
+      "ring_bytes_per_worker": 156525824.0,
+      "projected_collective_seconds": 0.01266206592,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 8,
+      "link_gbps": 100,
+      "hop_latency_us": 10,
+      "kind": "native",
+      "ring_bytes_per_worker": 101704960.0,
+      "projected_collective_seconds": 0.008276396799999999,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 8,
+      "link_gbps": 100,
+      "hop_latency_us": 10,
+      "kind": "lowrank",
+      "ring_bytes_per_worker": 101704960.0,
+      "projected_collective_seconds": 0.008276396799999999,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 8,
+      "link_gbps": 100,
+      "hop_latency_us": 100,
+      "kind": "adamw",
+      "ring_bytes_per_worker": 156525824.0,
+      "projected_collective_seconds": 0.01392206592,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 8,
+      "link_gbps": 100,
+      "hop_latency_us": 100,
+      "kind": "native",
+      "ring_bytes_per_worker": 101704960.0,
+      "projected_collective_seconds": 0.0095363968,
+      "measured_multi_GPU": false
+    },
+    {
+      "workers": 8,
+      "link_gbps": 100,
+      "hop_latency_us": 100,
+      "kind": "lowrank",
+      "ring_bytes_per_worker": 101704960.0,
+      "projected_collective_seconds": 0.0095363968,
+      "measured_multi_GPU": false
+    }
+  ],
+  "actual_multi_gpu_status": "blocked",
+  "blocker": "only one authorized V100; no duplicate-device ranks or RTX 4060 use permitted",
+  "scope": "sequential sharded gradients and measured one-GPU codec cost; no measured distributed speed or time-to-quality"
+}
