@@ -5,7 +5,7 @@ from common import PREFIX,ROOT,write_json,digest,journal
 def git(*args):return subprocess.check_output(['git',*args],cwd=ROOT/'repo')
 
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('--staged',action='store_true');ap.add_argument('--check-only',action='store_true');a=ap.parse_args();base=json.loads((PREFIX/'source_inventory.json').read_text())['base_sha'];prefix=str(PREFIX.relative_to(ROOT/'repo'))+'/'
+    ap=argparse.ArgumentParser();ap.add_argument('--staged',action='store_true');ap.add_argument('--check-only',action='store_true');ap.add_argument('--parent');a=ap.parse_args();base=json.loads((PREFIX/'source_inventory.json').read_text())['base_sha'];prefix=str(PREFIX.relative_to(ROOT/'repo'))+'/'
     original={}
     for name in ['original_inputs.json','additional_inputs.json']:
         original.update(json.loads((ROOT/'audit'/name).read_text()))
@@ -18,10 +18,11 @@ def main():
     diff=git('diff','--name-status',base).decode();assert not diff or all(line.startswith('A\t'+prefix) for line in diff.splitlines()),diff
     staged=[];findings=[]
     if a.staged:
-        records=git('diff','--cached',base,'--name-status','-z').split(b'\0');records=[r for r in records if r]
+        base_records=[r for r in git('diff','--cached',base,'--name-status','-z').split(b'\0') if r];assert all(kind==b'A' and name.decode().startswith(prefix) for kind,name in zip(base_records[::2],base_records[1::2]))
+        records=git('diff','--cached',a.parent or base,'--name-status','-z').split(b'\0');records=[r for r in records if r]
         assert len(records)%2==0
         for kind,name in zip(records[::2],records[1::2]):
-            name=name.decode();assert kind==b'A' and name.startswith(prefix),(kind,name);staged.append(name)
+            name=name.decode();assert kind in ([b'A',b'M'] if a.parent else [b'A']) and name.startswith(prefix),(kind,name);staged.append(name)
             body=git('show',':'+name)
             if name.endswith(('.pt','.pdf','.safetensors','.arrow','.parquet','.bin')):findings.append({'file':name,'reason':'forbidden artifact extension'})
             for pattern in [rb'AKIA[0-9A-Z]{16}',rb'gh[pousr]_[A-Za-z0-9]{20,}',rb'hf_[A-Za-z0-9]{20,}',rb'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY',rb'https://gemini\.google\.com/app/']:

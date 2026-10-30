@@ -413,3 +413,109 @@
 {"utc": "2026-10-30T18:14:20.046791+00:00", "event": "draft_publication_requested", "progress": "progress/011_publication_1793384060046304165.json"}
 {"utc": "2026-10-30T18:14:23.394477+00:00", "event": "publication_stage_prepared", "files": 1657, "excluded": 117}
 {"utc": "2026-10-30T18:14:27.668202+00:00", "event": "integrity_verified", "path": "reports/integrity_1793384067666795281.json", "staged": true}
+{"utc": "2026-10-30T18:16:53.832874+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793383997242959817_train_ed0f4e"}
+{"utc": "2026-10-30T18:16:53.845262+00:00", "event": "continuation_job_exit", "index": 22, "kind": "row_tail", "seed": 11, "returncode": 0}
+{"utc": "2026-10-30T18:16:53.911881+00:00", "event": "stage_start", "stage": "train", "result": "results/1793384213911680715_train_d19c50"}
+{"utc": "2026-10-30T18:20:09.602541+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793384213911680715_train_d19c50"}
+{"utc": "2026-10-30T18:20:09.611558+00:00", "event": "continuation_job_exit", "index": 23, "kind": "adamw", "seed": 22, "returncode": 0}
+{"utc": "2026-10-30T18:20:09.672283+00:00", "event": "stage_start", "stage": "train", "result": "results/1793384409672036199_train_a3111d"}
+{"utc": "2026-10-30T18:23:51.357851+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793384409672036199_train_a3111d"}
+{"utc": "2026-10-30T18:23:51.367076+00:00", "event": "continuation_job_exit", "index": 24, "kind": "row_tail", "seed": 22, "returncode": 0}
+{"utc": "2026-10-30T18:23:51.429276+00:00", "event": "stage_start", "stage": "train", "result": "results/1793384631429085526_train_df92b9"}
+{"utc": "2026-10-30T18:27:04.872772+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793384631429085526_train_df92b9"}
+{"utc": "2026-10-30T18:27:04.883982+00:00", "event": "continuation_job_exit", "index": 25, "kind": "adamw", "seed": 33, "returncode": 0}
+{"utc": "2026-10-30T18:27:04.955320+00:00", "event": "stage_start", "stage": "train", "result": "results/1793384824955123448_train_a0f02c"}
+{"utc": "2026-10-30T18:30:42.177418+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793384824955123448_train_a0f02c"}
+{"utc": "2026-10-30T18:30:42.188401+00:00", "event": "continuation_job_exit", "index": 26, "kind": "row_tail", "seed": 33, "returncode": 0}
+{"utc": "2026-10-30T18:30:42.188471+00:00", "event": "continuation_complete", "endpoint_steps": 6000}
+{"utc": "2026-10-30T18:30:48.306581+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385048306382735_train-select_f91d7a"}
+{"utc": "2026-10-30T18:30:54.740335+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385048306382735_train-select_f91d7a"}
+{"utc": "2026-10-30T18:30:54.747301+00:00", "event": "selection_job_exit", "index": 0, "returncode": 0}
+{"utc": "2026-10-30T18:30:54.803748+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385054803556851_train-select_ff2f80"}
+{"utc": "2026-10-30T18:31:01.134389+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385054803556851_train-select_ff2f80"}
+{"utc": "2026-10-30T18:31:01.144859+00:00", "event": "selection_job_exit", "index": 1, "returncode": 0}
+{"utc": "2026-10-30T18:31:01.202359+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385061202170082_train-select_f2be50"}
+{"utc": "2026-10-30T18:31:07.933831+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385061202170082_train-select_f2be50"}
+{"utc": "2026-10-30T18:31:07.945684+00:00", "event": "selection_job_exit", "index": 2, "returncode": 0}
+{"utc": "2026-10-30T18:31:07.997610+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385067997385038_train-select_90951d"}
+{"utc": "2026-10-30T18:31:14.432060+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385067997385038_train-select_90951d"}
+{"utc": "2026-10-30T18:31:14.445131+00:00", "event": "selection_job_exit", "index": 3, "returncode": 0}
+{"utc": "2026-10-30T18:31:14.493533+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385074493329892_train-select_98d037"}
+{"utc": "2026-10-30T18:31:21.130674+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385074493329892_train-select_98d037"}
+{"utc": "2026-10-30T18:31:21.143162+00:00", "event": "selection_job_exit", "index": 4, "returncode": 0}
+{"utc": "2026-10-30T18:31:21.202122+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385081201935583_train-select_7cdf2c"}
+{"utc": "2026-10-30T18:31:27.635653+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385081201935583_train-select_7cdf2c"}
+{"utc": "2026-10-30T18:31:27.645399+00:00", "event": "selection_job_exit", "index": 5, "returncode": 0}
+{"utc": "2026-10-30T18:31:27.715848+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385087715626406_train-select_551498"}
+{"utc": "2026-10-30T18:31:34.248577+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385087715626406_train-select_551498"}
+{"utc": "2026-10-30T18:31:34.258998+00:00", "event": "selection_job_exit", "index": 6, "returncode": 0}
+{"utc": "2026-10-30T18:31:34.345792+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385094345588129_train-select_a9fa85"}
+{"utc": "2026-10-30T18:31:41.476052+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385094345588129_train-select_a9fa85"}
+{"utc": "2026-10-30T18:31:41.486667+00:00", "event": "selection_job_exit", "index": 7, "returncode": 0}
+{"utc": "2026-10-30T18:31:41.553745+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385101553478303_train-select_6cf0c3"}
+{"utc": "2026-10-30T18:31:48.382941+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385101553478303_train-select_6cf0c3"}
+{"utc": "2026-10-30T18:31:48.390632+00:00", "event": "selection_job_exit", "index": 8, "returncode": 0}
+{"utc": "2026-10-30T18:31:48.445160+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385108444841995_train-select_d4b0b4"}
+{"utc": "2026-10-30T18:31:55.330025+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385108444841995_train-select_d4b0b4"}
+{"utc": "2026-10-30T18:31:55.336748+00:00", "event": "selection_job_exit", "index": 9, "returncode": 0}
+{"utc": "2026-10-30T18:31:55.397439+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385115397241479_train-select_de0671"}
+{"utc": "2026-10-30T18:32:02.179335+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385115397241479_train-select_de0671"}
+{"utc": "2026-10-30T18:32:02.188729+00:00", "event": "selection_job_exit", "index": 10, "returncode": 0}
+{"utc": "2026-10-30T18:32:02.239448+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385122239231239_train-select_b3bb27"}
+{"utc": "2026-10-30T18:32:08.921318+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385122239231239_train-select_b3bb27"}
+{"utc": "2026-10-30T18:32:08.933040+00:00", "event": "selection_job_exit", "index": 11, "returncode": 0}
+{"utc": "2026-10-30T18:32:08.985935+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385128985734286_train-select_11e780"}
+{"utc": "2026-10-30T18:32:15.666762+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385128985734286_train-select_11e780"}
+{"utc": "2026-10-30T18:32:15.677078+00:00", "event": "selection_job_exit", "index": 12, "returncode": 0}
+{"utc": "2026-10-30T18:32:15.727373+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385135727180545_train-select_f739d9"}
+{"utc": "2026-10-30T18:32:22.410849+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385135727180545_train-select_f739d9"}
+{"utc": "2026-10-30T18:32:22.418574+00:00", "event": "selection_job_exit", "index": 13, "returncode": 0}
+{"utc": "2026-10-30T18:32:22.485318+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385142485113730_train-select_aa5109"}
+{"utc": "2026-10-30T18:32:29.468390+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385142485113730_train-select_aa5109"}
+{"utc": "2026-10-30T18:32:29.485779+00:00", "event": "selection_job_exit", "index": 14, "returncode": 0}
+{"utc": "2026-10-30T18:32:29.549683+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385149549488923_train-select_c4947c"}
+{"utc": "2026-10-30T18:32:36.232170+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385149549488923_train-select_c4947c"}
+{"utc": "2026-10-30T18:32:36.242621+00:00", "event": "selection_job_exit", "index": 15, "returncode": 0}
+{"utc": "2026-10-30T18:32:36.301003+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385156300812095_train-select_b643d7"}
+{"utc": "2026-10-30T18:32:42.883031+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385156300812095_train-select_b643d7"}
+{"utc": "2026-10-30T18:32:42.893060+00:00", "event": "selection_job_exit", "index": 16, "returncode": 0}
+{"utc": "2026-10-30T18:32:42.956465+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385162956256952_train-select_61ef37"}
+{"utc": "2026-10-30T18:32:49.841810+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385162956256952_train-select_61ef37"}
+{"utc": "2026-10-30T18:32:49.854907+00:00", "event": "selection_job_exit", "index": 17, "returncode": 0}
+{"utc": "2026-10-30T18:32:49.927735+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385169927523362_train-select_d2c6af"}
+{"utc": "2026-10-30T18:32:56.960044+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385169927523362_train-select_d2c6af"}
+{"utc": "2026-10-30T18:32:56.967102+00:00", "event": "selection_job_exit", "index": 18, "returncode": 0}
+{"utc": "2026-10-30T18:32:57.016893+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385177016696076_train-select_57f382"}
+{"utc": "2026-10-30T18:33:03.752922+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385177016696076_train-select_57f382"}
+{"utc": "2026-10-30T18:33:03.772099+00:00", "event": "selection_job_exit", "index": 19, "returncode": 0}
+{"utc": "2026-10-30T18:33:03.842587+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385183842385030_train-select_0dca0f"}
+{"utc": "2026-10-30T18:33:10.829503+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385183842385030_train-select_0dca0f"}
+{"utc": "2026-10-30T18:33:10.838705+00:00", "event": "selection_job_exit", "index": 20, "returncode": 0}
+{"utc": "2026-10-30T18:33:10.902115+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385190901918808_train-select_08b0e1"}
+{"utc": "2026-10-30T18:33:17.885724+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385190901918808_train-select_08b0e1"}
+{"utc": "2026-10-30T18:33:17.904111+00:00", "event": "selection_job_exit", "index": 21, "returncode": 0}
+{"utc": "2026-10-30T18:33:17.973731+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385197973525034_train-select_78f0ce"}
+{"utc": "2026-10-30T18:33:24.808546+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385197973525034_train-select_78f0ce"}
+{"utc": "2026-10-30T18:33:24.823030+00:00", "event": "selection_job_exit", "index": 22, "returncode": 0}
+{"utc": "2026-10-30T18:33:24.893201+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385204892988510_train-select_51733c"}
+{"utc": "2026-10-30T18:33:31.823879+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385204892988510_train-select_51733c"}
+{"utc": "2026-10-30T18:33:31.832267+00:00", "event": "selection_job_exit", "index": 23, "returncode": 0}
+{"utc": "2026-10-30T18:33:31.902648+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385211902440057_train-select_a862b4"}
+{"utc": "2026-10-30T18:33:38.686076+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385211902440057_train-select_a862b4"}
+{"utc": "2026-10-30T18:33:38.703597+00:00", "event": "selection_job_exit", "index": 24, "returncode": 0}
+{"utc": "2026-10-30T18:33:38.772135+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385218771936741_train-select_7c5ec2"}
+{"utc": "2026-10-30T18:33:45.603325+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385218771936741_train-select_7c5ec2"}
+{"utc": "2026-10-30T18:33:45.610221+00:00", "event": "selection_job_exit", "index": 25, "returncode": 0}
+{"utc": "2026-10-30T18:33:45.664180+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385225663943859_train-select_ad3d35"}
+{"utc": "2026-10-30T18:33:52.397932+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385225663943859_train-select_ad3d35"}
+{"utc": "2026-10-30T18:33:52.416777+00:00", "event": "selection_job_exit", "index": 26, "returncode": 0}
+{"utc": "2026-10-30T18:33:52.416917+00:00", "event": "selection_campaign_complete"}
+{"utc": "2026-10-30T18:33:58.623194+00:00", "event": "closecall_replication_decision", "decisions": [{"kind": "row", "n": 3, "paired_deltas": [0.014757009097932539, 0.011460624061587765, 0.013305910863396164], "decision_ci97_5": [0.007255546967970942, 0.01909348238064004], "expand": true}, {"kind": "tail", "n": 3, "paired_deltas": [0.03855130531334794, 0.035946165873413705, 0.03449068718822357], "decision_ci97_5": [0.028958943628115498, 0.04369982862187464], "expand": false}, {"kind": "row_tail", "n": 3, "paired_deltas": [0.05007477214084943, 0.03952331292560274, 0.048388086958996546], "decision_ci97_5": [0.02568861419937635, 0.0663021671509228], "expand": false}, {"kind": "native", "n": 3, "paired_deltas": [0.10054154803501447, 0.08491652140258754, 0.09305900205332929], "decision_ci97_5": [0.06484113504693279, 0.12083691261368809], "expand": false}], "expanded": ["row"]}
+{"utc": "2026-10-30T18:33:58.680347+00:00", "event": "stage_start", "stage": "train", "result": "results/1793385238680127061_train_052b78"}
+{"utc": "2026-10-30T18:35:09.440624+00:00", "event": "published_initial_draft", "commit": "0319dc7e6abb2a403c32f57f98f2f378661f5ba4", "PR": "https://github.com/NoahMadison/RPM-IHOG/pull/1"}
+{"utc": "2026-10-30T18:38:06.412264+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793385238680127061_train_052b78"}
+{"utc": "2026-10-30T18:38:06.491119+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385486490901850_train-select_c696ef"}
+{"utc": "2026-10-30T18:38:14.978258+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385486490901850_train-select_c696ef"}
+{"utc": "2026-10-30T18:38:14.997665+00:00", "event": "closecall_job_exit", "kind": "adamw", "seed": 44, "returncode": 0}
+{"utc": "2026-10-30T18:38:15.067789+00:00", "event": "stage_start", "stage": "train", "result": "results/1793385495067564523_train_ac7b01"}
+{"utc": "2026-10-30T18:38:17.928083+00:00", "event": "stage_publication_prepared", "result": "results/1793383997242959817_train_ed0f4e", "parent": "0319dc7e6abb2a403c32f57f98f2f378661f5ba4", "progress": "progress/stage_1793383997242959817_train_ed0f4e_1793385497927871093.json"}
