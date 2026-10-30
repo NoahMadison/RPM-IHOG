@@ -671,3 +671,10 @@
 {"utc": "2026-10-30T19:05:19.041508+00:00", "event": "stage_publication_prepared", "result": "results/1793386287510830367_direct-factor-export_20dca5", "parent": "66d4384b3142c0de75f900a14a38604406406016", "progress": "progress/stage_1793386287510830367_direct-factor-export_20dca5_1793387119041249946.json"}
 {"utc": "2026-10-30T19:05:30.190806+00:00", "event": "published_stage", "commit": "514c6ff44e4346733f59373d9d5ffdbcd928fc5f", "result": "results/1793386287510830367_direct-factor-export_20dca5"}
 {"utc": "2026-10-30T19:05:30.317072+00:00", "event": "stage_publication_prepared", "result": "results/1793386293226495740_direct-factor-export_b1c64a", "parent": "514c6ff44e4346733f59373d9d5ffdbcd928fc5f", "progress": "progress/stage_1793386293226495740_direct-factor-export_b1c64a_1793387130316931973.json"}
+{"utc": "2026-10-30T19:05:43.817850+00:00", "event": "published_stage", "commit": "3459ee74adb55dc6f96eb1f9cd2dadf0cb210e25", "result": "results/1793386293226495740_direct-factor-export_b1c64a"}
+{"utc": "2026-10-30T19:07:04.627419+00:00", "event": "stage_start", "stage": "report", "result": "results/1793387224627222075_report_6f5c5f"}
+{"utc": "2026-10-30T19:07:06.461775+00:00", "event": "report_written", "path": "reports/005_20261030T190704Z.md"}
+{"utc": "2026-10-30T19:07:06.596681+00:00", "event": "stage_exit", "stage": "report", "exit_code": 0, "result": "results/1793387224627222075_report_6f5c5f"}
+{"utc": "2026-10-30T19:08:35.699071+00:00", "event": "integrity_verified", "path": "reports/integrity_1793387315697757608.json", "staged": false}
+{"utc": "2026-10-30T19:14:20.816274+00:00", "event": "first_pass_scientific_execution_complete", "summary": "reports/006_20261030T191420Z_SUMMARY.md", "handoff": "RESUME_PROMPT_006.md"}
+{"utc": "2026-10-30T19:15:53.963526+00:00", "event": "stage_publication_prepared", "result": "results/1793386298932015483_direct-factor-export_01afcc", "parent": "3459ee74adb55dc6f96eb1f9cd2dadf0cb210e25", "progress": "progress/stage_1793386298932015483_direct-factor-export_01afcc_1793387753962901680.json"}
