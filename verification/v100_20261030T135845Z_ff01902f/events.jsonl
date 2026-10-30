@@ -538,3 +538,5 @@
 {"utc": "2026-10-30T18:42:30.377910+00:00", "event": "closecall_job_exit", "kind": "row", "seed": 44, "returncode": 0}
 {"utc": "2026-10-30T18:42:30.436631+00:00", "event": "stage_start", "stage": "train", "result": "results/1793385750436422685_train_d51db8"}
 {"utc": "2026-10-30T18:43:57.334601+00:00", "event": "stage_publication_prepared", "result": "results/1793385061202170082_train-select_f2be50", "parent": "19a11d42054130ef529290330c76f2018cc68c50", "progress": "progress/stage_1793385061202170082_train-select_f2be50_1793385837334434444.json"}
+{"utc": "2026-10-30T18:44:04.994333+00:00", "event": "published_stage", "commit": "ca8f7ecfd4bc393372e9ec4e5d91bff1cda7cece", "result": "results/1793385061202170082_train-select_f2be50"}
+{"utc": "2026-10-30T18:44:05.134622+00:00", "event": "stage_publication_prepared", "result": "results/1793385067997385038_train-select_90951d", "parent": "ca8f7ecfd4bc393372e9ec4e5d91bff1cda7cece", "progress": "progress/stage_1793385067997385038_train-select_90951d_1793385845134326360.json"}
