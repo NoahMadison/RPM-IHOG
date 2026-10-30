@@ -552,3 +552,11 @@
 {"utc": "2026-10-30T18:44:50.104718+00:00", "event": "stage_publication_prepared", "result": "results/1793385101553478303_train-select_6cf0c3", "parent": "243666a6b34a7f73b3875505ad7ca40b5ecebad7", "progress": "progress/stage_1793385101553478303_train-select_6cf0c3_1793385890104565650.json"}
 {"utc": "2026-10-30T18:44:58.125318+00:00", "event": "published_stage", "commit": "f99873f8014616181b16c4544defdf0de2c50eb7", "result": "results/1793385101553478303_train-select_6cf0c3"}
 {"utc": "2026-10-30T18:44:58.272547+00:00", "event": "stage_publication_prepared", "result": "results/1793385108444841995_train-select_d4b0b4", "parent": "f99873f8014616181b16c4544defdf0de2c50eb7", "progress": "progress/stage_1793385108444841995_train-select_d4b0b4_1793385898272260348.json"}
+{"utc": "2026-10-30T18:45:05.951830+00:00", "event": "published_stage", "commit": "2e65f472c15d47ce818d6fd9fca404af9a6a3bf2", "result": "results/1793385108444841995_train-select_d4b0b4"}
+{"utc": "2026-10-30T18:46:29.249780+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793385750436422685_train_d51db8"}
+{"utc": "2026-10-30T18:46:29.319017+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385989318823224_train-select_1b98cc"}
+{"utc": "2026-10-30T18:46:37.705074+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385989318823224_train-select_1b98cc"}
+{"utc": "2026-10-30T18:46:37.713176+00:00", "event": "closecall_job_exit", "kind": "adamw", "seed": 55, "returncode": 0}
+{"utc": "2026-10-30T18:46:37.775412+00:00", "event": "stage_start", "stage": "train", "result": "results/1793385997775194711_train_1d2884"}
+{"utc": "2026-10-30T18:49:01.778333+00:00", "event": "context_handoff", "path": "RESUME_PROMPT_005.md", "PR": "https://github.com/NoahMadison/RPM-IHOG/pull/1", "state": "n5row/denseclosecall and exports/runtime pending; per-stagepublication active"}
+{"utc": "2026-10-30T18:49:05.014289+00:00", "event": "stage_publication_prepared", "result": "results/1793385115397241479_train-select_de0671", "parent": "2e65f472c15d47ce818d6fd9fca404af9a6a3bf2", "progress": "progress/stage_1793385115397241479_train-select_de0671_1793386145014109902.json"}
