@@ -1,0 +1,9 @@
+{
+  "action": "non-force feature branch update",
+  "automatic_review_initial_reason": "expectedparentstale; possible rewind of subsequentlypublishedcommits",
+  "checked_actual_remote": "2e65f472c15d47ce818d6fd9fca404af9a6a3bf2",
+  "verified_actual_new_parent": "2e65f472c15d47ce818d6fd9fca404af9a6a3bf2",
+  "new_commit": "0066472b46474050d94f257d010973f2873c2086",
+  "resolution": "fresh read-only remote and Git commit-parent/tree checks proved directfastforward; ordinary force=false update accepted, no bypass orrewind",
+  "future_guard": "publication_verify_remote.py records fresh proof immediately before each refupdate"
+}

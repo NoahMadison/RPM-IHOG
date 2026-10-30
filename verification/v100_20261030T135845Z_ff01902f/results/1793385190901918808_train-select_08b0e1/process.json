@@ -1,0 +1,15 @@
+{
+  "pid": 166727,
+  "command": [
+    "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/venv/bin/python",
+    "-B",
+    "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/run_verification.py",
+    "--stage",
+    "train-select",
+    "--checkpoint",
+    "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/results/1793383806602814849_train_7bc781/training_results.json",
+    "--worker",
+    "--out",
+    "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/results/1793385190901918808_train-select_08b0e1"
+  ]
+}

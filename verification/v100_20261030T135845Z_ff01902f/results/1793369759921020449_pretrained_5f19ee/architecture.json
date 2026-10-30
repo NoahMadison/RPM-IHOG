@@ -1,0 +1,466 @@
+{
+  "config": {
+    "transformers_version": "5.22.1",
+    "architectures": [
+      "GraniteMoeForCausalLM"
+    ],
+    "output_hidden_states": false,
+    "return_dict": true,
+    "dtype": "float32",
+    "chunk_size_feed_forward": 0,
+    "is_encoder_decoder": false,
+    "id2label": {
+      "0": "LABEL_0",
+      "1": "LABEL_1"
+    },
+    "label2id": {
+      "LABEL_0": 0,
+      "LABEL_1": 1
+    },
+    "problem_type": null,
+    "vocab_size": 49152,
+    "hidden_size": 1024,
+    "intermediate_size": 512,
+    "num_hidden_layers": 24,
+    "num_attention_heads": 16,
+    "num_key_value_heads": 8,
+    "hidden_act": "silu",
+    "max_position_embeddings": 131072,
+    "initializer_range": 0.02,
+    "rms_norm_eps": 1e-06,
+    "use_cache": true,
+    "pad_token_id": 0,
+    "bos_token_id": 0,
+    "eos_token_id": 0,
+    "tie_word_embeddings": true,
+    "rope_parameters": {
+      "rope_theta": 1500000.0,
+      "rope_type": "default"
+    },
+    "attention_bias": false,
+    "attention_dropout": 0.1,
+    "embedding_multiplier": 12.0,
+    "logits_scaling": 6.0,
+    "residual_multiplier": 0.22,
+    "attention_multiplier": 0.015625,
+    "num_local_experts": 32,
+    "num_experts_per_tok": 8,
+    "output_router_logits": false,
+    "router_aux_loss_coef": 0.001,
+    "_name_or_path": "ibm-granite/granite-3.1-1b-a400m-base",
+    "model_type": "granitemoe",
+    "output_attentions": false
+  },
+  "model_class": "GraniteMoeForCausalLM",
+  "target_parameters": [
+    {
+      "name": "model.layers.0.block_sparse_moe.experts.gate_up_proj",
+      "shape": [
+        32,
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "model.layers.0.block_sparse_moe.experts.down_proj",
+      "shape": [
+        32,
+        1024,
+        512
+      ]
+    },
+    {
+      "name": "model.layers.1.block_sparse_moe.experts.gate_up_proj",
+      "shape": [
+        32,
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "model.layers.1.block_sparse_moe.experts.down_proj",
+      "shape": [
+        32,
+        1024,
+        512
+      ]
+    },
+    {
+      "name": "model.layers.2.block_sparse_moe.experts.gate_up_proj",
+      "shape": [
+        32,
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "model.layers.2.block_sparse_moe.experts.down_proj",
+      "shape": [
+        32,
+        1024,
+        512
+      ]
+    },
+    {
+      "name": "model.layers.3.block_sparse_moe.experts.gate_up_proj",
+      "shape": [
+        32,
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "model.layers.3.block_sparse_moe.experts.down_proj",
+      "shape": [
+        32,
+        1024,
+        512
+      ]
+    },
+    {
+      "name": "model.layers.4.block_sparse_moe.experts.gate_up_proj",
+      "shape": [
+        32,
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "model.layers.4.block_sparse_moe.experts.down_proj",
+      "shape": [
+        32,
+        1024,
+        512
+      ]
+    },
+    {
+      "name": "model.layers.5.block_sparse_moe.experts.gate_up_proj",
+      "shape": [
+        32,
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "model.layers.5.block_sparse_moe.experts.down_proj",
+      "shape": [
+        32,
+        1024,
+        512
+      ]
+    },
+    {
+      "name": "model.layers.6.block_sparse_moe.experts.gate_up_proj",
+      "shape": [
+        32,
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "model.layers.6.block_sparse_moe.experts.down_proj",
+      "shape": [
+        32,
+        1024,
+        512
+      ]
+    },
+    {
+      "name": "model.layers.7.block_sparse_moe.experts.gate_up_proj",
+      "shape": [
+        32,
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "model.layers.7.block_sparse_moe.experts.down_proj",
+      "shape": [
+        32,
+        1024,
+        512
+      ]
+    },
+    {
+      "name": "model.layers.8.block_sparse_moe.experts.gate_up_proj",
+      "shape": [
+        32,
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "model.layers.8.block_sparse_moe.experts.down_proj",
+      "shape": [
+        32,
+        1024,
+        512
+      ]
+    },
+    {
+      "name": "model.layers.9.block_sparse_moe.experts.gate_up_proj",
+      "shape": [
+        32,
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "model.layers.9.block_sparse_moe.experts.down_proj",
+      "shape": [
+        32,
+        1024,
+        512
+      ]
+    },
+    {
+      "name": "model.layers.10.block_sparse_moe.experts.gate_up_proj",
+      "shape": [
+        32,
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "model.layers.10.block_sparse_moe.experts.down_proj",
+      "shape": [
+        32,
+        1024,
+        512
+      ]
+    },
+    {
+      "name": "model.layers.11.block_sparse_moe.experts.gate_up_proj",
+      "shape": [
+        32,
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "model.layers.11.block_sparse_moe.experts.down_proj",
+      "shape": [
+        32,
+        1024,
+        512
+      ]
+    },
+    {
+      "name": "model.layers.12.block_sparse_moe.experts.gate_up_proj",
+      "shape": [
+        32,
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "model.layers.12.block_sparse_moe.experts.down_proj",
+      "shape": [
+        32,
+        1024,
+        512
+      ]
+    },
+    {
+      "name": "model.layers.13.block_sparse_moe.experts.gate_up_proj",
+      "shape": [
+        32,
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "model.layers.13.block_sparse_moe.experts.down_proj",
+      "shape": [
+        32,
+        1024,
+        512
+      ]
+    },
+    {
+      "name": "model.layers.14.block_sparse_moe.experts.gate_up_proj",
+      "shape": [
+        32,
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "model.layers.14.block_sparse_moe.experts.down_proj",
+      "shape": [
+        32,
+        1024,
+        512
+      ]
+    },
+    {
+      "name": "model.layers.15.block_sparse_moe.experts.gate_up_proj",
+      "shape": [
+        32,
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "model.layers.15.block_sparse_moe.experts.down_proj",
+      "shape": [
+        32,
+        1024,
+        512
+      ]
+    },
+    {
+      "name": "model.layers.16.block_sparse_moe.experts.gate_up_proj",
+      "shape": [
+        32,
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "model.layers.16.block_sparse_moe.experts.down_proj",
+      "shape": [
+        32,
+        1024,
+        512
+      ]
+    },
+    {
+      "name": "model.layers.17.block_sparse_moe.experts.gate_up_proj",
+      "shape": [
+        32,
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "model.layers.17.block_sparse_moe.experts.down_proj",
+      "shape": [
+        32,
+        1024,
+        512
+      ]
+    },
+    {
+      "name": "model.layers.18.block_sparse_moe.experts.gate_up_proj",
+      "shape": [
+        32,
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "model.layers.18.block_sparse_moe.experts.down_proj",
+      "shape": [
+        32,
+        1024,
+        512
+      ]
+    },
+    {
+      "name": "model.layers.19.block_sparse_moe.experts.gate_up_proj",
+      "shape": [
+        32,
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "model.layers.19.block_sparse_moe.experts.down_proj",
+      "shape": [
+        32,
+        1024,
+        512
+      ]
+    },
+    {
+      "name": "model.layers.20.block_sparse_moe.experts.gate_up_proj",
+      "shape": [
+        32,
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "model.layers.20.block_sparse_moe.experts.down_proj",
+      "shape": [
+        32,
+        1024,
+        512
+      ]
+    },
+    {
+      "name": "model.layers.21.block_sparse_moe.experts.gate_up_proj",
+      "shape": [
+        32,
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "model.layers.21.block_sparse_moe.experts.down_proj",
+      "shape": [
+        32,
+        1024,
+        512
+      ]
+    },
+    {
+      "name": "model.layers.22.block_sparse_moe.experts.gate_up_proj",
+      "shape": [
+        32,
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "model.layers.22.block_sparse_moe.experts.down_proj",
+      "shape": [
+        32,
+        1024,
+        512
+      ]
+    },
+    {
+      "name": "model.layers.23.block_sparse_moe.experts.gate_up_proj",
+      "shape": [
+        32,
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "model.layers.23.block_sparse_moe.experts.down_proj",
+      "shape": [
+        32,
+        1024,
+        512
+      ]
+    }
+  ],
+  "unique_parameter_count": 1334625280,
+  "expert_or_mlp_parameters": 1207959552,
+  "load_seconds": 4.460535494999931,
+  "tokenizer": {
+    "tokenizer": "ibm-granite/granite-3.1-1b-a400m-base",
+    "revision": "408b6e90baab8cf24f4aa9f8e19703ffa0a53b29",
+    "splits": {
+      "train": {
+        "tokens": 2991040,
+        "sha256": "e8d8d4c2b3906f52f6289efa3686ba7e26a2bc6f9f398b1e6f515320b1d88aab",
+        "text_sha256": "aee724fa58bfbdeb3fc6803297fb6bab27b203d7c40b39ddef9b9770e5d52fe5"
+      },
+      "validation": {
+        "tokens": 314449,
+        "sha256": "dd2de7448bac444069bb298acdb53205f082f3f28799aeb7a121df9aa411d224",
+        "text_sha256": "b44fb967f92b525731216a507d1fbc44b97446b7ef0a2b4d1a893f81f1bbc29e"
+      },
+      "test": {
+        "tokens": 355892,
+        "sha256": "286ccb5fc74d3a6dbed3df3834e53a0a92c9be193f201d7d2f8709e72866746b",
+        "text_sha256": "696cca6b65a171b0a358a4be6732cdfdf2dd6164a32e20fd70e3c13fc4dfae83"
+      }
+    }
+  },
+  "execution_backend": "FP16 eager attention/eager experts"
+}

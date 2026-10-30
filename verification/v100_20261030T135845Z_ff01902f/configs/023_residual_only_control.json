@@ -1,0 +1,12 @@
+{
+  "purpose": "isolate Kronecker core from the same rotated2-bit residual quantizer",
+  "protocol": "complete Granite gated/routed banks at depths0/12/23;128train calibration sequences and16validation sequences, length128; original independent prefix; untouched otherweights",
+  "variants": [
+    "rank8core_plus_int2",
+    "rank0_int2_only"
+  ],
+  "matching": "same residual codebook2bits,scale policies,activation weighting,balancing,block16rotation; actual bytes differ byfactorpayload and are reported",
+  "primary_metric": "held-out complete bank R2 and actual payloadbytes",
+  "acceptance": "descriptive paired depth controls; no whole-model or final-test claim",
+  "source": "previous calibration protocol and frozen mathcodec; no newtestsetresults consulted"
+}

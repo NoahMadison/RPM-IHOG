@@ -1,0 +1,20 @@
+{
+  "pid": 55006,
+  "command": [
+    "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/venv/bin/python",
+    "-B",
+    "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/run_verification.py",
+    "--stage",
+    "train",
+    "--arm",
+    "adamw",
+    "--seed",
+    "909",
+    "--steps",
+    "10",
+    "--selection-only",
+    "--worker",
+    "--out",
+    "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/results/1793370558494515549_train_6a51ce"
+  ]
+}

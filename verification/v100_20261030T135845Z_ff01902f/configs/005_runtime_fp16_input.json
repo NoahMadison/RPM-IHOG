@@ -1,0 +1,8 @@
+{
+  "reason": "Initial complete-operator experiment used residentFP32 inputs and charged FP16 baseline input conversion. Add a conventional residentFP16 input condition to compare an optimized FP16 baseline without repeated activation conversion; directFP32 implementation includes its promotion. Prior FP32-input result preserved as a distinct condition.",
+  "matrix_and_bank_input": "residentFP16",
+  "dense_FP16_baseline": "preexistingFP16 weights and input, no per-call activation cast",
+  "direct": "same exact saved payload; required FP32 promotion included",
+  "protocol": "same shapes/batches/warmups/randomized groups as previous; no new payload or fidelity claim",
+  "core_claim": "report RPM core+residual separately from simpleINT4 baseline"
+}

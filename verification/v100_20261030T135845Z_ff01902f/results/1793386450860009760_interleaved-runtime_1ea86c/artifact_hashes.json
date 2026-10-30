@@ -1,0 +1,16 @@
+{
+  "cases_before_timing.json": "8c8ffc6b204a4aa45bebf36f3cea65a54fea848fcc753ea3b442cbfc4daa6d4f",
+  "stdout.log": "73bcc62e2443057462c30921c4f031be0c73fd528f44c22e7a416ac310068ed8",
+  "granite_int4_FP32.json": "fa21218eabcea205e51ef3ea3152268869d776c0b04df344d27e9fe34bb7760f",
+  "interleaved_runtime_results.json": "2fd8285d32aecbcac6bc598751ab96fb4a172aacbcd800d88015f6070ab20dac",
+  "gpu.json": "baab3679e7271620ca95485e1ed6e0dd19ca61748780fcd1af5bdd6fcf946af8",
+  "process.json": "c2ed569d5754283e8ed8a0218a1fc91c269dccbb2dd8396f3a8801e9433338da",
+  "config.json": "d4aafb174fcc95c746c87fd8e7745878377ad582dd2f074fc6c6ffb82a2edc24",
+  "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "native_FP16.json": "16db1ad359e1450089258b1656e686a63e21362d44f06113a2164041fc424ea6",
+  "data_lineage.json": "229012daeb4333920ed97dfe2d91a230f50d7a3f7df38c7b735a50304db3293a",
+  "exit.json": "3922873e7f5dc877eba775f260c5af862a4361c7beb7d52bd2ad612d34f32d0c",
+  "native_FP32.json": "1f93a0d44d60a9d48fb9e4d1bf7beb6a4b5f9279efd268bc701db92e30cf20c2",
+  "worker_identity.json": "65fa8f5f58030eaaaaef98baf0065e5cc2a269b882ee999cb42686bc43764168",
+  "granite_core_FP32.json": "69791f9cad2abe79728f9a98d14e3efa817df646aff6d32a626c578807404b7d"
+}

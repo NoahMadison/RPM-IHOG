@@ -1,0 +1,9 @@
+{
+  "purpose": "actual completepackedINT4 control, not onlymatrixbaseline; comparequality/residentbytes/completecacheddecodewithcore+residual separately",
+  "archive": "same verifiedGranite completegroup64INT4 checkpoint alreadyfresh-reloadevaluated",
+  "execution": "same24banksdirectloader, onlypackedINT4 CUDAkernel; noKroncore/FWHT; consistentFP32shared/accumulation",
+  "protocol": "samefixedpromptcontext32/128,16tokens,20groups,warmup,greedy/teacherforced,fulltestNLL andmemory/profiler as otherfullruntime",
+  "quality_match_tolerance": 0.001,
+  "limitation": "referencepackedkernel, not a vendor-optimizedINT4runtime; fixedprocessorder",
+  "budget_estimate_gpu_minutes": 6
+}

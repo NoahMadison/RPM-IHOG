@@ -1,0 +1,13 @@
+{
+  "pid": 28444,
+  "command": [
+    "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/venv/bin/python",
+    "-B",
+    "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/run_verification.py",
+    "--stage",
+    "mechanism",
+    "--worker",
+    "--out",
+    "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/results/1793369304154885202_mechanism_b1979c"
+  ]
+}

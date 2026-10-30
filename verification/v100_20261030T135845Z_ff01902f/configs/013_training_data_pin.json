@@ -1,0 +1,31 @@
+{
+  "identity": {
+    "dataset": "Salesforce/wikitext",
+    "configuration": "wikitext-2-raw-v1",
+    "revision": "b08601e04326c79dfdd32d625aee71d232d685c3",
+    "tokenizer": "openai-community/gpt2",
+    "tokenizer_revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+    "splits": {
+      "train": {
+        "text_sha256": "aee724fa58bfbdeb3fc6803297fb6bab27b203d7c40b39ddef9b9770e5d52fe5",
+        "tokens": 2428601,
+        "tokens_sha256": "7f6dc51e06582535f0ae0d65ba0cdddfbdcbba9e5d86382749364063762bb239",
+        "documents_or_lines": 36718
+      },
+      "validation": {
+        "text_sha256": "b44fb967f92b525731216a507d1fbc44b97446b7ef0a2b4d1a893f81f1bbc29e",
+        "tokens": 251048,
+        "tokens_sha256": "0a4b2d4ed37dea13c748c186fbefbce9541f61500756ff899e54634c7d6c70c7",
+        "documents_or_lines": 3760
+      },
+      "test": {
+        "text_sha256": "696cca6b65a171b0a358a4be6732cdfdf2dd6164a32e20fd70e3c13fc4dfae83",
+        "tokens": 287644,
+        "tokens_sha256": "22989cb6ea8fbc5441b48758d2c5963145aca909b0e17b4ec4a79d9efacd524e",
+        "documents_or_lines": 4358
+      }
+    }
+  },
+  "lineage": "single data-stage output used by all completed main runs; no data-stage rerun occurred; orchestrator now validates same revisions/content/tokenbuffer hashes before every future train/resume worker",
+  "source_of_pin": "completed data-stage data.json; declared before continuation or added replications; no test result used to choose data"
+}

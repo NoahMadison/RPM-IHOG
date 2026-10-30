@@ -1,0 +1,368 @@
+{
+  "specs": [
+    {
+      "phase": "tuning",
+      "arm": "adamw",
+      "seed": 11,
+      "lr": 0.0001,
+      "steps": 600,
+      "selection_only": true
+    },
+    {
+      "phase": "tuning",
+      "arm": "adamw",
+      "seed": 11,
+      "lr": 0.0003,
+      "steps": 600,
+      "selection_only": true
+    },
+    {
+      "phase": "tuning",
+      "arm": "row",
+      "seed": 11,
+      "lr": 0.0001,
+      "steps": 600,
+      "selection_only": true
+    },
+    {
+      "phase": "tuning",
+      "arm": "row",
+      "seed": 11,
+      "lr": 0.0003,
+      "steps": 600,
+      "selection_only": true
+    },
+    {
+      "phase": "tuning",
+      "arm": "tail",
+      "seed": 11,
+      "lr": 0.0001,
+      "steps": 600,
+      "selection_only": true
+    },
+    {
+      "phase": "tuning",
+      "arm": "tail",
+      "seed": 11,
+      "lr": 0.0003,
+      "steps": 600,
+      "selection_only": true
+    },
+    {
+      "phase": "tuning",
+      "arm": "row_tail",
+      "seed": 11,
+      "lr": 0.0001,
+      "steps": 600,
+      "selection_only": true
+    },
+    {
+      "phase": "tuning",
+      "arm": "row_tail",
+      "seed": 11,
+      "lr": 0.0003,
+      "steps": 600,
+      "selection_only": true
+    },
+    {
+      "phase": "tuning",
+      "arm": "native",
+      "seed": 11,
+      "lr": 0.0001,
+      "steps": 600,
+      "selection_only": true
+    },
+    {
+      "phase": "tuning",
+      "arm": "native",
+      "seed": 11,
+      "lr": 0.0003,
+      "steps": 600,
+      "selection_only": true
+    },
+    {
+      "phase": "tuning",
+      "arm": "lowrank",
+      "seed": 11,
+      "lr": 0.0001,
+      "steps": 600,
+      "selection_only": true
+    },
+    {
+      "phase": "tuning",
+      "arm": "lowrank",
+      "seed": 11,
+      "lr": 0.0003,
+      "steps": 600,
+      "selection_only": true
+    },
+    {
+      "phase": "tuning",
+      "arm": "legacy_blend",
+      "seed": 11,
+      "lr": 0.0001,
+      "steps": 600,
+      "selection_only": true
+    },
+    {
+      "phase": "tuning",
+      "arm": "legacy_blend",
+      "seed": 11,
+      "lr": 0.0003,
+      "steps": 600,
+      "selection_only": true
+    },
+    {
+      "phase": "rank_pilot",
+      "arm": "native",
+      "seed": 11,
+      "lr": 0.0003,
+      "rank": 4,
+      "steps": 600,
+      "selection_only": true
+    },
+    {
+      "phase": "rank_pilot",
+      "arm": "lowrank",
+      "seed": 11,
+      "lr": 0.0003,
+      "rank": 4,
+      "steps": 600,
+      "selection_only": true
+    },
+    {
+      "phase": "penalty_pilot",
+      "arm": "tail",
+      "seed": 11,
+      "lr": 0.0003,
+      "tail_decay": 0,
+      "steps": 600,
+      "selection_only": true
+    },
+    {
+      "phase": "penalty_pilot",
+      "arm": "tail",
+      "seed": 11,
+      "lr": 0.0003,
+      "tail_decay": 0.0003,
+      "steps": 600,
+      "selection_only": true
+    },
+    {
+      "phase": "penalty_pilot",
+      "arm": "row_tail",
+      "seed": 11,
+      "lr": 0.0003,
+      "tail_decay": 0,
+      "steps": 600,
+      "selection_only": true
+    },
+    {
+      "phase": "penalty_pilot",
+      "arm": "row_tail",
+      "seed": 11,
+      "lr": 0.0003,
+      "tail_decay": 0.0003,
+      "steps": 600,
+      "selection_only": true
+    },
+    {
+      "phase": "common_recipe",
+      "arm": "adamw",
+      "seed": 11,
+      "lr": 0.0003,
+      "steps": 1500
+    },
+    {
+      "phase": "common_recipe",
+      "arm": "row",
+      "seed": 11,
+      "lr": 0.0003,
+      "steps": 1500
+    },
+    {
+      "phase": "common_recipe",
+      "arm": "tail",
+      "seed": 11,
+      "lr": 0.0003,
+      "steps": 1500
+    },
+    {
+      "phase": "common_recipe",
+      "arm": "row_tail",
+      "seed": 11,
+      "lr": 0.0003,
+      "steps": 1500
+    },
+    {
+      "phase": "common_recipe",
+      "arm": "native",
+      "seed": 11,
+      "lr": 0.0003,
+      "steps": 1500
+    },
+    {
+      "phase": "common_recipe",
+      "arm": "lowrank",
+      "seed": 11,
+      "lr": 0.0003,
+      "steps": 1500
+    },
+    {
+      "phase": "common_recipe",
+      "arm": "legacy_blend",
+      "seed": 11,
+      "lr": 0.0003,
+      "steps": 1500
+    },
+    {
+      "phase": "common_recipe",
+      "arm": "adamw",
+      "seed": 22,
+      "lr": 0.0003,
+      "steps": 1500
+    },
+    {
+      "phase": "common_recipe",
+      "arm": "row",
+      "seed": 22,
+      "lr": 0.0003,
+      "steps": 1500
+    },
+    {
+      "phase": "common_recipe",
+      "arm": "tail",
+      "seed": 22,
+      "lr": 0.0003,
+      "steps": 1500
+    },
+    {
+      "phase": "common_recipe",
+      "arm": "row_tail",
+      "seed": 22,
+      "lr": 0.0003,
+      "steps": 1500
+    },
+    {
+      "phase": "common_recipe",
+      "arm": "native",
+      "seed": 22,
+      "lr": 0.0003,
+      "steps": 1500
+    },
+    {
+      "phase": "common_recipe",
+      "arm": "lowrank",
+      "seed": 22,
+      "lr": 0.0003,
+      "steps": 1500
+    },
+    {
+      "phase": "common_recipe",
+      "arm": "legacy_blend",
+      "seed": 22,
+      "lr": 0.0003,
+      "steps": 1500
+    },
+    {
+      "phase": "common_recipe",
+      "arm": "adamw",
+      "seed": 33,
+      "lr": 0.0003,
+      "steps": 1500
+    },
+    {
+      "phase": "common_recipe",
+      "arm": "row",
+      "seed": 33,
+      "lr": 0.0003,
+      "steps": 1500
+    },
+    {
+      "phase": "common_recipe",
+      "arm": "tail",
+      "seed": 33,
+      "lr": 0.0003,
+      "steps": 1500
+    },
+    {
+      "phase": "common_recipe",
+      "arm": "row_tail",
+      "seed": 33,
+      "lr": 0.0003,
+      "steps": 1500
+    },
+    {
+      "phase": "common_recipe",
+      "arm": "native",
+      "seed": 33,
+      "lr": 0.0003,
+      "steps": 1500
+    },
+    {
+      "phase": "common_recipe",
+      "arm": "lowrank",
+      "seed": 33,
+      "lr": 0.0003,
+      "steps": 1500
+    },
+    {
+      "phase": "common_recipe",
+      "arm": "legacy_blend",
+      "seed": 33,
+      "lr": 0.0003,
+      "steps": 1500
+    },
+    {
+      "phase": "function_matched",
+      "arm": "adamw",
+      "seed": 11,
+      "lr": 0.0003,
+      "steps": 1500,
+      "function_matched": true
+    },
+    {
+      "phase": "function_matched",
+      "arm": "row_tail",
+      "seed": 11,
+      "lr": 0.0003,
+      "steps": 1500,
+      "function_matched": true
+    },
+    {
+      "phase": "function_matched",
+      "arm": "adamw",
+      "seed": 22,
+      "lr": 0.0003,
+      "steps": 1500,
+      "function_matched": true
+    },
+    {
+      "phase": "function_matched",
+      "arm": "row_tail",
+      "seed": 22,
+      "lr": 0.0003,
+      "steps": 1500,
+      "function_matched": true
+    },
+    {
+      "phase": "function_matched",
+      "arm": "adamw",
+      "seed": 33,
+      "lr": 0.0003,
+      "steps": 1500,
+      "function_matched": true
+    },
+    {
+      "phase": "function_matched",
+      "arm": "row_tail",
+      "seed": 33,
+      "lr": 0.0003,
+      "steps": 1500,
+      "function_matched": true
+    }
+  ],
+  "continuation": "if validation improves >0.02 between steps 1200 and 1500, continue selected comparison to 6000 steps before plateau claims",
+  "time_to_quality_nll": 7.0,
+  "tuning_choice": "minimum complete-validation NLL among 600-step LR pilots per arm; rank/penalty pilots secondary; common recipe remains primary"
+}

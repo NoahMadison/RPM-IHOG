@@ -1,0 +1,44 @@
+{
+  "identity": {
+    "base": "d50eec79832e6b3ec9ee943f45ac63d7e3f38b50",
+    "plan_sha256": "bfc205324fbded08da3161a3b3f8b2e3f9be7486eb90bfd18f8a15485fe74441",
+    "sources": {
+      "src/audit_stage.py": "60e47dc4a24c70bd3bd56ed0ec15c8f23739d9c507c13f93c26832ecc1ef9367",
+      "src/common.py": "3871a6841962c1a6400e26dd13e0dd3c04b372b0aed97e6b5a8dace8280cca66",
+      "src/correctness.py": "7e2771a7ff791441328a1075b2f8473112904e8c35030006a621761f93698535",
+      "src/data_audit.py": "df09697db4b9a7a2480ce2949cc74ef6be34a3cc625d282a405164f86e99668d",
+      "src/legacy_reference.py": "3cc8f3b559b6484109963f673236706b3afd1da85184b5bb7e6644f870f74587",
+      "src/legacy_run.py": "a4422b776f5d1f70802987a7ee2ec7af37b25ed51ab823c115e1c300b40bb6f7",
+      "src/math_codec.py": "6b10901c44cafd88a191dc8c4367ff1c573bd0798c3edee1f80130fb58247a5c",
+      "src/models.py": "e5d5d5a8ae3a8dae4b375b1f216529bca127c32ab087d4c973ebc91452008be4",
+      "src/optimizers.py": "e96665355cdcb9bee3d570e3881028356ea660ddc3c893fc7034605146a6c888",
+      "src/training.py": "2a665c651f30630214f0a838e024c595a48ec2d51e39c3c0f6c7f6ed83657fc5"
+    }
+  },
+  "arguments": {
+    "stage": "train",
+    "tier": "smoke",
+    "dry_run": false,
+    "resume": null,
+    "seed": 11,
+    "arm": "adamw",
+    "model": null,
+    "codec": "ternary",
+    "steps": null,
+    "checkpoint": null,
+    "worker": false,
+    "out": null
+  },
+  "command": [
+    "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/run_verification.py",
+    "--stage",
+    "train",
+    "--tier",
+    "smoke",
+    "--arm",
+    "adamw",
+    "--seed",
+    "11"
+  ],
+  "budget_remaining_seconds": 86352.34677259599
+}

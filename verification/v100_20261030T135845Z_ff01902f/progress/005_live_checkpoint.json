@@ -1,0 +1,30 @@
+{
+  "completed_stage_count": 66,
+  "active_gpu": [
+    {
+      "run": "1793373174773770240_full-runtime_49a5ec",
+      "worker": {
+        "pid": 76747,
+        "command": [
+          "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/venv/bin/python",
+          "-B",
+          "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/run_verification.py",
+          "--stage",
+          "full-runtime",
+          "--worker",
+          "--out",
+          "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/results/1793373174773770240_full-runtime_49a5ec"
+        ]
+      }
+    }
+  ],
+  "main1500_complete": 13,
+  "continuation": "continue_campaign.py waits for all27 initial main/control endpoints, then uses validation-only trigger to6000; controllers remain active",
+  "downstream": "full7-condition campaign active; smoke passed, all1838PIQA and2376ARC-Easy questions percondition",
+  "distillation": "full24layers complete; originalNLL2.22194543154, one-shot2.46129427117, fitted2.35025536749; codesfixed andFP16packed; stillmisses+.01",
+  "direct_runtime": "fresh reference model measurements complete; directcompressedchildactive,1887MiBNVMLtotalobservedincludingcontexts; finalmemorymetricsnotyetaccepted",
+  "large_streaming": "six completeQwen matrix/expert samples succeeded; no fullrawlargecheckpoint",
+  "calibration_ablation": "fourtoggles atdepth0/12/23 completed; no-balancingfirstlayer rejected forFP16scaleoverflow; othermetrics preserved",
+  "publication": "HTTPSgitpushdryrun lackscredentials; connectedGitHubAPI authorized; plannedtree+commit+fastforwardref+PR, thenfetchandlocalffmerge; protocol tested in task-ownedfixture",
+  "next": "collect remaining exits;generate fresh report;run final checks/integrity; publishonlyprefix"
+}

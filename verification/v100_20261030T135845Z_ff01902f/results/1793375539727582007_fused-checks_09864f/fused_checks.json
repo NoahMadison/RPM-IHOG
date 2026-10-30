@@ -1,0 +1,609 @@
+{
+  "all_passed": true,
+  "matrix_cases": [
+    {
+      "shape": [
+        17,
+        21
+      ],
+      "kind": "pure",
+      "batch": 1,
+      "input_dtype": "torch.float16",
+      "max_abs_error": 1.4901161193847656e-08
+    },
+    {
+      "shape": [
+        17,
+        21
+      ],
+      "kind": "pure",
+      "batch": 1,
+      "input_dtype": "torch.float32",
+      "max_abs_error": 2.9802322387695312e-08
+    },
+    {
+      "shape": [
+        17,
+        21
+      ],
+      "kind": "pure",
+      "batch": 4,
+      "input_dtype": "torch.float16",
+      "max_abs_error": 5.960464477539063e-08
+    },
+    {
+      "shape": [
+        17,
+        21
+      ],
+      "kind": "pure",
+      "batch": 4,
+      "input_dtype": "torch.float32",
+      "max_abs_error": 2.9802322387695312e-08
+    },
+    {
+      "shape": [
+        17,
+        21
+      ],
+      "kind": "ternary",
+      "batch": 1,
+      "input_dtype": "torch.float16",
+      "max_abs_error": 2.9802322387695312e-08
+    },
+    {
+      "shape": [
+        17,
+        21
+      ],
+      "kind": "ternary",
+      "batch": 1,
+      "input_dtype": "torch.float32",
+      "max_abs_error": 2.9802322387695312e-08
+    },
+    {
+      "shape": [
+        17,
+        21
+      ],
+      "kind": "ternary",
+      "batch": 4,
+      "input_dtype": "torch.float16",
+      "max_abs_error": 4.470348358154297e-08
+    },
+    {
+      "shape": [
+        17,
+        21
+      ],
+      "kind": "ternary",
+      "batch": 4,
+      "input_dtype": "torch.float32",
+      "max_abs_error": 5.960464477539063e-08
+    },
+    {
+      "shape": [
+        17,
+        21
+      ],
+      "kind": "int2",
+      "batch": 1,
+      "input_dtype": "torch.float16",
+      "max_abs_error": 2.9802322387695312e-08
+    },
+    {
+      "shape": [
+        17,
+        21
+      ],
+      "kind": "int2",
+      "batch": 1,
+      "input_dtype": "torch.float32",
+      "max_abs_error": 2.2351741790771484e-08
+    },
+    {
+      "shape": [
+        17,
+        21
+      ],
+      "kind": "int2",
+      "batch": 4,
+      "input_dtype": "torch.float16",
+      "max_abs_error": 4.470348358154297e-08
+    },
+    {
+      "shape": [
+        17,
+        21
+      ],
+      "kind": "int2",
+      "batch": 4,
+      "input_dtype": "torch.float32",
+      "max_abs_error": 2.9802322387695312e-08
+    },
+    {
+      "shape": [
+        17,
+        21
+      ],
+      "kind": "int2_sign",
+      "batch": 1,
+      "input_dtype": "torch.float16",
+      "max_abs_error": 1.4901161193847656e-08
+    },
+    {
+      "shape": [
+        17,
+        21
+      ],
+      "kind": "int2_sign",
+      "batch": 1,
+      "input_dtype": "torch.float32",
+      "max_abs_error": 1.4901161193847656e-08
+    },
+    {
+      "shape": [
+        17,
+        21
+      ],
+      "kind": "int2_sign",
+      "batch": 4,
+      "input_dtype": "torch.float16",
+      "max_abs_error": 4.470348358154297e-08
+    },
+    {
+      "shape": [
+        17,
+        21
+      ],
+      "kind": "int2_sign",
+      "batch": 4,
+      "input_dtype": "torch.float32",
+      "max_abs_error": 4.470348358154297e-08
+    },
+    {
+      "shape": [
+        17,
+        21
+      ],
+      "kind": "int4",
+      "batch": 1,
+      "input_dtype": "torch.float16",
+      "max_abs_error": 1.4901161193847656e-08
+    },
+    {
+      "shape": [
+        17,
+        21
+      ],
+      "kind": "int4",
+      "batch": 1,
+      "input_dtype": "torch.float32",
+      "max_abs_error": 1.4901161193847656e-08
+    },
+    {
+      "shape": [
+        17,
+        21
+      ],
+      "kind": "int4",
+      "batch": 4,
+      "input_dtype": "torch.float16",
+      "max_abs_error": 2.9802322387695312e-08
+    },
+    {
+      "shape": [
+        17,
+        21
+      ],
+      "kind": "int4",
+      "batch": 4,
+      "input_dtype": "torch.float32",
+      "max_abs_error": 3.166496753692627e-08
+    },
+    {
+      "shape": [
+        32,
+        48
+      ],
+      "kind": "pure",
+      "batch": 1,
+      "input_dtype": "torch.float16",
+      "max_abs_error": 2.9802322387695312e-08
+    },
+    {
+      "shape": [
+        32,
+        48
+      ],
+      "kind": "pure",
+      "batch": 1,
+      "input_dtype": "torch.float32",
+      "max_abs_error": 2.9802322387695312e-08
+    },
+    {
+      "shape": [
+        32,
+        48
+      ],
+      "kind": "pure",
+      "batch": 4,
+      "input_dtype": "torch.float16",
+      "max_abs_error": 5.960464477539063e-08
+    },
+    {
+      "shape": [
+        32,
+        48
+      ],
+      "kind": "pure",
+      "batch": 4,
+      "input_dtype": "torch.float32",
+      "max_abs_error": 5.960464477539063e-08
+    },
+    {
+      "shape": [
+        32,
+        48
+      ],
+      "kind": "ternary",
+      "batch": 1,
+      "input_dtype": "torch.float16",
+      "max_abs_error": 2.9802322387695312e-08
+    },
+    {
+      "shape": [
+        32,
+        48
+      ],
+      "kind": "ternary",
+      "batch": 1,
+      "input_dtype": "torch.float32",
+      "max_abs_error": 4.470348358154297e-08
+    },
+    {
+      "shape": [
+        32,
+        48
+      ],
+      "kind": "ternary",
+      "batch": 4,
+      "input_dtype": "torch.float16",
+      "max_abs_error": 5.960464477539063e-08
+    },
+    {
+      "shape": [
+        32,
+        48
+      ],
+      "kind": "ternary",
+      "batch": 4,
+      "input_dtype": "torch.float32",
+      "max_abs_error": 8.940696716308594e-08
+    },
+    {
+      "shape": [
+        32,
+        48
+      ],
+      "kind": "int2",
+      "batch": 1,
+      "input_dtype": "torch.float16",
+      "max_abs_error": 5.960464477539063e-08
+    },
+    {
+      "shape": [
+        32,
+        48
+      ],
+      "kind": "int2",
+      "batch": 1,
+      "input_dtype": "torch.float32",
+      "max_abs_error": 2.9802322387695312e-08
+    },
+    {
+      "shape": [
+        32,
+        48
+      ],
+      "kind": "int2",
+      "batch": 4,
+      "input_dtype": "torch.float16",
+      "max_abs_error": 5.960464477539063e-08
+    },
+    {
+      "shape": [
+        32,
+        48
+      ],
+      "kind": "int2",
+      "batch": 4,
+      "input_dtype": "torch.float32",
+      "max_abs_error": 5.960464477539063e-08
+    },
+    {
+      "shape": [
+        32,
+        48
+      ],
+      "kind": "int2_sign",
+      "batch": 1,
+      "input_dtype": "torch.float16",
+      "max_abs_error": 5.21540641784668e-08
+    },
+    {
+      "shape": [
+        32,
+        48
+      ],
+      "kind": "int2_sign",
+      "batch": 1,
+      "input_dtype": "torch.float32",
+      "max_abs_error": 4.470348358154297e-08
+    },
+    {
+      "shape": [
+        32,
+        48
+      ],
+      "kind": "int2_sign",
+      "batch": 4,
+      "input_dtype": "torch.float16",
+      "max_abs_error": 7.450580596923828e-08
+    },
+    {
+      "shape": [
+        32,
+        48
+      ],
+      "kind": "int2_sign",
+      "batch": 4,
+      "input_dtype": "torch.float32",
+      "max_abs_error": 5.960464477539063e-08
+    },
+    {
+      "shape": [
+        32,
+        48
+      ],
+      "kind": "int4",
+      "batch": 1,
+      "input_dtype": "torch.float16",
+      "max_abs_error": 2.9802322387695312e-08
+    },
+    {
+      "shape": [
+        32,
+        48
+      ],
+      "kind": "int4",
+      "batch": 1,
+      "input_dtype": "torch.float32",
+      "max_abs_error": 3.725290298461914e-08
+    },
+    {
+      "shape": [
+        32,
+        48
+      ],
+      "kind": "int4",
+      "batch": 4,
+      "input_dtype": "torch.float16",
+      "max_abs_error": 2.9802322387695312e-08
+    },
+    {
+      "shape": [
+        32,
+        48
+      ],
+      "kind": "int4",
+      "batch": 4,
+      "input_dtype": "torch.float32",
+      "max_abs_error": 5.960464477539063e-08
+    },
+    {
+      "shape": [
+        512,
+        1024
+      ],
+      "kind": "pure",
+      "batch": 1,
+      "input_dtype": "torch.float16",
+      "max_abs_error": 7.450580596923828e-08
+    },
+    {
+      "shape": [
+        512,
+        1024
+      ],
+      "kind": "pure",
+      "batch": 1,
+      "input_dtype": "torch.float32",
+      "max_abs_error": 6.705522537231445e-08
+    },
+    {
+      "shape": [
+        512,
+        1024
+      ],
+      "kind": "pure",
+      "batch": 4,
+      "input_dtype": "torch.float16",
+      "max_abs_error": 7.450580596923828e-08
+    },
+    {
+      "shape": [
+        512,
+        1024
+      ],
+      "kind": "pure",
+      "batch": 4,
+      "input_dtype": "torch.float32",
+      "max_abs_error": 8.940696716308594e-08
+    },
+    {
+      "shape": [
+        512,
+        1024
+      ],
+      "kind": "ternary",
+      "batch": 1,
+      "input_dtype": "torch.float16",
+      "max_abs_error": 3.5762786865234375e-07
+    },
+    {
+      "shape": [
+        512,
+        1024
+      ],
+      "kind": "ternary",
+      "batch": 1,
+      "input_dtype": "torch.float32",
+      "max_abs_error": 3.5762786865234375e-07
+    },
+    {
+      "shape": [
+        512,
+        1024
+      ],
+      "kind": "ternary",
+      "batch": 4,
+      "input_dtype": "torch.float16",
+      "max_abs_error": 3.5762786865234375e-07
+    },
+    {
+      "shape": [
+        512,
+        1024
+      ],
+      "kind": "ternary",
+      "batch": 4,
+      "input_dtype": "torch.float32",
+      "max_abs_error": 3.5762786865234375e-07
+    },
+    {
+      "shape": [
+        512,
+        1024
+      ],
+      "kind": "int2",
+      "batch": 1,
+      "input_dtype": "torch.float16",
+      "max_abs_error": 3.5762786865234375e-07
+    },
+    {
+      "shape": [
+        512,
+        1024
+      ],
+      "kind": "int2",
+      "batch": 1,
+      "input_dtype": "torch.float32",
+      "max_abs_error": 3.5762786865234375e-07
+    },
+    {
+      "shape": [
+        512,
+        1024
+      ],
+      "kind": "int2",
+      "batch": 4,
+      "input_dtype": "torch.float16",
+      "max_abs_error": 4.76837158203125e-07
+    },
+    {
+      "shape": [
+        512,
+        1024
+      ],
+      "kind": "int2",
+      "batch": 4,
+      "input_dtype": "torch.float32",
+      "max_abs_error": 5.960464477539062e-07
+    },
+    {
+      "shape": [
+        512,
+        1024
+      ],
+      "kind": "int2_sign",
+      "batch": 1,
+      "input_dtype": "torch.float16",
+      "max_abs_error": 4.76837158203125e-07
+    },
+    {
+      "shape": [
+        512,
+        1024
+      ],
+      "kind": "int2_sign",
+      "batch": 1,
+      "input_dtype": "torch.float32",
+      "max_abs_error": 5.960464477539062e-07
+    },
+    {
+      "shape": [
+        512,
+        1024
+      ],
+      "kind": "int2_sign",
+      "batch": 4,
+      "input_dtype": "torch.float16",
+      "max_abs_error": 3.5762786865234375e-07
+    },
+    {
+      "shape": [
+        512,
+        1024
+      ],
+      "kind": "int2_sign",
+      "batch": 4,
+      "input_dtype": "torch.float32",
+      "max_abs_error": 3.8370490074157715e-07
+    },
+    {
+      "shape": [
+        512,
+        1024
+      ],
+      "kind": "int4",
+      "batch": 1,
+      "input_dtype": "torch.float16",
+      "max_abs_error": 3.5762786865234375e-07
+    },
+    {
+      "shape": [
+        512,
+        1024
+      ],
+      "kind": "int4",
+      "batch": 1,
+      "input_dtype": "torch.float32",
+      "max_abs_error": 2.980232238769531e-07
+    },
+    {
+      "shape": [
+        512,
+        1024
+      ],
+      "kind": "int4",
+      "batch": 4,
+      "input_dtype": "torch.float16",
+      "max_abs_error": 3.5762786865234375e-07
+    },
+    {
+      "shape": [
+        512,
+        1024
+      ],
+      "kind": "int4",
+      "batch": 4,
+      "input_dtype": "torch.float32",
+      "max_abs_error": 3.5762786865234375e-07
+    }
+  ],
+  "count": 60,
+  "transform_cases": 3,
+  "architecture": "sm70",
+  "packed_residual_materialized": false
+}

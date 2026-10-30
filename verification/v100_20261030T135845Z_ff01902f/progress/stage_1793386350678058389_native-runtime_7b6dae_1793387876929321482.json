@@ -1,0 +1,12 @@
+{
+  "stage": "native-runtime",
+  "result": "results/1793386350678058389_native-runtime_7b6dae",
+  "exit": {
+    "exit_code": 0,
+    "wall_seconds": 98.1633095670004
+  },
+  "prior_publication_commit": "f855003c76fc3706119b391940c03fa318e6d504",
+  "PR": "https://github.com/NoahMadison/RPM-IHOG/pull/1",
+  "artifact_manifest_sha256": "d5d322b18c579a919e971dea17f2663810a434d6a3c9a4466388bea6b16e17a4",
+  "pending_stages": "see append-only events and latest recovery handoff; blocked multiGPU is not a scientific failure"
+}

@@ -1,0 +1,16 @@
+{
+  "purpose": "remove fixed-fresh-process order limitation for complete model latency",
+  "cases": [
+    "Granite fittedcore+3bit residualFP32",
+    "Granite group64INT4FP32",
+    "trainednative learnedallFP16 archive executedFP32",
+    "same nativearchive executedFP16"
+  ],
+  "quality": "exact previously fresh-loaded complete-model artifact hashes and matchingoperator/precision; forward sanity relativeL2 .001FP32/.01FP16; full-NLL evidence reusedwithoutnewtest-based fitting",
+  "timing": "20paired groups percase/context/forcing;3equalwarmups;Python method-order RNG4711; all matrices/payloads resident; includealloperators/launches",
+  "shared_weights": "alias exact identical nonexpert parameter objects including every weighttyingalias; both expertforms simultaneouslyresident; isolated prior runs supply individualmemoryresults",
+  "workloads": "GraniteKVcached contexts32/128;Native noKVcache prefixrecomputation contexts32/96;16generatedtokens, greedy andidenticalteacherforcedtokens",
+  "primary_metric": "paired direct-minus-dense fullgeneration anddecode latencyCI; negative resolveslowerlatency atsamepayloadquality, report magnitudejointly",
+  "budget_estimate_seconds": 600,
+  "status": "not_run"
+}

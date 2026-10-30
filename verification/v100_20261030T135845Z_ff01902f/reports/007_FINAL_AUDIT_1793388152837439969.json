@@ -1,0 +1,44 @@
+{
+  "base": "d50eec79832e6b3ec9ee943f45ac63d7e3f38b50",
+  "scientific_report_commit": "db62e415977fbbac1e99bed36324806359dbd53a",
+  "scientific_tree": "6e24e8a101ea85e044395fa4522597c6188d24bc",
+  "PR": "https://github.com/NoahMadison/RPM-IHOG/pull/1",
+  "draft": true,
+  "base_working_files_match_raw_Git_blobs": {
+    "EVIDENCE.md": true,
+    "README.md": true,
+    "outputs.txt": true,
+    "run_all_benchmarks_and_evidence.py": true,
+    "stream_compress_v100_overnight_v2.py": true,
+    "stream_compress_v100_overnight_v3.py": true,
+    "technical_whitepaper.md": true,
+    "v100_moe_entropy_generator_ablation_backup.py": true
+  },
+  "original_input_count": 4,
+  "original_input_hashes_unchanged": true,
+  "published_collected_result_count": 179,
+  "unpublished_collected_results": [],
+  "collected_stage_exit_code_counts": {
+    "0": 176,
+    "1": 3
+  },
+  "all8_major_controller_exit_codes": {
+    "61482": 0,
+    "94365": 0,
+    "90730": 0,
+    "27784": 0,
+    "43032": 0,
+    "17873": 0,
+    "93979": 0,
+    "61860": 0
+  },
+  "all_planned_supported_experiments_completed": true,
+  "earlier_failures": "retained, with successful corrected retries; missing-parent-exit orphan retained locally and documented",
+  "main_seed_counts": "n5 dense/row; n3 othermainarms; n3 functionmatched pairs; runtime seed11; separate mechanism5seeds",
+  "private_large_artifacts": "env/cache/models/data/checkpoints/PDFhistories outsidepublishedtree or explicitlyexcluded; no external artifacthosting",
+  "physical_GPU": "only verified V100 UUID GPU-b1e26f14-9243-49b6-c5a7-51f7ce39672d; logicalcuda0",
+  "preservation_qualification": "initial ensurepip temp containment not established; see PRESERVATION_AUDIT.md",
+  "publication": "one collectedstage perincrementalcommit, fresh remote-parent/tree proof, force=false expectedparent lease; original defaultbranch untouched; draftnotmerged",
+  "remaining_scientific_coverage": "actual multiGPU blocked; fulllargemodel archive/quality/residency notrun; longer/richer tuning/causality/kernel studies require newprotocols",
+  "final_receipt": "ROOT/audit/publication_receipt_* will record final metadata commit/tree; this record references immutable scientific report commit without self-referential hash"
+}

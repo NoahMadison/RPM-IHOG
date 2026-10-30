@@ -1,0 +1,36 @@
+{
+  "criterion": "minimum complete validation NLL, tie earliest checkpoint",
+  "choices": [
+    {
+      "steps": 1500,
+      "validation_nll": 6.04103400572291,
+      "checkpoint": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/artifacts/training_1793379431935062591_train_9bec5b/checkpoint_001500.pt",
+      "reused_result": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/results/1793379431935062591_train_9bec5b/training_results.json"
+    },
+    {
+      "steps": 3000,
+      "validation_nll": 5.779076589728302,
+      "checkpoint": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/artifacts/training_1793384824955123448_train_a0f02c/checkpoint_003000.pt",
+      "reused_result": null
+    },
+    {
+      "steps": 4500,
+      "validation_nll": 5.652082032418142,
+      "checkpoint": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/artifacts/training_1793384824955123448_train_a0f02c/checkpoint_004500.pt",
+      "reused_result": null
+    },
+    {
+      "steps": 6000,
+      "validation_nll": 5.574327162003894,
+      "checkpoint": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/artifacts/training_1793384824955123448_train_a0f02c/checkpoint_006000.pt",
+      "reused_result": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/results/1793384824955123448_train_a0f02c/training_results.json"
+    }
+  ],
+  "chosen": {
+    "steps": 6000,
+    "validation_nll": 5.574327162003894,
+    "checkpoint": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/artifacts/training_1793384824955123448_train_a0f02c/checkpoint_006000.pt",
+    "reused_result": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/results/1793384824955123448_train_a0f02c/training_results.json"
+  },
+  "test_metrics_consulted_for_selection": false
+}

@@ -1,0 +1,16 @@
+granite_core FP32 32 False completed20interleavedgroups
+granite_core FP32 32 True completed20interleavedgroups
+granite_core FP32 128 False completed20interleavedgroups
+granite_core FP32 128 True completed20interleavedgroups
+granite_int4 FP32 32 False completed20interleavedgroups
+granite_int4 FP32 32 True completed20interleavedgroups
+granite_int4 FP32 128 False completed20interleavedgroups
+granite_int4 FP32 128 True completed20interleavedgroups
+native FP32 32 False completed20interleavedgroups
+native FP32 32 True completed20interleavedgroups
+native FP32 96 False completed20interleavedgroups
+native FP32 96 True completed20interleavedgroups
+native FP16 32 False completed20interleavedgroups
+native FP16 32 True completed20interleavedgroups
+native FP16 96 False completed20interleavedgroups
+native FP16 96 True completed20interleavedgroups

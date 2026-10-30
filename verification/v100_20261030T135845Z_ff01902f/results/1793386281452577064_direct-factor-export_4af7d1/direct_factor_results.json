@@ -1,0 +1,23 @@
+{
+  "kind": "native",
+  "variant": "expert_fp16_shared_fp32",
+  "seed": 33,
+  "selected_steps": 6000,
+  "function_matched": false,
+  "selected_source": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/results/1793385169927523362_train-select_d2c6af/selected_training_results.json",
+  "source_checkpoint_sha256": "934e8a05aa8c84699dafb7f1c6785d75fba32de463d0097fba8cf5afef4560bf",
+  "original_test_nll": 5.60087394162608,
+  "reloaded_test_nll": 5.600904888506195,
+  "delta_nll": 3.0946880114512965e-05,
+  "expert_tensor_bytes": 1114112,
+  "expert_bpw": 1.0625,
+  "whole_model_tensor_bytes": 57068544,
+  "whole_model_bpw": 20.417324006548593,
+  "serialized_bytes": 57088224,
+  "archive_sha256": "13ae475570c78fb0b059acfbb2ce77e448f306f5dad283e631c7ded99f5d91ed",
+  "archive": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/artifacts/direct_factor_1793386281452577064_direct-factor-export_4af7d1/native_direct.pt",
+  "fresh_process_evaluation": true,
+  "execution": "factors materialized by training-model forward, no optimized speed claim",
+  "learned_expert_scalars": 557056,
+  "containers_matched": true
+}

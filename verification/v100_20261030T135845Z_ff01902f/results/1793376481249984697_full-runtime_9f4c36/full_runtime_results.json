@@ -1,0 +1,5851 @@
+{
+  "model": "ibm-granite/granite-3.1-1b-a400m-base",
+  "revision": "408b6e90baab8cf24f4aa9f8e19703ffa0a53b29",
+  "codec": "int2_sign_closed_loop_functional_fit",
+  "archive_manifest_sha256": "9612b59e5b8de9c77ae0bf6306dbb32dfb5aea517c790114d44981bc2e6888d6",
+  "runs": {
+    "reference_decompressed": {
+      "mode": "reference_decompressed",
+      "details": {
+        "dense_expert_parameters_remaining": 48,
+        "model_and_payload_unique_storage_bytes": 5338501376,
+        "source_weights_loaded": false
+      },
+      "load_seconds": 13.487309100999482,
+      "load_peak_allocated": 5615457280,
+      "steady_allocated_before_inputs": 5347021824,
+      "steady_reserved_before_inputs": 5689573376,
+      "inference_peak_allocated": 5615457280,
+      "host_peak_rss_kib": 6340520,
+      "samples": [
+        {
+          "prefill_device_ms": 142.5070037841797,
+          "host_time_to_first_token_seconds": 0.142538041998705,
+          "decode_device_ms_for_15_steps": 709.876708984375,
+          "host_decode_seconds_for_15_steps": 0.7098939070001506,
+          "decode_tokens_per_second": 21.12991793856433,
+          "end_to_end_seconds": 0.8524319489988557,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 0
+        },
+        {
+          "prefill_device_ms": 141.73773193359375,
+          "host_time_to_first_token_seconds": 0.14176500599933206,
+          "decode_device_ms_for_15_steps": 710.530029296875,
+          "host_decode_seconds_for_15_steps": 0.7105467909987055,
+          "decode_tokens_per_second": 21.110502770573103,
+          "end_to_end_seconds": 0.8523117969980376,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 1
+        },
+        {
+          "prefill_device_ms": 141.15843200683594,
+          "host_time_to_first_token_seconds": 0.14119273100004648,
+          "decode_device_ms_for_15_steps": 720.068603515625,
+          "host_decode_seconds_for_15_steps": 0.7200863260004553,
+          "decode_tokens_per_second": 20.830835773974293,
+          "end_to_end_seconds": 0.8612790570005018,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 2
+        },
+        {
+          "prefill_device_ms": 141.8902130126953,
+          "host_time_to_first_token_seconds": 0.14191806099915993,
+          "decode_device_ms_for_15_steps": 718.8828125,
+          "host_decode_seconds_for_15_steps": 0.7188988119996793,
+          "decode_tokens_per_second": 20.865245218970667,
+          "end_to_end_seconds": 0.8608168729988392,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 3
+        },
+        {
+          "prefill_device_ms": 141.83346557617188,
+          "host_time_to_first_token_seconds": 0.14186204799989355,
+          "decode_device_ms_for_15_steps": 720.6410522460938,
+          "host_decode_seconds_for_15_steps": 0.7206563019990426,
+          "decode_tokens_per_second": 20.814360407854906,
+          "end_to_end_seconds": 0.8625183499989362,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 4
+        },
+        {
+          "prefill_device_ms": 141.71087646484375,
+          "host_time_to_first_token_seconds": 0.14173815200047102,
+          "decode_device_ms_for_15_steps": 720.3092651367188,
+          "host_decode_seconds_for_15_steps": 0.7203257780001877,
+          "decode_tokens_per_second": 20.823911149818784,
+          "end_to_end_seconds": 0.8620639300006587,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 5
+        },
+        {
+          "prefill_device_ms": 142.22540283203125,
+          "host_time_to_first_token_seconds": 0.14225320600053237,
+          "decode_device_ms_for_15_steps": 719.2268676757812,
+          "host_decode_seconds_for_15_steps": 0.7192435369997838,
+          "decode_tokens_per_second": 20.855244751409575,
+          "end_to_end_seconds": 0.8614967430003162,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 6
+        },
+        {
+          "prefill_device_ms": 142.5701141357422,
+          "host_time_to_first_token_seconds": 0.14259940900046786,
+          "decode_device_ms_for_15_steps": 719.921142578125,
+          "host_decode_seconds_for_15_steps": 0.7199380149995704,
+          "decode_tokens_per_second": 20.83512703521976,
+          "end_to_end_seconds": 0.8625374240000383,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 7
+        },
+        {
+          "prefill_device_ms": 141.6161651611328,
+          "host_time_to_first_token_seconds": 0.14164457600054448,
+          "decode_device_ms_for_15_steps": 718.755859375,
+          "host_decode_seconds_for_15_steps": 0.71877080899867,
+          "decode_tokens_per_second": 20.86896102652905,
+          "end_to_end_seconds": 0.8604153849992144,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 8
+        },
+        {
+          "prefill_device_ms": 142.4033660888672,
+          "host_time_to_first_token_seconds": 0.1424355340004695,
+          "decode_device_ms_for_15_steps": 720.3583984375,
+          "host_decode_seconds_for_15_steps": 0.7203757299994322,
+          "decode_tokens_per_second": 20.822467186688566,
+          "end_to_end_seconds": 0.8628112639999017,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 9
+        },
+        {
+          "prefill_device_ms": 142.72422790527344,
+          "host_time_to_first_token_seconds": 0.14275229100167053,
+          "decode_device_ms_for_15_steps": 720.6563720703125,
+          "host_decode_seconds_for_15_steps": 0.7206724780007789,
+          "decode_tokens_per_second": 20.813893214864503,
+          "end_to_end_seconds": 0.8634247690024495,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 10
+        },
+        {
+          "prefill_device_ms": 141.8076171875,
+          "host_time_to_first_token_seconds": 0.14183598100134986,
+          "decode_device_ms_for_15_steps": 718.5807495117188,
+          "host_decode_seconds_for_15_steps": 0.7185967080004048,
+          "decode_tokens_per_second": 20.874017140628972,
+          "end_to_end_seconds": 0.8604326890017546,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 11
+        },
+        {
+          "prefill_device_ms": 142.25424194335938,
+          "host_time_to_first_token_seconds": 0.14228253699911875,
+          "decode_device_ms_for_15_steps": 716.8153686523438,
+          "host_decode_seconds_for_15_steps": 0.7168327950003004,
+          "decode_tokens_per_second": 20.92538190861331,
+          "end_to_end_seconds": 0.8591153319994191,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 12
+        },
+        {
+          "prefill_device_ms": 141.9898223876953,
+          "host_time_to_first_token_seconds": 0.14201677900018694,
+          "decode_device_ms_for_15_steps": 727.1270141601562,
+          "host_decode_seconds_for_15_steps": 0.7271434340000269,
+          "decode_tokens_per_second": 20.628667328376707,
+          "end_to_end_seconds": 0.8691602130002138,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 13
+        },
+        {
+          "prefill_device_ms": 143.2623748779297,
+          "host_time_to_first_token_seconds": 0.1432898839993868,
+          "decode_device_ms_for_15_steps": 731.7534790039062,
+          "host_decode_seconds_for_15_steps": 0.7317681619988434,
+          "decode_tokens_per_second": 20.498295469738828,
+          "end_to_end_seconds": 0.8750580459982302,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 14
+        },
+        {
+          "prefill_device_ms": 143.4833526611328,
+          "host_time_to_first_token_seconds": 0.14350998500049172,
+          "decode_device_ms_for_15_steps": 734.4015502929688,
+          "host_decode_seconds_for_15_steps": 0.7344173220008088,
+          "decode_tokens_per_second": 20.424354860169654,
+          "end_to_end_seconds": 0.8779273070013005,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 15
+        },
+        {
+          "prefill_device_ms": 143.08018493652344,
+          "host_time_to_first_token_seconds": 0.14310862499951327,
+          "decode_device_ms_for_15_steps": 731.8005981445312,
+          "host_decode_seconds_for_15_steps": 0.7318170700000337,
+          "decode_tokens_per_second": 20.496925549986567,
+          "end_to_end_seconds": 0.874925694999547,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 16
+        },
+        {
+          "prefill_device_ms": 142.8870391845703,
+          "host_time_to_first_token_seconds": 0.14291468299961707,
+          "decode_device_ms_for_15_steps": 732.6627807617188,
+          "host_decode_seconds_for_15_steps": 0.732678420999946,
+          "decode_tokens_per_second": 20.47282896571224,
+          "end_to_end_seconds": 0.875593103999563,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 17
+        },
+        {
+          "prefill_device_ms": 143.2442169189453,
+          "host_time_to_first_token_seconds": 0.14327314700130955,
+          "decode_device_ms_for_15_steps": 731.884521484375,
+          "host_decode_seconds_for_15_steps": 0.7319010120008898,
+          "decode_tokens_per_second": 20.494574749927747,
+          "end_to_end_seconds": 0.8751741590021993,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 18
+        },
+        {
+          "prefill_device_ms": 143.32608032226562,
+          "host_time_to_first_token_seconds": 0.14335376800045196,
+          "decode_device_ms_for_15_steps": 734.3001708984375,
+          "host_decode_seconds_for_15_steps": 0.7343160489999718,
+          "decode_tokens_per_second": 20.42717167958912,
+          "end_to_end_seconds": 0.8776698170004238,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 19
+        },
+        {
+          "prefill_device_ms": 142.66358947753906,
+          "host_time_to_first_token_seconds": 0.14269191099992895,
+          "decode_device_ms_for_15_steps": 732.094482421875,
+          "host_decode_seconds_for_15_steps": 0.7321110070006398,
+          "decode_tokens_per_second": 20.488696190285378,
+          "end_to_end_seconds": 0.8748029180005688,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 0
+        },
+        {
+          "prefill_device_ms": 142.7789764404297,
+          "host_time_to_first_token_seconds": 0.14280727500045032,
+          "decode_device_ms_for_15_steps": 730.78271484375,
+          "host_decode_seconds_for_15_steps": 0.7307990750014142,
+          "decode_tokens_per_second": 20.525477539734123,
+          "end_to_end_seconds": 0.8736063500018645,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 1
+        },
+        {
+          "prefill_device_ms": 143.46240234375,
+          "host_time_to_first_token_seconds": 0.1434889620013564,
+          "decode_device_ms_for_15_steps": 733.000732421875,
+          "host_decode_seconds_for_15_steps": 0.733015529000113,
+          "decode_tokens_per_second": 20.46341367482501,
+          "end_to_end_seconds": 0.8765044910014694,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 2
+        },
+        {
+          "prefill_device_ms": 143.41293334960938,
+          "host_time_to_first_token_seconds": 0.14344095900014509,
+          "decode_device_ms_for_15_steps": 732.7139892578125,
+          "host_decode_seconds_for_15_steps": 0.7327314499998465,
+          "decode_tokens_per_second": 20.471347312856768,
+          "end_to_end_seconds": 0.8761724089999916,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 3
+        },
+        {
+          "prefill_device_ms": 143.51901245117188,
+          "host_time_to_first_token_seconds": 0.14354769000055967,
+          "decode_device_ms_for_15_steps": 732.6177368164062,
+          "host_decode_seconds_for_15_steps": 0.7326334139997925,
+          "decode_tokens_per_second": 20.474086648748248,
+          "end_to_end_seconds": 0.8761811040003522,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 4
+        },
+        {
+          "prefill_device_ms": 142.74111938476562,
+          "host_time_to_first_token_seconds": 0.14276849199995922,
+          "decode_device_ms_for_15_steps": 730.95068359375,
+          "host_decode_seconds_for_15_steps": 0.7309671340008208,
+          "decode_tokens_per_second": 20.520758461327972,
+          "end_to_end_seconds": 0.87373562600078,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 5
+        },
+        {
+          "prefill_device_ms": 142.49420166015625,
+          "host_time_to_first_token_seconds": 0.14252115900126228,
+          "decode_device_ms_for_15_steps": 732.1487426757812,
+          "host_decode_seconds_for_15_steps": 0.732163570000921,
+          "decode_tokens_per_second": 20.4872252794292,
+          "end_to_end_seconds": 0.8746847290021833,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 6
+        },
+        {
+          "prefill_device_ms": 143.1580810546875,
+          "host_time_to_first_token_seconds": 0.1431849480013625,
+          "decode_device_ms_for_15_steps": 733.2136840820312,
+          "host_decode_seconds_for_15_steps": 0.7332290189988271,
+          "decode_tokens_per_second": 20.457455462525814,
+          "end_to_end_seconds": 0.8764139670001896,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 7
+        },
+        {
+          "prefill_device_ms": 143.9264678955078,
+          "host_time_to_first_token_seconds": 0.14395486700050242,
+          "decode_device_ms_for_15_steps": 733.20654296875,
+          "host_decode_seconds_for_15_steps": 0.7332215030000953,
+          "decode_tokens_per_second": 20.45766516478998,
+          "end_to_end_seconds": 0.8771763700005977,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 8
+        },
+        {
+          "prefill_device_ms": 142.4449920654297,
+          "host_time_to_first_token_seconds": 0.1424722430001566,
+          "decode_device_ms_for_15_steps": 719.5934448242188,
+          "host_decode_seconds_for_15_steps": 0.7196093629991083,
+          "decode_tokens_per_second": 20.84464262316524,
+          "end_to_end_seconds": 0.8620816059992649,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 9
+        },
+        {
+          "prefill_device_ms": 142.5648651123047,
+          "host_time_to_first_token_seconds": 0.1425918980003189,
+          "decode_device_ms_for_15_steps": 717.4686889648438,
+          "host_decode_seconds_for_15_steps": 0.7174848610011395,
+          "decode_tokens_per_second": 20.90636446192023,
+          "end_to_end_seconds": 0.8600767590014584,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 10
+        },
+        {
+          "prefill_device_ms": 141.63052368164062,
+          "host_time_to_first_token_seconds": 0.1416599120002502,
+          "decode_device_ms_for_15_steps": 719.267822265625,
+          "host_decode_seconds_for_15_steps": 0.7192836190006346,
+          "decode_tokens_per_second": 20.854082595181087,
+          "end_to_end_seconds": 0.8609435310008848,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 11
+        },
+        {
+          "prefill_device_ms": 142.20889282226562,
+          "host_time_to_first_token_seconds": 0.1422429699996428,
+          "decode_device_ms_for_15_steps": 721.638427734375,
+          "host_decode_seconds_for_15_steps": 0.721654942000896,
+          "decode_tokens_per_second": 20.78555709520988,
+          "end_to_end_seconds": 0.8638979120005388,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 12
+        },
+        {
+          "prefill_device_ms": 141.8651580810547,
+          "host_time_to_first_token_seconds": 0.14189443200120877,
+          "decode_device_ms_for_15_steps": 719.8760986328125,
+          "host_decode_seconds_for_15_steps": 0.7198984309998195,
+          "decode_tokens_per_second": 20.836272665808547,
+          "end_to_end_seconds": 0.8617928630010283,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 13
+        },
+        {
+          "prefill_device_ms": 142.0900115966797,
+          "host_time_to_first_token_seconds": 0.14211910599988187,
+          "decode_device_ms_for_15_steps": 717.6099853515625,
+          "host_decode_seconds_for_15_steps": 0.7176262909997604,
+          "decode_tokens_per_second": 20.902244229517795,
+          "end_to_end_seconds": 0.8597453969996423,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 14
+        },
+        {
+          "prefill_device_ms": 142.33676147460938,
+          "host_time_to_first_token_seconds": 0.14236560899917095,
+          "decode_device_ms_for_15_steps": 718.3707885742188,
+          "host_decode_seconds_for_15_steps": 0.718387093000274,
+          "decode_tokens_per_second": 20.880107877988113,
+          "end_to_end_seconds": 0.860752701999445,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 15
+        },
+        {
+          "prefill_device_ms": 142.33766174316406,
+          "host_time_to_first_token_seconds": 0.1423664710000594,
+          "decode_device_ms_for_15_steps": 721.9261474609375,
+          "host_decode_seconds_for_15_steps": 0.7219419329994707,
+          "decode_tokens_per_second": 20.77729428692293,
+          "end_to_end_seconds": 0.8643084039995301,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 16
+        },
+        {
+          "prefill_device_ms": 142.3772430419922,
+          "host_time_to_first_token_seconds": 0.1424047030013753,
+          "decode_device_ms_for_15_steps": 720.4915161132812,
+          "host_decode_seconds_for_15_steps": 0.720507665999321,
+          "decode_tokens_per_second": 20.818654273713356,
+          "end_to_end_seconds": 0.8629123690006963,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 17
+        },
+        {
+          "prefill_device_ms": 142.008544921875,
+          "host_time_to_first_token_seconds": 0.14203689500027394,
+          "decode_device_ms_for_15_steps": 718.0830688476562,
+          "host_decode_seconds_for_15_steps": 0.7180991250006628,
+          "decode_tokens_per_second": 20.888481099299703,
+          "end_to_end_seconds": 0.8601360200009367,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 18
+        },
+        {
+          "prefill_device_ms": 141.4719696044922,
+          "host_time_to_first_token_seconds": 0.14149941300092905,
+          "decode_device_ms_for_15_steps": 717.169677734375,
+          "host_decode_seconds_for_15_steps": 0.7171854030002578,
+          "decode_tokens_per_second": 20.915093833825015,
+          "end_to_end_seconds": 0.8586848160011868,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 19
+        },
+        {
+          "prefill_device_ms": 162.08090209960938,
+          "host_time_to_first_token_seconds": 0.1621085890001268,
+          "decode_device_ms_for_15_steps": 731.1216430664062,
+          "host_decode_seconds_for_15_steps": 0.731136262000291,
+          "decode_tokens_per_second": 20.51601155571467,
+          "end_to_end_seconds": 0.8932448510004178,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 0
+        },
+        {
+          "prefill_device_ms": 161.96038818359375,
+          "host_time_to_first_token_seconds": 0.16199247599979572,
+          "decode_device_ms_for_15_steps": 728.9313354492188,
+          "host_decode_seconds_for_15_steps": 0.7289476080004533,
+          "decode_tokens_per_second": 20.57761056538191,
+          "end_to_end_seconds": 0.890940084000249,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 1
+        },
+        {
+          "prefill_device_ms": 162.4327392578125,
+          "host_time_to_first_token_seconds": 0.16246061399942846,
+          "decode_device_ms_for_15_steps": 728.1828002929688,
+          "host_decode_seconds_for_15_steps": 0.728200202998778,
+          "decode_tokens_per_second": 20.598730868556448,
+          "end_to_end_seconds": 0.8906608169982064,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 2
+        },
+        {
+          "prefill_device_ms": 161.92169189453125,
+          "host_time_to_first_token_seconds": 0.1619483719987329,
+          "decode_device_ms_for_15_steps": 728.2073364257812,
+          "host_decode_seconds_for_15_steps": 0.7282238940006209,
+          "decode_tokens_per_second": 20.59806073870354,
+          "end_to_end_seconds": 0.8901722659993538,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 3
+        },
+        {
+          "prefill_device_ms": 162.11167907714844,
+          "host_time_to_first_token_seconds": 0.16214002599917876,
+          "decode_device_ms_for_15_steps": 730.1253051757812,
+          "host_decode_seconds_for_15_steps": 0.7301417420003418,
+          "decode_tokens_per_second": 20.543956244584876,
+          "end_to_end_seconds": 0.8922817679995205,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 4
+        },
+        {
+          "prefill_device_ms": 161.4048614501953,
+          "host_time_to_first_token_seconds": 0.1614336540005752,
+          "decode_device_ms_for_15_steps": 730.7427978515625,
+          "host_decode_seconds_for_15_steps": 0.7307592800007114,
+          "decode_tokens_per_second": 20.526595296860815,
+          "end_to_end_seconds": 0.8921929340012866,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 5
+        },
+        {
+          "prefill_device_ms": 161.41705322265625,
+          "host_time_to_first_token_seconds": 0.1614432129990746,
+          "decode_device_ms_for_15_steps": 729.903076171875,
+          "host_decode_seconds_for_15_steps": 0.7299206499992579,
+          "decode_tokens_per_second": 20.550178981804734,
+          "end_to_end_seconds": 0.8913638629983325,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 6
+        },
+        {
+          "prefill_device_ms": 161.74301147460938,
+          "host_time_to_first_token_seconds": 0.16177059300025576,
+          "decode_device_ms_for_15_steps": 729.1668701171875,
+          "host_decode_seconds_for_15_steps": 0.7291840729994874,
+          "decode_tokens_per_second": 20.570937511426617,
+          "end_to_end_seconds": 0.8909546659997432,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 7
+        },
+        {
+          "prefill_device_ms": 161.60604858398438,
+          "host_time_to_first_token_seconds": 0.16163507800047228,
+          "decode_device_ms_for_15_steps": 729.5703125,
+          "host_decode_seconds_for_15_steps": 0.729585891998795,
+          "decode_tokens_per_second": 20.559608079736243,
+          "end_to_end_seconds": 0.8912209699992673,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 8
+        },
+        {
+          "prefill_device_ms": 162.31884765625,
+          "host_time_to_first_token_seconds": 0.1623459170004935,
+          "decode_device_ms_for_15_steps": 732.5255737304688,
+          "host_decode_seconds_for_15_steps": 0.7325438289990416,
+          "decode_tokens_per_second": 20.47659048673745,
+          "end_to_end_seconds": 0.8948897459995351,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 9
+        },
+        {
+          "prefill_device_ms": 161.9501495361328,
+          "host_time_to_first_token_seconds": 0.16197761700095725,
+          "decode_device_ms_for_15_steps": 729.5098876953125,
+          "host_decode_seconds_for_15_steps": 0.7295268990001205,
+          "decode_tokens_per_second": 20.56127062697591,
+          "end_to_end_seconds": 0.8915045160010777,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 10
+        },
+        {
+          "prefill_device_ms": 161.39695739746094,
+          "host_time_to_first_token_seconds": 0.16142456399938965,
+          "decode_device_ms_for_15_steps": 727.8131103515625,
+          "host_decode_seconds_for_15_steps": 0.727829286000997,
+          "decode_tokens_per_second": 20.60922841181119,
+          "end_to_end_seconds": 0.8892538500003866,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 11
+        },
+        {
+          "prefill_device_ms": 162.16455078125,
+          "host_time_to_first_token_seconds": 0.16219319599986193,
+          "decode_device_ms_for_15_steps": 719.0855712890625,
+          "host_decode_seconds_for_15_steps": 0.7191009420002956,
+          "decode_tokens_per_second": 20.859380267636798,
+          "end_to_end_seconds": 0.8812941380001575,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 12
+        },
+        {
+          "prefill_device_ms": 161.36575317382812,
+          "host_time_to_first_token_seconds": 0.16139400899919565,
+          "decode_device_ms_for_15_steps": 720.0133056640625,
+          "host_decode_seconds_for_15_steps": 0.720030245000089,
+          "decode_tokens_per_second": 20.83245822541544,
+          "end_to_end_seconds": 0.8814242539992847,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 13
+        },
+        {
+          "prefill_device_ms": 161.3753204345703,
+          "host_time_to_first_token_seconds": 0.16140496500156587,
+          "decode_device_ms_for_15_steps": 719.6221313476562,
+          "host_decode_seconds_for_15_steps": 0.7196398960004444,
+          "decode_tokens_per_second": 20.843758223197142,
+          "end_to_end_seconds": 0.8810448610020103,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 14
+        },
+        {
+          "prefill_device_ms": 161.27529907226562,
+          "host_time_to_first_token_seconds": 0.16130355799941754,
+          "decode_device_ms_for_15_steps": 719.014892578125,
+          "host_decode_seconds_for_15_steps": 0.7190321759990184,
+          "decode_tokens_per_second": 20.861375193897413,
+          "end_to_end_seconds": 0.8803357339984359,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 15
+        },
+        {
+          "prefill_device_ms": 161.44776916503906,
+          "host_time_to_first_token_seconds": 0.16147645499950158,
+          "decode_device_ms_for_15_steps": 718.7752685546875,
+          "host_decode_seconds_for_15_steps": 0.7187923790006607,
+          "decode_tokens_per_second": 20.868334776802374,
+          "end_to_end_seconds": 0.8802688340001623,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 16
+        },
+        {
+          "prefill_device_ms": 161.21200561523438,
+          "host_time_to_first_token_seconds": 0.16124094299993885,
+          "decode_device_ms_for_15_steps": 719.7931518554688,
+          "host_decode_seconds_for_15_steps": 0.7198090699985187,
+          "decode_tokens_per_second": 20.83885939368737,
+          "end_to_end_seconds": 0.8810500129984575,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 17
+        },
+        {
+          "prefill_device_ms": 162.01683044433594,
+          "host_time_to_first_token_seconds": 0.16204518099948473,
+          "decode_device_ms_for_15_steps": 734.5838012695312,
+          "host_decode_seconds_for_15_steps": 0.7346016490009788,
+          "decode_tokens_per_second": 20.41922996007325,
+          "end_to_end_seconds": 0.8966468300004635,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 18
+        },
+        {
+          "prefill_device_ms": 161.95957946777344,
+          "host_time_to_first_token_seconds": 0.16198885300036636,
+          "decode_device_ms_for_15_steps": 733.7963256835938,
+          "host_decode_seconds_for_15_steps": 0.7338142309999967,
+          "decode_tokens_per_second": 20.441140776949677,
+          "end_to_end_seconds": 0.895803084000363,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 19
+        },
+        {
+          "prefill_device_ms": 162.1817626953125,
+          "host_time_to_first_token_seconds": 0.16220904200054065,
+          "decode_device_ms_for_15_steps": 731.6173095703125,
+          "host_decode_seconds_for_15_steps": 0.7316346600000543,
+          "decode_tokens_per_second": 20.502035811150456,
+          "end_to_end_seconds": 0.8938437020005949,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 0
+        },
+        {
+          "prefill_device_ms": 162.8297882080078,
+          "host_time_to_first_token_seconds": 0.16285873999913747,
+          "decode_device_ms_for_15_steps": 732.9208374023438,
+          "host_decode_seconds_for_15_steps": 0.7329379490001884,
+          "decode_tokens_per_second": 20.46557968578612,
+          "end_to_end_seconds": 0.8957966889993259,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 1
+        },
+        {
+          "prefill_device_ms": 161.79986572265625,
+          "host_time_to_first_token_seconds": 0.1618274049997126,
+          "decode_device_ms_for_15_steps": 733.33349609375,
+          "host_decode_seconds_for_15_steps": 0.7333498719999625,
+          "decode_tokens_per_second": 20.454084159164847,
+          "end_to_end_seconds": 0.8951772769996751,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 2
+        },
+        {
+          "prefill_device_ms": 162.59683227539062,
+          "host_time_to_first_token_seconds": 0.1626243689988769,
+          "decode_device_ms_for_15_steps": 732.6975708007812,
+          "host_decode_seconds_for_15_steps": 0.7327144629998656,
+          "decode_tokens_per_second": 20.471821913528615,
+          "end_to_end_seconds": 0.8953388319987425,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 3
+        },
+        {
+          "prefill_device_ms": 161.77587890625,
+          "host_time_to_first_token_seconds": 0.16180335600074613,
+          "decode_device_ms_for_15_steps": 731.2844848632812,
+          "host_decode_seconds_for_15_steps": 0.73130042700177,
+          "decode_tokens_per_second": 20.511406046209917,
+          "end_to_end_seconds": 0.8931037830025161,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 4
+        },
+        {
+          "prefill_device_ms": 161.75753784179688,
+          "host_time_to_first_token_seconds": 0.16178396699979203,
+          "decode_device_ms_for_15_steps": 732.3811645507812,
+          "host_decode_seconds_for_15_steps": 0.7323989889991935,
+          "decode_tokens_per_second": 20.480639958961653,
+          "end_to_end_seconds": 0.8941829559989856,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 5
+        },
+        {
+          "prefill_device_ms": 161.81893920898438,
+          "host_time_to_first_token_seconds": 0.1618471359997784,
+          "decode_device_ms_for_15_steps": 735.5985717773438,
+          "host_decode_seconds_for_15_steps": 0.7356169119993865,
+          "decode_tokens_per_second": 20.39104832327796,
+          "end_to_end_seconds": 0.8974640479991649,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 6
+        },
+        {
+          "prefill_device_ms": 162.46493530273438,
+          "host_time_to_first_token_seconds": 0.16249311799947463,
+          "decode_device_ms_for_15_steps": 730.48779296875,
+          "host_decode_seconds_for_15_steps": 0.7305042389998562,
+          "decode_tokens_per_second": 20.533761748647365,
+          "end_to_end_seconds": 0.8929973569993308,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 7
+        },
+        {
+          "prefill_device_ms": 161.92416381835938,
+          "host_time_to_first_token_seconds": 0.16195363199949497,
+          "decode_device_ms_for_15_steps": 733.8086547851562,
+          "host_decode_seconds_for_15_steps": 0.7338255319991731,
+          "decode_tokens_per_second": 20.440825980986585,
+          "end_to_end_seconds": 0.8957791639986681,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 8
+        },
+        {
+          "prefill_device_ms": 161.81507873535156,
+          "host_time_to_first_token_seconds": 0.16184196600079304,
+          "decode_device_ms_for_15_steps": 732.179443359375,
+          "host_decode_seconds_for_15_steps": 0.7321956169998884,
+          "decode_tokens_per_second": 20.486328587244582,
+          "end_to_end_seconds": 0.8940375830006815,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 9
+        },
+        {
+          "prefill_device_ms": 161.970458984375,
+          "host_time_to_first_token_seconds": 0.16200320099960663,
+          "decode_device_ms_for_15_steps": 733.5874633789062,
+          "host_decode_seconds_for_15_steps": 0.7336038840003312,
+          "decode_tokens_per_second": 20.447001886365733,
+          "end_to_end_seconds": 0.8956070849999378,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 10
+        },
+        {
+          "prefill_device_ms": 162.2457275390625,
+          "host_time_to_first_token_seconds": 0.16227474700099265,
+          "decode_device_ms_for_15_steps": 734.6810913085938,
+          "host_decode_seconds_for_15_steps": 0.734701261999362,
+          "decode_tokens_per_second": 20.416461459696016,
+          "end_to_end_seconds": 0.8969760090003547,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 11
+        },
+        {
+          "prefill_device_ms": 161.7939910888672,
+          "host_time_to_first_token_seconds": 0.16182216400011384,
+          "decode_device_ms_for_15_steps": 721.870849609375,
+          "host_decode_seconds_for_15_steps": 0.721888124000543,
+          "decode_tokens_per_second": 20.778843010844042,
+          "end_to_end_seconds": 0.8837102880006569,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 12
+        },
+        {
+          "prefill_device_ms": 160.71405029296875,
+          "host_time_to_first_token_seconds": 0.16074272299920267,
+          "decode_device_ms_for_15_steps": 716.3822021484375,
+          "host_decode_seconds_for_15_steps": 0.716397718000735,
+          "decode_tokens_per_second": 20.93809014615623,
+          "end_to_end_seconds": 0.8771404409999377,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 13
+        },
+        {
+          "prefill_device_ms": 161.06080627441406,
+          "host_time_to_first_token_seconds": 0.16108857600011106,
+          "decode_device_ms_for_15_steps": 717.3673095703125,
+          "host_decode_seconds_for_15_steps": 0.7173841610001546,
+          "decode_tokens_per_second": 20.90929911121465,
+          "end_to_end_seconds": 0.8784727370002656,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 14
+        },
+        {
+          "prefill_device_ms": 161.11244201660156,
+          "host_time_to_first_token_seconds": 0.1611404710001807,
+          "decode_device_ms_for_15_steps": 721.2574462890625,
+          "host_decode_seconds_for_15_steps": 0.7212749589998566,
+          "decode_tokens_per_second": 20.79650736911689,
+          "end_to_end_seconds": 0.8824154300000373,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 15
+        },
+        {
+          "prefill_device_ms": 161.7708740234375,
+          "host_time_to_first_token_seconds": 0.16180549699856783,
+          "decode_device_ms_for_15_steps": 720.8816528320312,
+          "host_decode_seconds_for_15_steps": 0.7208975079993252,
+          "decode_tokens_per_second": 20.807396104931524,
+          "end_to_end_seconds": 0.882703004997893,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 16
+        },
+        {
+          "prefill_device_ms": 161.23794555664062,
+          "host_time_to_first_token_seconds": 0.16127303899884282,
+          "decode_device_ms_for_15_steps": 718.519287109375,
+          "host_decode_seconds_for_15_steps": 0.7185373879983672,
+          "decode_tokens_per_second": 20.87574042846339,
+          "end_to_end_seconds": 0.87981042699721,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 17
+        },
+        {
+          "prefill_device_ms": 160.75526428222656,
+          "host_time_to_first_token_seconds": 0.16078348700102651,
+          "decode_device_ms_for_15_steps": 718.6524047851562,
+          "host_decode_seconds_for_15_steps": 0.7186698589994194,
+          "decode_tokens_per_second": 20.871892444305388,
+          "end_to_end_seconds": 0.8794533460004459,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 18
+        },
+        {
+          "prefill_device_ms": 162.19839477539062,
+          "host_time_to_first_token_seconds": 0.16222625899899867,
+          "decode_device_ms_for_15_steps": 721.9732666015625,
+          "host_decode_seconds_for_15_steps": 0.7219892729990534,
+          "decode_tokens_per_second": 20.775931943824972,
+          "end_to_end_seconds": 0.884215531998052,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 19
+        }
+      ],
+      "full_test_quality": null,
+      "precision": "FP32 shared weights, direct FP32 contractions/accumulation with saved FP16 factors/scales and packed codes",
+      "host_sync_note": "one synchronization at first-token boundary; none added for per-token logging/return; eager expert nonzero routing synchronizations remain part of both measured paths"
+    },
+    "direct": {
+      "mode": "direct",
+      "details": {
+        "direct_expert_banks": 24,
+        "direct_matrix_operators": 2304,
+        "dense_expert_parameters_remaining": 0,
+        "model_and_payload_unique_storage_bytes": 1142905088,
+        "resident_operator_payload_bytes": 636241920,
+        "source_weights_loaded": false,
+        "weights_transferred_from_CPU_per_forward": false,
+        "implementation": "fused_FWHT_v2"
+      },
+      "load_seconds": 10.270473493001191,
+      "load_peak_allocated": 1144067072,
+      "steady_allocated_before_inputs": 1144067072,
+      "steady_reserved_before_inputs": 1157627904,
+      "inference_peak_allocated": 1459198464,
+      "host_peak_rss_kib": 6344844,
+      "samples": [
+        {
+          "prefill_device_ms": 299.8507080078125,
+          "host_time_to_first_token_seconds": 0.299880905999089,
+          "decode_device_ms_for_15_steps": 1752.668212890625,
+          "host_decode_seconds_for_15_steps": 1.7526753140009532,
+          "decode_tokens_per_second": 8.558344994178336,
+          "end_to_end_seconds": 2.0525562200000422,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 0
+        },
+        {
+          "prefill_device_ms": 299.3094787597656,
+          "host_time_to_first_token_seconds": 0.2993370300009701,
+          "decode_device_ms_for_15_steps": 1743.984619140625,
+          "host_decode_seconds_for_15_steps": 1.74399337900104,
+          "decode_tokens_per_second": 8.600950084221079,
+          "end_to_end_seconds": 2.04333040900201,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 1
+        },
+        {
+          "prefill_device_ms": 296.997314453125,
+          "host_time_to_first_token_seconds": 0.29702313100096944,
+          "decode_device_ms_for_15_steps": 1740.7816162109375,
+          "host_decode_seconds_for_15_steps": 1.7407878760004678,
+          "decode_tokens_per_second": 8.616787953775919,
+          "end_to_end_seconds": 2.0378110070014372,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 2
+        },
+        {
+          "prefill_device_ms": 297.4854431152344,
+          "host_time_to_first_token_seconds": 0.29751176399986434,
+          "decode_device_ms_for_15_steps": 1786.9117431640625,
+          "host_decode_seconds_for_15_steps": 1.78691992000131,
+          "decode_tokens_per_second": 8.394332522740585,
+          "end_to_end_seconds": 2.0844316840011743,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 3
+        },
+        {
+          "prefill_device_ms": 305.03839111328125,
+          "host_time_to_first_token_seconds": 0.3050650040004257,
+          "decode_device_ms_for_15_steps": 1795.725341796875,
+          "host_decode_seconds_for_15_steps": 1.795731116000752,
+          "decode_tokens_per_second": 8.353143667414024,
+          "end_to_end_seconds": 2.1007961200011778,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 4
+        },
+        {
+          "prefill_device_ms": 304.7173156738281,
+          "host_time_to_first_token_seconds": 0.3047440709997318,
+          "decode_device_ms_for_15_steps": 1794.398193359375,
+          "host_decode_seconds_for_15_steps": 1.7944044989999384,
+          "decode_tokens_per_second": 8.359319210556947,
+          "end_to_end_seconds": 2.09914856999967,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 5
+        },
+        {
+          "prefill_device_ms": 305.3515319824219,
+          "host_time_to_first_token_seconds": 0.30538092399910965,
+          "decode_device_ms_for_15_steps": 1799.03076171875,
+          "host_decode_seconds_for_15_steps": 1.7990424119998352,
+          "decode_tokens_per_second": 8.337768970841458,
+          "end_to_end_seconds": 2.104423335998945,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 6
+        },
+        {
+          "prefill_device_ms": 305.9661560058594,
+          "host_time_to_first_token_seconds": 0.30599407000045176,
+          "decode_device_ms_for_15_steps": 1794.1781005859375,
+          "host_decode_seconds_for_15_steps": 1.794183776999489,
+          "decode_tokens_per_second": 8.360347581051766,
+          "end_to_end_seconds": 2.100177846999941,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 7
+        },
+        {
+          "prefill_device_ms": 305.8155212402344,
+          "host_time_to_first_token_seconds": 0.30584131500108924,
+          "decode_device_ms_for_15_steps": 1798.66015625,
+          "host_decode_seconds_for_15_steps": 1.7986648280002555,
+          "decode_tokens_per_second": 8.33951927368086,
+          "end_to_end_seconds": 2.1045061430013448,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 8
+        },
+        {
+          "prefill_device_ms": 306.0478210449219,
+          "host_time_to_first_token_seconds": 0.3060777770006098,
+          "decode_device_ms_for_15_steps": 1796.3448486328125,
+          "host_decode_seconds_for_15_steps": 1.7963511219986685,
+          "decode_tokens_per_second": 8.350260601229563,
+          "end_to_end_seconds": 2.1024288989992783,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 9
+        },
+        {
+          "prefill_device_ms": 305.1390686035156,
+          "host_time_to_first_token_seconds": 0.3051646370004164,
+          "decode_device_ms_for_15_steps": 1777.6455078125,
+          "host_decode_seconds_for_15_steps": 1.7776556959997833,
+          "decode_tokens_per_second": 8.438079451355032,
+          "end_to_end_seconds": 2.0828203330001998,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 10
+        },
+        {
+          "prefill_device_ms": 299.2207946777344,
+          "host_time_to_first_token_seconds": 0.2992464769995422,
+          "decode_device_ms_for_15_steps": 1752.9097900390625,
+          "host_decode_seconds_for_15_steps": 1.7529165239993745,
+          "decode_tokens_per_second": 8.557167323505334,
+          "end_to_end_seconds": 2.0521630009989167,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 11
+        },
+        {
+          "prefill_device_ms": 298.76727294921875,
+          "host_time_to_first_token_seconds": 0.2987929209994036,
+          "decode_device_ms_for_15_steps": 1752.8995361328125,
+          "host_decode_seconds_for_15_steps": 1.7529047600000922,
+          "decode_tokens_per_second": 8.557224751902215,
+          "end_to_end_seconds": 2.051697680999496,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 12
+        },
+        {
+          "prefill_device_ms": 298.5697021484375,
+          "host_time_to_first_token_seconds": 0.2985948030000145,
+          "decode_device_ms_for_15_steps": 1752.311767578125,
+          "host_decode_seconds_for_15_steps": 1.752318861999811,
+          "decode_tokens_per_second": 8.560085909753575,
+          "end_to_end_seconds": 2.0509136649998254,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 13
+        },
+        {
+          "prefill_device_ms": 300.0267028808594,
+          "host_time_to_first_token_seconds": 0.3000533299982635,
+          "decode_device_ms_for_15_steps": 1750.0631103515625,
+          "host_decode_seconds_for_15_steps": 1.7500684700007696,
+          "decode_tokens_per_second": 8.57109322128031,
+          "end_to_end_seconds": 2.050121799999033,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 14
+        },
+        {
+          "prefill_device_ms": 298.65692138671875,
+          "host_time_to_first_token_seconds": 0.29868442899896763,
+          "decode_device_ms_for_15_steps": 1745.5400390625,
+          "host_decode_seconds_for_15_steps": 1.7455452400008653,
+          "decode_tokens_per_second": 8.593303488365942,
+          "end_to_end_seconds": 2.044229668999833,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 15
+        },
+        {
+          "prefill_device_ms": 298.61541748046875,
+          "host_time_to_first_token_seconds": 0.2986411220008449,
+          "decode_device_ms_for_15_steps": 1747.1815185546875,
+          "host_decode_seconds_for_15_steps": 1.7471876690015051,
+          "decode_tokens_per_second": 8.585225426054148,
+          "end_to_end_seconds": 2.04582879100235,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 16
+        },
+        {
+          "prefill_device_ms": 298.2113342285156,
+          "host_time_to_first_token_seconds": 0.29823661999944306,
+          "decode_device_ms_for_15_steps": 1748.3673095703125,
+          "host_decode_seconds_for_15_steps": 1.7483725359998061,
+          "decode_tokens_per_second": 8.579407243675476,
+          "end_to_end_seconds": 2.046609155999249,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 17
+        },
+        {
+          "prefill_device_ms": 298.6308898925781,
+          "host_time_to_first_token_seconds": 0.29865637399962,
+          "decode_device_ms_for_15_steps": 1749.7467041015625,
+          "host_decode_seconds_for_15_steps": 1.7497538900006475,
+          "decode_tokens_per_second": 8.572634177709672,
+          "end_to_end_seconds": 2.0484102640002675,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 18
+        },
+        {
+          "prefill_device_ms": 298.4498596191406,
+          "host_time_to_first_token_seconds": 0.29848051900080463,
+          "decode_device_ms_for_15_steps": 1747.853271484375,
+          "host_decode_seconds_for_15_steps": 1.7478599049991317,
+          "decode_tokens_per_second": 8.58192350376471,
+          "end_to_end_seconds": 2.0463404239999363,
+          "generated_token_sha256": "dc7e2e630d9a1f4cddc2098455f94610ec138dc71d78fad9452714b45452e0a4",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 19
+        },
+        {
+          "prefill_device_ms": 298.69683837890625,
+          "host_time_to_first_token_seconds": 0.2987217760000931,
+          "decode_device_ms_for_15_steps": 1747.9556884765625,
+          "host_decode_seconds_for_15_steps": 1.7479655129991443,
+          "decode_tokens_per_second": 8.581405003959791,
+          "end_to_end_seconds": 2.0466872889992374,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 0
+        },
+        {
+          "prefill_device_ms": 298.43560791015625,
+          "host_time_to_first_token_seconds": 0.2984642249994067,
+          "decode_device_ms_for_15_steps": 1749.6842041015625,
+          "host_decode_seconds_for_15_steps": 1.749690141999963,
+          "decode_tokens_per_second": 8.572946512034653,
+          "end_to_end_seconds": 2.04815436699937,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 1
+        },
+        {
+          "prefill_device_ms": 298.5945129394531,
+          "host_time_to_first_token_seconds": 0.2986198519993195,
+          "decode_device_ms_for_15_steps": 1762.5323486328125,
+          "host_decode_seconds_for_15_steps": 1.7625381409998226,
+          "decode_tokens_per_second": 8.510454129231528,
+          "end_to_end_seconds": 2.061157992999142,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 2
+        },
+        {
+          "prefill_device_ms": 301.1398620605469,
+          "host_time_to_first_token_seconds": 0.30116529800034186,
+          "decode_device_ms_for_15_steps": 1760.8079833984375,
+          "host_decode_seconds_for_15_steps": 1.7608129679992999,
+          "decode_tokens_per_second": 8.518792326389752,
+          "end_to_end_seconds": 2.0619782659996417,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 3
+        },
+        {
+          "prefill_device_ms": 306.9111328125,
+          "host_time_to_first_token_seconds": 0.3069360789995699,
+          "decode_device_ms_for_15_steps": 1798.8577880859375,
+          "host_decode_seconds_for_15_steps": 1.7988632590004272,
+          "decode_tokens_per_second": 8.338599348754856,
+          "end_to_end_seconds": 2.105799337999997,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 4
+        },
+        {
+          "prefill_device_ms": 306.5729675292969,
+          "host_time_to_first_token_seconds": 0.30660117300067213,
+          "decode_device_ms_for_15_steps": 1799.51611328125,
+          "host_decode_seconds_for_15_steps": 1.799521093000294,
+          "decode_tokens_per_second": 8.335551085422898,
+          "end_to_end_seconds": 2.106122266000966,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 5
+        },
+        {
+          "prefill_device_ms": 305.9994812011719,
+          "host_time_to_first_token_seconds": 0.30603294299908157,
+          "decode_device_ms_for_15_steps": 1802.498046875,
+          "host_decode_seconds_for_15_steps": 1.8025047549999726,
+          "decode_tokens_per_second": 8.321753359258254,
+          "end_to_end_seconds": 2.108537697999054,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 6
+        },
+        {
+          "prefill_device_ms": 306.0081787109375,
+          "host_time_to_first_token_seconds": 0.3060344309997163,
+          "decode_device_ms_for_15_steps": 1801.2467041015625,
+          "host_decode_seconds_for_15_steps": 1.8012520510001195,
+          "decode_tokens_per_second": 8.3275408300973,
+          "end_to_end_seconds": 2.107286481999836,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 7
+        },
+        {
+          "prefill_device_ms": 305.8952331542969,
+          "host_time_to_first_token_seconds": 0.30592088799858175,
+          "decode_device_ms_for_15_steps": 1797.843994140625,
+          "host_decode_seconds_for_15_steps": 1.7978491319991008,
+          "decode_tokens_per_second": 8.343302968542693,
+          "end_to_end_seconds": 2.1037700199976825,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 8
+        },
+        {
+          "prefill_device_ms": 304.1623229980469,
+          "host_time_to_first_token_seconds": 0.3041877449995809,
+          "decode_device_ms_for_15_steps": 1813.5950927734375,
+          "host_decode_seconds_for_15_steps": 1.8136006370004907,
+          "decode_tokens_per_second": 8.270839618146837,
+          "end_to_end_seconds": 2.1177883820000716,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 9
+        },
+        {
+          "prefill_device_ms": 341.8138122558594,
+          "host_time_to_first_token_seconds": 0.34184038500097813,
+          "decode_device_ms_for_15_steps": 1797.3248291015625,
+          "host_decode_seconds_for_15_steps": 1.7973306389994832,
+          "decode_tokens_per_second": 8.345709840205041,
+          "end_to_end_seconds": 2.1391710240004613,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 10
+        },
+        {
+          "prefill_device_ms": 298.8460693359375,
+          "host_time_to_first_token_seconds": 0.2988730420001957,
+          "decode_device_ms_for_15_steps": 1752.27392578125,
+          "host_decode_seconds_for_15_steps": 1.7522804610016465,
+          "decode_tokens_per_second": 8.560273502921806,
+          "end_to_end_seconds": 2.051153503001842,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 11
+        },
+        {
+          "prefill_device_ms": 298.18084716796875,
+          "host_time_to_first_token_seconds": 0.2982084270006453,
+          "decode_device_ms_for_15_steps": 1756.142578125,
+          "host_decode_seconds_for_15_steps": 1.7561483750014304,
+          "decode_tokens_per_second": 8.541419514161372,
+          "end_to_end_seconds": 2.0543568020020757,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 12
+        },
+        {
+          "prefill_device_ms": 299.51531982421875,
+          "host_time_to_first_token_seconds": 0.2995423069987737,
+          "decode_device_ms_for_15_steps": 1755.978759765625,
+          "host_decode_seconds_for_15_steps": 1.7559846349995496,
+          "decode_tokens_per_second": 8.542215974460305,
+          "end_to_end_seconds": 2.0555269419983233,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 13
+        },
+        {
+          "prefill_device_ms": 300.0618896484375,
+          "host_time_to_first_token_seconds": 0.30008804600038275,
+          "decode_device_ms_for_15_steps": 1752.563720703125,
+          "host_decode_seconds_for_15_steps": 1.752569821999714,
+          "decode_tokens_per_second": 8.558860144518938,
+          "end_to_end_seconds": 2.0526578680000966,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 14
+        },
+        {
+          "prefill_device_ms": 300.66033935546875,
+          "host_time_to_first_token_seconds": 0.300685964000877,
+          "decode_device_ms_for_15_steps": 1751.184326171875,
+          "host_decode_seconds_for_15_steps": 1.7511904980001418,
+          "decode_tokens_per_second": 8.565601524865507,
+          "end_to_end_seconds": 2.051876462001019,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 15
+        },
+        {
+          "prefill_device_ms": 300.3572082519531,
+          "host_time_to_first_token_seconds": 0.3003849330016237,
+          "decode_device_ms_for_15_steps": 1757.475830078125,
+          "host_decode_seconds_for_15_steps": 1.757482130000426,
+          "decode_tokens_per_second": 8.534937422092801,
+          "end_to_end_seconds": 2.0578670630020497,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 16
+        },
+        {
+          "prefill_device_ms": 300.23974609375,
+          "host_time_to_first_token_seconds": 0.3002701320001506,
+          "decode_device_ms_for_15_steps": 1753.596923828125,
+          "host_decode_seconds_for_15_steps": 1.7536045340002602,
+          "decode_tokens_per_second": 8.553810000583503,
+          "end_to_end_seconds": 2.053874666000411,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 17
+        },
+        {
+          "prefill_device_ms": 299.8888854980469,
+          "host_time_to_first_token_seconds": 0.29991538300055254,
+          "decode_device_ms_for_15_steps": 1762.1954345703125,
+          "host_decode_seconds_for_15_steps": 1.7622009110000363,
+          "decode_tokens_per_second": 8.512082763302857,
+          "end_to_end_seconds": 2.062116294000589,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 18
+        },
+        {
+          "prefill_device_ms": 300.497314453125,
+          "host_time_to_first_token_seconds": 0.30052260200136516,
+          "decode_device_ms_for_15_steps": 1757.1993408203125,
+          "host_decode_seconds_for_15_steps": 1.757204630999695,
+          "decode_tokens_per_second": 8.536285265459561,
+          "end_to_end_seconds": 2.05772723300106,
+          "generated_token_sha256": "a235c786832466b7257995a71424507e2f102208bef7f11fafd283b64dbd1803",
+          "kv_cache_bytes": 4620288,
+          "prompt_length": 32,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 19
+        },
+        {
+          "prefill_device_ms": 483.45880126953125,
+          "host_time_to_first_token_seconds": 0.4834846360008669,
+          "decode_device_ms_for_15_steps": 1767.7015380859375,
+          "host_decode_seconds_for_15_steps": 1.7677084360002482,
+          "decode_tokens_per_second": 8.48556226497405,
+          "end_to_end_seconds": 2.251193072001115,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 0
+        },
+        {
+          "prefill_device_ms": 484.0107421875,
+          "host_time_to_first_token_seconds": 0.4840372760008904,
+          "decode_device_ms_for_15_steps": 1769.6214599609375,
+          "host_decode_seconds_for_15_steps": 1.7696279470001173,
+          "decode_tokens_per_second": 8.476357996847913,
+          "end_to_end_seconds": 2.2536652230010077,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 1
+        },
+        {
+          "prefill_device_ms": 484.1980285644531,
+          "host_time_to_first_token_seconds": 0.4842242009999609,
+          "decode_device_ms_for_15_steps": 1749.89208984375,
+          "host_decode_seconds_for_15_steps": 1.7498988419993111,
+          "decode_tokens_per_second": 8.571924067829006,
+          "end_to_end_seconds": 2.234123042999272,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 2
+        },
+        {
+          "prefill_device_ms": 484.2236022949219,
+          "host_time_to_first_token_seconds": 0.48424812000121165,
+          "decode_device_ms_for_15_steps": 1757.307861328125,
+          "host_decode_seconds_for_15_steps": 1.757315278000533,
+          "decode_tokens_per_second": 8.535747789700517,
+          "end_to_end_seconds": 2.2415633980017446,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 3
+        },
+        {
+          "prefill_device_ms": 481.95404052734375,
+          "host_time_to_first_token_seconds": 0.48197678699943935,
+          "decode_device_ms_for_15_steps": 1764.67041015625,
+          "host_decode_seconds_for_15_steps": 1.7646779850001622,
+          "decode_tokens_per_second": 8.500134374373475,
+          "end_to_end_seconds": 2.2466547719996015,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 4
+        },
+        {
+          "prefill_device_ms": 483.3819580078125,
+          "host_time_to_first_token_seconds": 0.4834074240006885,
+          "decode_device_ms_for_15_steps": 1755.7176513671875,
+          "host_decode_seconds_for_15_steps": 1.7557259509994765,
+          "decode_tokens_per_second": 8.543474561881938,
+          "end_to_end_seconds": 2.239133375000165,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 5
+        },
+        {
+          "prefill_device_ms": 483.5075378417969,
+          "host_time_to_first_token_seconds": 0.483532459998969,
+          "decode_device_ms_for_15_steps": 1764.917236328125,
+          "host_decode_seconds_for_15_steps": 1.7649240880000434,
+          "decode_tokens_per_second": 8.498949106076019,
+          "end_to_end_seconds": 2.2484565479990124,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 6
+        },
+        {
+          "prefill_device_ms": 483.4361877441406,
+          "host_time_to_first_token_seconds": 0.48346015899915074,
+          "decode_device_ms_for_15_steps": 1757.2392578125,
+          "host_decode_seconds_for_15_steps": 1.7572454040000594,
+          "decode_tokens_per_second": 8.53608719980439,
+          "end_to_end_seconds": 2.24070556299921,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 7
+        },
+        {
+          "prefill_device_ms": 483.87652587890625,
+          "host_time_to_first_token_seconds": 0.4839009450006415,
+          "decode_device_ms_for_15_steps": 1763.885009765625,
+          "host_decode_seconds_for_15_steps": 1.7638922370006185,
+          "decode_tokens_per_second": 8.50392086622395,
+          "end_to_end_seconds": 2.24779318200126,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 8
+        },
+        {
+          "prefill_device_ms": 483.290283203125,
+          "host_time_to_first_token_seconds": 0.48331550500006415,
+          "decode_device_ms_for_15_steps": 1760.931884765625,
+          "host_decode_seconds_for_15_steps": 1.7609394320006686,
+          "decode_tokens_per_second": 8.518180538985343,
+          "end_to_end_seconds": 2.2442549370007328,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 9
+        },
+        {
+          "prefill_device_ms": 484.7295227050781,
+          "host_time_to_first_token_seconds": 0.484753410999474,
+          "decode_device_ms_for_15_steps": 1758.497802734375,
+          "host_decode_seconds_for_15_steps": 1.7585051679998287,
+          "decode_tokens_per_second": 8.529972088203417,
+          "end_to_end_seconds": 2.2432585789993027,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 10
+        },
+        {
+          "prefill_device_ms": 482.2452697753906,
+          "host_time_to_first_token_seconds": 0.48227185100040515,
+          "decode_device_ms_for_15_steps": 1760.8232421875,
+          "host_decode_seconds_for_15_steps": 1.7608318319998943,
+          "decode_tokens_per_second": 8.518701063555568,
+          "end_to_end_seconds": 2.2431036830002995,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 11
+        },
+        {
+          "prefill_device_ms": 483.3407287597656,
+          "host_time_to_first_token_seconds": 0.48336478500095836,
+          "decode_device_ms_for_15_steps": 1758.466064453125,
+          "host_decode_seconds_for_15_steps": 1.7584724000007554,
+          "decode_tokens_per_second": 8.530131038732002,
+          "end_to_end_seconds": 2.241837185001714,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 12
+        },
+        {
+          "prefill_device_ms": 482.9239501953125,
+          "host_time_to_first_token_seconds": 0.48294881399851874,
+          "decode_device_ms_for_15_steps": 1765.564453125,
+          "host_decode_seconds_for_15_steps": 1.765575544000967,
+          "decode_tokens_per_second": 8.495813193021768,
+          "end_to_end_seconds": 2.248524357999486,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 13
+        },
+        {
+          "prefill_device_ms": 483.25518798828125,
+          "host_time_to_first_token_seconds": 0.48327967600016564,
+          "decode_device_ms_for_15_steps": 1756.1610107421875,
+          "host_decode_seconds_for_15_steps": 1.7561672299998463,
+          "decode_tokens_per_second": 8.54132780965359,
+          "end_to_end_seconds": 2.239446906000012,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 14
+        },
+        {
+          "prefill_device_ms": 481.8736267089844,
+          "host_time_to_first_token_seconds": 0.4818983749992185,
+          "decode_device_ms_for_15_steps": 1764.4195556640625,
+          "host_decode_seconds_for_15_steps": 1.7644251879992225,
+          "decode_tokens_per_second": 8.501352226222362,
+          "end_to_end_seconds": 2.246323562998441,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 15
+        },
+        {
+          "prefill_device_ms": 483.21649169921875,
+          "host_time_to_first_token_seconds": 0.4832409609989554,
+          "decode_device_ms_for_15_steps": 1757.7779541015625,
+          "host_decode_seconds_for_15_steps": 1.7577846599997429,
+          "decode_tokens_per_second": 8.533468485270655,
+          "end_to_end_seconds": 2.2410256209986983,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 16
+        },
+        {
+          "prefill_device_ms": 483.170654296875,
+          "host_time_to_first_token_seconds": 0.48319589699895005,
+          "decode_device_ms_for_15_steps": 1761.3721923828125,
+          "host_decode_seconds_for_15_steps": 1.7613774130004458,
+          "decode_tokens_per_second": 8.516062423241829,
+          "end_to_end_seconds": 2.244573309999396,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 17
+        },
+        {
+          "prefill_device_ms": 482.6645812988281,
+          "host_time_to_first_token_seconds": 0.4826892359997146,
+          "decode_device_ms_for_15_steps": 1766.1727294921875,
+          "host_decode_seconds_for_15_steps": 1.7661794430005102,
+          "decode_tokens_per_second": 8.492908271266561,
+          "end_to_end_seconds": 2.248868679000225,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 18
+        },
+        {
+          "prefill_device_ms": 484.71270751953125,
+          "host_time_to_first_token_seconds": 0.4847361609990912,
+          "decode_device_ms_for_15_steps": 1764.36328125,
+          "host_decode_seconds_for_15_steps": 1.7643747170004644,
+          "decode_tokens_per_second": 8.501595412510126,
+          "end_to_end_seconds": 2.2491108779995557,
+          "generated_token_sha256": "34da4c60f06886a1397e1ea269b2301debfd1ba22f19b1ce7c8770e55e6a98bc",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": false,
+          "group": 19
+        },
+        {
+          "prefill_device_ms": 483.0814208984375,
+          "host_time_to_first_token_seconds": 0.48310642799879133,
+          "decode_device_ms_for_15_steps": 1764.27001953125,
+          "host_decode_seconds_for_15_steps": 1.7642772319995856,
+          "decode_tokens_per_second": 8.502065167501705,
+          "end_to_end_seconds": 2.247383659998377,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 0
+        },
+        {
+          "prefill_device_ms": 483.6585693359375,
+          "host_time_to_first_token_seconds": 0.4836824149988388,
+          "decode_device_ms_for_15_steps": 1768.204345703125,
+          "host_decode_seconds_for_15_steps": 1.7682090760008577,
+          "decode_tokens_per_second": 8.483159714305597,
+          "end_to_end_seconds": 2.2518914909996965,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 1
+        },
+        {
+          "prefill_device_ms": 484.07952880859375,
+          "host_time_to_first_token_seconds": 0.4841034220007714,
+          "decode_device_ms_for_15_steps": 1763.81640625,
+          "host_decode_seconds_for_15_steps": 1.7638262359996588,
+          "decode_tokens_per_second": 8.50423907630485,
+          "end_to_end_seconds": 2.24792965800043,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 2
+        },
+        {
+          "prefill_device_ms": 483.3591613769531,
+          "host_time_to_first_token_seconds": 0.4833832270014682,
+          "decode_device_ms_for_15_steps": 1768.5391845703125,
+          "host_decode_seconds_for_15_steps": 1.768545508999523,
+          "decode_tokens_per_second": 8.48154595042657,
+          "end_to_end_seconds": 2.251928736000991,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 3
+        },
+        {
+          "prefill_device_ms": 481.97076416015625,
+          "host_time_to_first_token_seconds": 0.48200062600153615,
+          "decode_device_ms_for_15_steps": 1759.94775390625,
+          "host_decode_seconds_for_15_steps": 1.7599574880005093,
+          "decode_tokens_per_second": 8.522933140300749,
+          "end_to_end_seconds": 2.2419581140020455,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 4
+        },
+        {
+          "prefill_device_ms": 483.87542724609375,
+          "host_time_to_first_token_seconds": 0.48389999000028183,
+          "decode_device_ms_for_15_steps": 1762.89892578125,
+          "host_decode_seconds_for_15_steps": 1.7629123040005652,
+          "decode_tokens_per_second": 8.50864785841054,
+          "end_to_end_seconds": 2.246812294000847,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 5
+        },
+        {
+          "prefill_device_ms": 482.306884765625,
+          "host_time_to_first_token_seconds": 0.4823308190007083,
+          "decode_device_ms_for_15_steps": 1763.06787109375,
+          "host_decode_seconds_for_15_steps": 1.7630734819995268,
+          "decode_tokens_per_second": 8.507870008338102,
+          "end_to_end_seconds": 2.245404301000235,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 6
+        },
+        {
+          "prefill_device_ms": 483.8684997558594,
+          "host_time_to_first_token_seconds": 0.4838978780007892,
+          "decode_device_ms_for_15_steps": 1760.859130859375,
+          "host_decode_seconds_for_15_steps": 1.760865078000279,
+          "decode_tokens_per_second": 8.518540226281678,
+          "end_to_end_seconds": 2.2447629560010682,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 7
+        },
+        {
+          "prefill_device_ms": 483.7799987792969,
+          "host_time_to_first_token_seconds": 0.48380337900016457,
+          "decode_device_ms_for_15_steps": 1764.1563720703125,
+          "host_decode_seconds_for_15_steps": 1.7641640370002278,
+          "decode_tokens_per_second": 8.502610690050057,
+          "end_to_end_seconds": 2.2479674160003924,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 8
+        },
+        {
+          "prefill_device_ms": 484.0699462890625,
+          "host_time_to_first_token_seconds": 0.4840932379993319,
+          "decode_device_ms_for_15_steps": 1781.6903076171875,
+          "host_decode_seconds_for_15_steps": 1.781696963000286,
+          "decode_tokens_per_second": 8.418940095593346,
+          "end_to_end_seconds": 2.265790200999618,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 9
+        },
+        {
+          "prefill_device_ms": 486.88458251953125,
+          "host_time_to_first_token_seconds": 0.4869078739993711,
+          "decode_device_ms_for_15_steps": 1816.1336669921875,
+          "host_decode_seconds_for_15_steps": 1.8161397200001375,
+          "decode_tokens_per_second": 8.259276439369359,
+          "end_to_end_seconds": 2.3030475939995085,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 10
+        },
+        {
+          "prefill_device_ms": 487.30279541015625,
+          "host_time_to_first_token_seconds": 0.4873274429992307,
+          "decode_device_ms_for_15_steps": 1809.8114013671875,
+          "host_decode_seconds_for_15_steps": 1.8098168189990247,
+          "decode_tokens_per_second": 8.28813161781545,
+          "end_to_end_seconds": 2.2971442619982554,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 11
+        },
+        {
+          "prefill_device_ms": 488.2104187011719,
+          "host_time_to_first_token_seconds": 0.4882366670008196,
+          "decode_device_ms_for_15_steps": 1813.0677490234375,
+          "host_decode_seconds_for_15_steps": 1.8130746629994974,
+          "decode_tokens_per_second": 8.273238993470043,
+          "end_to_end_seconds": 2.301311330000317,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 12
+        },
+        {
+          "prefill_device_ms": 486.9756774902344,
+          "host_time_to_first_token_seconds": 0.48700147599993215,
+          "decode_device_ms_for_15_steps": 1810.9276123046875,
+          "host_decode_seconds_for_15_steps": 1.8109368960012944,
+          "decode_tokens_per_second": 8.283005351054086,
+          "end_to_end_seconds": 2.2979383720012265,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 13
+        },
+        {
+          "prefill_device_ms": 488.2876892089844,
+          "host_time_to_first_token_seconds": 0.48831188099939027,
+          "decode_device_ms_for_15_steps": 1760.1617431640625,
+          "host_decode_seconds_for_15_steps": 1.760167716000069,
+          "decode_tokens_per_second": 8.521915192313077,
+          "end_to_end_seconds": 2.2484795969994593,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 14
+        },
+        {
+          "prefill_device_ms": 482.12860107421875,
+          "host_time_to_first_token_seconds": 0.4821534040002007,
+          "decode_device_ms_for_15_steps": 1760.015380859375,
+          "host_decode_seconds_for_15_steps": 1.7600224239995441,
+          "decode_tokens_per_second": 8.522618686819575,
+          "end_to_end_seconds": 2.242175827999745,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 15
+        },
+        {
+          "prefill_device_ms": 485.2778625488281,
+          "host_time_to_first_token_seconds": 0.48530206699979317,
+          "decode_device_ms_for_15_steps": 1811.567626953125,
+          "host_decode_seconds_for_15_steps": 1.8115750549986842,
+          "decode_tokens_per_second": 8.280087517550243,
+          "end_to_end_seconds": 2.2968771219984774,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 16
+        },
+        {
+          "prefill_device_ms": 487.19879150390625,
+          "host_time_to_first_token_seconds": 0.48722242999974696,
+          "decode_device_ms_for_15_steps": 1780.2188720703125,
+          "host_decode_seconds_for_15_steps": 1.7802256699997088,
+          "decode_tokens_per_second": 8.42589804920769,
+          "end_to_end_seconds": 2.2674480999994557,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 17
+        },
+        {
+          "prefill_device_ms": 483.1225280761719,
+          "host_time_to_first_token_seconds": 0.48314623899932485,
+          "decode_device_ms_for_15_steps": 1755.1800537109375,
+          "host_decode_seconds_for_15_steps": 1.7551871460000257,
+          "decode_tokens_per_second": 8.546097226261125,
+          "end_to_end_seconds": 2.2383333849993505,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 18
+        },
+        {
+          "prefill_device_ms": 481.913330078125,
+          "host_time_to_first_token_seconds": 0.4819371150006191,
+          "decode_device_ms_for_15_steps": 1762.3367919921875,
+          "host_decode_seconds_for_15_steps": 1.762343749000138,
+          "decode_tokens_per_second": 8.511392858805337,
+          "end_to_end_seconds": 2.244280864000757,
+          "generated_token_sha256": "9b799c24e7417d0f68825937a45f50d9682f3be5ed252066318a05a16734f50d",
+          "kv_cache_bytes": 14057472,
+          "prompt_length": 128,
+          "generated_tokens": 16,
+          "teacher_forced": true,
+          "group": 19
+        }
+      ],
+      "full_test_quality": {
+        "nll": 2.350256361643631,
+        "ppl": 10.488258167208654,
+        "tokens_scored": 355196,
+        "rows": [
+          {
+            "block": 0,
+            "nll_sum": 1043.1878662109375,
+            "count": 511
+          },
+          {
+            "block": 1,
+            "nll_sum": 1203.73974609375,
+            "count": 511
+          },
+          {
+            "block": 2,
+            "nll_sum": 1203.914794921875,
+            "count": 511
+          },
+          {
+            "block": 3,
+            "nll_sum": 1149.5645751953125,
+            "count": 511
+          },
+          {
+            "block": 4,
+            "nll_sum": 1262.383544921875,
+            "count": 511
+          },
+          {
+            "block": 5,
+            "nll_sum": 1218.683349609375,
+            "count": 511
+          },
+          {
+            "block": 6,
+            "nll_sum": 1275.6474609375,
+            "count": 511
+          },
+          {
+            "block": 7,
+            "nll_sum": 1319.6884765625,
+            "count": 511
+          },
+          {
+            "block": 8,
+            "nll_sum": 1216.597900390625,
+            "count": 511
+          },
+          {
+            "block": 9,
+            "nll_sum": 1405.2645263671875,
+            "count": 511
+          },
+          {
+            "block": 10,
+            "nll_sum": 1468.6038818359375,
+            "count": 511
+          },
+          {
+            "block": 11,
+            "nll_sum": 1422.728515625,
+            "count": 511
+          },
+          {
+            "block": 12,
+            "nll_sum": 1215.79833984375,
+            "count": 511
+          },
+          {
+            "block": 13,
+            "nll_sum": 1370.9259033203125,
+            "count": 511
+          },
+          {
+            "block": 14,
+            "nll_sum": 1364.2344970703125,
+            "count": 511
+          },
+          {
+            "block": 15,
+            "nll_sum": 1479.026611328125,
+            "count": 511
+          },
+          {
+            "block": 16,
+            "nll_sum": 1004.751708984375,
+            "count": 511
+          },
+          {
+            "block": 17,
+            "nll_sum": 1198.4896240234375,
+            "count": 511
+          },
+          {
+            "block": 18,
+            "nll_sum": 1413.307861328125,
+            "count": 511
+          },
+          {
+            "block": 19,
+            "nll_sum": 831.06591796875,
+            "count": 511
+          },
+          {
+            "block": 20,
+            "nll_sum": 1197.736083984375,
+            "count": 511
+          },
+          {
+            "block": 21,
+            "nll_sum": 1339.08251953125,
+            "count": 511
+          },
+          {
+            "block": 22,
+            "nll_sum": 1263.1826171875,
+            "count": 511
+          },
+          {
+            "block": 23,
+            "nll_sum": 1186.783935546875,
+            "count": 511
+          },
+          {
+            "block": 24,
+            "nll_sum": 986.7427978515625,
+            "count": 511
+          },
+          {
+            "block": 25,
+            "nll_sum": 1271.808837890625,
+            "count": 511
+          },
+          {
+            "block": 26,
+            "nll_sum": 1007.8433837890625,
+            "count": 511
+          },
+          {
+            "block": 27,
+            "nll_sum": 995.0452880859375,
+            "count": 511
+          },
+          {
+            "block": 28,
+            "nll_sum": 889.96875,
+            "count": 511
+          },
+          {
+            "block": 29,
+            "nll_sum": 1034.0455322265625,
+            "count": 511
+          },
+          {
+            "block": 30,
+            "nll_sum": 903.564697265625,
+            "count": 511
+          },
+          {
+            "block": 31,
+            "nll_sum": 1092.974365234375,
+            "count": 511
+          },
+          {
+            "block": 32,
+            "nll_sum": 1114.8531494140625,
+            "count": 511
+          },
+          {
+            "block": 33,
+            "nll_sum": 1192.560546875,
+            "count": 511
+          },
+          {
+            "block": 34,
+            "nll_sum": 1296.4788818359375,
+            "count": 511
+          },
+          {
+            "block": 35,
+            "nll_sum": 1270.73046875,
+            "count": 511
+          },
+          {
+            "block": 36,
+            "nll_sum": 1159.54296875,
+            "count": 511
+          },
+          {
+            "block": 37,
+            "nll_sum": 1272.265869140625,
+            "count": 511
+          },
+          {
+            "block": 38,
+            "nll_sum": 1172.6693115234375,
+            "count": 511
+          },
+          {
+            "block": 39,
+            "nll_sum": 1346.939697265625,
+            "count": 511
+          },
+          {
+            "block": 40,
+            "nll_sum": 1321.4083251953125,
+            "count": 511
+          },
+          {
+            "block": 41,
+            "nll_sum": 1323.896484375,
+            "count": 511
+          },
+          {
+            "block": 42,
+            "nll_sum": 1384.4873046875,
+            "count": 511
+          },
+          {
+            "block": 43,
+            "nll_sum": 1347.35986328125,
+            "count": 511
+          },
+          {
+            "block": 44,
+            "nll_sum": 902.4829711914062,
+            "count": 511
+          },
+          {
+            "block": 45,
+            "nll_sum": 1214.434326171875,
+            "count": 511
+          },
+          {
+            "block": 46,
+            "nll_sum": 1180.162841796875,
+            "count": 511
+          },
+          {
+            "block": 47,
+            "nll_sum": 1074.655517578125,
+            "count": 511
+          },
+          {
+            "block": 48,
+            "nll_sum": 1067.178955078125,
+            "count": 511
+          },
+          {
+            "block": 49,
+            "nll_sum": 1272.5302734375,
+            "count": 511
+          },
+          {
+            "block": 50,
+            "nll_sum": 1002.3397216796875,
+            "count": 511
+          },
+          {
+            "block": 51,
+            "nll_sum": 1074.05859375,
+            "count": 511
+          },
+          {
+            "block": 52,
+            "nll_sum": 1171.2708740234375,
+            "count": 511
+          },
+          {
+            "block": 53,
+            "nll_sum": 1044.288330078125,
+            "count": 511
+          },
+          {
+            "block": 54,
+            "nll_sum": 1177.704345703125,
+            "count": 511
+          },
+          {
+            "block": 55,
+            "nll_sum": 1181.67822265625,
+            "count": 511
+          },
+          {
+            "block": 56,
+            "nll_sum": 1127.8447265625,
+            "count": 511
+          },
+          {
+            "block": 57,
+            "nll_sum": 1032.33349609375,
+            "count": 511
+          },
+          {
+            "block": 58,
+            "nll_sum": 1173.173828125,
+            "count": 511
+          },
+          {
+            "block": 59,
+            "nll_sum": 1246.2744140625,
+            "count": 511
+          },
+          {
+            "block": 60,
+            "nll_sum": 1140.4854736328125,
+            "count": 511
+          },
+          {
+            "block": 61,
+            "nll_sum": 1215.0087890625,
+            "count": 511
+          },
+          {
+            "block": 62,
+            "nll_sum": 1375.884765625,
+            "count": 511
+          },
+          {
+            "block": 63,
+            "nll_sum": 1200.168212890625,
+            "count": 511
+          },
+          {
+            "block": 64,
+            "nll_sum": 1242.6102294921875,
+            "count": 511
+          },
+          {
+            "block": 65,
+            "nll_sum": 1344.8961181640625,
+            "count": 511
+          },
+          {
+            "block": 66,
+            "nll_sum": 1254.5528564453125,
+            "count": 511
+          },
+          {
+            "block": 67,
+            "nll_sum": 1219.3399658203125,
+            "count": 511
+          },
+          {
+            "block": 68,
+            "nll_sum": 1345.86767578125,
+            "count": 511
+          },
+          {
+            "block": 69,
+            "nll_sum": 1222.6671142578125,
+            "count": 511
+          },
+          {
+            "block": 70,
+            "nll_sum": 1293.25439453125,
+            "count": 511
+          },
+          {
+            "block": 71,
+            "nll_sum": 1326.9788818359375,
+            "count": 511
+          },
+          {
+            "block": 72,
+            "nll_sum": 1159.9796142578125,
+            "count": 511
+          },
+          {
+            "block": 73,
+            "nll_sum": 1318.16455078125,
+            "count": 511
+          },
+          {
+            "block": 74,
+            "nll_sum": 1265.77783203125,
+            "count": 511
+          },
+          {
+            "block": 75,
+            "nll_sum": 1349.88427734375,
+            "count": 511
+          },
+          {
+            "block": 76,
+            "nll_sum": 1382.1280517578125,
+            "count": 511
+          },
+          {
+            "block": 77,
+            "nll_sum": 1314.826904296875,
+            "count": 511
+          },
+          {
+            "block": 78,
+            "nll_sum": 1329.863525390625,
+            "count": 511
+          },
+          {
+            "block": 79,
+            "nll_sum": 1188.6138916015625,
+            "count": 511
+          },
+          {
+            "block": 80,
+            "nll_sum": 1180.35400390625,
+            "count": 511
+          },
+          {
+            "block": 81,
+            "nll_sum": 1211.0118408203125,
+            "count": 511
+          },
+          {
+            "block": 82,
+            "nll_sum": 1151.574462890625,
+            "count": 511
+          },
+          {
+            "block": 83,
+            "nll_sum": 1301.081298828125,
+            "count": 511
+          },
+          {
+            "block": 84,
+            "nll_sum": 1393.1900634765625,
+            "count": 511
+          },
+          {
+            "block": 85,
+            "nll_sum": 1140.53662109375,
+            "count": 511
+          },
+          {
+            "block": 86,
+            "nll_sum": 1344.1517333984375,
+            "count": 511
+          },
+          {
+            "block": 87,
+            "nll_sum": 1234.4228515625,
+            "count": 511
+          },
+          {
+            "block": 88,
+            "nll_sum": 1132.076171875,
+            "count": 511
+          },
+          {
+            "block": 89,
+            "nll_sum": 1161.4154052734375,
+            "count": 511
+          },
+          {
+            "block": 90,
+            "nll_sum": 1244.0927734375,
+            "count": 511
+          },
+          {
+            "block": 91,
+            "nll_sum": 1134.29833984375,
+            "count": 511
+          },
+          {
+            "block": 92,
+            "nll_sum": 992.823486328125,
+            "count": 511
+          },
+          {
+            "block": 93,
+            "nll_sum": 1020.4146728515625,
+            "count": 511
+          },
+          {
+            "block": 94,
+            "nll_sum": 1052.61181640625,
+            "count": 511
+          },
+          {
+            "block": 95,
+            "nll_sum": 1133.979248046875,
+            "count": 511
+          },
+          {
+            "block": 96,
+            "nll_sum": 1347.28271484375,
+            "count": 511
+          },
+          {
+            "block": 97,
+            "nll_sum": 1212.2889404296875,
+            "count": 511
+          },
+          {
+            "block": 98,
+            "nll_sum": 1231.5802001953125,
+            "count": 511
+          },
+          {
+            "block": 99,
+            "nll_sum": 1043.11328125,
+            "count": 511
+          },
+          {
+            "block": 100,
+            "nll_sum": 1259.99072265625,
+            "count": 511
+          },
+          {
+            "block": 101,
+            "nll_sum": 1387.9547119140625,
+            "count": 511
+          },
+          {
+            "block": 102,
+            "nll_sum": 1247.61083984375,
+            "count": 511
+          },
+          {
+            "block": 103,
+            "nll_sum": 1212.5352783203125,
+            "count": 511
+          },
+          {
+            "block": 104,
+            "nll_sum": 1172.50439453125,
+            "count": 511
+          },
+          {
+            "block": 105,
+            "nll_sum": 1130.538330078125,
+            "count": 511
+          },
+          {
+            "block": 106,
+            "nll_sum": 1274.994140625,
+            "count": 511
+          },
+          {
+            "block": 107,
+            "nll_sum": 1275.598388671875,
+            "count": 511
+          },
+          {
+            "block": 108,
+            "nll_sum": 1169.1705322265625,
+            "count": 511
+          },
+          {
+            "block": 109,
+            "nll_sum": 1321.463134765625,
+            "count": 511
+          },
+          {
+            "block": 110,
+            "nll_sum": 1289.5067138671875,
+            "count": 511
+          },
+          {
+            "block": 111,
+            "nll_sum": 1205.8271484375,
+            "count": 511
+          },
+          {
+            "block": 112,
+            "nll_sum": 1297.348388671875,
+            "count": 511
+          },
+          {
+            "block": 113,
+            "nll_sum": 1196.144775390625,
+            "count": 511
+          },
+          {
+            "block": 114,
+            "nll_sum": 1094.1837158203125,
+            "count": 511
+          },
+          {
+            "block": 115,
+            "nll_sum": 1345.6290283203125,
+            "count": 511
+          },
+          {
+            "block": 116,
+            "nll_sum": 1226.259765625,
+            "count": 511
+          },
+          {
+            "block": 117,
+            "nll_sum": 1208.329833984375,
+            "count": 511
+          },
+          {
+            "block": 118,
+            "nll_sum": 1371.201904296875,
+            "count": 511
+          },
+          {
+            "block": 119,
+            "nll_sum": 1315.609375,
+            "count": 511
+          },
+          {
+            "block": 120,
+            "nll_sum": 1169.79150390625,
+            "count": 511
+          },
+          {
+            "block": 121,
+            "nll_sum": 1190.878173828125,
+            "count": 511
+          },
+          {
+            "block": 122,
+            "nll_sum": 1317.475341796875,
+            "count": 511
+          },
+          {
+            "block": 123,
+            "nll_sum": 1202.7183837890625,
+            "count": 511
+          },
+          {
+            "block": 124,
+            "nll_sum": 1270.309326171875,
+            "count": 511
+          },
+          {
+            "block": 125,
+            "nll_sum": 1261.98486328125,
+            "count": 511
+          },
+          {
+            "block": 126,
+            "nll_sum": 1416.06298828125,
+            "count": 511
+          },
+          {
+            "block": 127,
+            "nll_sum": 1458.1878662109375,
+            "count": 511
+          },
+          {
+            "block": 128,
+            "nll_sum": 1423.177978515625,
+            "count": 511
+          },
+          {
+            "block": 129,
+            "nll_sum": 1208.3138427734375,
+            "count": 511
+          },
+          {
+            "block": 130,
+            "nll_sum": 1471.8302001953125,
+            "count": 511
+          },
+          {
+            "block": 131,
+            "nll_sum": 1396.4727783203125,
+            "count": 511
+          },
+          {
+            "block": 132,
+            "nll_sum": 1413.5301513671875,
+            "count": 511
+          },
+          {
+            "block": 133,
+            "nll_sum": 1003.152587890625,
+            "count": 511
+          },
+          {
+            "block": 134,
+            "nll_sum": 1438.038818359375,
+            "count": 511
+          },
+          {
+            "block": 135,
+            "nll_sum": 1478.687744140625,
+            "count": 511
+          },
+          {
+            "block": 136,
+            "nll_sum": 1234.18017578125,
+            "count": 511
+          },
+          {
+            "block": 137,
+            "nll_sum": 1104.4158935546875,
+            "count": 511
+          },
+          {
+            "block": 138,
+            "nll_sum": 1152.666015625,
+            "count": 511
+          },
+          {
+            "block": 139,
+            "nll_sum": 1187.428466796875,
+            "count": 511
+          },
+          {
+            "block": 140,
+            "nll_sum": 1157.044677734375,
+            "count": 511
+          },
+          {
+            "block": 141,
+            "nll_sum": 1188.3409423828125,
+            "count": 511
+          },
+          {
+            "block": 142,
+            "nll_sum": 1324.49853515625,
+            "count": 511
+          },
+          {
+            "block": 143,
+            "nll_sum": 1118.279296875,
+            "count": 511
+          },
+          {
+            "block": 144,
+            "nll_sum": 1292.02685546875,
+            "count": 511
+          },
+          {
+            "block": 145,
+            "nll_sum": 1101.06103515625,
+            "count": 511
+          },
+          {
+            "block": 146,
+            "nll_sum": 1148.7247314453125,
+            "count": 511
+          },
+          {
+            "block": 147,
+            "nll_sum": 1224.0341796875,
+            "count": 511
+          },
+          {
+            "block": 148,
+            "nll_sum": 1180.0572509765625,
+            "count": 511
+          },
+          {
+            "block": 149,
+            "nll_sum": 1125.335693359375,
+            "count": 511
+          },
+          {
+            "block": 150,
+            "nll_sum": 1270.3013916015625,
+            "count": 511
+          },
+          {
+            "block": 151,
+            "nll_sum": 1069.525390625,
+            "count": 511
+          },
+          {
+            "block": 152,
+            "nll_sum": 1193.1783447265625,
+            "count": 511
+          },
+          {
+            "block": 153,
+            "nll_sum": 1140.475341796875,
+            "count": 511
+          },
+          {
+            "block": 154,
+            "nll_sum": 1076.64306640625,
+            "count": 511
+          },
+          {
+            "block": 155,
+            "nll_sum": 1201.39794921875,
+            "count": 511
+          },
+          {
+            "block": 156,
+            "nll_sum": 1233.220458984375,
+            "count": 511
+          },
+          {
+            "block": 157,
+            "nll_sum": 1194.94677734375,
+            "count": 511
+          },
+          {
+            "block": 158,
+            "nll_sum": 1259.647216796875,
+            "count": 511
+          },
+          {
+            "block": 159,
+            "nll_sum": 1234.926513671875,
+            "count": 511
+          },
+          {
+            "block": 160,
+            "nll_sum": 1109.547607421875,
+            "count": 511
+          },
+          {
+            "block": 161,
+            "nll_sum": 1088.3807373046875,
+            "count": 511
+          },
+          {
+            "block": 162,
+            "nll_sum": 965.658935546875,
+            "count": 511
+          },
+          {
+            "block": 163,
+            "nll_sum": 1135.99072265625,
+            "count": 511
+          },
+          {
+            "block": 164,
+            "nll_sum": 1247.457763671875,
+            "count": 511
+          },
+          {
+            "block": 165,
+            "nll_sum": 1291.6240234375,
+            "count": 511
+          },
+          {
+            "block": 166,
+            "nll_sum": 1358.924072265625,
+            "count": 511
+          },
+          {
+            "block": 167,
+            "nll_sum": 1258.599365234375,
+            "count": 511
+          },
+          {
+            "block": 168,
+            "nll_sum": 1272.914794921875,
+            "count": 511
+          },
+          {
+            "block": 169,
+            "nll_sum": 1334.222900390625,
+            "count": 511
+          },
+          {
+            "block": 170,
+            "nll_sum": 1308.20166015625,
+            "count": 511
+          },
+          {
+            "block": 171,
+            "nll_sum": 981.5077514648438,
+            "count": 511
+          },
+          {
+            "block": 172,
+            "nll_sum": 995.2781982421875,
+            "count": 511
+          },
+          {
+            "block": 173,
+            "nll_sum": 887.3271484375,
+            "count": 511
+          },
+          {
+            "block": 174,
+            "nll_sum": 902.9261474609375,
+            "count": 511
+          },
+          {
+            "block": 175,
+            "nll_sum": 1043.736572265625,
+            "count": 511
+          },
+          {
+            "block": 176,
+            "nll_sum": 746.8970947265625,
+            "count": 511
+          },
+          {
+            "block": 177,
+            "nll_sum": 967.7244873046875,
+            "count": 511
+          },
+          {
+            "block": 178,
+            "nll_sum": 1049.4599609375,
+            "count": 511
+          },
+          {
+            "block": 179,
+            "nll_sum": 1007.8974609375,
+            "count": 511
+          },
+          {
+            "block": 180,
+            "nll_sum": 992.518310546875,
+            "count": 511
+          },
+          {
+            "block": 181,
+            "nll_sum": 842.60302734375,
+            "count": 511
+          },
+          {
+            "block": 182,
+            "nll_sum": 1108.7816162109375,
+            "count": 511
+          },
+          {
+            "block": 183,
+            "nll_sum": 904.5540771484375,
+            "count": 511
+          },
+          {
+            "block": 184,
+            "nll_sum": 889.3353881835938,
+            "count": 511
+          },
+          {
+            "block": 185,
+            "nll_sum": 895.978515625,
+            "count": 511
+          },
+          {
+            "block": 186,
+            "nll_sum": 989.4082641601562,
+            "count": 511
+          },
+          {
+            "block": 187,
+            "nll_sum": 901.5299072265625,
+            "count": 511
+          },
+          {
+            "block": 188,
+            "nll_sum": 992.5611572265625,
+            "count": 511
+          },
+          {
+            "block": 189,
+            "nll_sum": 1010.5551147460938,
+            "count": 511
+          },
+          {
+            "block": 190,
+            "nll_sum": 1073.884521484375,
+            "count": 511
+          },
+          {
+            "block": 191,
+            "nll_sum": 929.350830078125,
+            "count": 511
+          },
+          {
+            "block": 192,
+            "nll_sum": 1006.6240234375,
+            "count": 511
+          },
+          {
+            "block": 193,
+            "nll_sum": 1092.73681640625,
+            "count": 511
+          },
+          {
+            "block": 194,
+            "nll_sum": 1097.00830078125,
+            "count": 511
+          },
+          {
+            "block": 195,
+            "nll_sum": 1062.654296875,
+            "count": 511
+          },
+          {
+            "block": 196,
+            "nll_sum": 1196.52880859375,
+            "count": 511
+          },
+          {
+            "block": 197,
+            "nll_sum": 1230.40869140625,
+            "count": 511
+          },
+          {
+            "block": 198,
+            "nll_sum": 1195.8248291015625,
+            "count": 511
+          },
+          {
+            "block": 199,
+            "nll_sum": 1359.953369140625,
+            "count": 511
+          },
+          {
+            "block": 200,
+            "nll_sum": 1285.9600830078125,
+            "count": 511
+          },
+          {
+            "block": 201,
+            "nll_sum": 1441.587158203125,
+            "count": 511
+          },
+          {
+            "block": 202,
+            "nll_sum": 1441.2137451171875,
+            "count": 511
+          },
+          {
+            "block": 203,
+            "nll_sum": 1533.8597412109375,
+            "count": 511
+          },
+          {
+            "block": 204,
+            "nll_sum": 1380.41748046875,
+            "count": 511
+          },
+          {
+            "block": 205,
+            "nll_sum": 1543.4642333984375,
+            "count": 511
+          },
+          {
+            "block": 206,
+            "nll_sum": 1447.2841796875,
+            "count": 511
+          },
+          {
+            "block": 207,
+            "nll_sum": 1458.792724609375,
+            "count": 511
+          },
+          {
+            "block": 208,
+            "nll_sum": 1561.13818359375,
+            "count": 511
+          },
+          {
+            "block": 209,
+            "nll_sum": 1500.95166015625,
+            "count": 511
+          },
+          {
+            "block": 210,
+            "nll_sum": 1294.6943359375,
+            "count": 511
+          },
+          {
+            "block": 211,
+            "nll_sum": 1227.611328125,
+            "count": 511
+          },
+          {
+            "block": 212,
+            "nll_sum": 1252.538330078125,
+            "count": 511
+          },
+          {
+            "block": 213,
+            "nll_sum": 1544.859619140625,
+            "count": 511
+          },
+          {
+            "block": 214,
+            "nll_sum": 1366.1123046875,
+            "count": 511
+          },
+          {
+            "block": 215,
+            "nll_sum": 1442.056884765625,
+            "count": 511
+          },
+          {
+            "block": 216,
+            "nll_sum": 1375.68994140625,
+            "count": 511
+          },
+          {
+            "block": 217,
+            "nll_sum": 1286.389892578125,
+            "count": 511
+          },
+          {
+            "block": 218,
+            "nll_sum": 1244.958740234375,
+            "count": 511
+          },
+          {
+            "block": 219,
+            "nll_sum": 1328.236572265625,
+            "count": 511
+          },
+          {
+            "block": 220,
+            "nll_sum": 1167.1510009765625,
+            "count": 511
+          },
+          {
+            "block": 221,
+            "nll_sum": 1140.6416015625,
+            "count": 511
+          },
+          {
+            "block": 222,
+            "nll_sum": 1173.9544677734375,
+            "count": 511
+          },
+          {
+            "block": 223,
+            "nll_sum": 1252.140380859375,
+            "count": 511
+          },
+          {
+            "block": 224,
+            "nll_sum": 1274.3116455078125,
+            "count": 511
+          },
+          {
+            "block": 225,
+            "nll_sum": 1273.068603515625,
+            "count": 511
+          },
+          {
+            "block": 226,
+            "nll_sum": 1234.041015625,
+            "count": 511
+          },
+          {
+            "block": 227,
+            "nll_sum": 1227.2216796875,
+            "count": 511
+          },
+          {
+            "block": 228,
+            "nll_sum": 1336.532470703125,
+            "count": 511
+          },
+          {
+            "block": 229,
+            "nll_sum": 1305.520263671875,
+            "count": 511
+          },
+          {
+            "block": 230,
+            "nll_sum": 1357.9296875,
+            "count": 511
+          },
+          {
+            "block": 231,
+            "nll_sum": 1239.469482421875,
+            "count": 511
+          },
+          {
+            "block": 232,
+            "nll_sum": 1142.8052978515625,
+            "count": 511
+          },
+          {
+            "block": 233,
+            "nll_sum": 1070.48828125,
+            "count": 511
+          },
+          {
+            "block": 234,
+            "nll_sum": 1244.93115234375,
+            "count": 511
+          },
+          {
+            "block": 235,
+            "nll_sum": 1100.5018310546875,
+            "count": 511
+          },
+          {
+            "block": 236,
+            "nll_sum": 1158.8333740234375,
+            "count": 511
+          },
+          {
+            "block": 237,
+            "nll_sum": 1070.33642578125,
+            "count": 511
+          },
+          {
+            "block": 238,
+            "nll_sum": 1450.518798828125,
+            "count": 511
+          },
+          {
+            "block": 239,
+            "nll_sum": 1498.8961181640625,
+            "count": 511
+          },
+          {
+            "block": 240,
+            "nll_sum": 1412.456787109375,
+            "count": 511
+          },
+          {
+            "block": 241,
+            "nll_sum": 1361.3302001953125,
+            "count": 511
+          },
+          {
+            "block": 242,
+            "nll_sum": 1117.206298828125,
+            "count": 511
+          },
+          {
+            "block": 243,
+            "nll_sum": 1130.0380859375,
+            "count": 511
+          },
+          {
+            "block": 244,
+            "nll_sum": 1170.369140625,
+            "count": 511
+          },
+          {
+            "block": 245,
+            "nll_sum": 962.9022827148438,
+            "count": 511
+          },
+          {
+            "block": 246,
+            "nll_sum": 1260.560791015625,
+            "count": 511
+          },
+          {
+            "block": 247,
+            "nll_sum": 1156.558349609375,
+            "count": 511
+          },
+          {
+            "block": 248,
+            "nll_sum": 1064.843994140625,
+            "count": 511
+          },
+          {
+            "block": 249,
+            "nll_sum": 1151.951416015625,
+            "count": 511
+          },
+          {
+            "block": 250,
+            "nll_sum": 1005.83642578125,
+            "count": 511
+          },
+          {
+            "block": 251,
+            "nll_sum": 1235.007080078125,
+            "count": 511
+          },
+          {
+            "block": 252,
+            "nll_sum": 1037.76513671875,
+            "count": 511
+          },
+          {
+            "block": 253,
+            "nll_sum": 1159.6588134765625,
+            "count": 511
+          },
+          {
+            "block": 254,
+            "nll_sum": 1276.7308349609375,
+            "count": 511
+          },
+          {
+            "block": 255,
+            "nll_sum": 1150.548828125,
+            "count": 511
+          },
+          {
+            "block": 256,
+            "nll_sum": 1115.6370849609375,
+            "count": 511
+          },
+          {
+            "block": 257,
+            "nll_sum": 1031.6707763671875,
+            "count": 511
+          },
+          {
+            "block": 258,
+            "nll_sum": 1003.9049072265625,
+            "count": 511
+          },
+          {
+            "block": 259,
+            "nll_sum": 1097.124755859375,
+            "count": 511
+          },
+          {
+            "block": 260,
+            "nll_sum": 1083.0908203125,
+            "count": 511
+          },
+          {
+            "block": 261,
+            "nll_sum": 1140.0943603515625,
+            "count": 511
+          },
+          {
+            "block": 262,
+            "nll_sum": 1142.529296875,
+            "count": 511
+          },
+          {
+            "block": 263,
+            "nll_sum": 1115.6148681640625,
+            "count": 511
+          },
+          {
+            "block": 264,
+            "nll_sum": 1201.536376953125,
+            "count": 511
+          },
+          {
+            "block": 265,
+            "nll_sum": 997.548828125,
+            "count": 511
+          },
+          {
+            "block": 266,
+            "nll_sum": 1221.14306640625,
+            "count": 511
+          },
+          {
+            "block": 267,
+            "nll_sum": 1146.009033203125,
+            "count": 511
+          },
+          {
+            "block": 268,
+            "nll_sum": 1089.9896240234375,
+            "count": 511
+          },
+          {
+            "block": 269,
+            "nll_sum": 1112.6766357421875,
+            "count": 511
+          },
+          {
+            "block": 270,
+            "nll_sum": 1022.138427734375,
+            "count": 511
+          },
+          {
+            "block": 271,
+            "nll_sum": 1076.509033203125,
+            "count": 511
+          },
+          {
+            "block": 272,
+            "nll_sum": 1006.1165161132812,
+            "count": 511
+          },
+          {
+            "block": 273,
+            "nll_sum": 1079.929931640625,
+            "count": 511
+          },
+          {
+            "block": 274,
+            "nll_sum": 1165.774169921875,
+            "count": 511
+          },
+          {
+            "block": 275,
+            "nll_sum": 1241.61181640625,
+            "count": 511
+          },
+          {
+            "block": 276,
+            "nll_sum": 1175.50048828125,
+            "count": 511
+          },
+          {
+            "block": 277,
+            "nll_sum": 1076.4063720703125,
+            "count": 511
+          },
+          {
+            "block": 278,
+            "nll_sum": 1066.33251953125,
+            "count": 511
+          },
+          {
+            "block": 279,
+            "nll_sum": 1260.9593505859375,
+            "count": 511
+          },
+          {
+            "block": 280,
+            "nll_sum": 1154.213134765625,
+            "count": 511
+          },
+          {
+            "block": 281,
+            "nll_sum": 1107.9742431640625,
+            "count": 511
+          },
+          {
+            "block": 282,
+            "nll_sum": 1328.8685302734375,
+            "count": 511
+          },
+          {
+            "block": 283,
+            "nll_sum": 1313.166748046875,
+            "count": 511
+          },
+          {
+            "block": 284,
+            "nll_sum": 1194.5345458984375,
+            "count": 511
+          },
+          {
+            "block": 285,
+            "nll_sum": 1270.94580078125,
+            "count": 511
+          },
+          {
+            "block": 286,
+            "nll_sum": 1098.080322265625,
+            "count": 511
+          },
+          {
+            "block": 287,
+            "nll_sum": 1059.531005859375,
+            "count": 511
+          },
+          {
+            "block": 288,
+            "nll_sum": 1273.439697265625,
+            "count": 511
+          },
+          {
+            "block": 289,
+            "nll_sum": 1279.1236572265625,
+            "count": 511
+          },
+          {
+            "block": 290,
+            "nll_sum": 1294.24462890625,
+            "count": 511
+          },
+          {
+            "block": 291,
+            "nll_sum": 1220.2718505859375,
+            "count": 511
+          },
+          {
+            "block": 292,
+            "nll_sum": 1320.877685546875,
+            "count": 511
+          },
+          {
+            "block": 293,
+            "nll_sum": 1325.275146484375,
+            "count": 511
+          },
+          {
+            "block": 294,
+            "nll_sum": 1321.714111328125,
+            "count": 511
+          },
+          {
+            "block": 295,
+            "nll_sum": 1269.9776611328125,
+            "count": 511
+          },
+          {
+            "block": 296,
+            "nll_sum": 1371.199462890625,
+            "count": 511
+          },
+          {
+            "block": 297,
+            "nll_sum": 1314.683349609375,
+            "count": 511
+          },
+          {
+            "block": 298,
+            "nll_sum": 1376.4481201171875,
+            "count": 511
+          },
+          {
+            "block": 299,
+            "nll_sum": 1336.175048828125,
+            "count": 511
+          },
+          {
+            "block": 300,
+            "nll_sum": 1330.376220703125,
+            "count": 511
+          },
+          {
+            "block": 301,
+            "nll_sum": 1153.8037109375,
+            "count": 511
+          },
+          {
+            "block": 302,
+            "nll_sum": 1399.456787109375,
+            "count": 511
+          },
+          {
+            "block": 303,
+            "nll_sum": 1293.8255615234375,
+            "count": 511
+          },
+          {
+            "block": 304,
+            "nll_sum": 1206.2725830078125,
+            "count": 511
+          },
+          {
+            "block": 305,
+            "nll_sum": 1010.948486328125,
+            "count": 511
+          },
+          {
+            "block": 306,
+            "nll_sum": 770.8621826171875,
+            "count": 511
+          },
+          {
+            "block": 307,
+            "nll_sum": 789.4011840820312,
+            "count": 511
+          },
+          {
+            "block": 308,
+            "nll_sum": 961.751953125,
+            "count": 511
+          },
+          {
+            "block": 309,
+            "nll_sum": 974.3912353515625,
+            "count": 511
+          },
+          {
+            "block": 310,
+            "nll_sum": 970.0632934570312,
+            "count": 511
+          },
+          {
+            "block": 311,
+            "nll_sum": 1167.7030029296875,
+            "count": 511
+          },
+          {
+            "block": 312,
+            "nll_sum": 1135.466552734375,
+            "count": 511
+          },
+          {
+            "block": 313,
+            "nll_sum": 1260.8927001953125,
+            "count": 511
+          },
+          {
+            "block": 314,
+            "nll_sum": 1269.82470703125,
+            "count": 511
+          },
+          {
+            "block": 315,
+            "nll_sum": 1167.1199951171875,
+            "count": 511
+          },
+          {
+            "block": 316,
+            "nll_sum": 1134.4794921875,
+            "count": 511
+          },
+          {
+            "block": 317,
+            "nll_sum": 1016.8546752929688,
+            "count": 511
+          },
+          {
+            "block": 318,
+            "nll_sum": 1168.38525390625,
+            "count": 511
+          },
+          {
+            "block": 319,
+            "nll_sum": 1127.5521240234375,
+            "count": 511
+          },
+          {
+            "block": 320,
+            "nll_sum": 1034.8828125,
+            "count": 511
+          },
+          {
+            "block": 321,
+            "nll_sum": 1033.992919921875,
+            "count": 511
+          },
+          {
+            "block": 322,
+            "nll_sum": 1263.842041015625,
+            "count": 511
+          },
+          {
+            "block": 323,
+            "nll_sum": 1072.727783203125,
+            "count": 511
+          },
+          {
+            "block": 324,
+            "nll_sum": 1110.175048828125,
+            "count": 511
+          },
+          {
+            "block": 325,
+            "nll_sum": 1114.0103759765625,
+            "count": 511
+          },
+          {
+            "block": 326,
+            "nll_sum": 988.3854370117188,
+            "count": 511
+          },
+          {
+            "block": 327,
+            "nll_sum": 1080.93603515625,
+            "count": 511
+          },
+          {
+            "block": 328,
+            "nll_sum": 1119.720458984375,
+            "count": 511
+          },
+          {
+            "block": 329,
+            "nll_sum": 1153.468994140625,
+            "count": 511
+          },
+          {
+            "block": 330,
+            "nll_sum": 1105.714599609375,
+            "count": 511
+          },
+          {
+            "block": 331,
+            "nll_sum": 1133.4566650390625,
+            "count": 511
+          },
+          {
+            "block": 332,
+            "nll_sum": 1046.8232421875,
+            "count": 511
+          },
+          {
+            "block": 333,
+            "nll_sum": 1298.5010986328125,
+            "count": 511
+          },
+          {
+            "block": 334,
+            "nll_sum": 1204.940185546875,
+            "count": 511
+          },
+          {
+            "block": 335,
+            "nll_sum": 844.3067016601562,
+            "count": 511
+          },
+          {
+            "block": 336,
+            "nll_sum": 1165.673583984375,
+            "count": 511
+          },
+          {
+            "block": 337,
+            "nll_sum": 1451.979248046875,
+            "count": 511
+          },
+          {
+            "block": 338,
+            "nll_sum": 1181.508056640625,
+            "count": 511
+          },
+          {
+            "block": 339,
+            "nll_sum": 1080.71435546875,
+            "count": 511
+          },
+          {
+            "block": 340,
+            "nll_sum": 1368.407470703125,
+            "count": 511
+          },
+          {
+            "block": 341,
+            "nll_sum": 1293.534423828125,
+            "count": 511
+          },
+          {
+            "block": 342,
+            "nll_sum": 1319.455810546875,
+            "count": 511
+          },
+          {
+            "block": 343,
+            "nll_sum": 1278.246337890625,
+            "count": 511
+          },
+          {
+            "block": 344,
+            "nll_sum": 1331.9781494140625,
+            "count": 511
+          },
+          {
+            "block": 345,
+            "nll_sum": 1269.85595703125,
+            "count": 511
+          },
+          {
+            "block": 346,
+            "nll_sum": 1313.561767578125,
+            "count": 511
+          },
+          {
+            "block": 347,
+            "nll_sum": 1336.2259521484375,
+            "count": 511
+          },
+          {
+            "block": 348,
+            "nll_sum": 1398.536865234375,
+            "count": 511
+          },
+          {
+            "block": 349,
+            "nll_sum": 1469.087158203125,
+            "count": 511
+          },
+          {
+            "block": 350,
+            "nll_sum": 1295.514404296875,
+            "count": 511
+          },
+          {
+            "block": 351,
+            "nll_sum": 1373.2166748046875,
+            "count": 511
+          },
+          {
+            "block": 352,
+            "nll_sum": 1012.911376953125,
+            "count": 511
+          },
+          {
+            "block": 353,
+            "nll_sum": 1039.6080322265625,
+            "count": 511
+          },
+          {
+            "block": 354,
+            "nll_sum": 1158.36865234375,
+            "count": 511
+          },
+          {
+            "block": 355,
+            "nll_sum": 1004.21630859375,
+            "count": 511
+          },
+          {
+            "block": 356,
+            "nll_sum": 1185.938232421875,
+            "count": 511
+          },
+          {
+            "block": 357,
+            "nll_sum": 1079.1875,
+            "count": 511
+          },
+          {
+            "block": 358,
+            "nll_sum": 1135.96533203125,
+            "count": 511
+          },
+          {
+            "block": 359,
+            "nll_sum": 1368.368896484375,
+            "count": 511
+          },
+          {
+            "block": 360,
+            "nll_sum": 1326.66259765625,
+            "count": 511
+          },
+          {
+            "block": 361,
+            "nll_sum": 1237.1826171875,
+            "count": 511
+          },
+          {
+            "block": 362,
+            "nll_sum": 1262.6553955078125,
+            "count": 511
+          },
+          {
+            "block": 363,
+            "nll_sum": 1214.1854248046875,
+            "count": 511
+          },
+          {
+            "block": 364,
+            "nll_sum": 1104.00439453125,
+            "count": 511
+          },
+          {
+            "block": 365,
+            "nll_sum": 1089.336181640625,
+            "count": 511
+          },
+          {
+            "block": 366,
+            "nll_sum": 1273.953125,
+            "count": 511
+          },
+          {
+            "block": 367,
+            "nll_sum": 1213.139892578125,
+            "count": 511
+          },
+          {
+            "block": 368,
+            "nll_sum": 1171.8724365234375,
+            "count": 511
+          },
+          {
+            "block": 369,
+            "nll_sum": 1101.24462890625,
+            "count": 511
+          },
+          {
+            "block": 370,
+            "nll_sum": 1165.4500732421875,
+            "count": 511
+          },
+          {
+            "block": 371,
+            "nll_sum": 1239.659912109375,
+            "count": 511
+          },
+          {
+            "block": 372,
+            "nll_sum": 1146.72021484375,
+            "count": 511
+          },
+          {
+            "block": 373,
+            "nll_sum": 1297.8154296875,
+            "count": 511
+          },
+          {
+            "block": 374,
+            "nll_sum": 1162.405029296875,
+            "count": 511
+          },
+          {
+            "block": 375,
+            "nll_sum": 1312.890380859375,
+            "count": 511
+          },
+          {
+            "block": 376,
+            "nll_sum": 1059.95654296875,
+            "count": 511
+          },
+          {
+            "block": 377,
+            "nll_sum": 1134.67724609375,
+            "count": 511
+          },
+          {
+            "block": 378,
+            "nll_sum": 1424.7054443359375,
+            "count": 511
+          },
+          {
+            "block": 379,
+            "nll_sum": 1000.3282470703125,
+            "count": 511
+          },
+          {
+            "block": 380,
+            "nll_sum": 1264.02099609375,
+            "count": 511
+          },
+          {
+            "block": 381,
+            "nll_sum": 1121.587158203125,
+            "count": 511
+          },
+          {
+            "block": 382,
+            "nll_sum": 1377.910400390625,
+            "count": 511
+          },
+          {
+            "block": 383,
+            "nll_sum": 1407.231201171875,
+            "count": 511
+          },
+          {
+            "block": 384,
+            "nll_sum": 1386.1043701171875,
+            "count": 511
+          },
+          {
+            "block": 385,
+            "nll_sum": 1349.2471923828125,
+            "count": 511
+          },
+          {
+            "block": 386,
+            "nll_sum": 1114.6842041015625,
+            "count": 511
+          },
+          {
+            "block": 387,
+            "nll_sum": 1263.177001953125,
+            "count": 511
+          },
+          {
+            "block": 388,
+            "nll_sum": 1100.47998046875,
+            "count": 511
+          },
+          {
+            "block": 389,
+            "nll_sum": 1151.6573486328125,
+            "count": 511
+          },
+          {
+            "block": 390,
+            "nll_sum": 1200.9979248046875,
+            "count": 511
+          },
+          {
+            "block": 391,
+            "nll_sum": 1072.43798828125,
+            "count": 511
+          },
+          {
+            "block": 392,
+            "nll_sum": 1090.1259765625,
+            "count": 511
+          },
+          {
+            "block": 393,
+            "nll_sum": 1297.083984375,
+            "count": 511
+          },
+          {
+            "block": 394,
+            "nll_sum": 1187.01708984375,
+            "count": 511
+          },
+          {
+            "block": 395,
+            "nll_sum": 1147.189453125,
+            "count": 511
+          },
+          {
+            "block": 396,
+            "nll_sum": 1035.9788818359375,
+            "count": 511
+          },
+          {
+            "block": 397,
+            "nll_sum": 1269.2254638671875,
+            "count": 511
+          },
+          {
+            "block": 398,
+            "nll_sum": 1076.967529296875,
+            "count": 511
+          },
+          {
+            "block": 399,
+            "nll_sum": 1240.25390625,
+            "count": 511
+          },
+          {
+            "block": 400,
+            "nll_sum": 1335.412841796875,
+            "count": 511
+          },
+          {
+            "block": 401,
+            "nll_sum": 957.0859375,
+            "count": 511
+          },
+          {
+            "block": 402,
+            "nll_sum": 1152.698974609375,
+            "count": 511
+          },
+          {
+            "block": 403,
+            "nll_sum": 1014.0888671875,
+            "count": 511
+          },
+          {
+            "block": 404,
+            "nll_sum": 877.73779296875,
+            "count": 511
+          },
+          {
+            "block": 405,
+            "nll_sum": 1190.869873046875,
+            "count": 511
+          },
+          {
+            "block": 406,
+            "nll_sum": 1065.342041015625,
+            "count": 511
+          },
+          {
+            "block": 407,
+            "nll_sum": 1305.2154541015625,
+            "count": 511
+          },
+          {
+            "block": 408,
+            "nll_sum": 1170.22998046875,
+            "count": 511
+          },
+          {
+            "block": 409,
+            "nll_sum": 1146.1070556640625,
+            "count": 511
+          },
+          {
+            "block": 410,
+            "nll_sum": 1078.1611328125,
+            "count": 511
+          },
+          {
+            "block": 411,
+            "nll_sum": 1073.8726806640625,
+            "count": 511
+          },
+          {
+            "block": 412,
+            "nll_sum": 1013.8966064453125,
+            "count": 511
+          },
+          {
+            "block": 413,
+            "nll_sum": 985.9402465820312,
+            "count": 511
+          },
+          {
+            "block": 414,
+            "nll_sum": 1199.17724609375,
+            "count": 511
+          },
+          {
+            "block": 415,
+            "nll_sum": 1122.066162109375,
+            "count": 511
+          },
+          {
+            "block": 416,
+            "nll_sum": 1201.406494140625,
+            "count": 511
+          },
+          {
+            "block": 417,
+            "nll_sum": 1234.9400634765625,
+            "count": 511
+          },
+          {
+            "block": 418,
+            "nll_sum": 1082.6414794921875,
+            "count": 511
+          },
+          {
+            "block": 419,
+            "nll_sum": 1241.42724609375,
+            "count": 511
+          },
+          {
+            "block": 420,
+            "nll_sum": 1327.5750732421875,
+            "count": 511
+          },
+          {
+            "block": 421,
+            "nll_sum": 1287.6531982421875,
+            "count": 511
+          },
+          {
+            "block": 422,
+            "nll_sum": 1204.8135986328125,
+            "count": 511
+          },
+          {
+            "block": 423,
+            "nll_sum": 1137.07421875,
+            "count": 511
+          },
+          {
+            "block": 424,
+            "nll_sum": 1284.48095703125,
+            "count": 511
+          },
+          {
+            "block": 425,
+            "nll_sum": 1187.87255859375,
+            "count": 511
+          },
+          {
+            "block": 426,
+            "nll_sum": 1272.470947265625,
+            "count": 511
+          },
+          {
+            "block": 427,
+            "nll_sum": 1292.85693359375,
+            "count": 511
+          },
+          {
+            "block": 428,
+            "nll_sum": 1131.16943359375,
+            "count": 511
+          },
+          {
+            "block": 429,
+            "nll_sum": 1131.52685546875,
+            "count": 511
+          },
+          {
+            "block": 430,
+            "nll_sum": 1277.3990478515625,
+            "count": 511
+          },
+          {
+            "block": 431,
+            "nll_sum": 1241.185302734375,
+            "count": 511
+          },
+          {
+            "block": 432,
+            "nll_sum": 1414.920166015625,
+            "count": 511
+          },
+          {
+            "block": 433,
+            "nll_sum": 1532.3232421875,
+            "count": 511
+          },
+          {
+            "block": 434,
+            "nll_sum": 1489.286376953125,
+            "count": 511
+          },
+          {
+            "block": 435,
+            "nll_sum": 1544.091064453125,
+            "count": 511
+          },
+          {
+            "block": 436,
+            "nll_sum": 1514.8294677734375,
+            "count": 511
+          },
+          {
+            "block": 437,
+            "nll_sum": 1412.97998046875,
+            "count": 511
+          },
+          {
+            "block": 438,
+            "nll_sum": 1371.55517578125,
+            "count": 511
+          },
+          {
+            "block": 439,
+            "nll_sum": 1507.00634765625,
+            "count": 511
+          },
+          {
+            "block": 440,
+            "nll_sum": 1506.431884765625,
+            "count": 511
+          },
+          {
+            "block": 441,
+            "nll_sum": 1329.239013671875,
+            "count": 511
+          },
+          {
+            "block": 442,
+            "nll_sum": 1443.49853515625,
+            "count": 511
+          },
+          {
+            "block": 443,
+            "nll_sum": 1401.35986328125,
+            "count": 511
+          },
+          {
+            "block": 444,
+            "nll_sum": 1465.387939453125,
+            "count": 511
+          },
+          {
+            "block": 445,
+            "nll_sum": 1321.6385498046875,
+            "count": 511
+          },
+          {
+            "block": 446,
+            "nll_sum": 1332.3251953125,
+            "count": 511
+          },
+          {
+            "block": 447,
+            "nll_sum": 1472.201904296875,
+            "count": 511
+          },
+          {
+            "block": 448,
+            "nll_sum": 1378.095947265625,
+            "count": 511
+          },
+          {
+            "block": 449,
+            "nll_sum": 1518.37841796875,
+            "count": 511
+          },
+          {
+            "block": 450,
+            "nll_sum": 1438.681396484375,
+            "count": 511
+          },
+          {
+            "block": 451,
+            "nll_sum": 1399.546142578125,
+            "count": 511
+          },
+          {
+            "block": 452,
+            "nll_sum": 1451.417724609375,
+            "count": 511
+          },
+          {
+            "block": 453,
+            "nll_sum": 1439.3262939453125,
+            "count": 511
+          },
+          {
+            "block": 454,
+            "nll_sum": 1602.935791015625,
+            "count": 511
+          },
+          {
+            "block": 455,
+            "nll_sum": 1518.736572265625,
+            "count": 511
+          },
+          {
+            "block": 456,
+            "nll_sum": 1310.7542724609375,
+            "count": 511
+          },
+          {
+            "block": 457,
+            "nll_sum": 1039.8333740234375,
+            "count": 511
+          },
+          {
+            "block": 458,
+            "nll_sum": 902.65283203125,
+            "count": 511
+          },
+          {
+            "block": 459,
+            "nll_sum": 1335.818603515625,
+            "count": 511
+          },
+          {
+            "block": 460,
+            "nll_sum": 1342.5989990234375,
+            "count": 511
+          },
+          {
+            "block": 461,
+            "nll_sum": 1557.56787109375,
+            "count": 511
+          },
+          {
+            "block": 462,
+            "nll_sum": 1423.9853515625,
+            "count": 511
+          },
+          {
+            "block": 463,
+            "nll_sum": 1095.944580078125,
+            "count": 511
+          },
+          {
+            "block": 464,
+            "nll_sum": 1334.56396484375,
+            "count": 511
+          },
+          {
+            "block": 465,
+            "nll_sum": 959.2127685546875,
+            "count": 511
+          },
+          {
+            "block": 466,
+            "nll_sum": 1000.4580688476562,
+            "count": 511
+          },
+          {
+            "block": 467,
+            "nll_sum": 1193.093017578125,
+            "count": 511
+          },
+          {
+            "block": 468,
+            "nll_sum": 1277.61767578125,
+            "count": 511
+          },
+          {
+            "block": 469,
+            "nll_sum": 1212.91845703125,
+            "count": 511
+          },
+          {
+            "block": 470,
+            "nll_sum": 1122.50048828125,
+            "count": 511
+          },
+          {
+            "block": 471,
+            "nll_sum": 1246.9169921875,
+            "count": 511
+          },
+          {
+            "block": 472,
+            "nll_sum": 1272.631591796875,
+            "count": 511
+          },
+          {
+            "block": 473,
+            "nll_sum": 1271.745849609375,
+            "count": 511
+          },
+          {
+            "block": 474,
+            "nll_sum": 1146.513427734375,
+            "count": 511
+          },
+          {
+            "block": 475,
+            "nll_sum": 1081.341064453125,
+            "count": 511
+          },
+          {
+            "block": 476,
+            "nll_sum": 1037.30224609375,
+            "count": 511
+          },
+          {
+            "block": 477,
+            "nll_sum": 1100.7286376953125,
+            "count": 511
+          },
+          {
+            "block": 478,
+            "nll_sum": 1018.6357421875,
+            "count": 511
+          },
+          {
+            "block": 479,
+            "nll_sum": 1071.779052734375,
+            "count": 511
+          },
+          {
+            "block": 480,
+            "nll_sum": 1015.0626220703125,
+            "count": 511
+          },
+          {
+            "block": 481,
+            "nll_sum": 1187.615234375,
+            "count": 511
+          },
+          {
+            "block": 482,
+            "nll_sum": 1191.2408447265625,
+            "count": 511
+          },
+          {
+            "block": 483,
+            "nll_sum": 1152.43603515625,
+            "count": 511
+          },
+          {
+            "block": 484,
+            "nll_sum": 1183.701904296875,
+            "count": 511
+          },
+          {
+            "block": 485,
+            "nll_sum": 1139.486083984375,
+            "count": 511
+          },
+          {
+            "block": 486,
+            "nll_sum": 1361.4869384765625,
+            "count": 511
+          },
+          {
+            "block": 487,
+            "nll_sum": 1174.152587890625,
+            "count": 511
+          },
+          {
+            "block": 488,
+            "nll_sum": 1171.184326171875,
+            "count": 511
+          },
+          {
+            "block": 489,
+            "nll_sum": 1243.092529296875,
+            "count": 511
+          },
+          {
+            "block": 490,
+            "nll_sum": 1213.411376953125,
+            "count": 511
+          },
+          {
+            "block": 491,
+            "nll_sum": 1091.9600830078125,
+            "count": 511
+          },
+          {
+            "block": 492,
+            "nll_sum": 1026.1434326171875,
+            "count": 511
+          },
+          {
+            "block": 493,
+            "nll_sum": 1255.9342041015625,
+            "count": 511
+          },
+          {
+            "block": 494,
+            "nll_sum": 1294.2144775390625,
+            "count": 511
+          },
+          {
+            "block": 495,
+            "nll_sum": 1285.497314453125,
+            "count": 511
+          },
+          {
+            "block": 496,
+            "nll_sum": 1255.1441650390625,
+            "count": 511
+          },
+          {
+            "block": 497,
+            "nll_sum": 1120.0550537109375,
+            "count": 511
+          },
+          {
+            "block": 498,
+            "nll_sum": 1256.9090576171875,
+            "count": 511
+          },
+          {
+            "block": 499,
+            "nll_sum": 1216.4593505859375,
+            "count": 511
+          },
+          {
+            "block": 500,
+            "nll_sum": 1199.7059326171875,
+            "count": 511
+          },
+          {
+            "block": 501,
+            "nll_sum": 1272.36865234375,
+            "count": 511
+          },
+          {
+            "block": 502,
+            "nll_sum": 1315.049560546875,
+            "count": 511
+          },
+          {
+            "block": 503,
+            "nll_sum": 1160.9429931640625,
+            "count": 511
+          },
+          {
+            "block": 504,
+            "nll_sum": 969.0123291015625,
+            "count": 511
+          },
+          {
+            "block": 505,
+            "nll_sum": 1182.7296142578125,
+            "count": 511
+          },
+          {
+            "block": 506,
+            "nll_sum": 1526.35693359375,
+            "count": 511
+          },
+          {
+            "block": 507,
+            "nll_sum": 1332.0625,
+            "count": 511
+          },
+          {
+            "block": 508,
+            "nll_sum": 1122.939697265625,
+            "count": 511
+          },
+          {
+            "block": 509,
+            "nll_sum": 1311.19091796875,
+            "count": 511
+          },
+          {
+            "block": 510,
+            "nll_sum": 1112.0,
+            "count": 511
+          },
+          {
+            "block": 511,
+            "nll_sum": 1146.6143798828125,
+            "count": 511
+          },
+          {
+            "block": 512,
+            "nll_sum": 1251.004150390625,
+            "count": 511
+          },
+          {
+            "block": 513,
+            "nll_sum": 1067.6624755859375,
+            "count": 511
+          },
+          {
+            "block": 514,
+            "nll_sum": 1058.031005859375,
+            "count": 511
+          },
+          {
+            "block": 515,
+            "nll_sum": 1156.71337890625,
+            "count": 511
+          },
+          {
+            "block": 516,
+            "nll_sum": 1112.839599609375,
+            "count": 511
+          },
+          {
+            "block": 517,
+            "nll_sum": 1094.1693115234375,
+            "count": 511
+          },
+          {
+            "block": 518,
+            "nll_sum": 1242.23583984375,
+            "count": 511
+          },
+          {
+            "block": 519,
+            "nll_sum": 1162.8638916015625,
+            "count": 511
+          },
+          {
+            "block": 520,
+            "nll_sum": 1004.5343017578125,
+            "count": 511
+          },
+          {
+            "block": 521,
+            "nll_sum": 1163.3896484375,
+            "count": 511
+          },
+          {
+            "block": 522,
+            "nll_sum": 1091.553955078125,
+            "count": 511
+          },
+          {
+            "block": 523,
+            "nll_sum": 1133.9083251953125,
+            "count": 511
+          },
+          {
+            "block": 524,
+            "nll_sum": 1022.7181396484375,
+            "count": 511
+          },
+          {
+            "block": 525,
+            "nll_sum": 1159.9234619140625,
+            "count": 511
+          },
+          {
+            "block": 526,
+            "nll_sum": 1092.62890625,
+            "count": 511
+          },
+          {
+            "block": 527,
+            "nll_sum": 1071.30029296875,
+            "count": 511
+          },
+          {
+            "block": 528,
+            "nll_sum": 1033.640380859375,
+            "count": 511
+          },
+          {
+            "block": 529,
+            "nll_sum": 1235.977783203125,
+            "count": 511
+          },
+          {
+            "block": 530,
+            "nll_sum": 1059.42919921875,
+            "count": 511
+          },
+          {
+            "block": 531,
+            "nll_sum": 1166.414794921875,
+            "count": 511
+          },
+          {
+            "block": 532,
+            "nll_sum": 1100.5140380859375,
+            "count": 511
+          },
+          {
+            "block": 533,
+            "nll_sum": 968.5763549804688,
+            "count": 511
+          },
+          {
+            "block": 534,
+            "nll_sum": 1269.425537109375,
+            "count": 511
+          },
+          {
+            "block": 535,
+            "nll_sum": 1181.6787109375,
+            "count": 511
+          },
+          {
+            "block": 536,
+            "nll_sum": 1236.97314453125,
+            "count": 511
+          },
+          {
+            "block": 537,
+            "nll_sum": 1268.58349609375,
+            "count": 511
+          },
+          {
+            "block": 538,
+            "nll_sum": 1184.4287109375,
+            "count": 511
+          },
+          {
+            "block": 539,
+            "nll_sum": 1286.2703857421875,
+            "count": 511
+          },
+          {
+            "block": 540,
+            "nll_sum": 1345.307373046875,
+            "count": 511
+          },
+          {
+            "block": 541,
+            "nll_sum": 1243.198974609375,
+            "count": 511
+          },
+          {
+            "block": 542,
+            "nll_sum": 1325.0955810546875,
+            "count": 511
+          },
+          {
+            "block": 543,
+            "nll_sum": 1465.6207275390625,
+            "count": 511
+          },
+          {
+            "block": 544,
+            "nll_sum": 1408.4443359375,
+            "count": 511
+          },
+          {
+            "block": 545,
+            "nll_sum": 1086.659423828125,
+            "count": 511
+          },
+          {
+            "block": 546,
+            "nll_sum": 1196.150390625,
+            "count": 511
+          },
+          {
+            "block": 547,
+            "nll_sum": 1280.482421875,
+            "count": 511
+          },
+          {
+            "block": 548,
+            "nll_sum": 1287.7296142578125,
+            "count": 511
+          },
+          {
+            "block": 549,
+            "nll_sum": 1314.0340576171875,
+            "count": 511
+          },
+          {
+            "block": 550,
+            "nll_sum": 1227.45947265625,
+            "count": 511
+          },
+          {
+            "block": 551,
+            "nll_sum": 1208.886962890625,
+            "count": 511
+          },
+          {
+            "block": 552,
+            "nll_sum": 1240.956298828125,
+            "count": 511
+          },
+          {
+            "block": 553,
+            "nll_sum": 1209.00439453125,
+            "count": 511
+          },
+          {
+            "block": 554,
+            "nll_sum": 1298.2286376953125,
+            "count": 511
+          },
+          {
+            "block": 555,
+            "nll_sum": 1200.0924072265625,
+            "count": 511
+          },
+          {
+            "block": 556,
+            "nll_sum": 1336.268798828125,
+            "count": 511
+          },
+          {
+            "block": 557,
+            "nll_sum": 1232.5361328125,
+            "count": 511
+          },
+          {
+            "block": 558,
+            "nll_sum": 1272.263916015625,
+            "count": 511
+          },
+          {
+            "block": 559,
+            "nll_sum": 1096.2706298828125,
+            "count": 511
+          },
+          {
+            "block": 560,
+            "nll_sum": 1332.2451171875,
+            "count": 511
+          },
+          {
+            "block": 561,
+            "nll_sum": 956.89990234375,
+            "count": 511
+          },
+          {
+            "block": 562,
+            "nll_sum": 1133.93896484375,
+            "count": 511
+          },
+          {
+            "block": 563,
+            "nll_sum": 1404.1534423828125,
+            "count": 511
+          },
+          {
+            "block": 564,
+            "nll_sum": 1353.9696044921875,
+            "count": 511
+          },
+          {
+            "block": 565,
+            "nll_sum": 941.3262329101562,
+            "count": 511
+          },
+          {
+            "block": 566,
+            "nll_sum": 1031.6983642578125,
+            "count": 511
+          },
+          {
+            "block": 567,
+            "nll_sum": 1063.9635009765625,
+            "count": 511
+          },
+          {
+            "block": 568,
+            "nll_sum": 1268.959228515625,
+            "count": 511
+          },
+          {
+            "block": 569,
+            "nll_sum": 1292.917236328125,
+            "count": 511
+          },
+          {
+            "block": 570,
+            "nll_sum": 1341.961181640625,
+            "count": 511
+          },
+          {
+            "block": 571,
+            "nll_sum": 1420.0118408203125,
+            "count": 511
+          },
+          {
+            "block": 572,
+            "nll_sum": 929.6002197265625,
+            "count": 511
+          },
+          {
+            "block": 573,
+            "nll_sum": 1313.0379638671875,
+            "count": 511
+          },
+          {
+            "block": 574,
+            "nll_sum": 1342.0650634765625,
+            "count": 511
+          },
+          {
+            "block": 575,
+            "nll_sum": 1177.346923828125,
+            "count": 511
+          },
+          {
+            "block": 576,
+            "nll_sum": 1116.7435302734375,
+            "count": 511
+          },
+          {
+            "block": 577,
+            "nll_sum": 1113.1871337890625,
+            "count": 511
+          },
+          {
+            "block": 578,
+            "nll_sum": 1095.4930419921875,
+            "count": 511
+          },
+          {
+            "block": 579,
+            "nll_sum": 1058.13623046875,
+            "count": 511
+          },
+          {
+            "block": 580,
+            "nll_sum": 1084.705322265625,
+            "count": 511
+          },
+          {
+            "block": 581,
+            "nll_sum": 1155.398681640625,
+            "count": 511
+          },
+          {
+            "block": 582,
+            "nll_sum": 1112.769775390625,
+            "count": 511
+          },
+          {
+            "block": 583,
+            "nll_sum": 1162.5101318359375,
+            "count": 511
+          },
+          {
+            "block": 584,
+            "nll_sum": 1111.77099609375,
+            "count": 511
+          },
+          {
+            "block": 585,
+            "nll_sum": 1103.4510498046875,
+            "count": 511
+          },
+          {
+            "block": 586,
+            "nll_sum": 1144.5545654296875,
+            "count": 511
+          },
+          {
+            "block": 587,
+            "nll_sum": 1079.3614501953125,
+            "count": 511
+          },
+          {
+            "block": 588,
+            "nll_sum": 1136.189697265625,
+            "count": 511
+          },
+          {
+            "block": 589,
+            "nll_sum": 1313.9000244140625,
+            "count": 511
+          },
+          {
+            "block": 590,
+            "nll_sum": 1308.7625732421875,
+            "count": 511
+          },
+          {
+            "block": 591,
+            "nll_sum": 1142.2689208984375,
+            "count": 511
+          },
+          {
+            "block": 592,
+            "nll_sum": 1089.2037353515625,
+            "count": 511
+          },
+          {
+            "block": 593,
+            "nll_sum": 1179.393310546875,
+            "count": 511
+          },
+          {
+            "block": 594,
+            "nll_sum": 1134.5263671875,
+            "count": 511
+          },
+          {
+            "block": 595,
+            "nll_sum": 1064.5396728515625,
+            "count": 511
+          },
+          {
+            "block": 596,
+            "nll_sum": 1397.0869140625,
+            "count": 511
+          },
+          {
+            "block": 597,
+            "nll_sum": 1407.222412109375,
+            "count": 511
+          },
+          {
+            "block": 598,
+            "nll_sum": 1320.56396484375,
+            "count": 511
+          },
+          {
+            "block": 599,
+            "nll_sum": 1196.296630859375,
+            "count": 511
+          },
+          {
+            "block": 600,
+            "nll_sum": 1120.5352783203125,
+            "count": 511
+          },
+          {
+            "block": 601,
+            "nll_sum": 1091.8631591796875,
+            "count": 511
+          },
+          {
+            "block": 602,
+            "nll_sum": 1205.6103515625,
+            "count": 511
+          },
+          {
+            "block": 603,
+            "nll_sum": 1198.5848388671875,
+            "count": 511
+          },
+          {
+            "block": 604,
+            "nll_sum": 1243.0704345703125,
+            "count": 511
+          },
+          {
+            "block": 605,
+            "nll_sum": 1201.125732421875,
+            "count": 511
+          },
+          {
+            "block": 606,
+            "nll_sum": 1222.44482421875,
+            "count": 511
+          },
+          {
+            "block": 607,
+            "nll_sum": 1061.725341796875,
+            "count": 511
+          },
+          {
+            "block": 608,
+            "nll_sum": 1248.1044921875,
+            "count": 511
+          },
+          {
+            "block": 609,
+            "nll_sum": 1160.5294189453125,
+            "count": 511
+          },
+          {
+            "block": 610,
+            "nll_sum": 1168.426025390625,
+            "count": 511
+          },
+          {
+            "block": 611,
+            "nll_sum": 1181.408203125,
+            "count": 511
+          },
+          {
+            "block": 612,
+            "nll_sum": 1195.55908203125,
+            "count": 511
+          },
+          {
+            "block": 613,
+            "nll_sum": 1053.45361328125,
+            "count": 511
+          },
+          {
+            "block": 614,
+            "nll_sum": 1139.70849609375,
+            "count": 511
+          },
+          {
+            "block": 615,
+            "nll_sum": 1207.9327392578125,
+            "count": 511
+          },
+          {
+            "block": 616,
+            "nll_sum": 1178.739013671875,
+            "count": 511
+          },
+          {
+            "block": 617,
+            "nll_sum": 1022.841064453125,
+            "count": 511
+          },
+          {
+            "block": 618,
+            "nll_sum": 1116.1802978515625,
+            "count": 511
+          },
+          {
+            "block": 619,
+            "nll_sum": 981.7017211914062,
+            "count": 511
+          },
+          {
+            "block": 620,
+            "nll_sum": 1194.366943359375,
+            "count": 511
+          },
+          {
+            "block": 621,
+            "nll_sum": 1212.28173828125,
+            "count": 511
+          },
+          {
+            "block": 622,
+            "nll_sum": 1329.95751953125,
+            "count": 511
+          },
+          {
+            "block": 623,
+            "nll_sum": 1487.0657958984375,
+            "count": 511
+          },
+          {
+            "block": 624,
+            "nll_sum": 1003.0634765625,
+            "count": 511
+          },
+          {
+            "block": 625,
+            "nll_sum": 1136.726318359375,
+            "count": 511
+          },
+          {
+            "block": 626,
+            "nll_sum": 1141.507568359375,
+            "count": 511
+          },
+          {
+            "block": 627,
+            "nll_sum": 1072.068359375,
+            "count": 511
+          },
+          {
+            "block": 628,
+            "nll_sum": 1128.89208984375,
+            "count": 511
+          },
+          {
+            "block": 629,
+            "nll_sum": 1061.25146484375,
+            "count": 511
+          },
+          {
+            "block": 630,
+            "nll_sum": 1333.6151123046875,
+            "count": 511
+          },
+          {
+            "block": 631,
+            "nll_sum": 1140.9619140625,
+            "count": 511
+          },
+          {
+            "block": 632,
+            "nll_sum": 1163.172607421875,
+            "count": 511
+          },
+          {
+            "block": 633,
+            "nll_sum": 1248.665771484375,
+            "count": 511
+          },
+          {
+            "block": 634,
+            "nll_sum": 1212.988037109375,
+            "count": 511
+          },
+          {
+            "block": 635,
+            "nll_sum": 1106.7060546875,
+            "count": 511
+          },
+          {
+            "block": 636,
+            "nll_sum": 1141.44189453125,
+            "count": 511
+          },
+          {
+            "block": 637,
+            "nll_sum": 1366.9822998046875,
+            "count": 511
+          },
+          {
+            "block": 638,
+            "nll_sum": 1358.861083984375,
+            "count": 511
+          },
+          {
+            "block": 639,
+            "nll_sum": 1331.959716796875,
+            "count": 511
+          },
+          {
+            "block": 640,
+            "nll_sum": 1306.384765625,
+            "count": 511
+          },
+          {
+            "block": 641,
+            "nll_sum": 1361.78369140625,
+            "count": 511
+          },
+          {
+            "block": 642,
+            "nll_sum": 1143.844482421875,
+            "count": 511
+          },
+          {
+            "block": 643,
+            "nll_sum": 839.4871826171875,
+            "count": 511
+          },
+          {
+            "block": 644,
+            "nll_sum": 1088.585205078125,
+            "count": 511
+          },
+          {
+            "block": 645,
+            "nll_sum": 1320.9720458984375,
+            "count": 511
+          },
+          {
+            "block": 646,
+            "nll_sum": 1173.884765625,
+            "count": 511
+          },
+          {
+            "block": 647,
+            "nll_sum": 1281.75341796875,
+            "count": 511
+          },
+          {
+            "block": 648,
+            "nll_sum": 1055.4078369140625,
+            "count": 511
+          },
+          {
+            "block": 649,
+            "nll_sum": 1133.9803466796875,
+            "count": 511
+          },
+          {
+            "block": 650,
+            "nll_sum": 937.4642333984375,
+            "count": 511
+          },
+          {
+            "block": 651,
+            "nll_sum": 1057.84130859375,
+            "count": 511
+          },
+          {
+            "block": 652,
+            "nll_sum": 1389.7491455078125,
+            "count": 511
+          },
+          {
+            "block": 653,
+            "nll_sum": 850.7154541015625,
+            "count": 511
+          },
+          {
+            "block": 654,
+            "nll_sum": 909.295654296875,
+            "count": 511
+          },
+          {
+            "block": 655,
+            "nll_sum": 975.4389038085938,
+            "count": 511
+          },
+          {
+            "block": 656,
+            "nll_sum": 607.7215576171875,
+            "count": 511
+          },
+          {
+            "block": 657,
+            "nll_sum": 904.0509643554688,
+            "count": 511
+          },
+          {
+            "block": 658,
+            "nll_sum": 1060.1456298828125,
+            "count": 511
+          },
+          {
+            "block": 659,
+            "nll_sum": 1324.604248046875,
+            "count": 511
+          },
+          {
+            "block": 660,
+            "nll_sum": 1223.775146484375,
+            "count": 511
+          },
+          {
+            "block": 661,
+            "nll_sum": 1227.044921875,
+            "count": 511
+          },
+          {
+            "block": 662,
+            "nll_sum": 1145.274169921875,
+            "count": 511
+          },
+          {
+            "block": 663,
+            "nll_sum": 1358.013916015625,
+            "count": 511
+          },
+          {
+            "block": 664,
+            "nll_sum": 1196.193603515625,
+            "count": 511
+          },
+          {
+            "block": 665,
+            "nll_sum": 1335.895751953125,
+            "count": 511
+          },
+          {
+            "block": 666,
+            "nll_sum": 1183.9075927734375,
+            "count": 511
+          },
+          {
+            "block": 667,
+            "nll_sum": 1255.705322265625,
+            "count": 511
+          },
+          {
+            "block": 668,
+            "nll_sum": 1474.26123046875,
+            "count": 511
+          },
+          {
+            "block": 669,
+            "nll_sum": 1380.4249267578125,
+            "count": 511
+          },
+          {
+            "block": 670,
+            "nll_sum": 1102.2056884765625,
+            "count": 511
+          },
+          {
+            "block": 671,
+            "nll_sum": 1429.2841796875,
+            "count": 511
+          },
+          {
+            "block": 672,
+            "nll_sum": 1238.531005859375,
+            "count": 511
+          },
+          {
+            "block": 673,
+            "nll_sum": 1190.553955078125,
+            "count": 511
+          },
+          {
+            "block": 674,
+            "nll_sum": 1028.845458984375,
+            "count": 511
+          },
+          {
+            "block": 675,
+            "nll_sum": 1206.603271484375,
+            "count": 511
+          },
+          {
+            "block": 676,
+            "nll_sum": 1136.5343017578125,
+            "count": 511
+          },
+          {
+            "block": 677,
+            "nll_sum": 1174.973876953125,
+            "count": 511
+          },
+          {
+            "block": 678,
+            "nll_sum": 1181.024169921875,
+            "count": 511
+          },
+          {
+            "block": 679,
+            "nll_sum": 1195.0458984375,
+            "count": 511
+          },
+          {
+            "block": 680,
+            "nll_sum": 1387.73828125,
+            "count": 511
+          },
+          {
+            "block": 681,
+            "nll_sum": 1164.9088134765625,
+            "count": 511
+          },
+          {
+            "block": 682,
+            "nll_sum": 1181.630126953125,
+            "count": 511
+          },
+          {
+            "block": 683,
+            "nll_sum": 1115.207763671875,
+            "count": 511
+          },
+          {
+            "block": 684,
+            "nll_sum": 1264.20703125,
+            "count": 511
+          },
+          {
+            "block": 685,
+            "nll_sum": 1257.2186279296875,
+            "count": 511
+          },
+          {
+            "block": 686,
+            "nll_sum": 1278.419921875,
+            "count": 511
+          },
+          {
+            "block": 687,
+            "nll_sum": 1217.30517578125,
+            "count": 511
+          },
+          {
+            "block": 688,
+            "nll_sum": 1302.00732421875,
+            "count": 511
+          },
+          {
+            "block": 689,
+            "nll_sum": 1437.1241455078125,
+            "count": 511
+          },
+          {
+            "block": 690,
+            "nll_sum": 1331.7691650390625,
+            "count": 511
+          },
+          {
+            "block": 691,
+            "nll_sum": 1409.9910888671875,
+            "count": 511
+          },
+          {
+            "block": 692,
+            "nll_sum": 1281.1339111328125,
+            "count": 511
+          },
+          {
+            "block": 693,
+            "nll_sum": 1037.8106689453125,
+            "count": 511
+          },
+          {
+            "block": 694,
+            "nll_sum": 1092.6798095703125,
+            "count": 511
+          },
+          {
+            "block": 695,
+            "nll_sum": 176.38427734375,
+            "count": 51
+          }
+        ],
+        "protocol": "512-token disjoint context blocks; first token per block not scored; eager attention; FP32 cross entropy",
+        "weight_dtype": "torch.float32"
+      },
+      "precision": "FP32 shared weights, direct FP32 contractions/accumulation with saved FP16 factors/scales and packed codes",
+      "host_sync_note": "one synchronization at first-token boundary; none added for per-token logging/return; eager expert nonzero routing synchronizations remain part of both measured paths"
+    }
+  },
+  "quality_direct_minus_same_payload_decompressed": {
+    "mean": 9.941522328077316e-07,
+    "ci95": [
+      -1.240972490009858e-06,
+      3.5633067440120204e-06
+    ],
+    "unit": "contiguous512-token context block; token-weighted ratio of sums",
+    "blocks": 696,
+    "bootstrap_replications": 2000,
+    "seed": 919
+  },
+  "comparisons": [
+    {
+      "prompt_length": 32,
+      "teacher_forced": false,
+      "decode_seconds_direct_minus_reference_ci": {
+        "mean": 1.0434229168503406,
+        "n": 20,
+        "ci95": [
+          1.0310608133365375,
+          1.0557850203641437
+        ]
+      },
+      "same_generated_token_hash_groups": 20,
+      "groups": 20
+    },
+    {
+      "prompt_length": 32,
+      "teacher_forced": true,
+      "decode_seconds_direct_minus_reference_ci": {
+        "mean": 1.04640219494986,
+        "n": 20,
+        "ci95": [
+          1.0361961018309094,
+          1.0566082880688108
+        ]
+      },
+      "same_generated_token_hash_groups": 20,
+      "groups": 20
+    },
+    {
+      "prompt_length": 128,
+      "teacher_forced": false,
+      "decode_seconds_direct_minus_reference_ci": {
+        "mean": 1.0342414494502008,
+        "n": 20,
+        "ci95": [
+          1.031205313620752,
+          1.0372775852796496
+        ]
+      },
+      "same_generated_token_hash_groups": 20,
+      "groups": 20
+    },
+    {
+      "prompt_length": 128,
+      "teacher_forced": true,
+      "decode_seconds_direct_minus_reference_ci": {
+        "mean": 1.0492597233501328,
+        "n": 20,
+        "ci95": [
+          1.0380914992053376,
+          1.060427947494928
+        ]
+      },
+      "same_generated_token_hash_groups": 20,
+      "groups": 20
+    }
+  ],
+  "scope": "complete actual24-layer Granite forward, prefill, KV-cached greedy and identical-token teacher-forced decode; direct packed experts, unmodified shared weights; source checkpoint absent fromdecoder",
+  "limits": "one fixed validation prompt at context32/128,16 generated tokens; mode order not interleaved across fresh processes; no vendor-optimized packedINT4 whole-model comparator; does not establish universal speed",
+  "acceptance_reference_nll_tolerance": 0.001
+}

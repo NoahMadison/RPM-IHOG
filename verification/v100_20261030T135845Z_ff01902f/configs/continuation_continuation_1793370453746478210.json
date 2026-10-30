@@ -1,0 +1,8 @@
+{
+  "endpoint_steps": 6000,
+  "criterion": "if any common-recipe structured arm improves selection validation NLL by >.02 from step1200 to1500, continue all paired common and function-matched arms to the equal-token 6000 endpoint",
+  "parameters": "all hyperparameters and batch table unchanged; no test-based tuning",
+  "expected_runs": 27,
+  "cost_estimate": "600-step pilots take about22 training seconds; 27 x4500 remaining updates about75 GPU minutes plus validation/checkpoint/export/reload; below24h ceiling",
+  "wait_limit_seconds": 14400
+}

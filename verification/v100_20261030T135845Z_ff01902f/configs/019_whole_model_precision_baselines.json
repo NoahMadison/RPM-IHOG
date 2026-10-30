@@ -1,0 +1,13 @@
+{
+  "purpose": "expert-only compression withFP32 untouchedsharedtensors can exceedwholeFP16dense bytes; measure actualcompleteFP16baseline ratherthan claimwholemodelsavings fromexpertbpw",
+  "conditions": [
+    "denseAdamW allFP16",
+    "nativeoriginalfactors/rows allFP16shared",
+    "ordinarylowrankoriginalfactors/rows allFP16shared"
+  ],
+  "controls": "defaultdirectfactorarchives preserveFP32shared, separatelyreported; same selectedtrainedcheckpoints andmatchedcontainerpolicy",
+  "quality": "freshprocess eval withtrainingprecision/AMP afterloadingroundedstoredvalues; reportdelta vs same unroundedselectedmodel; no zero-loss assumption",
+  "targeted_dtype_change": "allparameterroundingexplicitlyintendedinthisprecisionvariant; originalsourcecheckpoint/files untouched",
+  "residency_limit": "trainingmodel loaderupcasts storedvalues toFP32parameters; archivebytesnotclaimedasGPUresidentbytes",
+  "execution": "currentexistingfactorcontroller exportsdefaultnative/LR; thisfollowup addsallFP16dense/native/LR afteritcompletes"
+}

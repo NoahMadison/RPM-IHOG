@@ -1,0 +1,20 @@
+{
+  "runs": [
+    {
+      "result": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/results/1793370371989775880_train_f7eb19",
+      "checkpoint": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/artifacts/training_1793370371989775880_train_f7eb19/checkpoint_000005.pt"
+    },
+    {
+      "result": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/results/1793370524813393695_train_ba6742",
+      "checkpoint": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/artifacts/training_1793370524813393695_train_ba6742/checkpoint_000010.pt"
+    },
+    {
+      "result": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/results/1793370558494515549_train_6a51ce",
+      "checkpoint": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/artifacts/training_1793370558494515549_train_6a51ce/checkpoint_000010.pt"
+    }
+  ],
+  "model_state_bitwise_equal": true,
+  "attempted_updates": 10,
+  "resume_at": 5,
+  "scope": "fixed real text main recipe; validation-only pipeline verification, not scientific training replication"
+}

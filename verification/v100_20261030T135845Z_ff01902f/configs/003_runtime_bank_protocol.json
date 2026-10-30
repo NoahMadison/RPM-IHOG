@@ -1,0 +1,20 @@
+{
+  "scope": "add full gated/routed first-layer Granite bank from exact full-model fidelity archive",
+  "batch_sizes": [
+    1,
+    4,
+    16,
+    128
+  ],
+  "timing_groups": 20,
+  "repeats_per_group": 5,
+  "warmup_per_variant": 3,
+  "order_seed": 551,
+  "reason_for_bank_repeats": "bounds cost of 32-expert reference loops; separate from matrix timing repeat=20 protocol",
+  "controls": [
+    "exact-payload dense FP32 bank",
+    "exact-payload dense FP16 bank"
+  ],
+  "precision": "direct FP32 residual/core, with explicitly counted resident FP32 factor copies; code bytes/scales unchanged from fidelity artifact",
+  "cpu_scope": "single-thread pure core component only; no combined fidelity/full-path claim"
+}

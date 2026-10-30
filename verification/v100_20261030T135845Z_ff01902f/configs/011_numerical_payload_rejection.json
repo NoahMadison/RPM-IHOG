@@ -1,0 +1,7 @@
+{
+  "finding": "real no-balancing activation-weighted codec can require inverse activation scales outsideFP16 finite range; initial ablation emitted nonfinite outputs and was rejected before metric acceptance",
+  "action": "new payload validator rejects nonfinite factors/scales and bad shapes/reserved codes; ablation records unsupported numerical configuration and continues other controls; no falseNLL/R2 accepted",
+  "main_training_source_dependencies": "unchanged/frozen; original balanced accepted outputs finite; no continuation lineage altered",
+  "followup": "FP32-scale or explicitly clipped/normalized activation-scale codec is separate experiment with its own bytes/fidelity; not silently substituted",
+  "git_https_push_auth": "dry run fails: could not readUsername; connectedGitHub API remains authorized/available for publication"
+}

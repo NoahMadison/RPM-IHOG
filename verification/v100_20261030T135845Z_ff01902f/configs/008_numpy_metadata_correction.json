@@ -1,0 +1,7 @@
+{
+  "finding": "initial audit enumerated duplicate distributions, reporting system NumPy2.3.5; the runtime .pth actually imported preexisting NumPy2.5.4. Optional lm-eval constrained install locally introduced2.3.5. Restore2.5.4 in task venv to match initial imported runtime.",
+  "original_environment_modified": false,
+  "training_math": "PyTorch only; batch/QR/model RNG are Torch. NumPy used for byte hashing and final statistical summaries; no NumPy optimizer, training minibatch RNG or forward/backward.",
+  "reporting_policy": "final statistics generated with restored2.5.4; raw per-run metrics preserved; timeline documented rather than claiming metadata pin was imported runtime",
+  "environment_mutation_scope": "only newly created task-owned venv; no old NumPy files uninstalled"
+}

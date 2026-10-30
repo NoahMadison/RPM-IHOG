@@ -1,0 +1,120 @@
+{
+  "version": 1,
+  "gpu_hours_ceiling": 24,
+  "main_seeds": [
+    11,
+    22,
+    33
+  ],
+  "ci": "paired Student-t 95% across independent seeds; contiguous-block bootstrap for NLL",
+  "tolerances": {
+    "training_noninferiority_nll": 0.02,
+    "compression_nll": 0.01
+  },
+  "training": {
+    "data": "WikiText-2 official splits; fixed GPT-2 tokenizer",
+    "legacy": {
+      "steps": 300,
+      "layers": 4,
+      "width": 256,
+      "experts": 16,
+      "topk": 2,
+      "rank": 8,
+      "factor_shape": [
+        16,
+        16
+      ],
+      "train_tokens": 900000,
+      "validation_tokens": 100000,
+      "vocabulary": 512
+    },
+    "main": {
+      "layers": 4,
+      "width": 256,
+      "experts": 16,
+      "topk": 2,
+      "rank": 8,
+      "sequence_length": 128,
+      "batch_size": 16,
+      "steps": 1500,
+      "continuation_steps": 6000,
+      "lr": 0.0003,
+      "arms": [
+        "adamw",
+        "row",
+        "tail",
+        "row_tail",
+        "native",
+        "lowrank",
+        "legacy_blend"
+      ],
+      "tail_schedule": "ramp from zero at step 300 to 0.003 per successful update at step 600",
+      "selection": "common recipe primary; bounded LR pilots 1e-4/3e-4 and rank 4/8, tail 0/0.0003/0.003 on validation; no test-based selection"
+    }
+  },
+  "pretrained": {
+    "models": [
+      "ibm-granite/granite-3.1-1b-a400m-base",
+      "HuggingFaceTB/SmolLM2-1.7B"
+    ],
+    "context": 512,
+    "stride": 512,
+    "eval": "all WikiText-2 test tokens in nonoverlapping 512-token blocks; first target of each block excluded; identical protocol baseline/compressed",
+    "calibration_sequences": 128,
+    "calibration_sequence_length": 128,
+    "codecs": [
+      "pure",
+      "ternary",
+      "int2",
+      "int2_sign",
+      "int4"
+    ],
+    "rank": 8,
+    "factor_size": 16,
+    "selection": "bounded layer pilot on validation; selected full-model codecs evaluated on test after fresh-process reload; reconstructed dense fallback labeled explicitly"
+  },
+  "runtime": {
+    "batches": [
+      1,
+      4,
+      16,
+      128
+    ],
+    "groups": 20,
+    "repeat": 20,
+    "warmup": 10,
+    "order": "seeded random permutation",
+    "scope": "exact serialized payload; dense reconstruction reference and factorized core+packed residual CUDA kernel"
+  },
+  "mechanism": {
+    "seeds": [
+      11,
+      22,
+      33,
+      44,
+      55
+    ],
+    "steps": 300,
+    "dimension": 64,
+    "observations": 16,
+    "arms": [
+      "sgd",
+      "adamw",
+      "row",
+      "tail",
+      "isotropic"
+    ],
+    "initializations": [
+      "zero",
+      "random"
+    ],
+    "metric": "actual update/gradient row/null norms, loss, fixed-bin entropy; no universal entropy inference"
+  },
+  "streaming": {
+    "protocol": "strict HTTP 206 and Content-Range; immutable source revision; complete tensors; archive coverage/reload/resume; increasing source count"
+  },
+  "distributed": {
+    "single_gpu": "unequal sharded-gradient and optimizer-update equality, measured payload and compressor costs",
+    "multi_gpu": "requires distinct GPU devices; otherwise blocked"
+  }
+}

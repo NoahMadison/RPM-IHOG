@@ -1,0 +1,20 @@
+{
+  "model": "Granite pinnedrevision",
+  "depths": [
+    0,
+    12,
+    23
+  ],
+  "variants": [
+    "activation+balance+rotation",
+    "no_activation",
+    "no_balance",
+    "no_rotation"
+  ],
+  "codec": "rank8_int2_sign, identical tensor payload fields; only one component toggled per control",
+  "calibration": "128 train sequences length128; actual routed inputs; downRMS from originalSiLU(gate)*up",
+  "evaluation": "16 validation sequences length128; completegatedbank withrouterweights, no finaltest fitting",
+  "metric": "held-outR2/MSE/cosine andactualtensorbytes",
+  "scope": "mechanism/calibration association at selected realbanks; no fullmodelperformanceclaim",
+  "bounded_search": "four predeclared toggles acrossfirst/middle/lastdepth; no grid/tuning onfinaltest"
+}
