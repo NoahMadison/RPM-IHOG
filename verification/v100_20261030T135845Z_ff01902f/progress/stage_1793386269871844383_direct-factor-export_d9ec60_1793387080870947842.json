@@ -1,0 +1,23 @@
+{
+  "stage": "direct-factor-export",
+  "result": "results/1793386269871844383_direct-factor-export_d9ec60",
+  "exit": {
+    "exit_code": 0,
+    "wall_seconds": 5.682262062000518
+  },
+  "prior_publication_commit": "2ce73430f0dfc9bd5c90c57cca24fca760da3d8e",
+  "PR": "https://github.com/NoahMadison/RPM-IHOG/pull/1",
+  "artifact_manifest_sha256": "db2cbb7acbfeb9ba7db618c7e17a8d4cad984ca8758840a09a67410d58b17eb3",
+  "pending_stages": "see append-only events and latest recovery handoff; blocked multiGPU is not a scientific failure",
+  "metrics": {
+    "kind": "native",
+    "seed": 11,
+    "selected_steps": 6000,
+    "function_matched": false,
+    "expert_bpw": 1.0625,
+    "whole_model_bpw": 20.417324006548593,
+    "serialized_bytes": 57088224,
+    "delta_nll": 1.938936176681949e-05,
+    "raw_evidence": "results/1793386269871844383_direct-factor-export_d9ec60/direct_factor_results.json"
+  }
+}
