@@ -678,3 +678,5 @@
 {"utc": "2026-10-30T19:08:35.699071+00:00", "event": "integrity_verified", "path": "reports/integrity_1793387315697757608.json", "staged": false}
 {"utc": "2026-10-30T19:14:20.816274+00:00", "event": "first_pass_scientific_execution_complete", "summary": "reports/006_20261030T191420Z_SUMMARY.md", "handoff": "RESUME_PROMPT_006.md"}
 {"utc": "2026-10-30T19:15:53.963526+00:00", "event": "stage_publication_prepared", "result": "results/1793386298932015483_direct-factor-export_01afcc", "parent": "3459ee74adb55dc6f96eb1f9cd2dadf0cb210e25", "progress": "progress/stage_1793386298932015483_direct-factor-export_01afcc_1793387753962901680.json"}
+{"utc": "2026-10-30T19:16:10.083652+00:00", "event": "published_stage", "commit": "7a02a916be03ecd9e3e20a69f9f7d1e7166bf950", "result": "results/1793386298932015483_direct-factor-export_01afcc"}
+{"utc": "2026-10-30T19:16:10.209615+00:00", "event": "stage_publication_prepared", "result": "results/1793386304623938289_direct-factor-export_01ba0c", "parent": "7a02a916be03ecd9e3e20a69f9f7d1e7166bf950", "progress": "progress/stage_1793386304623938289_direct-factor-export_01ba0c_1793387770209470253.json"}
