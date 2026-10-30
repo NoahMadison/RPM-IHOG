@@ -560,3 +560,47 @@
 {"utc": "2026-10-30T18:46:37.775412+00:00", "event": "stage_start", "stage": "train", "result": "results/1793385997775194711_train_1d2884"}
 {"utc": "2026-10-30T18:49:01.778333+00:00", "event": "context_handoff", "path": "RESUME_PROMPT_005.md", "PR": "https://github.com/NoahMadison/RPM-IHOG/pull/1", "state": "n5row/denseclosecall and exports/runtime pending; per-stagepublication active"}
 {"utc": "2026-10-30T18:49:05.014289+00:00", "event": "stage_publication_prepared", "result": "results/1793385115397241479_train-select_de0671", "parent": "2e65f472c15d47ce818d6fd9fca404af9a6a3bf2", "progress": "progress/stage_1793385115397241479_train-select_de0671_1793386145014109902.json"}
+{"utc": "2026-10-30T18:50:40.852919+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793385997775194711_train_1d2884"}
+{"utc": "2026-10-30T18:50:40.933236+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793386240933022802_train-select_82af61"}
+{"utc": "2026-10-30T18:50:49.073585+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793386240933022802_train-select_82af61"}
+{"utc": "2026-10-30T18:50:49.090761+00:00", "event": "closecall_job_exit", "kind": "row", "seed": 55, "returncode": 0}
+{"utc": "2026-10-30T18:50:49.090823+00:00", "event": "closecall_campaign_complete", "expanded": ["row"]}
+{"utc": "2026-10-30T18:50:52.587981+00:00", "event": "stage_start", "stage": "direct-factor-export", "result": "results/1793386252587799446_direct-factor-export_63f528"}
+{"utc": "2026-10-30T18:50:58.270779+00:00", "event": "stage_exit", "stage": "direct-factor-export", "exit_code": 0, "result": "results/1793386252587799446_direct-factor-export_63f528"}
+{"utc": "2026-10-30T18:50:58.356636+00:00", "event": "stage_start", "stage": "direct-factor-export", "result": "results/1793386258356419552_direct-factor-export_bc51f2"}
+{"utc": "2026-10-30T18:51:03.990931+00:00", "event": "stage_exit", "stage": "direct-factor-export", "exit_code": 0, "result": "results/1793386258356419552_direct-factor-export_bc51f2"}
+{"utc": "2026-10-30T18:51:04.061166+00:00", "event": "stage_start", "stage": "direct-factor-export", "result": "results/1793386264060969702_direct-factor-export_f188be"}
+{"utc": "2026-10-30T18:51:09.792620+00:00", "event": "stage_exit", "stage": "direct-factor-export", "exit_code": 0, "result": "results/1793386264060969702_direct-factor-export_f188be"}
+{"utc": "2026-10-30T18:51:09.872036+00:00", "event": "stage_start", "stage": "direct-factor-export", "result": "results/1793386269871844383_direct-factor-export_d9ec60"}
+{"utc": "2026-10-30T18:51:15.564978+00:00", "event": "stage_exit", "stage": "direct-factor-export", "exit_code": 0, "result": "results/1793386269871844383_direct-factor-export_d9ec60"}
+{"utc": "2026-10-30T18:51:15.641148+00:00", "event": "stage_start", "stage": "direct-factor-export", "result": "results/1793386275640950404_direct-factor-export_a4b431"}
+{"utc": "2026-10-30T18:51:21.374530+00:00", "event": "stage_exit", "stage": "direct-factor-export", "exit_code": 0, "result": "results/1793386275640950404_direct-factor-export_a4b431"}
+{"utc": "2026-10-30T18:51:21.452761+00:00", "event": "stage_start", "stage": "direct-factor-export", "result": "results/1793386281452577064_direct-factor-export_4af7d1"}
+{"utc": "2026-10-30T18:51:27.035218+00:00", "event": "stage_exit", "stage": "direct-factor-export", "exit_code": 0, "result": "results/1793386281452577064_direct-factor-export_4af7d1"}
+{"utc": "2026-10-30T18:51:27.047713+00:00", "event": "factor_export_campaign_complete", "runs": 6}
+{"utc": "2026-10-30T18:51:27.511019+00:00", "event": "stage_start", "stage": "direct-factor-export", "result": "results/1793386287510830367_direct-factor-export_20dca5"}
+{"utc": "2026-10-30T18:51:33.145767+00:00", "event": "stage_exit", "stage": "direct-factor-export", "exit_code": 0, "result": "results/1793386287510830367_direct-factor-export_20dca5"}
+{"utc": "2026-10-30T18:51:33.226690+00:00", "event": "stage_start", "stage": "direct-factor-export", "result": "results/1793386293226495740_direct-factor-export_b1c64a"}
+{"utc": "2026-10-30T18:51:38.857327+00:00", "event": "stage_exit", "stage": "direct-factor-export", "exit_code": 0, "result": "results/1793386293226495740_direct-factor-export_b1c64a"}
+{"utc": "2026-10-30T18:51:38.932206+00:00", "event": "stage_start", "stage": "direct-factor-export", "result": "results/1793386298932015483_direct-factor-export_01afcc"}
+{"utc": "2026-10-30T18:51:44.250829+00:00", "event": "published_stage", "commit": "0066472b46474050d94f257d010973f2873c2086", "result": "results/1793385115397241479_train-select_de0671"}
+{"utc": "2026-10-30T18:51:44.564645+00:00", "event": "stage_exit", "stage": "direct-factor-export", "exit_code": 0, "result": "results/1793386298932015483_direct-factor-export_01afcc"}
+{"utc": "2026-10-30T18:51:44.624131+00:00", "event": "stage_start", "stage": "direct-factor-export", "result": "results/1793386304623938289_direct-factor-export_01ba0c"}
+{"utc": "2026-10-30T18:51:50.255518+00:00", "event": "stage_exit", "stage": "direct-factor-export", "exit_code": 0, "result": "results/1793386304623938289_direct-factor-export_01ba0c"}
+{"utc": "2026-10-30T18:51:50.331657+00:00", "event": "stage_start", "stage": "direct-factor-export", "result": "results/1793386310331467869_direct-factor-export_bcb4fa"}
+{"utc": "2026-10-30T18:51:55.965958+00:00", "event": "stage_exit", "stage": "direct-factor-export", "exit_code": 0, "result": "results/1793386310331467869_direct-factor-export_bcb4fa"}
+{"utc": "2026-10-30T18:51:56.042970+00:00", "event": "stage_start", "stage": "direct-factor-export", "result": "results/1793386316042766999_direct-factor-export_20d479"}
+{"utc": "2026-10-30T18:52:01.674982+00:00", "event": "stage_exit", "stage": "direct-factor-export", "exit_code": 0, "result": "results/1793386316042766999_direct-factor-export_20d479"}
+{"utc": "2026-10-30T18:52:01.739006+00:00", "event": "stage_start", "stage": "direct-factor-export", "result": "results/1793386321738816029_direct-factor-export_5b6440"}
+{"utc": "2026-10-30T18:52:07.321288+00:00", "event": "stage_exit", "stage": "direct-factor-export", "exit_code": 0, "result": "results/1793386321738816029_direct-factor-export_5b6440"}
+{"utc": "2026-10-30T18:52:07.402116+00:00", "event": "stage_start", "stage": "direct-factor-export", "result": "results/1793386327401905501_direct-factor-export_d9bf17"}
+{"utc": "2026-10-30T18:52:12.983195+00:00", "event": "stage_exit", "stage": "direct-factor-export", "exit_code": 0, "result": "results/1793386327401905501_direct-factor-export_d9bf17"}
+{"utc": "2026-10-30T18:52:13.063284+00:00", "event": "stage_start", "stage": "direct-factor-export", "result": "results/1793386333063063224_direct-factor-export_d9a4ac"}
+{"utc": "2026-10-30T18:52:18.649317+00:00", "event": "stage_exit", "stage": "direct-factor-export", "exit_code": 0, "result": "results/1793386333063063224_direct-factor-export_d9a4ac"}
+{"utc": "2026-10-30T18:52:18.733871+00:00", "event": "stage_start", "stage": "direct-factor-export", "result": "results/1793386338733658715_direct-factor-export_85ee1a"}
+{"utc": "2026-10-30T18:52:24.416559+00:00", "event": "stage_exit", "stage": "direct-factor-export", "exit_code": 0, "result": "results/1793386338733658715_direct-factor-export_85ee1a"}
+{"utc": "2026-10-30T18:52:24.495324+00:00", "event": "stage_start", "stage": "direct-factor-export", "result": "results/1793386344495112288_direct-factor-export_e11c93"}
+{"utc": "2026-10-30T18:52:30.177574+00:00", "event": "stage_exit", "stage": "direct-factor-export", "exit_code": 0, "result": "results/1793386344495112288_direct-factor-export_e11c93"}
+{"utc": "2026-10-30T18:52:30.188660+00:00", "event": "precision_export_campaign_complete", "runs": 11}
+{"utc": "2026-10-30T18:52:30.678256+00:00", "event": "stage_start", "stage": "native-runtime", "result": "results/1793386350678058389_native-runtime_7b6dae"}
+{"utc": "2026-10-30T18:53:28.979085+00:00", "event": "stage_publication_prepared", "result": "results/1793385122239231239_train-select_b3bb27", "parent": "0066472b46474050d94f257d010973f2873c2086", "progress": "progress/stage_1793385122239231239_train-select_b3bb27_1793386408978935932.json"}
