@@ -604,3 +604,5 @@
 {"utc": "2026-10-30T18:52:30.188660+00:00", "event": "precision_export_campaign_complete", "runs": 11}
 {"utc": "2026-10-30T18:52:30.678256+00:00", "event": "stage_start", "stage": "native-runtime", "result": "results/1793386350678058389_native-runtime_7b6dae"}
 {"utc": "2026-10-30T18:53:28.979085+00:00", "event": "stage_publication_prepared", "result": "results/1793385122239231239_train-select_b3bb27", "parent": "0066472b46474050d94f257d010973f2873c2086", "progress": "progress/stage_1793385122239231239_train-select_b3bb27_1793386408978935932.json"}
+{"utc": "2026-10-30T18:53:39.919655+00:00", "event": "published_stage", "commit": "a7dc7f5a3cf4ae0fabf28dafff6585e258691816", "result": "results/1793385122239231239_train-select_b3bb27"}
+{"utc": "2026-10-30T18:53:40.053268+00:00", "event": "stage_publication_prepared", "result": "results/1793385128985734286_train-select_11e780", "parent": "a7dc7f5a3cf4ae0fabf28dafff6585e258691816", "progress": "progress/stage_1793385128985734286_train-select_11e780_1793386420053013479.json"}
