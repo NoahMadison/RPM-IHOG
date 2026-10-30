@@ -1,0 +1,17 @@
+{
+  "reference_decompressed.json": "54de98d5abf4b8034cefbb10cb67eb7ef3a49409b9c08046a50e8e2a1733716e",
+  "reference_dense_fp16.json": "778e5b37672d5a3f89c92931e7185c6885db51cd3172028bce7f62bfb4504d03",
+  "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "direct_factors.json": "8af20a80792934e56fcf00c4e9f0cb71ccc98f80c43586d3dccdc96d5301469b",
+  "direct_factors_fp16.json": "28828fde677ba382aa28e66979271ea353db494c010ec0b434d52457f9da6b1c",
+  "gpu.json": "baab3679e7271620ca95485e1ed6e0dd19ca61748780fcd1af5bdd6fcf946af8",
+  "process.json": "7236bd9e740cd770ae04beaad01544f3b9f17b8cbc42a7e6d15d79666549c6bc",
+  "config.json": "6ea761b5a15c30a1dbdaa28155becb3b8c070cad1b0caa0eb57e0ea5ddcc1c16",
+  "stderr.log": "b9abd3fe77b7725afbd78679092cf41fbd54f288daebf764c0101429a2a440d6",
+  "payload_correctness.json": "36ba7f7bb0f599badf7ce6ff6771e969ca212d1385bf9478b7b459c5441713b2",
+  "data_lineage.json": "229012daeb4333920ed97dfe2d91a230f50d7a3f7df38c7b735a50304db3293a",
+  "original_fp32.json": "3f286106d901b68a0a755676e0e9e00903b2213ecfe1a31c203ac9f70760bf0e",
+  "exit.json": "4fc175ce59b91ba9f4538a3ea4a74ff90d986e1c43f6b72d695bb5e58d7c24e2",
+  "worker_identity.json": "65fa8f5f58030eaaaaef98baf0065e5cc2a269b882ee999cb42686bc43764168",
+  "native_runtime_results.json": "fba5823b0120ccf9d10a9a952327faa453105d145a0a50392150a1872b490521"
+}
