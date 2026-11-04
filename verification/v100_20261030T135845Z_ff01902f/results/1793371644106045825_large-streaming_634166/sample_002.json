@@ -1,0 +1,35 @@
+{
+  "model": "Qwen/Qwen3.8-27B",
+  "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+  "status": "completed",
+  "source_tensor": "model.language_model.layers.28.mlp.up_proj.weight",
+  "bank_or_tensor_shape": [
+    17408,
+    5120
+  ],
+  "complete_matrix_shape": [
+    17408,
+    5120
+  ],
+  "expert_id": null,
+  "projection_selector": "up",
+  "source_dtype": "BF16",
+  "source_range_inclusive": [
+    3632437728,
+    3810695647
+  ],
+  "source_bytes": 178257920,
+  "source_sha256": "73883fb30e803225a96286810da05922cfc3206fde5d05dee0f56a4826f18f64",
+  "codec": "int2_sign",
+  "tensor_payload_bytes": 39112712,
+  "tensor_payload_bpw": 3.510662482766544,
+  "serialized_bytes": 39116041,
+  "archive_sha256": "78e7152e92c5d7d20a2be6268449d065d3f7ec8a8dfe2703cfb18fbec79c013c",
+  "weight_sqnr_db": 13.941362569922989,
+  "gpu_peak_allocated": 5474428416,
+  "gpu_peak_reserved": 6603931648,
+  "host_peak_rss_kib": 1610360,
+  "scope": "actual complete dense projection or expert matrix; no full language-model quality/archive/residency",
+  "max_live_HTTP_response_bytes": 178257920,
+  "conversion_memory_note": "source buffer plus per-matrix dtype/device conversions and SVD/codec workspace included in RSS/GPU peaks; range bytes are not total process memory"
+}

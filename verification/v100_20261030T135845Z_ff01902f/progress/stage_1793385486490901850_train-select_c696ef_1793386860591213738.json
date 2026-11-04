@@ -1,0 +1,20 @@
+{
+  "stage": "train-select",
+  "result": "results/1793385486490901850_train-select_c696ef",
+  "exit": {
+    "exit_code": 0,
+    "wall_seconds": 8.484432208999351
+  },
+  "prior_publication_commit": "4e37ba53bdeb59a2e54b0bb117fc06c2170b4d0d",
+  "PR": "https://github.com/NoahMadison/RPM-IHOG/pull/1",
+  "artifact_manifest_sha256": "82a410b3da67761e6739f0458e8701c65b922cf226f51f894f26cbc357b38446",
+  "pending_stages": "see append-only events and latest recovery handoff; blocked multiGPU is not a scientific failure",
+  "metrics": {
+    "kind": "adamw",
+    "seed": 44,
+    "selected_steps": 6000,
+    "function_matched": false,
+    "original_test_nll": 5.489770268778511,
+    "raw_evidence": "results/1793385486490901850_train-select_c696ef/selected_training_results.json"
+  }
+}

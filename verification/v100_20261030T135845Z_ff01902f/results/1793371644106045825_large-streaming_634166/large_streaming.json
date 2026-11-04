@@ -1,0 +1,403 @@
+{
+  "samples": [
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+      "status": "completed",
+      "source_tensor": "model.language_model.layers.4.mlp.gate_proj.weight",
+      "bank_or_tensor_shape": [
+        17408,
+        5120
+      ],
+      "complete_matrix_shape": [
+        17408,
+        5120
+      ],
+      "expert_id": null,
+      "projection_selector": "gate",
+      "source_dtype": "BF16",
+      "source_range_inclusive": [
+        408951048,
+        587208967
+      ],
+      "source_bytes": 178257920,
+      "source_sha256": "06f98bd48072e7c80dffaa6c135cb08f0fb4026d929334e859e0b91d936bae24",
+      "codec": "int2_sign",
+      "tensor_payload_bytes": 39112712,
+      "tensor_payload_bpw": 3.510662482766544,
+      "serialized_bytes": 39116041,
+      "archive_sha256": "33dbcbe5d531be5c014ba4a8f6ad5b8435f448fa86bf7cc646e5f497ee5e4084",
+      "weight_sqnr_db": 13.952358391302958,
+      "gpu_peak_allocated": 5474428416,
+      "gpu_peak_reserved": 6513754112,
+      "host_peak_rss_kib": 1298060,
+      "scope": "actual complete dense projection or expert matrix; no full language-model quality/archive/residency",
+      "max_live_HTTP_response_bytes": 178257920,
+      "conversion_memory_note": "source buffer plus per-matrix dtype/device conversions and SVD/codec workspace included in RSS/GPU peaks; range bytes are not total process memory"
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+      "status": "completed",
+      "source_tensor": "model.language_model.layers.28.mlp.up_proj.weight",
+      "bank_or_tensor_shape": [
+        17408,
+        5120
+      ],
+      "complete_matrix_shape": [
+        17408,
+        5120
+      ],
+      "expert_id": null,
+      "projection_selector": "up",
+      "source_dtype": "BF16",
+      "source_range_inclusive": [
+        3632437728,
+        3810695647
+      ],
+      "source_bytes": 178257920,
+      "source_sha256": "73883fb30e803225a96286810da05922cfc3206fde5d05dee0f56a4826f18f64",
+      "codec": "int2_sign",
+      "tensor_payload_bytes": 39112712,
+      "tensor_payload_bpw": 3.510662482766544,
+      "serialized_bytes": 39116041,
+      "archive_sha256": "78e7152e92c5d7d20a2be6268449d065d3f7ec8a8dfe2703cfb18fbec79c013c",
+      "weight_sqnr_db": 13.941362569922989,
+      "gpu_peak_allocated": 5474428416,
+      "gpu_peak_reserved": 6603931648,
+      "host_peak_rss_kib": 1610360,
+      "scope": "actual complete dense projection or expert matrix; no full language-model quality/archive/residency",
+      "max_live_HTTP_response_bytes": 178257920,
+      "conversion_memory_note": "source buffer plus per-matrix dtype/device conversions and SVD/codec workspace included in RSS/GPU peaks; range bytes are not total process memory"
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+      "status": "completed",
+      "source_tensor": "model.language_model.layers.52.mlp.down_proj.weight",
+      "bank_or_tensor_shape": [
+        5120,
+        17408
+      ],
+      "complete_matrix_shape": [
+        5120,
+        17408
+      ],
+      "expert_id": null,
+      "projection_selector": "down",
+      "source_dtype": "BF16",
+      "source_range_inclusive": [
+        3275921888,
+        3454179807
+      ],
+      "source_bytes": 178257920,
+      "source_sha256": "7e4bb5bc2b8512e5fa2167fe91daa7da5ad364a13ba7df0ceefd84ca39364a9c",
+      "codec": "int2_sign",
+      "tensor_payload_bytes": 39063560,
+      "tensor_payload_bpw": 3.5062507180606617,
+      "serialized_bytes": 39066889,
+      "archive_sha256": "4ad4fc0447288db4451162d66badd3bb5ebfa1286fde992fc87fc7d584b30846",
+      "weight_sqnr_db": 13.93582858959843,
+      "gpu_peak_allocated": 5474428416,
+      "gpu_peak_reserved": 6603931648,
+      "host_peak_rss_kib": 1645984,
+      "scope": "actual complete dense projection or expert matrix; no full language-model quality/archive/residency",
+      "max_live_HTTP_response_bytes": 178257920,
+      "conversion_memory_note": "source buffer plus per-matrix dtype/device conversions and SVD/codec workspace included in RSS/GPU peaks; range bytes are not total process memory"
+    },
+    {
+      "model": "Qwen/Qwen3.8-Flash-Next",
+      "revision": "de4b8e4d43b917e7706784d8bb445c9af86a3540",
+      "status": "completed",
+      "source_tensor": "model.language_model.layers.0.mlp.experts.gate_up_proj",
+      "bank_or_tensor_shape": [
+        512,
+        1280,
+        2560
+      ],
+      "complete_matrix_shape": [
+        1280,
+        2560
+      ],
+      "expert_id": 7,
+      "projection_selector": "gate",
+      "source_dtype": "BF16",
+      "source_range_inclusive": [
+        45875368,
+        52428967
+      ],
+      "source_bytes": 6553600,
+      "source_sha256": "9536f54ece41bd96a543fdda0cbbf92bbcf15c24fdecb6973e61b50e3b2182c5",
+      "codec": "int2_sign",
+      "tensor_payload_bytes": 1450504,
+      "tensor_payload_bpw": 3.54126953125,
+      "serialized_bytes": 1453833,
+      "archive_sha256": "6d87c3e7ba1fecccc7a196788e64aacc21a3456e0de485205d9eeddcd8e1d3d9",
+      "weight_sqnr_db": 13.987227079270363,
+      "gpu_peak_allocated": 210833408,
+      "gpu_peak_reserved": 257949696,
+      "host_peak_rss_kib": 1645984,
+      "scope": "actual complete dense projection or expert matrix; no full language-model quality/archive/residency",
+      "max_live_HTTP_response_bytes": 6553600,
+      "conversion_memory_note": "source buffer plus per-matrix dtype/device conversions and SVD/codec workspace included in RSS/GPU peaks; range bytes are not total process memory"
+    },
+    {
+      "model": "Qwen/Qwen3.8-Flash-Next",
+      "revision": "de4b8e4d43b917e7706784d8bb445c9af86a3540",
+      "status": "completed",
+      "source_tensor": "model.language_model.layers.24.mlp.experts.gate_up_proj",
+      "bank_or_tensor_shape": [
+        512,
+        1280,
+        2560
+      ],
+      "complete_matrix_shape": [
+        1280,
+        2560
+      ],
+      "expert_id": 319,
+      "projection_selector": "up",
+      "source_dtype": "BF16",
+      "source_range_inclusive": [
+        2090598576,
+        2097152175
+      ],
+      "source_bytes": 6553600,
+      "source_sha256": "f53389125508d09ba40df3ecd581c5c6059b58208328941575d7c1de3f3c64fd",
+      "codec": "int2_sign",
+      "tensor_payload_bytes": 1450504,
+      "tensor_payload_bpw": 3.54126953125,
+      "serialized_bytes": 1453833,
+      "archive_sha256": "1f972e3e33d955dd81819e325054c78d6565997dee353009239be3c86d08f89e",
+      "weight_sqnr_db": 13.985791587840602,
+      "gpu_peak_allocated": 210833408,
+      "gpu_peak_reserved": 257949696,
+      "host_peak_rss_kib": 1645984,
+      "scope": "actual complete dense projection or expert matrix; no full language-model quality/archive/residency",
+      "max_live_HTTP_response_bytes": 6553600,
+      "conversion_memory_note": "source buffer plus per-matrix dtype/device conversions and SVD/codec workspace included in RSS/GPU peaks; range bytes are not total process memory"
+    },
+    {
+      "model": "Qwen/Qwen3.8-Flash-Next",
+      "revision": "de4b8e4d43b917e7706784d8bb445c9af86a3540",
+      "status": "completed",
+      "source_tensor": "model.language_model.layers.47.mlp.experts.down_proj",
+      "bank_or_tensor_shape": [
+        512,
+        2560,
+        640
+      ],
+      "complete_matrix_shape": [
+        2560,
+        640
+      ],
+      "expert_id": 106,
+      "projection_selector": "down",
+      "source_dtype": "BF16",
+      "source_range_inclusive": [
+        347345376,
+        350622175
+      ],
+      "source_bytes": 3276800,
+      "source_sha256": "d254ef540185cab4c2a53b3ab929fdd6944dfd2b7000caf9ebd61a8c4fd91b0d",
+      "codec": "int2_sign",
+      "tensor_payload_bytes": 737544,
+      "tensor_payload_bpw": 3.6012890625,
+      "serialized_bytes": 740873,
+      "archive_sha256": "005db618dffc0ebcba65b7b4e204146232d202304bfce79b66e316c168f72fa3",
+      "weight_sqnr_db": 14.012636306888488,
+      "gpu_peak_allocated": 111096320,
+      "gpu_peak_reserved": 146800640,
+      "host_peak_rss_kib": 1645984,
+      "scope": "actual complete dense projection or expert matrix; no full language-model quality/archive/residency",
+      "max_live_HTTP_response_bytes": 3276800,
+      "conversion_memory_note": "source buffer plus per-matrix dtype/device conversions and SVD/codec workspace included in RSS/GPU peaks; range bytes are not total process memory"
+    }
+  ],
+  "HTTP_range_requests": [
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+      "start": 0,
+      "end": 7,
+      "bytes": 8,
+      "attempt": 0,
+      "content_range": "bytes 0-7/3043080328",
+      "sha256": "031c60adfb474131774f63470a61a16493dd9eb02f4e03e7c756c13b7193e645"
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+      "start": 8,
+      "end": 6151,
+      "bytes": 6144,
+      "attempt": 0,
+      "content_range": "bytes 8-6151/3043080328",
+      "sha256": "9280c80e72b3937a3ddf26f710905110dce1afa90fa9490c1fba8ea004337059"
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+      "start": 408951048,
+      "end": 587208967,
+      "bytes": 178257920,
+      "attempt": 0,
+      "content_range": "bytes 408951048-587208967/3043080328",
+      "sha256": "06f98bd48072e7c80dffaa6c135cb08f0fb4026d929334e859e0b91d936bae24"
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+      "start": 0,
+      "end": 7,
+      "bytes": 8,
+      "attempt": 0,
+      "content_range": "bytes 0-7/3979553696",
+      "sha256": "b0ba8b19389c4cce378d24043568e6790ebfdb7c36cf04e5598b985f1bd9fb57"
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+      "start": 8,
+      "end": 9951,
+      "bytes": 9944,
+      "attempt": 0,
+      "content_range": "bytes 8-9951/3979553696",
+      "sha256": "d6d64a048584f6e4ef92e2525704b6d674029b83b8b2fd938ae3757dacbc7219"
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+      "start": 3632437728,
+      "end": 3810695647,
+      "bytes": 178257920,
+      "attempt": 0,
+      "content_range": "bytes 3632437728-3810695647/3979553696",
+      "sha256": "73883fb30e803225a96286810da05922cfc3206fde5d05dee0f56a4826f18f64"
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+      "start": 0,
+      "end": 7,
+      "bytes": 8,
+      "attempt": 0,
+      "content_range": "bytes 0-7/3979553696",
+      "sha256": "b0ba8b19389c4cce378d24043568e6790ebfdb7c36cf04e5598b985f1bd9fb57"
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+      "start": 8,
+      "end": 9951,
+      "bytes": 9944,
+      "attempt": 0,
+      "content_range": "bytes 8-9951/3979553696",
+      "sha256": "1712cb24f3a3165a69216c5250ed89511ceb4005d9cb893a57d9aaf76c531702"
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+      "start": 3275921888,
+      "end": 3454179807,
+      "bytes": 178257920,
+      "attempt": 0,
+      "content_range": "bytes 3275921888-3454179807/3979553696",
+      "sha256": "7e4bb5bc2b8512e5fa2167fe91daa7da5ad364a13ba7df0ceefd84ca39364a9c"
+    },
+    {
+      "model": "Qwen/Qwen3.8-Flash-Next",
+      "revision": "de4b8e4d43b917e7706784d8bb445c9af86a3540",
+      "start": 0,
+      "end": 7,
+      "bytes": 8,
+      "attempt": 0,
+      "content_range": "bytes 0-7/3355443368",
+      "sha256": "1fdfd601af3bc480d52aa5a42cfba0b9fa501b3137c74bd4a08a46c096a0e60e"
+    },
+    {
+      "model": "Qwen/Qwen3.8-Flash-Next",
+      "revision": "de4b8e4d43b917e7706784d8bb445c9af86a3540",
+      "start": 8,
+      "end": 167,
+      "bytes": 160,
+      "attempt": 0,
+      "content_range": "bytes 8-167/3355443368",
+      "sha256": "d482a7b5ad9050e1ec1541aa95e6ce3e836d943641748dbb0836f0c5232e3f9d"
+    },
+    {
+      "model": "Qwen/Qwen3.8-Flash-Next",
+      "revision": "de4b8e4d43b917e7706784d8bb445c9af86a3540",
+      "start": 45875368,
+      "end": 52428967,
+      "bytes": 6553600,
+      "attempt": 0,
+      "content_range": "bytes 45875368-52428967/3355443368",
+      "sha256": "9536f54ece41bd96a543fdda0cbbf92bbcf15c24fdecb6973e61b50e3b2182c5"
+    },
+    {
+      "model": "Qwen/Qwen3.8-Flash-Next",
+      "revision": "de4b8e4d43b917e7706784d8bb445c9af86a3540",
+      "start": 0,
+      "end": 7,
+      "bytes": 8,
+      "attempt": 0,
+      "content_range": "bytes 0-7/3355443376",
+      "sha256": "3be9e31f8f3c1cb49532ea51a10c7fbc69c161ffbfb5bacd6db3245ef240aaba"
+    },
+    {
+      "model": "Qwen/Qwen3.8-Flash-Next",
+      "revision": "de4b8e4d43b917e7706784d8bb445c9af86a3540",
+      "start": 8,
+      "end": 175,
+      "bytes": 168,
+      "attempt": 0,
+      "content_range": "bytes 8-175/3355443376",
+      "sha256": "b09d2c4023d920db48857d9164d621ec752f083f9189212ce9b9a27fb389ba3c"
+    },
+    {
+      "model": "Qwen/Qwen3.8-Flash-Next",
+      "revision": "de4b8e4d43b917e7706784d8bb445c9af86a3540",
+      "start": 2090598576,
+      "end": 2097152175,
+      "bytes": 6553600,
+      "attempt": 0,
+      "content_range": "bytes 2090598576-2097152175/3355443376",
+      "sha256": "f53389125508d09ba40df3ecd581c5c6059b58208328941575d7c1de3f3c64fd"
+    },
+    {
+      "model": "Qwen/Qwen3.8-Flash-Next",
+      "revision": "de4b8e4d43b917e7706784d8bb445c9af86a3540",
+      "start": 0,
+      "end": 7,
+      "bytes": 8,
+      "attempt": 0,
+      "content_range": "bytes 0-7/1948519840",
+      "sha256": "b591e0aa81bc3ecb4ee921f89189355c40ebe3ed2570787e38c7f869345c19b9"
+    },
+    {
+      "model": "Qwen/Qwen3.8-Flash-Next",
+      "revision": "de4b8e4d43b917e7706784d8bb445c9af86a3540",
+      "start": 8,
+      "end": 4575,
+      "bytes": 4568,
+      "attempt": 0,
+      "content_range": "bytes 8-4575/1948519840",
+      "sha256": "603c7d6eb958abd92e1a270d6bef6f33391438ac1409de320de2f79c666b737d"
+    },
+    {
+      "model": "Qwen/Qwen3.8-Flash-Next",
+      "revision": "de4b8e4d43b917e7706784d8bb445c9af86a3540",
+      "start": 347345376,
+      "end": 350622175,
+      "bytes": 3276800,
+      "attempt": 0,
+      "content_range": "bytes 347345376-350622175/1948519840",
+      "sha256": "d254ef540185cab4c2a53b3ab929fdd6944dfd2b7000caf9ebd61a8c4fd91b0d"
+    }
+  ],
+  "actual_downloaded_bytes": 551188736,
+  "full_large_model_archive_status": "not_run",
+  "large_model_full_quality_status": "not_run",
+  "large_model_residency_status": "not_run"
+}

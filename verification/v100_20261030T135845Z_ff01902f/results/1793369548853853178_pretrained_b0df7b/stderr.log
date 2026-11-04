@@ -1,0 +1,32 @@
+Loading weights:   0%|          | 0/218 [00:00<?, ?it/s]Loading weights:  55%|█████▍    | 119/218 [00:00<00:00, 1153.64it/s]Loading weights: 100%|██████████| 218/218 [00:00<00:00, 1191.83it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Traceback (most recent call last):
+  File "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/run_verification.py", line 46, in <module>
+    if __name__=='__main__': main()
+                             ~~~~^^
+  File "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/run_verification.py", line 22, in main
+    module=importlib.import_module(STAGES[args.stage]);module.main(out,args)
+                                                       ~~~~~~~~~~~^^^^^^^^^^
+  File "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/src/pretrained.py", line 111, in main
+    baseline={'validation':evaluate(model,tokens['validation'],limit=8),'test':evaluate(model,tokens['test'],limit=limit)};write_json(out/'baseline.json',baseline)
+                                                                                                                           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/src/common.py", line 16, in write_json
+    with path.open('x') as f: json.dump(obj, f, indent=2, allow_nan=False)
+                              ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/json/__init__.py", line 181, in dump
+    for chunk in iterable:
+                 ^^^^^^^^
+  File "/usr/lib/python3.14/json/encoder.py", line 444, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/lib/python3.14/json/encoder.py", line 413, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.14/json/encoder.py", line 405, in _iterencode_dict
+    yield _floatstr(value)
+          ~~~~~~~~~^^^^^^^
+  File "/usr/lib/python3.14/json/encoder.py", line 242, in floatstr
+    raise ValueError(
+        "Out of range float values are not JSON compliant: " +
+        repr(o))
+ValueError: Out of range float values are not JSON compliant: nan
+when serializing dict item 'nll'
+when serializing dict item 'validation'

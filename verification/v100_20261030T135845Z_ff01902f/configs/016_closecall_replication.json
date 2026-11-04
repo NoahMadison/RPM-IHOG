@@ -1,0 +1,23 @@
+{
+  "initial_seeds": [
+    11,
+    22,
+    33
+  ],
+  "extra_seeds": [
+    44,
+    55
+  ],
+  "contrast": "validation-selected testNLL candidate-minus-dense, same6000-updatebudget",
+  "candidate_arms": [
+    "row",
+    "tail",
+    "row_tail",
+    "native"
+  ],
+  "trigger": "initial97.5%CI straddles+.02, or mean is within.01 of+.02; decision before any6000 testresult",
+  "replication": "dense plus triggeredarms get2 extra independentpairedseeds; same LR/rank/tail/data/batches recipe; validation-selected savedcheckpoint",
+  "confidence": "95% intervals descriptive; engineeringdecision uses97.5% at initialn3/finaln5, alpha.025+.025 per contrast; no cross-method multiplicity claim",
+  "budget_estimate_gpu_minutes_max": 55,
+  "reason": "atleast3mainseeds;5forstrongclosecallwhenpractical"
+}

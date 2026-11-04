@@ -1,0 +1,335 @@
+{
+  "complete_fixture_archives": [
+    {
+      "fixture_tensor_count": 2,
+      "source_bytes": 65944,
+      "downloaded_bytes": 65944,
+      "peak_live_source_range_bytes": 65536,
+      "archive_bytes_including_manifests": 21923,
+      "resumed_reused_artifacts": 1,
+      "coverage_complete": true,
+      "fresh_process_reload": {
+        "verified": [
+          "expert_000",
+          "norm"
+        ],
+        "source_consulted": false
+      },
+      "host_peak_rss_kib": 1073592,
+      "gpu_peak_allocated": 10102272
+    },
+    {
+      "fixture_tensor_count": 9,
+      "source_bytes": 525240,
+      "downloaded_bytes": 525240,
+      "peak_live_source_range_bytes": 65536,
+      "archive_bytes_including_manifests": 152983,
+      "resumed_reused_artifacts": 1,
+      "coverage_complete": true,
+      "fresh_process_reload": {
+        "verified": [
+          "expert_000",
+          "expert_001",
+          "expert_002",
+          "expert_003",
+          "expert_004",
+          "expert_005",
+          "expert_006",
+          "expert_007",
+          "norm"
+        ],
+        "source_consulted": false
+      },
+      "host_peak_rss_kib": 1074872,
+      "gpu_peak_allocated": 10228224
+    },
+    {
+      "fixture_tensor_count": 33,
+      "source_bytes": 2100016,
+      "downloaded_bytes": 2100016,
+      "peak_live_source_range_bytes": 65536,
+      "archive_bytes_including_manifests": 602368,
+      "resumed_reused_artifacts": 1,
+      "coverage_complete": true,
+      "fresh_process_reload": {
+        "verified": [
+          "expert_000",
+          "expert_001",
+          "expert_002",
+          "expert_003",
+          "expert_004",
+          "expert_005",
+          "expert_006",
+          "expert_007",
+          "expert_008",
+          "expert_009",
+          "expert_010",
+          "expert_011",
+          "expert_012",
+          "expert_013",
+          "expert_014",
+          "expert_015",
+          "expert_016",
+          "expert_017",
+          "expert_018",
+          "expert_019",
+          "expert_020",
+          "expert_021",
+          "expert_022",
+          "expert_023",
+          "expert_024",
+          "expert_025",
+          "expert_026",
+          "expert_027",
+          "expert_028",
+          "expert_029",
+          "expert_030",
+          "expert_031",
+          "norm"
+        ],
+        "source_consulted": false
+      },
+      "host_peak_rss_kib": 1077432,
+      "gpu_peak_allocated": 10228224
+    }
+  ],
+  "real_tensor_streaming": {
+    "samples": [
+      {
+        "model": "ibm-granite/granite-3.1-1b-a400m-base",
+        "revision": "408b6e90baab8cf24f4aa9f8e19703ffa0a53b29",
+        "tensor": "model.layers.0.block_sparse_moe.input_linear.weight",
+        "bank_shape": [
+          32,
+          1024,
+          1024
+        ],
+        "complete_expert": 7,
+        "expert_shape": [
+          1024,
+          1024
+        ],
+        "source_range": [
+          115362568,
+          117459719
+        ],
+        "source_bytes": 2097152,
+        "source_sha256": "7d5c38b7af27490d6297d672d4558cec7e5de22a0c972999f84d649043f2e9d5",
+        "archive_bytes": 340817,
+        "archive_sha256": "cb318067468d66bf88a60565d94e20da52dc53a8f261ee627dc30e0585b5420d",
+        "sqnr_db": 7.404625939462136,
+        "scope": "complete expert matrix sample, not full archive/model"
+      },
+      {
+        "model": "ibm-granite/granite-3.1-1b-a400m-base",
+        "revision": "408b6e90baab8cf24f4aa9f8e19703ffa0a53b29",
+        "tensor": "model.layers.0.block_sparse_moe.output_linear.weight",
+        "bank_shape": [
+          32,
+          1024,
+          512
+        ],
+        "complete_expert": 7,
+        "expert_shape": [
+          1024,
+          512
+        ],
+        "source_range": [
+          175131400,
+          176179975
+        ],
+        "source_bytes": 1048576,
+        "source_sha256": "ce7090f9f51dc528f84bd160aef60cf60ba3f2a9278ae897cf6a71dd5d818c30",
+        "archive_bytes": 175953,
+        "archive_sha256": "cd5f36816e66f68ba02ab1f4b305fcbe28dd307aefa8b80c4e1730c950b35bb0",
+        "sqnr_db": 7.458257515453064,
+        "scope": "complete expert matrix sample, not full archive/model"
+      },
+      {
+        "model": "ibm-granite/granite-3.1-1b-a400m-base",
+        "revision": "408b6e90baab8cf24f4aa9f8e19703ffa0a53b29",
+        "tensor": "model.layers.12.block_sparse_moe.input_linear.weight",
+        "bank_shape": [
+          32,
+          1024,
+          1024
+        ],
+        "complete_expert": 3,
+        "expert_shape": [
+          1024,
+          1024
+        ],
+        "source_range": [
+          535071496,
+          537168647
+        ],
+        "source_bytes": 2097152,
+        "source_sha256": "09d11ed8cc2c765048ff1d139d782ed3bdb3f88f9098fcc85b12b9fe3a921d73",
+        "archive_bytes": 340817,
+        "archive_sha256": "bb105f77db5dc76e32142af0420cbb04aca0111181de0d184e3788c5804a0283",
+        "sqnr_db": 7.417266271119619,
+        "scope": "complete expert matrix sample, not full archive/model"
+      },
+      {
+        "model": "ibm-granite/granite-3.1-1b-a400m-base",
+        "revision": "408b6e90baab8cf24f4aa9f8e19703ffa0a53b29",
+        "tensor": "model.layers.12.block_sparse_moe.output_linear.weight",
+        "bank_shape": [
+          32,
+          1024,
+          512
+        ],
+        "complete_expert": 3,
+        "expert_shape": [
+          1024,
+          512
+        ],
+        "source_range": [
+          599034632,
+          600083207
+        ],
+        "source_bytes": 1048576,
+        "source_sha256": "3de691ea8214f9584649cd540b3b2eab16c4dadacab6bf9dcd90e4b9e1429d1b",
+        "archive_bytes": 175953,
+        "archive_sha256": "3c71333ad2915e712030ec662a2dd838f10766b916cf4f1949c75240b3902ab6",
+        "sqnr_db": 7.472315790562747,
+        "scope": "complete expert matrix sample, not full archive/model"
+      },
+      {
+        "model": "ibm-granite/granite-3.1-1b-a400m-base",
+        "revision": "408b6e90baab8cf24f4aa9f8e19703ffa0a53b29",
+        "tensor": "model.layers.23.block_sparse_moe.input_linear.weight",
+        "bank_shape": [
+          32,
+          1024,
+          1024
+        ],
+        "complete_expert": 18,
+        "expert_shape": [
+          1024,
+          1024
+        ],
+        "source_range": [
+          606501816,
+          608598967
+        ],
+        "source_bytes": 2097152,
+        "source_sha256": "7f5dcb518764780cff16e5345f56c8d562ed1fbe3346ece85ee1d4ca601ab4b1",
+        "archive_bytes": 340817,
+        "archive_sha256": "25e0876a56a5b7a8f54dc0f38943779b9a7aa003946b6c9fabc7e95c759475df",
+        "sqnr_db": 7.423844487718955,
+        "scope": "complete expert matrix sample, not full archive/model"
+      },
+      {
+        "model": "ibm-granite/granite-3.1-1b-a400m-base",
+        "revision": "408b6e90baab8cf24f4aa9f8e19703ffa0a53b29",
+        "tensor": "model.layers.23.block_sparse_moe.output_linear.weight",
+        "bank_shape": [
+          32,
+          1024,
+          512
+        ],
+        "complete_expert": 18,
+        "expert_shape": [
+          1024,
+          512
+        ],
+        "source_range": [
+          654736312,
+          655784887
+        ],
+        "source_bytes": 1048576,
+        "source_sha256": "e1df652f000586de7f8ccf25d881ab82f6d9947a5631a3766d8315cda59953f8",
+        "archive_bytes": 175953,
+        "archive_sha256": "4536c24f0d8b00bf076b021e7c5f7e10f29462667e2c394887e0f566a3a69f0c",
+        "sqnr_db": 7.46808165680466,
+        "scope": "complete expert matrix sample, not full archive/model"
+      }
+    ],
+    "downloaded_bytes": 9463488,
+    "requests": [
+      {
+        "start": 0,
+        "end": 7,
+        "bytes": 8,
+        "attempt": 0,
+        "content_range": "bytes 0-7/1993497352",
+        "sha256": "4e24a30ce306fa832216c30436760805c3b25767f6392ce42ca06159eababe29"
+      },
+      {
+        "start": 8,
+        "end": 19207,
+        "bytes": 19200,
+        "attempt": 0,
+        "content_range": "bytes 8-19207/1993497352",
+        "sha256": "7f4df05057e8b8777eb95e1670f04cb0c8c46103d930e73c8b6969ba8c7f96fe"
+      },
+      {
+        "start": 115362568,
+        "end": 117459719,
+        "bytes": 2097152,
+        "attempt": 0,
+        "content_range": "bytes 115362568-117459719/1993497352",
+        "sha256": "7d5c38b7af27490d6297d672d4558cec7e5de22a0c972999f84d649043f2e9d5"
+      },
+      {
+        "start": 175131400,
+        "end": 176179975,
+        "bytes": 1048576,
+        "attempt": 0,
+        "content_range": "bytes 175131400-176179975/1993497352",
+        "sha256": "ce7090f9f51dc528f84bd160aef60cf60ba3f2a9278ae897cf6a71dd5d818c30"
+      },
+      {
+        "start": 535071496,
+        "end": 537168647,
+        "bytes": 2097152,
+        "attempt": 0,
+        "content_range": "bytes 535071496-537168647/1993497352",
+        "sha256": "09d11ed8cc2c765048ff1d139d782ed3bdb3f88f9098fcc85b12b9fe3a921d73"
+      },
+      {
+        "start": 599034632,
+        "end": 600083207,
+        "bytes": 1048576,
+        "attempt": 0,
+        "content_range": "bytes 599034632-600083207/1993497352",
+        "sha256": "3de691ea8214f9584649cd540b3b2eab16c4dadacab6bf9dcd90e4b9e1429d1b"
+      },
+      {
+        "start": 0,
+        "end": 7,
+        "bytes": 8,
+        "attempt": 0,
+        "content_range": "bytes 0-7/675779512",
+        "sha256": "fc62e7b1f2b41f83ef1914076e0841809f09f858121ca565599465e762cb1fd8"
+      },
+      {
+        "start": 8,
+        "end": 7095,
+        "bytes": 7088,
+        "attempt": 0,
+        "content_range": "bytes 8-7095/675779512",
+        "sha256": "f4cf6b626a1583bd50fd4521d2b4a970dc92c6ccadefd163aa54951c7aff4f54"
+      },
+      {
+        "start": 606501816,
+        "end": 608598967,
+        "bytes": 2097152,
+        "attempt": 0,
+        "content_range": "bytes 606501816-608598967/675779512",
+        "sha256": "7f5dcb518764780cff16e5345f56c8d562ed1fbe3346ece85ee1d4ca601ab4b1"
+      },
+      {
+        "start": 654736312,
+        "end": 655784887,
+        "bytes": 1048576,
+        "attempt": 0,
+        "content_range": "bytes 654736312-655784887/675779512",
+        "sha256": "e1df652f000586de7f8ccf25d881ab82f6d9947a5631a3766d8315cda59953f8"
+      }
+    ],
+    "max_source_bytes_buffered": 2097152
+  },
+  "scope": "bounded complete fixtures and sampled real complete expert matrices; no full large model archive"
+}

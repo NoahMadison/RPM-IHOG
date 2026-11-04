@@ -1,0 +1,12 @@
+{
+  "stage": "report",
+  "result": "results/1793387224627222075_report_6f5c5f",
+  "exit": {
+    "exit_code": 0,
+    "wall_seconds": 1.968691892001516
+  },
+  "prior_publication_commit": "aa58aada1572a655d4a363fd4a78c0db0e4aafa4",
+  "PR": "https://github.com/NoahMadison/RPM-IHOG/pull/1",
+  "artifact_manifest_sha256": "4eb78e4d25ab515329c976061860a4a3f4196e76458e4683c13d6dbf26e9fa6b",
+  "pending_stages": "see append-only events and latest recovery handoff; blocked multiGPU is not a scientific failure"
+}

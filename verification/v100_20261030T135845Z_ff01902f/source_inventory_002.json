@@ -1,0 +1,16 @@
+{
+  "corrections_to_source_inventory_json": {
+    "pdfs": "two supplied historical PDFs found and SHA256-verified; private text kept in ROOT/audit only",
+    "step1_script": "located in original generators directory; exact supplied hash; reference copy under src/legacy_reference.py"
+  },
+  "branch": "verification/v100-20261030T135845Z-ff01902f",
+  "pretrained_revisions": {
+    "ibm-granite/granite-3.1-1b-a400m-base": "408b6e90baab8cf24f4aa9f8e19703ffa0a53b29",
+    "HuggingFaceTB/SmolLM2-1.7B": "effd688a12921b4cc83e3312b6feb579f70f9c71",
+    "Qwen/Qwen3.8-27B": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+    "Qwen/Qwen3.8-Flash-Next": "de4b8e4d43b917e7706784d8bb445c9af86a3540"
+  },
+  "environment": "new task venv; read-only original Torch runtime via task .pth; all installed additions/caches/compiler artifacts under task root",
+  "ninja": "1.13.2 installed after initial compiler attempt blocked",
+  "private_histories_publish": false
+}

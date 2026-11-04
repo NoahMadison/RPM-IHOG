@@ -1,0 +1,34 @@
+{
+  "identity": {
+    "base": "d50eec79832e6b3ec9ee943f45ac63d7e3f38b50",
+    "plan_sha256": "bfc205324fbded08da3161a3b3f8b2e3f9be7486eb90bfd18f8a15485fe74441",
+    "sources": {
+      "src/audit_stage.py": "60e47dc4a24c70bd3bd56ed0ec15c8f23739d9c507c13f93c26832ecc1ef9367",
+      "src/common.py": "3871a6841962c1a6400e26dd13e0dd3c04b372b0aed97e6b5a8dace8280cca66",
+      "src/data_audit.py": "df09697db4b9a7a2480ce2949cc74ef6be34a3cc625d282a405164f86e99668d",
+      "src/legacy_reference.py": "3cc8f3b559b6484109963f673236706b3afd1da85184b5bb7e6644f870f74587",
+      "src/math_codec.py": "dfcf368892e6502a74651f8a1f9f1efc512a5b9e8b451517b1e278487824a0ac",
+      "src/optimizers.py": "e96665355cdcb9bee3d570e3881028356ea660ddc3c893fc7034605146a6c888"
+    }
+  },
+  "arguments": {
+    "stage": "data",
+    "tier": "main",
+    "dry_run": false,
+    "resume": null,
+    "seed": null,
+    "arm": null,
+    "model": null,
+    "codec": "ternary",
+    "steps": null,
+    "checkpoint": null,
+    "worker": false,
+    "out": null
+  },
+  "command": [
+    "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/run_verification.py",
+    "--stage",
+    "data"
+  ],
+  "budget_remaining_seconds": 86400
+}

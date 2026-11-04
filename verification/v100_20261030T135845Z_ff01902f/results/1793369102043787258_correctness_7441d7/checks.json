@@ -1,0 +1,14 @@
+{
+  "passed": [
+    "rectangular_multirank_strided_factor_forward_and_backward_FP64_gradcheck",
+    "FWHT_inverse_orthogonality_full_block_random_sign",
+    "all_integer_codes_odd_lengths_boundaries_tail_bits_CPU_GPU_roundtrip",
+    "packed_payload_independent_process_reload_padding_zero_extreme_scale_placement",
+    "row_pooled_squared_gradient_recurrence_bias_correction_decay",
+    "QR_projection_zero_and_rank_deficient_tail_shrink",
+    "causal_mask_next_token_alignment_tying_token_weighted_NLL",
+    "exclusive_artifacts_and_resume_source_config_rejection"
+  ],
+  "count": 8,
+  "all_passed": true
+}

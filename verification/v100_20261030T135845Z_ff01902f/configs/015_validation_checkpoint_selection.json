@@ -1,0 +1,15 @@
+{
+  "purpose": "compare selected/tuned densebaseline and controls without favoring6000-step overfitting; preserve fixed-endpoint commonrecipe as separate result",
+  "after": "all predeclared6000-step continuations complete",
+  "checkpoint_candidates": [
+    1500,
+    3000,
+    4500,
+    6000
+  ],
+  "selection": "minimum fullvalidationNLL; tiesearliest; never testmetric",
+  "budgets": "same6000updates andtwoLRpilots perarm; checkpointselectionvalidationcomputebudget same",
+  "evaluation": "selectedoriginal anddirectnative/pure/coreternary exports reload in freshprocess; existingendpoint evidence validatedandreused when selected",
+  "no_model_or_data_reduction": true,
+  "predeclared_before6000_test_results": true
+}

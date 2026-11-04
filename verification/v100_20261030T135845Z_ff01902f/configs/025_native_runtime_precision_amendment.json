@@ -1,0 +1,14 @@
+{
+  "supersedes": "024 archive/precision selection; protocol remains same seed11 validation-selected model,20groups/context32/96/noKVcache",
+  "reason": "include both directFP16 factors and denseFP16 for a fair Volta precision/storage baseline; preserve the FP32 operator correctness comparison independently",
+  "archive": "complete allFP16 learnednative factors/rows/shared package fromprecisionexport campaign; exact artifact hash verified; same package usedbyall decoded/directmodes",
+  "modes": [
+    "original_FP32 checkpoint densematerialized",
+    "samepayload denseFP32",
+    "samepayload directfactorFP32",
+    "samepayload denseFP16",
+    "samepayload directfactorFP16"
+  ],
+  "acceptance": "samepayload +.001NLL within each precision, storage rounding +.01 relative originalFP32 in consistent FP32 execution; FP16 direct/original delta separately reported includes numerical precision. Performance compared withinprecision, jointqualityreported; no training-replication claim",
+  "status": "not_run"
+}

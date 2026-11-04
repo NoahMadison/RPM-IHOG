@@ -1,0 +1,262 @@
+[
+  {
+    "codec": "pure",
+    "validation": {
+      "nll": 11.213727081358549,
+      "ppl": 74141.23107925542,
+      "tokens_scored": 4088,
+      "rows": [
+        {
+          "block": 0,
+          "nll_sum": 5082.4580078125,
+          "count": 511
+        },
+        {
+          "block": 1,
+          "nll_sum": 6368.7421875,
+          "count": 511
+        },
+        {
+          "block": 2,
+          "nll_sum": 5432.7900390625,
+          "count": 511
+        },
+        {
+          "block": 3,
+          "nll_sum": 6491.04150390625,
+          "count": 511
+        },
+        {
+          "block": 4,
+          "nll_sum": 4948.28369140625,
+          "count": 511
+        },
+        {
+          "block": 5,
+          "nll_sum": 5384.27587890625,
+          "count": 511
+        },
+        {
+          "block": 6,
+          "nll_sum": 5678.9140625,
+          "count": 511
+        },
+        {
+          "block": 7,
+          "nll_sum": 6455.2109375,
+          "count": 511
+        }
+      ],
+      "protocol": "512-token disjoint context blocks; first token per block not scored; eager attention; FP32 cross entropy",
+      "weight_dtype": "torch.float16"
+    }
+  },
+  {
+    "codec": "ternary",
+    "validation": {
+      "nll": 2.247557877094545,
+      "ppl": 9.464593888593484,
+      "tokens_scored": 4088,
+      "rows": [
+        {
+          "block": 0,
+          "nll_sum": 1003.6622314453125,
+          "count": 511
+        },
+        {
+          "block": 1,
+          "nll_sum": 1040.201416015625,
+          "count": 511
+        },
+        {
+          "block": 2,
+          "nll_sum": 1227.433349609375,
+          "count": 511
+        },
+        {
+          "block": 3,
+          "nll_sum": 1190.097900390625,
+          "count": 511
+        },
+        {
+          "block": 4,
+          "nll_sum": 1052.4549560546875,
+          "count": 511
+        },
+        {
+          "block": 5,
+          "nll_sum": 1192.09619140625,
+          "count": 511
+        },
+        {
+          "block": 6,
+          "nll_sum": 1208.551025390625,
+          "count": 511
+        },
+        {
+          "block": 7,
+          "nll_sum": 1273.51953125,
+          "count": 511
+        }
+      ],
+      "protocol": "512-token disjoint context blocks; first token per block not scored; eager attention; FP32 cross entropy",
+      "weight_dtype": "torch.float16"
+    }
+  },
+  {
+    "codec": "int2",
+    "validation": {
+      "nll": 2.1254958957142094,
+      "ppl": 8.377050601777663,
+      "tokens_scored": 4088,
+      "rows": [
+        {
+          "block": 0,
+          "nll_sum": 934.8798828125,
+          "count": 511
+        },
+        {
+          "block": 1,
+          "nll_sum": 994.13623046875,
+          "count": 511
+        },
+        {
+          "block": 2,
+          "nll_sum": 1141.7451171875,
+          "count": 511
+        },
+        {
+          "block": 3,
+          "nll_sum": 1144.910888671875,
+          "count": 511
+        },
+        {
+          "block": 4,
+          "nll_sum": 996.244140625,
+          "count": 511
+        },
+        {
+          "block": 5,
+          "nll_sum": 1156.4755859375,
+          "count": 511
+        },
+        {
+          "block": 6,
+          "nll_sum": 1142.75341796875,
+          "count": 511
+        },
+        {
+          "block": 7,
+          "nll_sum": 1177.8819580078125,
+          "count": 511
+        }
+      ],
+      "protocol": "512-token disjoint context blocks; first token per block not scored; eager attention; FP32 cross entropy",
+      "weight_dtype": "torch.float16"
+    }
+  },
+  {
+    "codec": "int2_sign",
+    "validation": {
+      "nll": 2.0788563021008515,
+      "ppl": 7.9953194531223595,
+      "tokens_scored": 4088,
+      "rows": [
+        {
+          "block": 0,
+          "nll_sum": 916.7110595703125,
+          "count": 511
+        },
+        {
+          "block": 1,
+          "nll_sum": 971.741943359375,
+          "count": 511
+        },
+        {
+          "block": 2,
+          "nll_sum": 1106.21142578125,
+          "count": 511
+        },
+        {
+          "block": 3,
+          "nll_sum": 1109.17431640625,
+          "count": 511
+        },
+        {
+          "block": 4,
+          "nll_sum": 966.0844116210938,
+          "count": 511
+        },
+        {
+          "block": 5,
+          "nll_sum": 1145.84619140625,
+          "count": 511
+        },
+        {
+          "block": 6,
+          "nll_sum": 1115.169189453125,
+          "count": 511
+        },
+        {
+          "block": 7,
+          "nll_sum": 1167.426025390625,
+          "count": 511
+        }
+      ],
+      "protocol": "512-token disjoint context blocks; first token per block not scored; eager attention; FP32 cross entropy",
+      "weight_dtype": "torch.float16"
+    }
+  },
+  {
+    "codec": "int4",
+    "validation": {
+      "nll": 2.0694632184948705,
+      "ppl": 7.920570360871163,
+      "tokens_scored": 4088,
+      "rows": [
+        {
+          "block": 0,
+          "nll_sum": 917.5383911132812,
+          "count": 511
+        },
+        {
+          "block": 1,
+          "nll_sum": 960.693115234375,
+          "count": 511
+        },
+        {
+          "block": 2,
+          "nll_sum": 1097.9737548828125,
+          "count": 511
+        },
+        {
+          "block": 3,
+          "nll_sum": 1101.100830078125,
+          "count": 511
+        },
+        {
+          "block": 4,
+          "nll_sum": 959.65234375,
+          "count": 511
+        },
+        {
+          "block": 5,
+          "nll_sum": 1137.721923828125,
+          "count": 511
+        },
+        {
+          "block": 6,
+          "nll_sum": 1112.463134765625,
+          "count": 511
+        },
+        {
+          "block": 7,
+          "nll_sum": 1172.8221435546875,
+          "count": 511
+        }
+      ],
+      "protocol": "512-token disjoint context blocks; first token per block not scored; eager attention; FP32 cross entropy",
+      "weight_dtype": "torch.float16"
+    }
+  }
+]

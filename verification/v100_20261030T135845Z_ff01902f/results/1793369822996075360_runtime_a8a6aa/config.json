@@ -1,0 +1,50 @@
+{
+  "identity": {
+    "base": "d50eec79832e6b3ec9ee943f45ac63d7e3f38b50",
+    "plan_sha256": "bfc205324fbded08da3161a3b3f8b2e3f9be7486eb90bfd18f8a15485fe74441",
+    "sources": {
+      "src/audit_stage.py": "60e47dc4a24c70bd3bd56ed0ec15c8f23739d9c507c13f93c26832ecc1ef9367",
+      "src/bitrate.py": "acdb4eb8c10e4a2ae269ac58a01876b0df7082b4752399d0962528dfaa9fe066",
+      "src/common.py": "4de668f5b2654d7f77aa0a7e17be0fee90868a9711401991c26711fd88f6e359",
+      "src/correctness.py": "7e2771a7ff791441328a1075b2f8473112904e8c35030006a621761f93698535",
+      "src/data_audit.py": "df09697db4b9a7a2480ce2949cc74ef6be34a3cc625d282a405164f86e99668d",
+      "src/distributed.py": "1a41ef48fdaaef35aec4b4748e4b1bc2e67428e3e17ebb29f0177d9d526e352e",
+      "src/legacy_reference.py": "3cc8f3b559b6484109963f673236706b3afd1da85184b5bb7e6644f870f74587",
+      "src/legacy_run.py": "a4422b776f5d1f70802987a7ee2ec7af37b25ed51ab823c115e1c300b40bb6f7",
+      "src/math_codec.py": "a1071b80e495964b2e42152f3540c86254845697ac23c5252e983f76e7e44558",
+      "src/mechanism.py": "9fd619f8468ef8a93cb630ad59088b4f3a81471181d2c8734e6bc6853d5c0c49",
+      "src/models.py": "3cb7390c57e7e0255c2c79099e298efaa221afbf14fd56491ff2de59e708aff0",
+      "src/optimizers.py": "e96665355cdcb9bee3d570e3881028356ea660ddc3c893fc7034605146a6c888",
+      "src/packed_kernel.py": "fa2ba4b72f49483ae1f923cf2f342e550256f326799074685128428a36a79d01",
+      "src/pretrained.py": "b6f4ed6403480f5fd94384512b43060d138035596a47a23f5f64a5584f7afa94",
+      "src/runtime.py": "20c863b686c50171a4a6003a9c92aae3a14eaab494d010bacd8b27c841085ba5",
+      "src/streaming.py": "6c9e2e89bd06f3dc544e0c21a6648ed0ffdb5a5a46c215244aaa4c83ab8c8d43",
+      "src/training.py": "8fced76481965a1f4b1fb44a22a7962606ba9e8f789477119f7b665d7dda526d"
+    }
+  },
+  "arguments": {
+    "stage": "runtime",
+    "tier": "main",
+    "dry_run": false,
+    "resume": null,
+    "seed": null,
+    "arm": null,
+    "model": null,
+    "codec": "ternary",
+    "steps": null,
+    "checkpoint": null,
+    "lr": 0.0003,
+    "rank": 8,
+    "tail_decay": 0.003,
+    "function_matched": false,
+    "selection_only": false,
+    "worker": false,
+    "out": null
+  },
+  "command": [
+    "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/run_verification.py",
+    "--stage",
+    "runtime"
+  ],
+  "budget_remaining_seconds": 85498.711133448
+}

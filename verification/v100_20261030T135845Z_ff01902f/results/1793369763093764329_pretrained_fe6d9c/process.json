@@ -1,0 +1,17 @@
+{
+  "pid": 47497,
+  "command": [
+    "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/venv/bin/python",
+    "-B",
+    "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/run_verification.py",
+    "--stage",
+    "pretrained",
+    "--model",
+    "HuggingFaceTB/SmolLM2-1.7B",
+    "--codec",
+    "auto",
+    "--worker",
+    "--out",
+    "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/results/1793369763093764329_pretrained_fe6d9c"
+  ]
+}

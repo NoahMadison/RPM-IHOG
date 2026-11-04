@@ -1,0 +1,704 @@
+{"event": "plan_frozen_before_test_results", "utc": "2026-10-30T14:00:15.475515+00:00", "base": "d50eec79832e6b3ec9ee943f45ac63d7e3f38b50"}
+{"utc": "2026-10-30T14:03:37.797290+00:00", "event": "stage_start", "stage": "data", "result": "results/1793369017797097725_data_eb73ea"}
+{"utc": "2026-10-30T14:03:40.899960+00:00", "event": "stage_start", "stage": "audit", "result": "results/1793369020899782371_audit_3a7613"}
+{"utc": "2026-10-30T14:03:42.467124+00:00", "event": "stage_exit", "stage": "audit", "exit_code": 0, "result": "results/1793369020899782371_audit_3a7613"}
+{"utc": "2026-10-30T14:03:50.955057+00:00", "event": "stage_exit", "stage": "data", "exit_code": 0, "result": "results/1793369017797097725_data_eb73ea"}
+{"utc": "2026-10-30T14:04:18.620640+00:00", "event": "stage_start", "stage": "correctness", "result": "results/1793369058620452898_correctness_6b01f6"}
+{"utc": "2026-10-30T14:04:58.950810+00:00", "event": "restart_recovery", "completed": ["audit", "data"], "prior_correctness": "worker raised invalid code on zero INT4 FP16 scale underflow; parent exit record interrupted by restart; source fixed before rerun"}
+{"utc": "2026-10-30T14:05:02.043973+00:00", "event": "stage_start", "stage": "correctness", "result": "results/1793369102043787258_correctness_7441d7"}
+{"utc": "2026-10-30T14:05:20.510475+00:00", "event": "stage_exit", "stage": "correctness", "exit_code": 0, "result": "results/1793369102043787258_correctness_7441d7"}
+{"utc": "2026-10-30T14:05:34.584356+00:00", "event": "stage_start", "stage": "legacy", "result": "results/1793369134584164656_legacy_751c9e"}
+{"utc": "2026-10-30T14:05:49.050713+00:00", "event": "stage_exit", "stage": "legacy", "exit_code": 0, "result": "results/1793369134584164656_legacy_751c9e"}
+{"utc": "2026-10-30T14:06:59.774030+00:00", "event": "stage_start", "stage": "legacy", "result": "results/1793369219773839454_legacy_fd8088"}
+{"utc": "2026-10-30T14:07:02.895313+00:00", "event": "stage_start", "stage": "train", "result": "results/1793369222895118345_train_605319"}
+{"utc": "2026-10-30T14:07:35.220990+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793369222895118345_train_605319"}
+{"utc": "2026-10-30T14:07:50.903700+00:00", "event": "stage_exit", "stage": "legacy", "exit_code": 0, "result": "results/1793369219773839454_legacy_fd8088"}
+{"utc": "2026-10-30T14:08:24.155079+00:00", "event": "stage_start", "stage": "mechanism", "result": "results/1793369304154885202_mechanism_b1979c"}
+{"utc": "2026-10-30T14:08:41.024690+00:00", "event": "stage_exit", "stage": "mechanism", "exit_code": 0, "result": "results/1793369304154885202_mechanism_b1979c"}
+{"utc": "2026-10-30T14:09:02.281569+00:00", "event": "campaign_job_start", "index": 0, "spec": {"phase": "tuning", "arm": "adamw", "seed": 11, "lr": 0.0001, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:09:02.341479+00:00", "event": "stage_start", "stage": "train", "result": "results/1793369342341280621_train_850e6f"}
+{"utc": "2026-10-30T14:09:28.837384+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793369342341280621_train_850e6f"}
+{"utc": "2026-10-30T14:09:28.846216+00:00", "event": "campaign_job_exit", "index": 0, "returncode": 0}
+{"utc": "2026-10-30T14:09:28.846307+00:00", "event": "campaign_job_start", "index": 1, "spec": {"phase": "tuning", "arm": "adamw", "seed": 11, "lr": 0.0003, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:09:28.898425+00:00", "event": "stage_start", "stage": "train", "result": "results/1793369368898195504_train_4c1590"}
+{"utc": "2026-10-30T14:09:56.472229+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793369368898195504_train_4c1590"}
+{"utc": "2026-10-30T14:09:56.489557+00:00", "event": "campaign_job_exit", "index": 1, "returncode": 0}
+{"utc": "2026-10-30T14:09:56.489934+00:00", "event": "campaign_job_start", "index": 2, "spec": {"phase": "tuning", "arm": "row", "seed": 11, "lr": 0.0001, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:09:56.558614+00:00", "event": "stage_start", "stage": "train", "result": "results/1793369396558384333_train_cafde2"}
+{"utc": "2026-10-30T14:10:24.140812+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793369396558384333_train_cafde2"}
+{"utc": "2026-10-30T14:10:24.149788+00:00", "event": "campaign_job_exit", "index": 2, "returncode": 0}
+{"utc": "2026-10-30T14:10:24.149915+00:00", "event": "campaign_job_start", "index": 3, "spec": {"phase": "tuning", "arm": "row", "seed": 11, "lr": 0.0003, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:10:24.200748+00:00", "event": "stage_start", "stage": "train", "result": "results/1793369424200546946_train_165cf6"}
+{"utc": "2026-10-30T14:10:38.399489+00:00", "event": "model_download", "id": "ibm-granite/granite-3.1-1b-a400m-base", "revision": "408b6e90baab8cf24f4aa9f8e19703ffa0a53b29", "path": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/cache/hf/hub/models--ibm-granite--granite-3.1-1b-a400m-base/snapshots/408b6e90baab8cf24f4aa9f8e19703ffa0a53b29", "seconds": 65.52436608500011}
+{"utc": "2026-10-30T14:10:51.873599+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793369424200546946_train_165cf6"}
+{"utc": "2026-10-30T14:10:51.883613+00:00", "event": "campaign_job_exit", "index": 3, "returncode": 0}
+{"utc": "2026-10-30T14:10:51.883691+00:00", "event": "campaign_job_start", "index": 4, "spec": {"phase": "tuning", "arm": "tail", "seed": 11, "lr": 0.0001, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:10:51.931406+00:00", "event": "stage_start", "stage": "train", "result": "results/1793369451931199893_train_81ded7"}
+{"utc": "2026-10-30T14:11:20.361985+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793369451931199893_train_81ded7"}
+{"utc": "2026-10-30T14:11:20.368802+00:00", "event": "campaign_job_exit", "index": 4, "returncode": 0}
+{"utc": "2026-10-30T14:11:20.368888+00:00", "event": "campaign_job_start", "index": 5, "spec": {"phase": "tuning", "arm": "tail", "seed": 11, "lr": 0.0003, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:11:20.414681+00:00", "event": "stage_start", "stage": "train", "result": "results/1793369480414480621_train_5b8ded"}
+{"utc": "2026-10-30T14:11:49.788545+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793369480414480621_train_5b8ded"}
+{"utc": "2026-10-30T14:11:49.795059+00:00", "event": "campaign_job_exit", "index": 5, "returncode": 0}
+{"utc": "2026-10-30T14:11:49.795130+00:00", "event": "campaign_job_start", "index": 6, "spec": {"phase": "tuning", "arm": "row_tail", "seed": 11, "lr": 0.0001, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:11:49.849492+00:00", "event": "stage_start", "stage": "train", "result": "results/1793369509849283529_train_00eb69"}
+{"utc": "2026-10-30T14:12:04.346761+00:00", "event": "model_download", "id": "HuggingFaceTB/SmolLM2-1.7B", "revision": "effd688a12921b4cc83e3312b6feb579f70f9c71", "path": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/cache/hf/hub/models--HuggingFaceTB--SmolLM2-1.7B/snapshots/effd688a12921b4cc83e3312b6feb579f70f9c71", "seconds": 85.94714156099963}
+{"utc": "2026-10-30T14:12:19.083227+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793369509849283529_train_00eb69"}
+{"utc": "2026-10-30T14:12:19.091226+00:00", "event": "campaign_job_exit", "index": 6, "returncode": 0}
+{"utc": "2026-10-30T14:12:19.091333+00:00", "event": "campaign_job_start", "index": 7, "spec": {"phase": "tuning", "arm": "row_tail", "seed": 11, "lr": 0.0003, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:12:19.155287+00:00", "event": "stage_start", "stage": "train", "result": "results/1793369539155073804_train_f11513"}
+{"utc": "2026-10-30T14:12:28.854067+00:00", "event": "stage_start", "stage": "pretrained", "result": "results/1793369548853853178_pretrained_b0df7b"}
+{"utc": "2026-10-30T14:12:31.965812+00:00", "event": "stage_start", "stage": "pretrained", "result": "results/1793369551965609827_pretrained_f6c544"}
+{"utc": "2026-10-30T14:12:35.063019+00:00", "event": "stage_start", "stage": "streaming", "result": "results/1793369555062805627_streaming_2b5c87"}
+{"utc": "2026-10-30T14:12:48.512906+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793369539155073804_train_f11513"}
+{"utc": "2026-10-30T14:12:48.520885+00:00", "event": "campaign_job_exit", "index": 7, "returncode": 0}
+{"utc": "2026-10-30T14:12:48.520959+00:00", "event": "campaign_job_start", "index": 8, "spec": {"phase": "tuning", "arm": "native", "seed": 11, "lr": 0.0001, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:12:48.567182+00:00", "event": "stage_start", "stage": "train", "result": "results/1793369568566977627_train_e38e94"}
+{"utc": "2026-10-30T14:13:49.397626+00:00", "event": "stage_exit", "stage": "pretrained", "exit_code": 1, "result": "results/1793369548853853178_pretrained_b0df7b"}
+{"utc": "2026-10-30T14:14:33.216628+00:00", "event": "stage_exit", "stage": "pretrained", "exit_code": 1, "result": "results/1793369551965609827_pretrained_f6c544"}
+{"utc": "2026-10-30T14:14:45.659176+00:00", "event": "stage_exit", "stage": "streaming", "exit_code": 0, "result": "results/1793369555062805627_streaming_2b5c87"}
+{"utc": "2026-10-30T14:15:11.508035+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793369568566977627_train_e38e94"}
+{"utc": "2026-10-30T14:15:11.515366+00:00", "event": "campaign_job_exit", "index": 8, "returncode": 0}
+{"utc": "2026-10-30T14:15:11.515456+00:00", "event": "campaign_job_start", "index": 9, "spec": {"phase": "tuning", "arm": "native", "seed": 11, "lr": 0.0003, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:15:11.606538+00:00", "event": "stage_start", "stage": "train", "result": "results/1793369711606231971_train_b23fd5"}
+{"utc": "2026-10-30T14:15:38.203678+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793369711606231971_train_b23fd5"}
+{"utc": "2026-10-30T14:15:38.213846+00:00", "event": "campaign_job_exit", "index": 9, "returncode": 0}
+{"utc": "2026-10-30T14:15:38.213913+00:00", "event": "campaign_job_start", "index": 10, "spec": {"phase": "tuning", "arm": "lowrank", "seed": 11, "lr": 0.0001, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:15:38.289687+00:00", "event": "stage_start", "stage": "train", "result": "results/1793369738289475220_train_65c1d8"}
+{"utc": "2026-10-30T14:15:57.955421+00:00", "event": "protocol_amendment", "file": "configs/002_pretrained_precision_amendment.json"}
+{"utc": "2026-10-30T14:15:59.921199+00:00", "event": "stage_start", "stage": "pretrained", "result": "results/1793369759921020449_pretrained_5f19ee"}
+{"utc": "2026-10-30T14:16:03.094825+00:00", "event": "stage_start", "stage": "pretrained", "result": "results/1793369763093764329_pretrained_fe6d9c"}
+{"utc": "2026-10-30T14:16:03.973856+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793369738289475220_train_65c1d8"}
+{"utc": "2026-10-30T14:16:03.984010+00:00", "event": "campaign_job_exit", "index": 10, "returncode": 0}
+{"utc": "2026-10-30T14:16:03.984080+00:00", "event": "campaign_job_start", "index": 11, "spec": {"phase": "tuning", "arm": "lowrank", "seed": 11, "lr": 0.0003, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:16:04.035075+00:00", "event": "stage_start", "stage": "train", "result": "results/1793369764034908703_train_01b269"}
+{"utc": "2026-10-30T14:16:56.128638+00:00", "event": "stage_start", "stage": "bitrate", "result": "results/1793369816128440199_bitrate_9b7ee8"}
+{"utc": "2026-10-30T14:17:00.044461+00:00", "event": "stage_start", "stage": "distributed", "result": "results/1793369820044289807_distributed_af0c37"}
+{"utc": "2026-10-30T14:17:02.996238+00:00", "event": "stage_start", "stage": "runtime", "result": "results/1793369822996075360_runtime_a8a6aa"}
+{"utc": "2026-10-30T14:19:17.924660+00:00", "event": "recoverable_checkpoint", "path": "progress/002_recovery_checkpoint.json"}
+{"utc": "2026-10-30T14:21:25.789904+00:00", "event": "protocol_amendment", "file": "configs/003_runtime_bank_protocol.json"}
+{"utc": "2026-10-30T14:25:28.621722+00:00", "event": "stage_exit", "stage": "pretrained", "exit_code": 0, "result": "results/1793369759921020449_pretrained_5f19ee"}
+{"utc": "2026-10-30T14:26:11.990080+00:00", "event": "stage_start", "stage": "train", "result": "results/1793370371989775880_train_f7eb19"}
+{"utc": "2026-10-30T14:28:07.760106+00:00", "event": "stage_exit", "stage": "pretrained", "exit_code": 0, "result": "results/1793369763093764329_pretrained_fe6d9c"}
+{"utc": "2026-10-30T14:28:24.582887+00:00", "event": "resource_and_accounting_amendment", "file": "configs/004_checkpoint_resource_policy.json"}
+{"utc": "2026-10-30T14:28:33.201079+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793369764034908703_train_01b269"}
+{"utc": "2026-10-30T14:28:33.209888+00:00", "event": "campaign_job_exit", "index": 11, "returncode": 0}
+{"utc": "2026-10-30T14:28:33.210057+00:00", "event": "campaign_job_start", "index": 12, "spec": {"phase": "tuning", "arm": "legacy_blend", "seed": 11, "lr": 0.0001, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:28:33.259444+00:00", "event": "stage_start", "stage": "train", "result": "results/1793370513259263703_train_d2606b"}
+{"utc": "2026-10-30T14:28:34.427887+00:00", "event": "stage_exit", "stage": "bitrate", "exit_code": 0, "result": "results/1793369816128440199_bitrate_9b7ee8"}
+{"utc": "2026-10-30T14:28:39.099968+00:00", "event": "stage_exit", "stage": "distributed", "exit_code": 0, "result": "results/1793369820044289807_distributed_af0c37"}
+{"utc": "2026-10-30T14:28:40.103505+00:00", "event": "stage_exit", "stage": "runtime", "exit_code": 0, "result": "results/1793369822996075360_runtime_a8a6aa"}
+{"utc": "2026-10-30T14:28:44.750427+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793370371989775880_train_f7eb19"}
+{"utc": "2026-10-30T14:28:44.813578+00:00", "event": "stage_start", "stage": "train", "result": "results/1793370524813393695_train_ba6742"}
+{"utc": "2026-10-30T14:29:13.906795+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793370513259263703_train_d2606b"}
+{"utc": "2026-10-30T14:29:13.914568+00:00", "event": "campaign_job_exit", "index": 12, "returncode": 0}
+{"utc": "2026-10-30T14:29:13.914702+00:00", "event": "campaign_job_start", "index": 13, "spec": {"phase": "tuning", "arm": "legacy_blend", "seed": 11, "lr": 0.0003, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:29:13.965782+00:00", "event": "stage_start", "stage": "train", "result": "results/1793370553965600821_train_b811db"}
+{"utc": "2026-10-30T14:29:18.434997+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793370524813393695_train_ba6742"}
+{"utc": "2026-10-30T14:29:18.494691+00:00", "event": "stage_start", "stage": "train", "result": "results/1793370558494515549_train_6a51ce"}
+{"utc": "2026-10-30T14:29:48.220820+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793370553965600821_train_b811db"}
+{"utc": "2026-10-30T14:29:48.229530+00:00", "event": "campaign_job_exit", "index": 13, "returncode": 0}
+{"utc": "2026-10-30T14:29:48.229672+00:00", "event": "campaign_job_start", "index": 14, "spec": {"phase": "rank_pilot", "arm": "native", "seed": 11, "lr": 0.0003, "rank": 4, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:29:48.279752+00:00", "event": "stage_start", "stage": "train", "result": "results/1793370588279570644_train_dceddf"}
+{"utc": "2026-10-30T14:29:52.846064+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793370558494515549_train_6a51ce"}
+{"utc": "2026-10-30T14:29:53.456541+00:00", "event": "resume_equivalence_passed", "runs": [{"result": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/results/1793370371989775880_train_f7eb19", "checkpoint": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/artifacts/training_1793370371989775880_train_f7eb19/checkpoint_000005.pt"}, {"result": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/results/1793370524813393695_train_ba6742", "checkpoint": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/artifacts/training_1793370524813393695_train_ba6742/checkpoint_000010.pt"}, {"result": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/results/1793370558494515549_train_6a51ce", "checkpoint": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/artifacts/training_1793370558494515549_train_6a51ce/checkpoint_000010.pt"}]}
+{"utc": "2026-10-30T14:29:57.661604+00:00", "event": "recoverable_checkpoint", "path": "progress/003_pretrained_complete.json"}
+{"utc": "2026-10-30T14:30:11.290036+00:00", "event": "stage_start", "stage": "runtime", "result": "results/1793370611289862592_runtime_46bbbe"}
+{"utc": "2026-10-30T14:30:14.115707+00:00", "event": "stage_start", "stage": "distributed", "result": "results/1793370614115522989_distributed_22a182"}
+{"utc": "2026-10-30T14:30:16.826735+00:00", "event": "stage_start", "stage": "correctness", "result": "results/1793370616826531192_correctness_0c6313"}
+{"utc": "2026-10-30T14:30:19.566107+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793370588279570644_train_dceddf"}
+{"utc": "2026-10-30T14:30:19.575948+00:00", "event": "campaign_job_exit", "index": 14, "returncode": 0}
+{"utc": "2026-10-30T14:30:19.576089+00:00", "event": "campaign_job_start", "index": 15, "spec": {"phase": "rank_pilot", "arm": "lowrank", "seed": 11, "lr": 0.0003, "rank": 4, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:30:19.627874+00:00", "event": "stage_start", "stage": "train", "result": "results/1793370619627693911_train_5a89ad"}
+{"utc": "2026-10-30T14:31:51.635443+00:00", "event": "stage_exit", "stage": "runtime", "exit_code": 0, "result": "results/1793370611289862592_runtime_46bbbe"}
+{"utc": "2026-10-30T14:31:54.276787+00:00", "event": "stage_exit", "stage": "distributed", "exit_code": 0, "result": "results/1793370614115522989_distributed_22a182"}
+{"utc": "2026-10-30T14:32:13.232384+00:00", "event": "stage_exit", "stage": "correctness", "exit_code": 0, "result": "results/1793370616826531192_correctness_0c6313"}
+{"utc": "2026-10-30T14:32:19.086665+00:00", "event": "handoff_written", "path": "RESUME_PROMPT.md"}
+{"utc": "2026-10-30T14:32:39.055123+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793370619627693911_train_5a89ad"}
+{"utc": "2026-10-30T14:32:39.066960+00:00", "event": "campaign_job_exit", "index": 15, "returncode": 0}
+{"utc": "2026-10-30T14:32:39.067102+00:00", "event": "campaign_job_start", "index": 16, "spec": {"phase": "penalty_pilot", "arm": "tail", "seed": 11, "lr": 0.0003, "tail_decay": 0, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:32:39.124244+00:00", "event": "stage_start", "stage": "train", "result": "results/1793370759123896032_train_2fe605"}
+{"utc": "2026-10-30T14:33:07.415875+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793370759123896032_train_2fe605"}
+{"utc": "2026-10-30T14:33:07.426299+00:00", "event": "campaign_job_exit", "index": 16, "returncode": 0}
+{"utc": "2026-10-30T14:33:07.426471+00:00", "event": "campaign_job_start", "index": 17, "spec": {"phase": "penalty_pilot", "arm": "tail", "seed": 11, "lr": 0.0003, "tail_decay": 0.0003, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:33:07.487188+00:00", "event": "stage_start", "stage": "train", "result": "results/1793370787486994201_train_aaa3a4"}
+{"utc": "2026-10-30T14:33:36.291390+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793370787486994201_train_aaa3a4"}
+{"utc": "2026-10-30T14:33:36.301532+00:00", "event": "campaign_job_exit", "index": 17, "returncode": 0}
+{"utc": "2026-10-30T14:33:36.301660+00:00", "event": "campaign_job_start", "index": 18, "spec": {"phase": "penalty_pilot", "arm": "row_tail", "seed": 11, "lr": 0.0003, "tail_decay": 0, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:33:36.366561+00:00", "event": "stage_start", "stage": "train", "result": "results/1793370816366385094_train_afdf5d"}
+{"utc": "2026-10-30T14:34:03.762217+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793370816366385094_train_afdf5d"}
+{"utc": "2026-10-30T14:34:03.791949+00:00", "event": "campaign_job_exit", "index": 18, "returncode": 0}
+{"utc": "2026-10-30T14:34:03.792358+00:00", "event": "campaign_job_start", "index": 19, "spec": {"phase": "penalty_pilot", "arm": "row_tail", "seed": 11, "lr": 0.0003, "tail_decay": 0.0003, "steps": 600, "selection_only": true}}
+{"utc": "2026-10-30T14:34:03.859669+00:00", "event": "stage_start", "stage": "train", "result": "results/1793370843859495561_train_cd6978"}
+{"utc": "2026-10-30T14:34:10.701599+00:00", "event": "stage_start", "stage": "report", "result": "results/1793370850701415415_report_d6c793"}
+{"utc": "2026-10-30T14:34:10.916397+00:00", "event": "report_written", "path": "reports/001_20261030T143410Z.md"}
+{"utc": "2026-10-30T14:34:10.966762+00:00", "event": "stage_exit", "stage": "report", "exit_code": 0, "result": "results/1793370850701415415_report_d6c793"}
+{"utc": "2026-10-30T14:34:33.117808+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793370843859495561_train_cd6978"}
+{"utc": "2026-10-30T14:34:33.132082+00:00", "event": "campaign_job_exit", "index": 19, "returncode": 0}
+{"utc": "2026-10-30T14:34:33.144866+00:00", "event": "campaign_job_start", "index": 20, "spec": {"phase": "common_recipe", "arm": "adamw", "seed": 11, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T14:34:33.212965+00:00", "event": "stage_start", "stage": "train", "result": "results/1793370873212762834_train_510c39"}
+{"utc": "2026-10-30T14:34:38.877838+00:00", "event": "stage_start", "stage": "legacy", "result": "results/1793370878877666800_legacy_487b39"}
+{"utc": "2026-10-30T14:35:44.266083+00:00", "event": "runtime_protocol_addition", "file": "configs/005_runtime_fp16_input.json"}
+{"utc": "2026-10-30T14:35:46.123307+00:00", "event": "stage_start", "stage": "runtime", "result": "results/1793370946123120303_runtime_fec9cb"}
+{"utc": "2026-10-30T14:35:48.506480+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793370873212762834_train_510c39"}
+{"utc": "2026-10-30T14:35:48.513994+00:00", "event": "campaign_job_exit", "index": 20, "returncode": 0}
+{"utc": "2026-10-30T14:35:48.514139+00:00", "event": "campaign_job_start", "index": 21, "spec": {"phase": "common_recipe", "arm": "row", "seed": 11, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T14:35:48.567729+00:00", "event": "stage_start", "stage": "train", "result": "results/1793370948567535613_train_e5a26f"}
+{"utc": "2026-10-30T14:36:23.192994+00:00", "event": "stage_exit", "stage": "legacy", "exit_code": 0, "result": "results/1793370878877666800_legacy_487b39"}
+{"utc": "2026-10-30T14:37:00.953332+00:00", "event": "stage_start", "stage": "streaming", "result": "results/1793371020953143857_streaming_7da6a8"}
+{"utc": "2026-10-30T14:37:17.219311+00:00", "event": "stage_exit", "stage": "runtime", "exit_code": 0, "result": "results/1793370946123120303_runtime_fec9cb"}
+{"utc": "2026-10-30T14:37:55.926995+00:00", "event": "integrity_verified", "path": "reports/integrity_1793371075926795190.json", "staged": false}
+{"utc": "2026-10-30T14:38:34.247025+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793370948567535613_train_e5a26f"}
+{"utc": "2026-10-30T14:38:34.256198+00:00", "event": "campaign_job_exit", "index": 21, "returncode": 0}
+{"utc": "2026-10-30T14:38:34.256357+00:00", "event": "campaign_job_start", "index": 22, "spec": {"phase": "common_recipe", "arm": "tail", "seed": 11, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T14:38:34.320201+00:00", "event": "stage_start", "stage": "train", "result": "results/1793371114319938563_train_a94d7a"}
+{"utc": "2026-10-30T14:38:48.789457+00:00", "event": "stage_exit", "stage": "streaming", "exit_code": 0, "result": "results/1793371020953143857_streaming_7da6a8"}
+{"utc": "2026-10-30T14:40:09.594523+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793371114319938563_train_a94d7a"}
+{"utc": "2026-10-30T14:40:09.602781+00:00", "event": "campaign_job_exit", "index": 22, "returncode": 0}
+{"utc": "2026-10-30T14:40:09.603721+00:00", "event": "campaign_job_start", "index": 23, "spec": {"phase": "common_recipe", "arm": "row_tail", "seed": 11, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T14:40:09.673394+00:00", "event": "stage_start", "stage": "train", "result": "results/1793371209673206740_train_79cc6a"}
+{"utc": "2026-10-30T14:41:31.232314+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793371209673206740_train_79cc6a"}
+{"utc": "2026-10-30T14:41:31.248460+00:00", "event": "campaign_job_exit", "index": 23, "returncode": 0}
+{"utc": "2026-10-30T14:41:31.248629+00:00", "event": "campaign_job_start", "index": 24, "spec": {"phase": "common_recipe", "arm": "native", "seed": 11, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T14:41:31.314284+00:00", "event": "stage_start", "stage": "train", "result": "results/1793371291314106526_train_a66e09"}
+{"utc": "2026-10-30T14:42:10.043965+00:00", "event": "distillation_plan_frozen", "file": "configs/006_distillation_protocol.json"}
+{"utc": "2026-10-30T14:42:12.075032+00:00", "event": "stage_start", "stage": "distillation", "result": "results/1793371332074859684_distillation_f62605"}
+{"utc": "2026-10-30T14:42:50.354571+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793371291314106526_train_a66e09"}
+{"utc": "2026-10-30T14:42:50.375524+00:00", "event": "campaign_job_exit", "index": 24, "returncode": 0}
+{"utc": "2026-10-30T14:42:50.375715+00:00", "event": "campaign_job_start", "index": 25, "spec": {"phase": "common_recipe", "arm": "lowrank", "seed": 11, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T14:42:50.423897+00:00", "event": "stage_start", "stage": "train", "result": "results/1793371370423721380_train_b2a1e6"}
+{"utc": "2026-10-30T14:42:57.535679+00:00", "event": "stage_exit", "stage": "distillation", "exit_code": 0, "result": "results/1793371332074859684_distillation_f62605"}
+{"utc": "2026-10-30T14:44:10.667972+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793371370423721380_train_b2a1e6"}
+{"utc": "2026-10-30T14:44:10.681150+00:00", "event": "campaign_job_exit", "index": 25, "returncode": 0}
+{"utc": "2026-10-30T14:44:10.681303+00:00", "event": "campaign_job_start", "index": 26, "spec": {"phase": "common_recipe", "arm": "legacy_blend", "seed": 11, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T14:44:10.743612+00:00", "event": "stage_start", "stage": "train", "result": "results/1793371450743432772_train_c7135f"}
+{"utc": "2026-10-30T14:45:08.260853+00:00", "event": "stage_start", "stage": "distillation", "result": "results/1793371508260674874_distillation_519e84"}
+{"utc": "2026-10-30T14:45:33.009347+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793371450743432772_train_c7135f"}
+{"utc": "2026-10-30T14:45:33.018361+00:00", "event": "campaign_job_exit", "index": 26, "returncode": 0}
+{"utc": "2026-10-30T14:45:33.029264+00:00", "event": "campaign_job_start", "index": 27, "spec": {"phase": "common_recipe", "arm": "adamw", "seed": 22, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T14:45:33.084719+00:00", "event": "stage_start", "stage": "train", "result": "results/1793371533084526906_train_4ae25c"}
+{"utc": "2026-10-30T14:47:21.835144+00:00", "event": "large_streaming_plan_frozen", "file": "configs/007_large_streaming_samples.json"}
+{"utc": "2026-10-30T14:47:24.106215+00:00", "event": "stage_start", "stage": "large-streaming", "result": "results/1793371644106045825_large-streaming_634166"}
+{"utc": "2026-10-30T14:50:12.135594+00:00", "event": "software_metadata_correction", "path": "configs/008_numpy_metadata_correction.json"}
+{"utc": "2026-10-30T14:52:15.210880+00:00", "event": "downstream_plan_frozen", "file": "configs/009_downstream_protocol.json"}
+{"utc": "2026-10-30T14:52:19.017084+00:00", "event": "downstream_sources_pinned", "sources": [{"task": "piqa", "revision": "142f6d7367fd9877f0fb3b5734ea6a545f54cdd1", "status": "available"}, {"task": "arc_easy", "revision": "210d026faf9955653af8916fad021475a3f00453", "status": "available"}]}
+{"utc": "2026-10-30T14:52:43.993437+00:00", "event": "stage_start", "stage": "downstream", "result": "results/1793371963993256212_downstream_08866f"}
+{"utc": "2026-10-30T14:54:24.929702+00:00", "event": "stage_exit", "stage": "distillation", "exit_code": 0, "result": "results/1793371508260674874_distillation_519e84"}
+{"utc": "2026-10-30T14:54:28.937203+00:00", "event": "calibration_ablation_plan_frozen", "file": "configs/010_calibration_component_ablation.json"}
+{"utc": "2026-10-30T14:54:31.319657+00:00", "event": "stage_start", "stage": "calibration-ablation", "result": "results/1793372071319472348_calibration-ablation_a31659"}
+{"utc": "2026-10-30T14:55:37.752020+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793371533084526906_train_4ae25c"}
+{"utc": "2026-10-30T14:55:37.760021+00:00", "event": "campaign_job_exit", "index": 27, "returncode": 0}
+{"utc": "2026-10-30T14:55:37.773064+00:00", "event": "campaign_job_start", "index": 28, "spec": {"phase": "common_recipe", "arm": "row", "seed": 22, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T14:55:37.825087+00:00", "event": "stage_start", "stage": "train", "result": "results/1793372137824912469_train_8f1302"}
+{"utc": "2026-10-30T14:56:03.453255+00:00", "event": "stage_exit", "stage": "large-streaming", "exit_code": 0, "result": "results/1793371644106045825_large-streaming_634166"}
+{"utc": "2026-10-30T14:56:16.251143+00:00", "event": "stage_exit", "stage": "downstream", "exit_code": 0, "result": "results/1793371963993256212_downstream_08866f"}
+{"utc": "2026-10-30T14:56:25.997635+00:00", "event": "stage_exit", "stage": "calibration-ablation", "exit_code": 1, "result": "results/1793372071319472348_calibration-ablation_a31659"}
+{"utc": "2026-10-30T14:57:40.824278+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793372137824912469_train_8f1302"}
+{"utc": "2026-10-30T14:57:40.834881+00:00", "event": "campaign_job_exit", "index": 28, "returncode": 0}
+{"utc": "2026-10-30T14:57:40.834947+00:00", "event": "campaign_job_start", "index": 29, "spec": {"phase": "common_recipe", "arm": "tail", "seed": 22, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T14:57:40.910866+00:00", "event": "stage_start", "stage": "train", "result": "results/1793372260910693237_train_ae9854"}
+{"utc": "2026-10-30T14:59:01.928288+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793372260910693237_train_ae9854"}
+{"utc": "2026-10-30T14:59:01.934975+00:00", "event": "campaign_job_exit", "index": 29, "returncode": 0}
+{"utc": "2026-10-30T14:59:01.946037+00:00", "event": "campaign_job_start", "index": 30, "spec": {"phase": "common_recipe", "arm": "row_tail", "seed": 22, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T14:59:02.010036+00:00", "event": "stage_start", "stage": "train", "result": "results/1793372342009852540_train_46416a"}
+{"utc": "2026-10-30T14:59:21.616592+00:00", "event": "stage_start", "stage": "calibration-ablation", "result": "results/1793372361616414378_calibration-ablation_3f961c"}
+{"utc": "2026-10-30T14:59:25.132781+00:00", "event": "stage_start", "stage": "downstream", "result": "results/1793372365132606450_downstream_fcb689"}
+{"utc": "2026-10-30T14:59:26.279886+00:00", "event": "numerical_validation_checkpoint", "file": "configs/011_numerical_payload_rejection.json"}
+{"utc": "2026-10-30T15:00:23.623529+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793372342009852540_train_46416a"}
+{"utc": "2026-10-30T15:00:23.630975+00:00", "event": "campaign_job_exit", "index": 30, "returncode": 0}
+{"utc": "2026-10-30T15:00:23.642645+00:00", "event": "campaign_job_start", "index": 31, "spec": {"phase": "common_recipe", "arm": "native", "seed": 22, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T15:00:23.696040+00:00", "event": "stage_start", "stage": "train", "result": "results/1793372423695853623_train_70567e"}
+{"utc": "2026-10-30T15:01:19.007339+00:00", "event": "stage_exit", "stage": "calibration-ablation", "exit_code": 0, "result": "results/1793372361616414378_calibration-ablation_3f961c"}
+{"utc": "2026-10-30T15:04:55.825306+00:00", "event": "training_data_lineage_pinned", "file": "configs/013_training_data_pin.json"}
+{"utc": "2026-10-30T15:06:26.405093+00:00", "event": "stage_exit", "stage": "downstream", "exit_code": 0, "result": "results/1793372365132606450_downstream_fcb689"}
+{"utc": "2026-10-30T15:06:26.412107+00:00", "event": "downstream_campaign_job_exit", "model": "ibm-granite/granite-3.1-1b-a400m-base", "codec": "original", "returncode": 0}
+{"utc": "2026-10-30T15:06:26.460644+00:00", "event": "stage_start", "stage": "downstream", "result": "results/1793372786460469486_downstream_a5d3fb"}
+{"utc": "2026-10-30T15:07:44.282460+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793372423695853623_train_70567e"}
+{"utc": "2026-10-30T15:07:44.289674+00:00", "event": "campaign_job_exit", "index": 31, "returncode": 0}
+{"utc": "2026-10-30T15:07:44.289740+00:00", "event": "campaign_job_start", "index": 32, "spec": {"phase": "common_recipe", "arm": "lowrank", "seed": 22, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T15:07:44.353368+00:00", "event": "stage_start", "stage": "train", "result": "results/1793372864353189640_train_8913f4"}
+{"utc": "2026-10-30T15:12:52.099923+00:00", "event": "complete_direct_runtime_plan_frozen", "file": "configs/014_complete_direct_runtime_protocol.json"}
+{"utc": "2026-10-30T15:12:54.773951+00:00", "event": "stage_start", "stage": "full-runtime", "result": "results/1793373174773770240_full-runtime_49a5ec"}
+{"utc": "2026-10-30T15:12:58.701885+00:00", "event": "stage_exit", "stage": "downstream", "exit_code": 0, "result": "results/1793372786460469486_downstream_a5d3fb"}
+{"utc": "2026-10-30T15:12:58.709189+00:00", "event": "downstream_campaign_job_exit", "model": "ibm-granite/granite-3.1-1b-a400m-base", "codec": "int4", "returncode": 0}
+{"utc": "2026-10-30T15:12:58.761775+00:00", "event": "stage_start", "stage": "downstream", "result": "results/1793373178761603423_downstream_410f68"}
+{"utc": "2026-10-30T15:14:10.445131+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793372864353189640_train_8913f4"}
+{"utc": "2026-10-30T15:14:10.452783+00:00", "event": "campaign_job_exit", "index": 32, "returncode": 0}
+{"utc": "2026-10-30T15:14:10.463714+00:00", "event": "campaign_job_start", "index": 33, "spec": {"phase": "common_recipe", "arm": "legacy_blend", "seed": 22, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T15:14:10.514068+00:00", "event": "stage_start", "stage": "train", "result": "results/1793373250513891972_train_53f552"}
+{"utc": "2026-10-30T15:23:12.250651+00:00", "event": "recoverable_checkpoint", "path": "progress/005_live_checkpoint.json", "handoff": "RESUME_PROMPT_002.md"}
+{"utc": "2026-10-30T15:30:17.038330+00:00", "event": "validation_checkpoint_selection_frozen", "file": "configs/015_validation_checkpoint_selection.json"}
+{"utc": "2026-10-30T15:32:17.046065+00:00", "event": "closecall_replication_plan_frozen", "file": "configs/016_closecall_replication.json"}
+{"utc": "2026-10-30T15:34:41.310832+00:00", "event": "matched_direct_factor_export_plan_frozen", "file": "configs/017_matched_direct_factor_containers.json"}
+{"utc": "2026-10-30T15:43:12.593079+00:00", "event": "stage_exit", "stage": "full-runtime", "exit_code": 0, "result": "results/1793373174773770240_full-runtime_49a5ec"}
+{"utc": "2026-10-30T15:48:37.330372+00:00", "event": "stage_exit", "stage": "downstream", "exit_code": 0, "result": "results/1793373178761603423_downstream_410f68"}
+{"utc": "2026-10-30T15:48:37.342744+00:00", "event": "downstream_campaign_job_exit", "model": "ibm-granite/granite-3.1-1b-a400m-base", "codec": "int2_sign", "returncode": 0}
+{"utc": "2026-10-30T15:48:37.394848+00:00", "event": "stage_start", "stage": "downstream", "result": "results/1793375317394641110_downstream_f905e4"}
+{"utc": "2026-10-30T15:50:02.739176+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793373250513891972_train_53f552"}
+{"utc": "2026-10-30T15:50:02.751116+00:00", "event": "campaign_job_exit", "index": 33, "returncode": 0}
+{"utc": "2026-10-30T15:50:02.751210+00:00", "event": "campaign_job_start", "index": 34, "spec": {"phase": "common_recipe", "arm": "adamw", "seed": 33, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T15:50:02.813130+00:00", "event": "stage_start", "stage": "train", "result": "results/1793375402812871815_train_ef703a"}
+{"utc": "2026-10-30T15:52:17.753342+00:00", "event": "fused_transform_followup_plan_frozen", "file": "configs/018_fused_transform_followup.json"}
+{"utc": "2026-10-30T15:52:19.727756+00:00", "event": "stage_start", "stage": "fused-checks", "result": "results/1793375539727582007_fused-checks_09864f"}
+{"utc": "2026-10-30T15:55:20.440205+00:00", "event": "stage_exit", "stage": "downstream", "exit_code": 0, "result": "results/1793375317394641110_downstream_f905e4"}
+{"utc": "2026-10-30T15:55:20.448034+00:00", "event": "downstream_campaign_job_exit", "model": "ibm-granite/granite-3.1-1b-a400m-base", "codec": "distilled", "returncode": 0}
+{"utc": "2026-10-30T15:55:20.500538+00:00", "event": "stage_start", "stage": "downstream", "result": "results/1793375720500354414_downstream_94a857"}
+{"utc": "2026-10-30T15:56:33.911949+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793375402812871815_train_ef703a"}
+{"utc": "2026-10-30T15:56:33.922959+00:00", "event": "campaign_job_exit", "index": 34, "returncode": 0}
+{"utc": "2026-10-30T15:56:33.923046+00:00", "event": "campaign_job_start", "index": 35, "spec": {"phase": "common_recipe", "arm": "row", "seed": 33, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T15:56:33.976943+00:00", "event": "stage_start", "stage": "train", "result": "results/1793375793976758821_train_abd3e2"}
+{"utc": "2026-10-30T15:57:11.887417+00:00", "event": "stage_exit", "stage": "fused-checks", "exit_code": 0, "result": "results/1793375539727582007_fused-checks_09864f"}
+{"utc": "2026-10-30T15:58:13.219745+00:00", "event": "stage_exit", "stage": "downstream", "exit_code": 0, "result": "results/1793375720500354414_downstream_94a857"}
+{"utc": "2026-10-30T15:58:13.227014+00:00", "event": "downstream_campaign_job_exit", "model": "HuggingFaceTB/SmolLM2-1.7B", "codec": "original", "returncode": 0}
+{"utc": "2026-10-30T15:58:13.275607+00:00", "event": "stage_start", "stage": "downstream", "result": "results/1793375893275426300_downstream_d23d5d"}
+{"utc": "2026-10-30T15:59:26.343360+00:00", "event": "whole_model_precision_baselines_frozen", "file": "configs/019_whole_model_precision_baselines.json"}
+{"utc": "2026-10-30T15:59:26.939401+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793375793976758821_train_abd3e2"}
+{"utc": "2026-10-30T15:59:26.946747+00:00", "event": "campaign_job_exit", "index": 35, "returncode": 0}
+{"utc": "2026-10-30T15:59:26.946810+00:00", "event": "campaign_job_start", "index": 36, "spec": {"phase": "common_recipe", "arm": "tail", "seed": 33, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T15:59:27.006214+00:00", "event": "stage_start", "stage": "train", "result": "results/1793375967006030090_train_0ce728"}
+{"utc": "2026-10-30T16:00:44.581028+00:00", "event": "stage_exit", "stage": "downstream", "exit_code": 0, "result": "results/1793375893275426300_downstream_d23d5d"}
+{"utc": "2026-10-30T16:00:44.588556+00:00", "event": "downstream_campaign_job_exit", "model": "HuggingFaceTB/SmolLM2-1.7B", "codec": "int4", "returncode": 0}
+{"utc": "2026-10-30T16:00:44.641982+00:00", "event": "stage_start", "stage": "downstream", "result": "results/1793376044641814458_downstream_9e1d5e"}
+{"utc": "2026-10-30T16:02:04.517056+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793375967006030090_train_0ce728"}
+{"utc": "2026-10-30T16:02:04.524027+00:00", "event": "campaign_job_exit", "index": 36, "returncode": 0}
+{"utc": "2026-10-30T16:02:04.524101+00:00", "event": "campaign_job_start", "index": 37, "spec": {"phase": "common_recipe", "arm": "row_tail", "seed": 33, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T16:02:04.575609+00:00", "event": "stage_start", "stage": "train", "result": "results/1793376124575423225_train_17eaa3"}
+{"utc": "2026-10-30T16:03:22.083645+00:00", "event": "stage_exit", "stage": "downstream", "exit_code": 0, "result": "results/1793376044641814458_downstream_9e1d5e"}
+{"utc": "2026-10-30T16:03:22.092585+00:00", "event": "downstream_campaign_job_exit", "model": "HuggingFaceTB/SmolLM2-1.7B", "codec": "int2_sign", "returncode": 0}
+{"utc": "2026-10-30T16:03:22.092685+00:00", "event": "downstream_campaign_complete"}
+{"utc": "2026-10-30T16:04:43.083369+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793376124575423225_train_17eaa3"}
+{"utc": "2026-10-30T16:04:43.098431+00:00", "event": "campaign_job_exit", "index": 37, "returncode": 0}
+{"utc": "2026-10-30T16:04:43.098670+00:00", "event": "campaign_job_start", "index": 38, "spec": {"phase": "common_recipe", "arm": "native", "seed": 33, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T16:04:43.173209+00:00", "event": "stage_start", "stage": "train", "result": "results/1793376283172987651_train_277ab0"}
+{"utc": "2026-10-30T16:06:02.252775+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793376283172987651_train_277ab0"}
+{"utc": "2026-10-30T16:06:02.261908+00:00", "event": "campaign_job_exit", "index": 38, "returncode": 0}
+{"utc": "2026-10-30T16:06:02.261977+00:00", "event": "campaign_job_start", "index": 39, "spec": {"phase": "common_recipe", "arm": "lowrank", "seed": 33, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T16:06:02.352891+00:00", "event": "stage_start", "stage": "train", "result": "results/1793376362352712796_train_f7d08e"}
+{"utc": "2026-10-30T16:07:16.541878+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793376362352712796_train_f7d08e"}
+{"utc": "2026-10-30T16:07:16.551004+00:00", "event": "campaign_job_exit", "index": 39, "returncode": 0}
+{"utc": "2026-10-30T16:07:16.551072+00:00", "event": "campaign_job_start", "index": 40, "spec": {"phase": "common_recipe", "arm": "legacy_blend", "seed": 33, "lr": 0.0003, "steps": 1500}}
+{"utc": "2026-10-30T16:07:16.630771+00:00", "event": "stage_start", "stage": "train", "result": "results/1793376436630585768_train_8f8e0e"}
+{"utc": "2026-10-30T16:07:55.849710+00:00", "event": "stage_start", "stage": "runtime", "result": "results/1793376475849530707_runtime_326021"}
+{"utc": "2026-10-30T16:08:01.250174+00:00", "event": "stage_start", "stage": "full-runtime", "result": "results/1793376481249984697_full-runtime_9f4c36"}
+{"utc": "2026-10-30T16:08:02.448029+00:00", "event": "stage_start", "stage": "report", "result": "results/1793376482447839102_report_db9719"}
+{"utc": "2026-10-30T16:08:04.557678+00:00", "event": "report_written", "path": "reports/002_20261030T160802Z.md"}
+{"utc": "2026-10-30T16:08:04.722061+00:00", "event": "stage_exit", "stage": "report", "exit_code": 0, "result": "results/1793376482447839102_report_db9719"}
+{"utc": "2026-10-30T16:08:38.811253+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793376436630585768_train_8f8e0e"}
+{"utc": "2026-10-30T16:08:38.829553+00:00", "event": "campaign_job_exit", "index": 40, "returncode": 0}
+{"utc": "2026-10-30T16:08:38.829656+00:00", "event": "campaign_job_start", "index": 41, "spec": {"phase": "function_matched", "arm": "adamw", "seed": 11, "lr": 0.0003, "steps": 1500, "function_matched": true}}
+{"utc": "2026-10-30T16:08:38.882827+00:00", "event": "stage_start", "stage": "train", "result": "results/1793376518882637020_train_6b76df"}
+{"utc": "2026-10-30T16:09:21.565968+00:00", "event": "stage_exit", "stage": "runtime", "exit_code": 0, "result": "results/1793376475849530707_runtime_326021"}
+{"utc": "2026-10-30T16:13:55.333478+00:00", "event": "complete_int4_control_frozen", "file": "configs/020_complete_int4_control.json"}
+{"utc": "2026-10-30T16:13:57.793285+00:00", "event": "stage_start", "stage": "full-int4-runtime", "result": "results/1793376837793103804_full-int4-runtime_66c6d9"}
+{"utc": "2026-10-30T16:17:38.917299+00:00", "event": "real_gradient_audit_corrected", "file": "configs/021_real_gradient_nonzero_audit.json"}
+{"utc": "2026-10-30T16:17:40.825470+00:00", "event": "stage_start", "stage": "distributed", "result": "results/1793377060825279344_distributed_c9a9a3"}
+{"utc": "2026-10-30T16:25:34.983216+00:00", "event": "quality_diagnostic_plan_frozen", "file": "configs/022_quality_diagnostics.json"}
+{"utc": "2026-10-30T16:25:36.969138+00:00", "event": "stage_start", "stage": "quality-diagnostics", "result": "results/1793377536968959136_quality-diagnostics_11a4f9"}
+{"utc": "2026-10-30T16:25:40.150887+00:00", "event": "stage_start", "stage": "quality-diagnostics", "result": "results/1793377540132978288_quality-diagnostics_9bbb91"}
+{"utc": "2026-10-30T16:30:03.073301+00:00", "event": "stage_exit", "stage": "full-runtime", "exit_code": 0, "result": "results/1793376481249984697_full-runtime_9f4c36"}
+{"utc": "2026-10-30T16:31:17.259759+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793376518882637020_train_6b76df"}
+{"utc": "2026-10-30T16:31:17.267221+00:00", "event": "campaign_job_exit", "index": 41, "returncode": 0}
+{"utc": "2026-10-30T16:31:17.267298+00:00", "event": "campaign_job_start", "index": 42, "spec": {"phase": "function_matched", "arm": "row_tail", "seed": 11, "lr": 0.0003, "steps": 1500, "function_matched": true}}
+{"utc": "2026-10-30T16:31:17.320852+00:00", "event": "stage_start", "stage": "train", "result": "results/1793377877320667218_train_341647"}
+{"utc": "2026-10-30T16:32:44.268238+00:00", "event": "context_handoff", "path": "RESUME_PROMPT_003.md", "state": "paired training continuation pending; full fused actual model completed"}
+{"utc": "2026-10-30T16:37:50.561439+00:00", "event": "residual_only_control_frozen", "file": "configs/023_residual_only_control.json"}
+{"utc": "2026-10-30T16:37:50.618636+00:00", "event": "stage_start", "stage": "residual-control", "result": "results/1793378270618459664_residual-control_b2ec52"}
+{"utc": "2026-10-30T16:39:44.443982+00:00", "event": "stage_start", "stage": "report", "result": "results/1793378384443793380_report_81c8df"}
+{"utc": "2026-10-30T16:39:45.956095+00:00", "event": "report_written", "path": "reports/003_20261030T163944Z.md"}
+{"utc": "2026-10-30T16:39:46.063269+00:00", "event": "stage_exit", "stage": "report", "exit_code": 0, "result": "results/1793378384443793380_report_81c8df"}
+{"utc": "2026-10-30T16:49:32.276963+00:00", "event": "stage_exit", "stage": "full-int4-runtime", "exit_code": 0, "result": "results/1793376837793103804_full-int4-runtime_66c6d9"}
+{"utc": "2026-10-30T16:49:36.962744+00:00", "event": "stage_exit", "stage": "distributed", "exit_code": 0, "result": "results/1793377060825279344_distributed_c9a9a3"}
+{"utc": "2026-10-30T16:50:27.788607+00:00", "event": "stage_exit", "stage": "quality-diagnostics", "exit_code": 0, "result": "results/1793377536968959136_quality-diagnostics_11a4f9"}
+{"utc": "2026-10-30T16:51:12.111034+00:00", "event": "stage_exit", "stage": "quality-diagnostics", "exit_code": 0, "result": "results/1793377540132978288_quality-diagnostics_9bbb91"}
+{"utc": "2026-10-30T16:52:32.509122+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793377877320667218_train_341647"}
+{"utc": "2026-10-30T16:52:32.517485+00:00", "event": "campaign_job_exit", "index": 42, "returncode": 0}
+{"utc": "2026-10-30T16:52:32.517562+00:00", "event": "campaign_job_start", "index": 43, "spec": {"phase": "function_matched", "arm": "adamw", "seed": 22, "lr": 0.0003, "steps": 1500, "function_matched": true}}
+{"utc": "2026-10-30T16:52:32.568899+00:00", "event": "stage_start", "stage": "train", "result": "results/1793379152568683227_train_d5ce42"}
+{"utc": "2026-10-30T16:53:20.320066+00:00", "event": "stage_exit", "stage": "residual-control", "exit_code": 0, "result": "results/1793378270618459664_residual-control_b2ec52"}
+{"utc": "2026-10-30T16:53:21.235450+00:00", "event": "major_stage_checkpoint", "scope": "complete pretrained quality/downstream/directruntimes and nonzero-gradientaudit", "pending": "pairedtraining continuation and final publication"}
+{"utc": "2026-10-30T16:54:34.721160+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793379152568683227_train_d5ce42"}
+{"utc": "2026-10-30T16:54:34.733272+00:00", "event": "campaign_job_exit", "index": 43, "returncode": 0}
+{"utc": "2026-10-30T16:54:34.733348+00:00", "event": "campaign_job_start", "index": 44, "spec": {"phase": "function_matched", "arm": "row_tail", "seed": 22, "lr": 0.0003, "steps": 1500, "function_matched": true}}
+{"utc": "2026-10-30T16:54:34.817079+00:00", "event": "stage_start", "stage": "train", "result": "results/1793379274816903422_train_435926"}
+{"utc": "2026-10-30T16:55:57.138361+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793379274816903422_train_435926"}
+{"utc": "2026-10-30T16:55:57.153064+00:00", "event": "campaign_job_exit", "index": 44, "returncode": 0}
+{"utc": "2026-10-30T16:55:57.153159+00:00", "event": "campaign_job_start", "index": 45, "spec": {"phase": "function_matched", "arm": "adamw", "seed": 33, "lr": 0.0003, "steps": 1500, "function_matched": true}}
+{"utc": "2026-10-30T16:55:57.212907+00:00", "event": "stage_start", "stage": "train", "result": "results/1793379357212719552_train_c346b3"}
+{"utc": "2026-10-30T16:57:11.856665+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793379357212719552_train_c346b3"}
+{"utc": "2026-10-30T16:57:11.867714+00:00", "event": "campaign_job_exit", "index": 45, "returncode": 0}
+{"utc": "2026-10-30T16:57:11.867780+00:00", "event": "campaign_job_start", "index": 46, "spec": {"phase": "function_matched", "arm": "row_tail", "seed": 33, "lr": 0.0003, "steps": 1500, "function_matched": true}}
+{"utc": "2026-10-30T16:57:11.935261+00:00", "event": "stage_start", "stage": "train", "result": "results/1793379431935062591_train_9bec5b"}
+{"utc": "2026-10-30T16:58:20.411103+00:00", "event": "integrity_verified", "path": "reports/integrity_1793379500410815937.json", "staged": false}
+{"utc": "2026-10-30T16:58:33.713142+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793379431935062591_train_9bec5b"}
+{"utc": "2026-10-30T16:58:33.720374+00:00", "event": "campaign_job_exit", "index": 46, "returncode": 0}
+{"utc": "2026-10-30T16:58:33.733592+00:00", "event": "campaign_complete", "path": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/artifacts/campaign_1793369342280972329"}
+{"utc": "2026-10-30T16:58:38.604661+00:00", "event": "continuation_started", "trigger": [{"kind": "row_tail", "seed": 11, "improvement": 0.0829692855477333}, {"kind": "native", "seed": 11, "improvement": 0.09274670481681824}, {"kind": "row_tail", "seed": 22, "improvement": 0.0860271230340004}, {"kind": "native", "seed": 22, "improvement": 0.06530607491731644}, {"kind": "row_tail", "seed": 33, "improvement": 0.08797022700309753}, {"kind": "native", "seed": 33, "improvement": 0.08720565587282181}], "endpoint_steps": 6000}
+{"utc": "2026-10-30T16:58:38.674239+00:00", "event": "stage_start", "stage": "train", "result": "results/1793379518674050373_train_9777dd"}
+{"utc": "2026-10-30T17:01:46.219662+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793379518674050373_train_9777dd"}
+{"utc": "2026-10-30T17:01:46.229744+00:00", "event": "continuation_job_exit", "index": 0, "kind": "adamw", "seed": 11, "returncode": 0}
+{"utc": "2026-10-30T17:01:46.313883+00:00", "event": "stage_start", "stage": "train", "result": "results/1793379706313697319_train_87887b"}
+{"utc": "2026-10-30T17:04:50.891194+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793379706313697319_train_87887b"}
+{"utc": "2026-10-30T17:04:50.902537+00:00", "event": "continuation_job_exit", "index": 1, "kind": "row", "seed": 11, "returncode": 0}
+{"utc": "2026-10-30T17:04:50.978015+00:00", "event": "stage_start", "stage": "train", "result": "results/1793379890977817036_train_1bd3d2"}
+{"utc": "2026-10-30T17:04:59.620052+00:00", "event": "budget_refined_from_continuation_pilot", "observed_first_continuation_stage_seconds": 187.54183532699972, "cumulative6000_training_seconds": 227.20553914099946, "additional_updates": 4500, "remaining_equal_budget_continuations": 26, "estimated_remaining_continuation_wall_seconds": 4876.087718501993, "additional_selection_exports_estimate_seconds": 1200, "maximum_conditional_extra_seed_training_estimate_seconds": 3000, "conservative_charged_completed_stage_seconds": 32176.073924037006, "ceiling_seconds": 86400, "note": "wall estimates include observed validation/checkpoint/reload; source/library setup completed; shared GPU lock waits inflate conservative charged budget. Estimates are not scientific speed results."}
+{"utc": "2026-10-30T17:08:26.876270+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793379890977817036_train_1bd3d2"}
+{"utc": "2026-10-30T17:08:26.895096+00:00", "event": "continuation_job_exit", "index": 2, "kind": "tail", "seed": 11, "returncode": 0}
+{"utc": "2026-10-30T17:08:26.976112+00:00", "event": "stage_start", "stage": "train", "result": "results/1793380106975909798_train_05f5e7"}
+{"utc": "2026-10-30T17:12:03.127019+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793380106975909798_train_05f5e7"}
+{"utc": "2026-10-30T17:12:03.136111+00:00", "event": "continuation_job_exit", "index": 3, "kind": "row_tail", "seed": 11, "returncode": 0}
+{"utc": "2026-10-30T17:12:03.214842+00:00", "event": "stage_start", "stage": "train", "result": "results/1793380323214633758_train_524d4d"}
+{"utc": "2026-10-30T17:15:30.515110+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793380323214633758_train_524d4d"}
+{"utc": "2026-10-30T17:15:30.525034+00:00", "event": "continuation_job_exit", "index": 4, "kind": "native", "seed": 11, "returncode": 0}
+{"utc": "2026-10-30T17:15:30.607799+00:00", "event": "stage_start", "stage": "train", "result": "results/1793380530607602925_train_45c938"}
+{"utc": "2026-10-30T17:18:48.849047+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793380530607602925_train_45c938"}
+{"utc": "2026-10-30T17:18:48.873613+00:00", "event": "continuation_job_exit", "index": 5, "kind": "lowrank", "seed": 11, "returncode": 0}
+{"utc": "2026-10-30T17:18:48.980346+00:00", "event": "stage_start", "stage": "train", "result": "results/1793380728980142234_train_818e92"}
+{"utc": "2026-10-30T17:19:53.326935+00:00", "event": "training_continuation_checkpoint", "completed": 6, "planned": 27}
+{"utc": "2026-10-30T17:22:31.836067+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793380728980142234_train_818e92"}
+{"utc": "2026-10-30T17:22:31.846494+00:00", "event": "continuation_job_exit", "index": 6, "kind": "legacy_blend", "seed": 11, "returncode": 0}
+{"utc": "2026-10-30T17:22:31.934840+00:00", "event": "stage_start", "stage": "train", "result": "results/1793380951934609726_train_3d76f2"}
+{"utc": "2026-10-30T17:25:53.645438+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793380951934609726_train_3d76f2"}
+{"utc": "2026-10-30T17:25:53.667093+00:00", "event": "continuation_job_exit", "index": 7, "kind": "adamw", "seed": 22, "returncode": 0}
+{"utc": "2026-10-30T17:25:53.752828+00:00", "event": "stage_start", "stage": "train", "result": "results/1793381153752628915_train_7c6f35"}
+{"utc": "2026-10-30T17:27:14.431625+00:00", "event": "context_handoff", "path": "RESUME_PROMPT_004.md", "state": "all initial training complete; longpairedcontinuations running; all independent supported stages collected"}
+{"utc": "2026-10-30T17:29:02.970969+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793381153752628915_train_7c6f35"}
+{"utc": "2026-10-30T17:29:02.993706+00:00", "event": "continuation_job_exit", "index": 8, "kind": "row", "seed": 22, "returncode": 0}
+{"utc": "2026-10-30T17:29:03.062553+00:00", "event": "stage_start", "stage": "train", "result": "results/1793381343062363512_train_f941fb"}
+{"utc": "2026-10-30T17:32:41.760936+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793381343062363512_train_f941fb"}
+{"utc": "2026-10-30T17:32:41.768642+00:00", "event": "continuation_job_exit", "index": 9, "kind": "tail", "seed": 22, "returncode": 0}
+{"utc": "2026-10-30T17:32:41.845724+00:00", "event": "stage_start", "stage": "train", "result": "results/1793381561845530087_train_c3c390"}
+{"utc": "2026-10-30T17:36:15.826966+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793381561845530087_train_c3c390"}
+{"utc": "2026-10-30T17:36:15.833724+00:00", "event": "continuation_job_exit", "index": 10, "kind": "row_tail", "seed": 22, "returncode": 0}
+{"utc": "2026-10-30T17:36:15.909477+00:00", "event": "stage_start", "stage": "train", "result": "results/1793381775909269375_train_4ea8b7"}
+{"utc": "2026-10-30T17:39:33.972316+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793381775909269375_train_4ea8b7"}
+{"utc": "2026-10-30T17:39:33.986093+00:00", "event": "continuation_job_exit", "index": 11, "kind": "native", "seed": 22, "returncode": 0}
+{"utc": "2026-10-30T17:39:34.060601+00:00", "event": "stage_start", "stage": "train", "result": "results/1793381974060417625_train_643d9e"}
+{"utc": "2026-10-30T17:42:47.307627+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793381974060417625_train_643d9e"}
+{"utc": "2026-10-30T17:42:47.321033+00:00", "event": "continuation_job_exit", "index": 12, "kind": "lowrank", "seed": 22, "returncode": 0}
+{"utc": "2026-10-30T17:42:47.400556+00:00", "event": "stage_start", "stage": "train", "result": "results/1793382167400368896_train_6bf8b8"}
+{"utc": "2026-10-30T17:46:00.132320+00:00", "event": "native_full_runtime_plan_frozen", "file": "configs/024_native_complete_runtime.json"}
+{"utc": "2026-10-30T17:46:24.885471+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793382167400368896_train_6bf8b8"}
+{"utc": "2026-10-30T17:46:24.899394+00:00", "event": "continuation_job_exit", "index": 13, "kind": "legacy_blend", "seed": 22, "returncode": 0}
+{"utc": "2026-10-30T17:46:24.987391+00:00", "event": "stage_start", "stage": "train", "result": "results/1793382384987191480_train_f32726"}
+{"utc": "2026-10-30T17:49:33.787301+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793382384987191480_train_f32726"}
+{"utc": "2026-10-30T17:49:33.801917+00:00", "event": "continuation_job_exit", "index": 14, "kind": "adamw", "seed": 33, "returncode": 0}
+{"utc": "2026-10-30T17:49:33.878281+00:00", "event": "stage_start", "stage": "train", "result": "results/1793382573878086265_train_0c4249"}
+{"utc": "2026-10-30T17:49:43.259890+00:00", "event": "native_runtime_precision_amendment_frozen", "file": "configs/025_native_runtime_precision_amendment.json"}
+{"utc": "2026-10-30T17:52:28.744209+00:00", "event": "native_payload_checks_frozen", "file": "configs/026_native_runtime_saved_payload_checks.json"}
+{"utc": "2026-10-30T17:52:43.305012+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793382573878086265_train_0c4249"}
+{"utc": "2026-10-30T17:52:43.318987+00:00", "event": "continuation_job_exit", "index": 15, "kind": "row", "seed": 33, "returncode": 0}
+{"utc": "2026-10-30T17:52:43.395016+00:00", "event": "stage_start", "stage": "train", "result": "results/1793382763394816386_train_bf1755"}
+{"utc": "2026-10-30T17:56:19.107507+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793382763394816386_train_bf1755"}
+{"utc": "2026-10-30T17:56:19.114371+00:00", "event": "continuation_job_exit", "index": 16, "kind": "tail", "seed": 33, "returncode": 0}
+{"utc": "2026-10-30T17:56:19.194991+00:00", "event": "stage_start", "stage": "train", "result": "results/1793382979194802153_train_4dbb6f"}
+{"utc": "2026-10-30T17:59:52.609759+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793382979194802153_train_4dbb6f"}
+{"utc": "2026-10-30T17:59:52.624294+00:00", "event": "continuation_job_exit", "index": 17, "kind": "row_tail", "seed": 33, "returncode": 0}
+{"utc": "2026-10-30T17:59:52.699227+00:00", "event": "stage_start", "stage": "train", "result": "results/1793383192699014029_train_ba24c5"}
+{"utc": "2026-10-30T18:03:11.530690+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793383192699014029_train_ba24c5"}
+{"utc": "2026-10-30T18:03:11.540076+00:00", "event": "continuation_job_exit", "index": 18, "kind": "native", "seed": 33, "returncode": 0}
+{"utc": "2026-10-30T18:03:11.621366+00:00", "event": "stage_start", "stage": "train", "result": "results/1793383391621178562_train_a5a220"}
+{"utc": "2026-10-30T18:06:24.437285+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793383391621178562_train_a5a220"}
+{"utc": "2026-10-30T18:06:24.452594+00:00", "event": "continuation_job_exit", "index": 19, "kind": "lowrank", "seed": 33, "returncode": 0}
+{"utc": "2026-10-30T18:06:24.531987+00:00", "event": "stage_start", "stage": "train", "result": "results/1793383584531803466_train_baecbb"}
+{"utc": "2026-10-30T18:09:20.440784+00:00", "event": "interleaved_fullruntime_plan_frozen", "file": "configs/027_interleaved_complete_runtime.json"}
+{"utc": "2026-10-30T18:10:06.508627+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793383584531803466_train_baecbb"}
+{"utc": "2026-10-30T18:10:06.519836+00:00", "event": "continuation_job_exit", "index": 20, "kind": "legacy_blend", "seed": 33, "returncode": 0}
+{"utc": "2026-10-30T18:10:06.603006+00:00", "event": "stage_start", "stage": "train", "result": "results/1793383806602814849_train_7bc781"}
+{"utc": "2026-10-30T18:12:28.101787+00:00", "event": "stage_start", "stage": "report", "result": "results/1793383948101591826_report_8f00c6"}
+{"utc": "2026-10-30T18:12:29.778703+00:00", "event": "report_written", "path": "reports/004_20261030T181228Z.md"}
+{"utc": "2026-10-30T18:12:29.919990+00:00", "event": "stage_exit", "stage": "report", "exit_code": 0, "result": "results/1793383948101591826_report_8f00c6"}
+{"utc": "2026-10-30T18:13:17.154613+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793383806602814849_train_7bc781"}
+{"utc": "2026-10-30T18:13:17.161295+00:00", "event": "continuation_job_exit", "index": 21, "kind": "adamw", "seed": 11, "returncode": 0}
+{"utc": "2026-10-30T18:13:17.243150+00:00", "event": "stage_start", "stage": "train", "result": "results/1793383997242959817_train_ed0f4e"}
+{"utc": "2026-10-30T18:14:20.046791+00:00", "event": "draft_publication_requested", "progress": "progress/011_publication_1793384060046304165.json"}
+{"utc": "2026-10-30T18:14:23.394477+00:00", "event": "publication_stage_prepared", "files": 1657, "excluded": 117}
+{"utc": "2026-10-30T18:14:27.668202+00:00", "event": "integrity_verified", "path": "reports/integrity_1793384067666795281.json", "staged": true}
+{"utc": "2026-10-30T18:16:53.832874+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793383997242959817_train_ed0f4e"}
+{"utc": "2026-10-30T18:16:53.845262+00:00", "event": "continuation_job_exit", "index": 22, "kind": "row_tail", "seed": 11, "returncode": 0}
+{"utc": "2026-10-30T18:16:53.911881+00:00", "event": "stage_start", "stage": "train", "result": "results/1793384213911680715_train_d19c50"}
+{"utc": "2026-10-30T18:20:09.602541+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793384213911680715_train_d19c50"}
+{"utc": "2026-10-30T18:20:09.611558+00:00", "event": "continuation_job_exit", "index": 23, "kind": "adamw", "seed": 22, "returncode": 0}
+{"utc": "2026-10-30T18:20:09.672283+00:00", "event": "stage_start", "stage": "train", "result": "results/1793384409672036199_train_a3111d"}
+{"utc": "2026-10-30T18:23:51.357851+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793384409672036199_train_a3111d"}
+{"utc": "2026-10-30T18:23:51.367076+00:00", "event": "continuation_job_exit", "index": 24, "kind": "row_tail", "seed": 22, "returncode": 0}
+{"utc": "2026-10-30T18:23:51.429276+00:00", "event": "stage_start", "stage": "train", "result": "results/1793384631429085526_train_df92b9"}
+{"utc": "2026-10-30T18:27:04.872772+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793384631429085526_train_df92b9"}
+{"utc": "2026-10-30T18:27:04.883982+00:00", "event": "continuation_job_exit", "index": 25, "kind": "adamw", "seed": 33, "returncode": 0}
+{"utc": "2026-10-30T18:27:04.955320+00:00", "event": "stage_start", "stage": "train", "result": "results/1793384824955123448_train_a0f02c"}
+{"utc": "2026-10-30T18:30:42.177418+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793384824955123448_train_a0f02c"}
+{"utc": "2026-10-30T18:30:42.188401+00:00", "event": "continuation_job_exit", "index": 26, "kind": "row_tail", "seed": 33, "returncode": 0}
+{"utc": "2026-10-30T18:30:42.188471+00:00", "event": "continuation_complete", "endpoint_steps": 6000}
+{"utc": "2026-10-30T18:30:48.306581+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385048306382735_train-select_f91d7a"}
+{"utc": "2026-10-30T18:30:54.740335+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385048306382735_train-select_f91d7a"}
+{"utc": "2026-10-30T18:30:54.747301+00:00", "event": "selection_job_exit", "index": 0, "returncode": 0}
+{"utc": "2026-10-30T18:30:54.803748+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385054803556851_train-select_ff2f80"}
+{"utc": "2026-10-30T18:31:01.134389+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385054803556851_train-select_ff2f80"}
+{"utc": "2026-10-30T18:31:01.144859+00:00", "event": "selection_job_exit", "index": 1, "returncode": 0}
+{"utc": "2026-10-30T18:31:01.202359+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385061202170082_train-select_f2be50"}
+{"utc": "2026-10-30T18:31:07.933831+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385061202170082_train-select_f2be50"}
+{"utc": "2026-10-30T18:31:07.945684+00:00", "event": "selection_job_exit", "index": 2, "returncode": 0}
+{"utc": "2026-10-30T18:31:07.997610+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385067997385038_train-select_90951d"}
+{"utc": "2026-10-30T18:31:14.432060+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385067997385038_train-select_90951d"}
+{"utc": "2026-10-30T18:31:14.445131+00:00", "event": "selection_job_exit", "index": 3, "returncode": 0}
+{"utc": "2026-10-30T18:31:14.493533+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385074493329892_train-select_98d037"}
+{"utc": "2026-10-30T18:31:21.130674+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385074493329892_train-select_98d037"}
+{"utc": "2026-10-30T18:31:21.143162+00:00", "event": "selection_job_exit", "index": 4, "returncode": 0}
+{"utc": "2026-10-30T18:31:21.202122+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385081201935583_train-select_7cdf2c"}
+{"utc": "2026-10-30T18:31:27.635653+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385081201935583_train-select_7cdf2c"}
+{"utc": "2026-10-30T18:31:27.645399+00:00", "event": "selection_job_exit", "index": 5, "returncode": 0}
+{"utc": "2026-10-30T18:31:27.715848+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385087715626406_train-select_551498"}
+{"utc": "2026-10-30T18:31:34.248577+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385087715626406_train-select_551498"}
+{"utc": "2026-10-30T18:31:34.258998+00:00", "event": "selection_job_exit", "index": 6, "returncode": 0}
+{"utc": "2026-10-30T18:31:34.345792+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385094345588129_train-select_a9fa85"}
+{"utc": "2026-10-30T18:31:41.476052+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385094345588129_train-select_a9fa85"}
+{"utc": "2026-10-30T18:31:41.486667+00:00", "event": "selection_job_exit", "index": 7, "returncode": 0}
+{"utc": "2026-10-30T18:31:41.553745+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385101553478303_train-select_6cf0c3"}
+{"utc": "2026-10-30T18:31:48.382941+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385101553478303_train-select_6cf0c3"}
+{"utc": "2026-10-30T18:31:48.390632+00:00", "event": "selection_job_exit", "index": 8, "returncode": 0}
+{"utc": "2026-10-30T18:31:48.445160+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385108444841995_train-select_d4b0b4"}
+{"utc": "2026-10-30T18:31:55.330025+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385108444841995_train-select_d4b0b4"}
+{"utc": "2026-10-30T18:31:55.336748+00:00", "event": "selection_job_exit", "index": 9, "returncode": 0}
+{"utc": "2026-10-30T18:31:55.397439+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385115397241479_train-select_de0671"}
+{"utc": "2026-10-30T18:32:02.179335+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385115397241479_train-select_de0671"}
+{"utc": "2026-10-30T18:32:02.188729+00:00", "event": "selection_job_exit", "index": 10, "returncode": 0}
+{"utc": "2026-10-30T18:32:02.239448+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385122239231239_train-select_b3bb27"}
+{"utc": "2026-10-30T18:32:08.921318+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385122239231239_train-select_b3bb27"}
+{"utc": "2026-10-30T18:32:08.933040+00:00", "event": "selection_job_exit", "index": 11, "returncode": 0}
+{"utc": "2026-10-30T18:32:08.985935+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385128985734286_train-select_11e780"}
+{"utc": "2026-10-30T18:32:15.666762+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385128985734286_train-select_11e780"}
+{"utc": "2026-10-30T18:32:15.677078+00:00", "event": "selection_job_exit", "index": 12, "returncode": 0}
+{"utc": "2026-10-30T18:32:15.727373+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385135727180545_train-select_f739d9"}
+{"utc": "2026-10-30T18:32:22.410849+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385135727180545_train-select_f739d9"}
+{"utc": "2026-10-30T18:32:22.418574+00:00", "event": "selection_job_exit", "index": 13, "returncode": 0}
+{"utc": "2026-10-30T18:32:22.485318+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385142485113730_train-select_aa5109"}
+{"utc": "2026-10-30T18:32:29.468390+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385142485113730_train-select_aa5109"}
+{"utc": "2026-10-30T18:32:29.485779+00:00", "event": "selection_job_exit", "index": 14, "returncode": 0}
+{"utc": "2026-10-30T18:32:29.549683+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385149549488923_train-select_c4947c"}
+{"utc": "2026-10-30T18:32:36.232170+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385149549488923_train-select_c4947c"}
+{"utc": "2026-10-30T18:32:36.242621+00:00", "event": "selection_job_exit", "index": 15, "returncode": 0}
+{"utc": "2026-10-30T18:32:36.301003+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385156300812095_train-select_b643d7"}
+{"utc": "2026-10-30T18:32:42.883031+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385156300812095_train-select_b643d7"}
+{"utc": "2026-10-30T18:32:42.893060+00:00", "event": "selection_job_exit", "index": 16, "returncode": 0}
+{"utc": "2026-10-30T18:32:42.956465+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385162956256952_train-select_61ef37"}
+{"utc": "2026-10-30T18:32:49.841810+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385162956256952_train-select_61ef37"}
+{"utc": "2026-10-30T18:32:49.854907+00:00", "event": "selection_job_exit", "index": 17, "returncode": 0}
+{"utc": "2026-10-30T18:32:49.927735+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385169927523362_train-select_d2c6af"}
+{"utc": "2026-10-30T18:32:56.960044+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385169927523362_train-select_d2c6af"}
+{"utc": "2026-10-30T18:32:56.967102+00:00", "event": "selection_job_exit", "index": 18, "returncode": 0}
+{"utc": "2026-10-30T18:32:57.016893+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385177016696076_train-select_57f382"}
+{"utc": "2026-10-30T18:33:03.752922+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385177016696076_train-select_57f382"}
+{"utc": "2026-10-30T18:33:03.772099+00:00", "event": "selection_job_exit", "index": 19, "returncode": 0}
+{"utc": "2026-10-30T18:33:03.842587+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385183842385030_train-select_0dca0f"}
+{"utc": "2026-10-30T18:33:10.829503+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385183842385030_train-select_0dca0f"}
+{"utc": "2026-10-30T18:33:10.838705+00:00", "event": "selection_job_exit", "index": 20, "returncode": 0}
+{"utc": "2026-10-30T18:33:10.902115+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385190901918808_train-select_08b0e1"}
+{"utc": "2026-10-30T18:33:17.885724+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385190901918808_train-select_08b0e1"}
+{"utc": "2026-10-30T18:33:17.904111+00:00", "event": "selection_job_exit", "index": 21, "returncode": 0}
+{"utc": "2026-10-30T18:33:17.973731+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385197973525034_train-select_78f0ce"}
+{"utc": "2026-10-30T18:33:24.808546+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385197973525034_train-select_78f0ce"}
+{"utc": "2026-10-30T18:33:24.823030+00:00", "event": "selection_job_exit", "index": 22, "returncode": 0}
+{"utc": "2026-10-30T18:33:24.893201+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385204892988510_train-select_51733c"}
+{"utc": "2026-10-30T18:33:31.823879+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385204892988510_train-select_51733c"}
+{"utc": "2026-10-30T18:33:31.832267+00:00", "event": "selection_job_exit", "index": 23, "returncode": 0}
+{"utc": "2026-10-30T18:33:31.902648+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385211902440057_train-select_a862b4"}
+{"utc": "2026-10-30T18:33:38.686076+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385211902440057_train-select_a862b4"}
+{"utc": "2026-10-30T18:33:38.703597+00:00", "event": "selection_job_exit", "index": 24, "returncode": 0}
+{"utc": "2026-10-30T18:33:38.772135+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385218771936741_train-select_7c5ec2"}
+{"utc": "2026-10-30T18:33:45.603325+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385218771936741_train-select_7c5ec2"}
+{"utc": "2026-10-30T18:33:45.610221+00:00", "event": "selection_job_exit", "index": 25, "returncode": 0}
+{"utc": "2026-10-30T18:33:45.664180+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385225663943859_train-select_ad3d35"}
+{"utc": "2026-10-30T18:33:52.397932+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385225663943859_train-select_ad3d35"}
+{"utc": "2026-10-30T18:33:52.416777+00:00", "event": "selection_job_exit", "index": 26, "returncode": 0}
+{"utc": "2026-10-30T18:33:52.416917+00:00", "event": "selection_campaign_complete"}
+{"utc": "2026-10-30T18:33:58.623194+00:00", "event": "closecall_replication_decision", "decisions": [{"kind": "row", "n": 3, "paired_deltas": [0.014757009097932539, 0.011460624061587765, 0.013305910863396164], "decision_ci97_5": [0.007255546967970942, 0.01909348238064004], "expand": true}, {"kind": "tail", "n": 3, "paired_deltas": [0.03855130531334794, 0.035946165873413705, 0.03449068718822357], "decision_ci97_5": [0.028958943628115498, 0.04369982862187464], "expand": false}, {"kind": "row_tail", "n": 3, "paired_deltas": [0.05007477214084943, 0.03952331292560274, 0.048388086958996546], "decision_ci97_5": [0.02568861419937635, 0.0663021671509228], "expand": false}, {"kind": "native", "n": 3, "paired_deltas": [0.10054154803501447, 0.08491652140258754, 0.09305900205332929], "decision_ci97_5": [0.06484113504693279, 0.12083691261368809], "expand": false}], "expanded": ["row"]}
+{"utc": "2026-10-30T18:33:58.680347+00:00", "event": "stage_start", "stage": "train", "result": "results/1793385238680127061_train_052b78"}
+{"utc": "2026-10-30T18:35:09.440624+00:00", "event": "published_initial_draft", "commit": "0319dc7e6abb2a403c32f57f98f2f378661f5ba4", "PR": "https://github.com/NoahMadison/RPM-IHOG/pull/1"}
+{"utc": "2026-10-30T18:38:06.412264+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793385238680127061_train_052b78"}
+{"utc": "2026-10-30T18:38:06.491119+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385486490901850_train-select_c696ef"}
+{"utc": "2026-10-30T18:38:14.978258+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385486490901850_train-select_c696ef"}
+{"utc": "2026-10-30T18:38:14.997665+00:00", "event": "closecall_job_exit", "kind": "adamw", "seed": 44, "returncode": 0}
+{"utc": "2026-10-30T18:38:15.067789+00:00", "event": "stage_start", "stage": "train", "result": "results/1793385495067564523_train_ac7b01"}
+{"utc": "2026-10-30T18:38:17.928083+00:00", "event": "stage_publication_prepared", "result": "results/1793383997242959817_train_ed0f4e", "parent": "0319dc7e6abb2a403c32f57f98f2f378661f5ba4", "progress": "progress/stage_1793383997242959817_train_ed0f4e_1793385497927871093.json"}
+{"utc": "2026-10-30T18:39:37.353336+00:00", "event": "published_stage", "commit": "048ad83f2ea8e91754d33b0976cd2dba5a99e5a4", "result": "results/1793383997242959817_train_ed0f4e"}
+{"utc": "2026-10-30T18:40:39.955357+00:00", "event": "stage_publication_prepared", "result": "results/1793384213911680715_train_d19c50", "parent": "048ad83f2ea8e91754d33b0976cd2dba5a99e5a4", "progress": "progress/stage_1793384213911680715_train_d19c50_1793385639955187004.json"}
+{"utc": "2026-10-30T18:40:49.438994+00:00", "event": "published_stage", "commit": "e548569cd7a8927e7084336fc58296ce4c19a312", "result": "results/1793384213911680715_train_d19c50"}
+{"utc": "2026-10-30T18:40:49.581916+00:00", "event": "stage_publication_prepared", "result": "results/1793384409672036199_train_a3111d", "parent": "e548569cd7a8927e7084336fc58296ce4c19a312", "progress": "progress/stage_1793384409672036199_train_a3111d_1793385649581576985.json"}
+{"utc": "2026-10-30T18:41:01.289199+00:00", "event": "published_stage", "commit": "3c69358bf6757fb32df99fa3ba188e43a9fa937d", "result": "results/1793384409672036199_train_a3111d"}
+{"utc": "2026-10-30T18:41:01.441678+00:00", "event": "stage_publication_prepared", "result": "results/1793384631429085526_train_df92b9", "parent": "3c69358bf6757fb32df99fa3ba188e43a9fa937d", "progress": "progress/stage_1793384631429085526_train_df92b9_1793385661441465411.json"}
+{"utc": "2026-10-30T18:41:13.910976+00:00", "event": "published_stage", "commit": "33e892221d7829470f6063691c16d967991d2779", "result": "results/1793384631429085526_train_df92b9"}
+{"utc": "2026-10-30T18:41:14.050963+00:00", "event": "stage_publication_prepared", "result": "results/1793384824955123448_train_a0f02c", "parent": "33e892221d7829470f6063691c16d967991d2779", "progress": "progress/stage_1793384824955123448_train_a0f02c_1793385674050789611.json"}
+{"utc": "2026-10-30T18:41:23.337657+00:00", "event": "published_stage", "commit": "4558629798ed48f28f294641d607f121f87d1c8a", "result": "results/1793384824955123448_train_a0f02c"}
+{"utc": "2026-10-30T18:41:23.484794+00:00", "event": "stage_publication_prepared", "result": "results/1793385048306382735_train-select_f91d7a", "parent": "4558629798ed48f28f294641d607f121f87d1c8a", "progress": "progress/stage_1793385048306382735_train-select_f91d7a_1793385683484499135.json"}
+{"utc": "2026-10-30T18:41:33.253515+00:00", "event": "published_stage", "commit": "7e5ed1510ce8198942b778139243853d70d252c5", "result": "results/1793385048306382735_train-select_f91d7a"}
+{"utc": "2026-10-30T18:41:33.399444+00:00", "event": "stage_publication_prepared", "result": "results/1793385054803556851_train-select_ff2f80", "parent": "7e5ed1510ce8198942b778139243853d70d252c5", "progress": "progress/stage_1793385054803556851_train-select_ff2f80_1793385693399109741.json"}
+{"utc": "2026-10-30T18:41:42.470623+00:00", "event": "published_stage", "commit": "19a11d42054130ef529290330c76f2018cc68c50", "result": "results/1793385054803556851_train-select_ff2f80"}
+{"utc": "2026-10-30T18:42:21.972618+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793385495067564523_train_ac7b01"}
+{"utc": "2026-10-30T18:42:22.074199+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385742073999200_train-select_522ead"}
+{"utc": "2026-10-30T18:42:30.365259+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385742073999200_train-select_522ead"}
+{"utc": "2026-10-30T18:42:30.377910+00:00", "event": "closecall_job_exit", "kind": "row", "seed": 44, "returncode": 0}
+{"utc": "2026-10-30T18:42:30.436631+00:00", "event": "stage_start", "stage": "train", "result": "results/1793385750436422685_train_d51db8"}
+{"utc": "2026-10-30T18:43:57.334601+00:00", "event": "stage_publication_prepared", "result": "results/1793385061202170082_train-select_f2be50", "parent": "19a11d42054130ef529290330c76f2018cc68c50", "progress": "progress/stage_1793385061202170082_train-select_f2be50_1793385837334434444.json"}
+{"utc": "2026-10-30T18:44:04.994333+00:00", "event": "published_stage", "commit": "ca8f7ecfd4bc393372e9ec4e5d91bff1cda7cece", "result": "results/1793385061202170082_train-select_f2be50"}
+{"utc": "2026-10-30T18:44:05.134622+00:00", "event": "stage_publication_prepared", "result": "results/1793385067997385038_train-select_90951d", "parent": "ca8f7ecfd4bc393372e9ec4e5d91bff1cda7cece", "progress": "progress/stage_1793385067997385038_train-select_90951d_1793385845134326360.json"}
+{"utc": "2026-10-30T18:44:14.755872+00:00", "event": "published_stage", "commit": "2b77e9fa08c6be81b44b1ba3d782f1bea9f46308", "result": "results/1793385067997385038_train-select_90951d"}
+{"utc": "2026-10-30T18:44:14.880585+00:00", "event": "stage_publication_prepared", "result": "results/1793385074493329892_train-select_98d037", "parent": "2b77e9fa08c6be81b44b1ba3d782f1bea9f46308", "progress": "progress/stage_1793385074493329892_train-select_98d037_1793385854880433604.json"}
+{"utc": "2026-10-30T18:44:23.503901+00:00", "event": "published_stage", "commit": "585db1d67f62e0484723faa3a04c61e0f0c5b378", "result": "results/1793385074493329892_train-select_98d037"}
+{"utc": "2026-10-30T18:44:23.664042+00:00", "event": "stage_publication_prepared", "result": "results/1793385081201935583_train-select_7cdf2c", "parent": "585db1d67f62e0484723faa3a04c61e0f0c5b378", "progress": "progress/stage_1793385081201935583_train-select_7cdf2c_1793385863663865256.json"}
+{"utc": "2026-10-30T18:44:32.680501+00:00", "event": "published_stage", "commit": "5b81d8bf46bbd327d9422dd167cf3120ecac56a7", "result": "results/1793385081201935583_train-select_7cdf2c"}
+{"utc": "2026-10-30T18:44:32.824354+00:00", "event": "stage_publication_prepared", "result": "results/1793385087715626406_train-select_551498", "parent": "5b81d8bf46bbd327d9422dd167cf3120ecac56a7", "progress": "progress/stage_1793385087715626406_train-select_551498_1793385872824060989.json"}
+{"utc": "2026-10-30T18:44:42.291318+00:00", "event": "published_stage", "commit": "611afe54cc5f45341936b88166a7943baf0d5db4", "result": "results/1793385087715626406_train-select_551498"}
+{"utc": "2026-10-30T18:44:42.428436+00:00", "event": "stage_publication_prepared", "result": "results/1793385094345588129_train-select_a9fa85", "parent": "611afe54cc5f45341936b88166a7943baf0d5db4", "progress": "progress/stage_1793385094345588129_train-select_a9fa85_1793385882428146696.json"}
+{"utc": "2026-10-30T18:44:49.965640+00:00", "event": "published_stage", "commit": "243666a6b34a7f73b3875505ad7ca40b5ecebad7", "result": "results/1793385094345588129_train-select_a9fa85"}
+{"utc": "2026-10-30T18:44:50.104718+00:00", "event": "stage_publication_prepared", "result": "results/1793385101553478303_train-select_6cf0c3", "parent": "243666a6b34a7f73b3875505ad7ca40b5ecebad7", "progress": "progress/stage_1793385101553478303_train-select_6cf0c3_1793385890104565650.json"}
+{"utc": "2026-10-30T18:44:58.125318+00:00", "event": "published_stage", "commit": "f99873f8014616181b16c4544defdf0de2c50eb7", "result": "results/1793385101553478303_train-select_6cf0c3"}
+{"utc": "2026-10-30T18:44:58.272547+00:00", "event": "stage_publication_prepared", "result": "results/1793385108444841995_train-select_d4b0b4", "parent": "f99873f8014616181b16c4544defdf0de2c50eb7", "progress": "progress/stage_1793385108444841995_train-select_d4b0b4_1793385898272260348.json"}
+{"utc": "2026-10-30T18:45:05.951830+00:00", "event": "published_stage", "commit": "2e65f472c15d47ce818d6fd9fca404af9a6a3bf2", "result": "results/1793385108444841995_train-select_d4b0b4"}
+{"utc": "2026-10-30T18:46:29.249780+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793385750436422685_train_d51db8"}
+{"utc": "2026-10-30T18:46:29.319017+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793385989318823224_train-select_1b98cc"}
+{"utc": "2026-10-30T18:46:37.705074+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793385989318823224_train-select_1b98cc"}
+{"utc": "2026-10-30T18:46:37.713176+00:00", "event": "closecall_job_exit", "kind": "adamw", "seed": 55, "returncode": 0}
+{"utc": "2026-10-30T18:46:37.775412+00:00", "event": "stage_start", "stage": "train", "result": "results/1793385997775194711_train_1d2884"}
+{"utc": "2026-10-30T18:49:01.778333+00:00", "event": "context_handoff", "path": "RESUME_PROMPT_005.md", "PR": "https://github.com/NoahMadison/RPM-IHOG/pull/1", "state": "n5row/denseclosecall and exports/runtime pending; per-stagepublication active"}
+{"utc": "2026-10-30T18:49:05.014289+00:00", "event": "stage_publication_prepared", "result": "results/1793385115397241479_train-select_de0671", "parent": "2e65f472c15d47ce818d6fd9fca404af9a6a3bf2", "progress": "progress/stage_1793385115397241479_train-select_de0671_1793386145014109902.json"}
+{"utc": "2026-10-30T18:50:40.852919+00:00", "event": "stage_exit", "stage": "train", "exit_code": 0, "result": "results/1793385997775194711_train_1d2884"}
+{"utc": "2026-10-30T18:50:40.933236+00:00", "event": "stage_start", "stage": "train-select", "result": "results/1793386240933022802_train-select_82af61"}
+{"utc": "2026-10-30T18:50:49.073585+00:00", "event": "stage_exit", "stage": "train-select", "exit_code": 0, "result": "results/1793386240933022802_train-select_82af61"}
+{"utc": "2026-10-30T18:50:49.090761+00:00", "event": "closecall_job_exit", "kind": "row", "seed": 55, "returncode": 0}
+{"utc": "2026-10-30T18:50:49.090823+00:00", "event": "closecall_campaign_complete", "expanded": ["row"]}
+{"utc": "2026-10-30T18:50:52.587981+00:00", "event": "stage_start", "stage": "direct-factor-export", "result": "results/1793386252587799446_direct-factor-export_63f528"}
+{"utc": "2026-10-30T18:50:58.270779+00:00", "event": "stage_exit", "stage": "direct-factor-export", "exit_code": 0, "result": "results/1793386252587799446_direct-factor-export_63f528"}
+{"utc": "2026-10-30T18:50:58.356636+00:00", "event": "stage_start", "stage": "direct-factor-export", "result": "results/1793386258356419552_direct-factor-export_bc51f2"}
+{"utc": "2026-10-30T18:51:03.990931+00:00", "event": "stage_exit", "stage": "direct-factor-export", "exit_code": 0, "result": "results/1793386258356419552_direct-factor-export_bc51f2"}
+{"utc": "2026-10-30T18:51:04.061166+00:00", "event": "stage_start", "stage": "direct-factor-export", "result": "results/1793386264060969702_direct-factor-export_f188be"}
+{"utc": "2026-10-30T18:51:09.792620+00:00", "event": "stage_exit", "stage": "direct-factor-export", "exit_code": 0, "result": "results/1793386264060969702_direct-factor-export_f188be"}
+{"utc": "2026-10-30T18:51:09.872036+00:00", "event": "stage_start", "stage": "direct-factor-export", "result": "results/1793386269871844383_direct-factor-export_d9ec60"}
+{"utc": "2026-10-30T18:51:15.564978+00:00", "event": "stage_exit", "stage": "direct-factor-export", "exit_code": 0, "result": "results/1793386269871844383_direct-factor-export_d9ec60"}
+{"utc": "2026-10-30T18:51:15.641148+00:00", "event": "stage_start", "stage": "direct-factor-export", "result": "results/1793386275640950404_direct-factor-export_a4b431"}
+{"utc": "2026-10-30T18:51:21.374530+00:00", "event": "stage_exit", "stage": "direct-factor-export", "exit_code": 0, "result": "results/1793386275640950404_direct-factor-export_a4b431"}
+{"utc": "2026-10-30T18:51:21.452761+00:00", "event": "stage_start", "stage": "direct-factor-export", "result": "results/1793386281452577064_direct-factor-export_4af7d1"}
+{"utc": "2026-10-30T18:51:27.035218+00:00", "event": "stage_exit", "stage": "direct-factor-export", "exit_code": 0, "result": "results/1793386281452577064_direct-factor-export_4af7d1"}
+{"utc": "2026-10-30T18:51:27.047713+00:00", "event": "factor_export_campaign_complete", "runs": 6}
+{"utc": "2026-10-30T18:51:27.511019+00:00", "event": "stage_start", "stage": "direct-factor-export", "result": "results/1793386287510830367_direct-factor-export_20dca5"}
+{"utc": "2026-10-30T18:51:33.145767+00:00", "event": "stage_exit", "stage": "direct-factor-export", "exit_code": 0, "result": "results/1793386287510830367_direct-factor-export_20dca5"}
+{"utc": "2026-10-30T18:51:33.226690+00:00", "event": "stage_start", "stage": "direct-factor-export", "result": "results/1793386293226495740_direct-factor-export_b1c64a"}
+{"utc": "2026-10-30T18:51:38.857327+00:00", "event": "stage_exit", "stage": "direct-factor-export", "exit_code": 0, "result": "results/1793386293226495740_direct-factor-export_b1c64a"}
+{"utc": "2026-10-30T18:51:38.932206+00:00", "event": "stage_start", "stage": "direct-factor-export", "result": "results/1793386298932015483_direct-factor-export_01afcc"}
+{"utc": "2026-10-30T18:51:44.250829+00:00", "event": "published_stage", "commit": "0066472b46474050d94f257d010973f2873c2086", "result": "results/1793385115397241479_train-select_de0671"}
+{"utc": "2026-10-30T18:51:44.564645+00:00", "event": "stage_exit", "stage": "direct-factor-export", "exit_code": 0, "result": "results/1793386298932015483_direct-factor-export_01afcc"}
+{"utc": "2026-10-30T18:51:44.624131+00:00", "event": "stage_start", "stage": "direct-factor-export", "result": "results/1793386304623938289_direct-factor-export_01ba0c"}
+{"utc": "2026-10-30T18:51:50.255518+00:00", "event": "stage_exit", "stage": "direct-factor-export", "exit_code": 0, "result": "results/1793386304623938289_direct-factor-export_01ba0c"}
+{"utc": "2026-10-30T18:51:50.331657+00:00", "event": "stage_start", "stage": "direct-factor-export", "result": "results/1793386310331467869_direct-factor-export_bcb4fa"}
+{"utc": "2026-10-30T18:51:55.965958+00:00", "event": "stage_exit", "stage": "direct-factor-export", "exit_code": 0, "result": "results/1793386310331467869_direct-factor-export_bcb4fa"}
+{"utc": "2026-10-30T18:51:56.042970+00:00", "event": "stage_start", "stage": "direct-factor-export", "result": "results/1793386316042766999_direct-factor-export_20d479"}
+{"utc": "2026-10-30T18:52:01.674982+00:00", "event": "stage_exit", "stage": "direct-factor-export", "exit_code": 0, "result": "results/1793386316042766999_direct-factor-export_20d479"}
+{"utc": "2026-10-30T18:52:01.739006+00:00", "event": "stage_start", "stage": "direct-factor-export", "result": "results/1793386321738816029_direct-factor-export_5b6440"}
+{"utc": "2026-10-30T18:52:07.321288+00:00", "event": "stage_exit", "stage": "direct-factor-export", "exit_code": 0, "result": "results/1793386321738816029_direct-factor-export_5b6440"}
+{"utc": "2026-10-30T18:52:07.402116+00:00", "event": "stage_start", "stage": "direct-factor-export", "result": "results/1793386327401905501_direct-factor-export_d9bf17"}
+{"utc": "2026-10-30T18:52:12.983195+00:00", "event": "stage_exit", "stage": "direct-factor-export", "exit_code": 0, "result": "results/1793386327401905501_direct-factor-export_d9bf17"}
+{"utc": "2026-10-30T18:52:13.063284+00:00", "event": "stage_start", "stage": "direct-factor-export", "result": "results/1793386333063063224_direct-factor-export_d9a4ac"}
+{"utc": "2026-10-30T18:52:18.649317+00:00", "event": "stage_exit", "stage": "direct-factor-export", "exit_code": 0, "result": "results/1793386333063063224_direct-factor-export_d9a4ac"}
+{"utc": "2026-10-30T18:52:18.733871+00:00", "event": "stage_start", "stage": "direct-factor-export", "result": "results/1793386338733658715_direct-factor-export_85ee1a"}
+{"utc": "2026-10-30T18:52:24.416559+00:00", "event": "stage_exit", "stage": "direct-factor-export", "exit_code": 0, "result": "results/1793386338733658715_direct-factor-export_85ee1a"}
+{"utc": "2026-10-30T18:52:24.495324+00:00", "event": "stage_start", "stage": "direct-factor-export", "result": "results/1793386344495112288_direct-factor-export_e11c93"}
+{"utc": "2026-10-30T18:52:30.177574+00:00", "event": "stage_exit", "stage": "direct-factor-export", "exit_code": 0, "result": "results/1793386344495112288_direct-factor-export_e11c93"}
+{"utc": "2026-10-30T18:52:30.188660+00:00", "event": "precision_export_campaign_complete", "runs": 11}
+{"utc": "2026-10-30T18:52:30.678256+00:00", "event": "stage_start", "stage": "native-runtime", "result": "results/1793386350678058389_native-runtime_7b6dae"}
+{"utc": "2026-10-30T18:53:28.979085+00:00", "event": "stage_publication_prepared", "result": "results/1793385122239231239_train-select_b3bb27", "parent": "0066472b46474050d94f257d010973f2873c2086", "progress": "progress/stage_1793385122239231239_train-select_b3bb27_1793386408978935932.json"}
+{"utc": "2026-10-30T18:53:39.919655+00:00", "event": "published_stage", "commit": "a7dc7f5a3cf4ae0fabf28dafff6585e258691816", "result": "results/1793385122239231239_train-select_b3bb27"}
+{"utc": "2026-10-30T18:53:40.053268+00:00", "event": "stage_publication_prepared", "result": "results/1793385128985734286_train-select_11e780", "parent": "a7dc7f5a3cf4ae0fabf28dafff6585e258691816", "progress": "progress/stage_1793385128985734286_train-select_11e780_1793386420053013479.json"}
+{"utc": "2026-10-30T18:53:52.504334+00:00", "event": "published_stage", "commit": "a228efb15f236574990e0ed45d8e0e4f35cea237", "result": "results/1793385128985734286_train-select_11e780"}
+{"utc": "2026-10-30T18:53:52.641657+00:00", "event": "stage_publication_prepared", "result": "results/1793385135727180545_train-select_f739d9", "parent": "a228efb15f236574990e0ed45d8e0e4f35cea237", "progress": "progress/stage_1793385135727180545_train-select_f739d9_1793386432641510850.json"}
+{"utc": "2026-10-30T18:54:03.768582+00:00", "event": "published_stage", "commit": "87bb957fc038ddaab6de31976c085c5e64de3a43", "result": "results/1793385135727180545_train-select_f739d9"}
+{"utc": "2026-10-30T18:54:03.900039+00:00", "event": "stage_publication_prepared", "result": "results/1793385142485113730_train-select_aa5109", "parent": "87bb957fc038ddaab6de31976c085c5e64de3a43", "progress": "progress/stage_1793385142485113730_train-select_aa5109_1793386443899892095.json"}
+{"utc": "2026-10-30T18:54:08.845121+00:00", "event": "stage_exit", "stage": "native-runtime", "exit_code": 0, "result": "results/1793386350678058389_native-runtime_7b6dae"}
+{"utc": "2026-10-30T18:54:08.861120+00:00", "event": "native_runtime_campaign_complete", "returncode": 0}
+{"utc": "2026-10-30T18:54:10.860204+00:00", "event": "stage_start", "stage": "interleaved-runtime", "result": "results/1793386450860009760_interleaved-runtime_1ea86c"}
+{"utc": "2026-10-30T18:54:13.858327+00:00", "event": "published_stage", "commit": "e16a4cf9c7bf0598005e3e4582e11d2b9d2f5ba4", "result": "results/1793385142485113730_train-select_aa5109"}
+{"utc": "2026-10-30T18:54:13.996792+00:00", "event": "stage_publication_prepared", "result": "results/1793385149549488923_train-select_c4947c", "parent": "e16a4cf9c7bf0598005e3e4582e11d2b9d2f5ba4", "progress": "progress/stage_1793385149549488923_train-select_c4947c_1793386453996639493.json"}
+{"utc": "2026-10-30T18:54:23.606140+00:00", "event": "published_stage", "commit": "fd2774ba06daaaf80d602cc5045959013e80d700", "result": "results/1793385149549488923_train-select_c4947c"}
+{"utc": "2026-10-30T18:54:23.735636+00:00", "event": "stage_publication_prepared", "result": "results/1793385156300812095_train-select_b643d7", "parent": "fd2774ba06daaaf80d602cc5045959013e80d700", "progress": "progress/stage_1793385156300812095_train-select_b643d7_1793386463735386245.json"}
+{"utc": "2026-10-30T18:54:35.803700+00:00", "event": "published_stage", "commit": "99f7367e4fea1265c0663ba85afa79d594e4347a", "result": "results/1793385156300812095_train-select_b643d7"}
+{"utc": "2026-10-30T18:54:35.934519+00:00", "event": "stage_publication_prepared", "result": "results/1793385162956256952_train-select_61ef37", "parent": "99f7367e4fea1265c0663ba85afa79d594e4347a", "progress": "progress/stage_1793385162956256952_train-select_61ef37_1793386475934339410.json"}
+{"utc": "2026-10-30T18:54:46.866915+00:00", "event": "published_stage", "commit": "55996bf2f85d5f836fc24fedcd5f8e4fd3c193c1", "result": "results/1793385162956256952_train-select_61ef37"}
+{"utc": "2026-10-30T18:54:47.007875+00:00", "event": "stage_publication_prepared", "result": "results/1793385169927523362_train-select_d2c6af", "parent": "55996bf2f85d5f836fc24fedcd5f8e4fd3c193c1", "progress": "progress/stage_1793385169927523362_train-select_d2c6af_1793386487007718213.json"}
+{"utc": "2026-10-30T18:54:56.752719+00:00", "event": "published_stage", "commit": "68bc8494849ec2c2de7e0654a378a5ad053ca72b", "result": "results/1793385169927523362_train-select_d2c6af"}
+{"utc": "2026-10-30T18:59:11.070166+00:00", "event": "stage_publication_prepared", "result": "results/1793385177016696076_train-select_57f382", "parent": "68bc8494849ec2c2de7e0654a378a5ad053ca72b", "progress": "progress/stage_1793385177016696076_train-select_57f382_1793386751070006674.json"}
+{"utc": "2026-10-30T18:59:23.428825+00:00", "event": "published_stage", "commit": "bcce38733e51eeb82313751227266a9c9218d065", "result": "results/1793385177016696076_train-select_57f382"}
+{"utc": "2026-10-30T18:59:23.558810+00:00", "event": "stage_publication_prepared", "result": "results/1793385183842385030_train-select_0dca0f", "parent": "bcce38733e51eeb82313751227266a9c9218d065", "progress": "progress/stage_1793385183842385030_train-select_0dca0f_1793386763558552844.json"}
+{"utc": "2026-10-30T18:59:34.156617+00:00", "event": "published_stage", "commit": "7803301031bd3d8edfd16544269ebff02feef5ff", "result": "results/1793385183842385030_train-select_0dca0f"}
+{"utc": "2026-10-30T18:59:34.289290+00:00", "event": "stage_publication_prepared", "result": "results/1793385190901918808_train-select_08b0e1", "parent": "7803301031bd3d8edfd16544269ebff02feef5ff", "progress": "progress/stage_1793385190901918808_train-select_08b0e1_1793386774289130066.json"}
+{"utc": "2026-10-30T18:59:46.374256+00:00", "event": "published_stage", "commit": "3eb586793db8ebfa39e07f8a12efd25cca14e054", "result": "results/1793385190901918808_train-select_08b0e1"}
+{"utc": "2026-10-30T18:59:46.515403+00:00", "event": "stage_publication_prepared", "result": "results/1793385197973525034_train-select_78f0ce", "parent": "3eb586793db8ebfa39e07f8a12efd25cca14e054", "progress": "progress/stage_1793385197973525034_train-select_78f0ce_1793386786515249219.json"}
+{"utc": "2026-10-30T18:59:58.005203+00:00", "event": "published_stage", "commit": "482746d031d1979c83af05c090d461c32ad068f8", "result": "results/1793385197973525034_train-select_78f0ce"}
+{"utc": "2026-10-30T18:59:58.155524+00:00", "event": "stage_publication_prepared", "result": "results/1793385204892988510_train-select_51733c", "parent": "482746d031d1979c83af05c090d461c32ad068f8", "progress": "progress/stage_1793385204892988510_train-select_51733c_1793386798155356828.json"}
+{"utc": "2026-10-30T19:00:10.424681+00:00", "event": "published_stage", "commit": "b7552b81a1e17926f67257d43aaa78f79d8260bd", "result": "results/1793385204892988510_train-select_51733c"}
+{"utc": "2026-10-30T19:00:10.569864+00:00", "event": "stage_publication_prepared", "result": "results/1793385211902440057_train-select_a862b4", "parent": "b7552b81a1e17926f67257d43aaa78f79d8260bd", "progress": "progress/stage_1793385211902440057_train-select_a862b4_1793386810569698903.json"}
+{"utc": "2026-10-30T19:00:22.196602+00:00", "event": "published_stage", "commit": "8ab1651006b0af5117bd19d390c41247130ac266", "result": "results/1793385211902440057_train-select_a862b4"}
+{"utc": "2026-10-30T19:00:22.342781+00:00", "event": "stage_publication_prepared", "result": "results/1793385218771936741_train-select_7c5ec2", "parent": "8ab1651006b0af5117bd19d390c41247130ac266", "progress": "progress/stage_1793385218771936741_train-select_7c5ec2_1793386822342628363.json"}
+{"utc": "2026-10-30T19:00:34.257142+00:00", "event": "published_stage", "commit": "2f6414c25e4fbfcd326778dd2b1ad8c1a2f2cb8a", "result": "results/1793385218771936741_train-select_7c5ec2"}
+{"utc": "2026-10-30T19:00:34.383401+00:00", "event": "stage_publication_prepared", "result": "results/1793385225663943859_train-select_ad3d35", "parent": "2f6414c25e4fbfcd326778dd2b1ad8c1a2f2cb8a", "progress": "progress/stage_1793385225663943859_train-select_ad3d35_1793386834383243751.json"}
+{"utc": "2026-10-30T19:00:47.009175+00:00", "event": "published_stage", "commit": "2144f6b352c2601de875d0274c1107658f81393e", "result": "results/1793385225663943859_train-select_ad3d35"}
+{"utc": "2026-10-30T19:00:47.167764+00:00", "event": "stage_publication_prepared", "result": "results/1793385238680127061_train_052b78", "parent": "2144f6b352c2601de875d0274c1107658f81393e", "progress": "progress/stage_1793385238680127061_train_052b78_1793386847167604521.json"}
+{"utc": "2026-10-30T19:01:00.449781+00:00", "event": "published_stage", "commit": "4e37ba53bdeb59a2e54b0bb117fc06c2170b4d0d", "result": "results/1793385238680127061_train_052b78"}
+{"utc": "2026-10-30T19:01:00.591367+00:00", "event": "stage_publication_prepared", "result": "results/1793385486490901850_train-select_c696ef", "parent": "4e37ba53bdeb59a2e54b0bb117fc06c2170b4d0d", "progress": "progress/stage_1793385486490901850_train-select_c696ef_1793386860591213738.json"}
+{"utc": "2026-10-30T19:01:13.123930+00:00", "event": "published_stage", "commit": "6fceae62c160cba27e94310782a7a763087413bb", "result": "results/1793385486490901850_train-select_c696ef"}
+{"utc": "2026-10-30T19:01:13.259393+00:00", "event": "stage_publication_prepared", "result": "results/1793385495067564523_train_ac7b01", "parent": "6fceae62c160cba27e94310782a7a763087413bb", "progress": "progress/stage_1793385495067564523_train_ac7b01_1793386873259232694.json"}
+{"utc": "2026-10-30T19:01:25.638319+00:00", "event": "published_stage", "commit": "b88a2be4ad5eb3521e64c7b9f67a7cec4adb7577", "result": "results/1793385495067564523_train_ac7b01"}
+{"utc": "2026-10-30T19:01:25.783573+00:00", "event": "stage_publication_prepared", "result": "results/1793385742073999200_train-select_522ead", "parent": "b88a2be4ad5eb3521e64c7b9f67a7cec4adb7577", "progress": "progress/stage_1793385742073999200_train-select_522ead_1793386885783426607.json"}
+{"utc": "2026-10-30T19:01:37.493971+00:00", "event": "published_stage", "commit": "0506008b9bb59e8ab557beeed22c6ac6dc5a2512", "result": "results/1793385742073999200_train-select_522ead"}
+{"utc": "2026-10-30T19:03:05.282372+00:00", "event": "stage_publication_prepared", "result": "results/1793385750436422685_train_d51db8", "parent": "0506008b9bb59e8ab557beeed22c6ac6dc5a2512", "progress": "progress/stage_1793385750436422685_train_d51db8_1793386985282097997.json"}
+{"utc": "2026-10-30T19:03:20.168507+00:00", "event": "published_stage", "commit": "f8ce6c1ce9853d340755db1d38c6f43b3ef1d7b1", "result": "results/1793385750436422685_train_d51db8"}
+{"utc": "2026-10-30T19:03:20.316621+00:00", "event": "stage_publication_prepared", "result": "results/1793385989318823224_train-select_1b98cc", "parent": "f8ce6c1ce9853d340755db1d38c6f43b3ef1d7b1", "progress": "progress/stage_1793385989318823224_train-select_1b98cc_1793387000316362959.json"}
+{"utc": "2026-10-30T19:03:33.518707+00:00", "event": "published_stage", "commit": "9e00d4f0b7a7c60301177830ddae6863eac9c3b2", "result": "results/1793385989318823224_train-select_1b98cc"}
+{"utc": "2026-10-30T19:03:33.664462+00:00", "event": "stage_publication_prepared", "result": "results/1793385997775194711_train_1d2884", "parent": "9e00d4f0b7a7c60301177830ddae6863eac9c3b2", "progress": "progress/stage_1793385997775194711_train_1d2884_1793387013664300791.json"}
+{"utc": "2026-10-30T19:03:47.031985+00:00", "event": "published_stage", "commit": "651fc7dcc5c4e118806b6cfad0c1ebe6ae49a93a", "result": "results/1793385997775194711_train_1d2884"}
+{"utc": "2026-10-30T19:03:47.163680+00:00", "event": "stage_publication_prepared", "result": "results/1793386240933022802_train-select_82af61", "parent": "651fc7dcc5c4e118806b6cfad0c1ebe6ae49a93a", "progress": "progress/stage_1793386240933022802_train-select_82af61_1793387027163523705.json"}
+{"utc": "2026-10-30T19:03:59.953624+00:00", "event": "published_stage", "commit": "e9e714ac685f352b3b444a631f23db9b4b03d34e", "result": "results/1793386240933022802_train-select_82af61"}
+{"utc": "2026-10-30T19:04:00.090582+00:00", "event": "stage_publication_prepared", "result": "results/1793386252587799446_direct-factor-export_63f528", "parent": "e9e714ac685f352b3b444a631f23db9b4b03d34e", "progress": "progress/stage_1793386252587799446_direct-factor-export_63f528_1793387040090440439.json"}
+{"utc": "2026-10-30T19:04:02.156875+00:00", "event": "stage_exit", "stage": "interleaved-runtime", "exit_code": 0, "result": "results/1793386450860009760_interleaved-runtime_1ea86c"}
+{"utc": "2026-10-30T19:04:02.163833+00:00", "event": "interleaved_runtime_campaign_complete", "returncode": 0}
+{"utc": "2026-10-30T19:04:14.923548+00:00", "event": "published_stage", "commit": "df2d948f89465c46cb8ffeea63f9f6e81016af48", "result": "results/1793386252587799446_direct-factor-export_63f528"}
+{"utc": "2026-10-30T19:04:15.131203+00:00", "event": "stage_publication_prepared", "result": "results/1793386258356419552_direct-factor-export_bc51f2", "parent": "df2d948f89465c46cb8ffeea63f9f6e81016af48", "progress": "progress/stage_1793386258356419552_direct-factor-export_bc51f2_1793387055130936575.json"}
+{"utc": "2026-10-30T19:04:27.955396+00:00", "event": "published_stage", "commit": "9d1d80266bc46477a137053323ce262e9bfa0df9", "result": "results/1793386258356419552_direct-factor-export_bc51f2"}
+{"utc": "2026-10-30T19:04:28.134942+00:00", "event": "stage_publication_prepared", "result": "results/1793386264060969702_direct-factor-export_f188be", "parent": "9d1d80266bc46477a137053323ce262e9bfa0df9", "progress": "progress/stage_1793386264060969702_direct-factor-export_f188be_1793387068134796886.json"}
+{"utc": "2026-10-30T19:04:40.721901+00:00", "event": "published_stage", "commit": "2ce73430f0dfc9bd5c90c57cca24fca760da3d8e", "result": "results/1793386264060969702_direct-factor-export_f188be"}
+{"utc": "2026-10-30T19:04:40.871124+00:00", "event": "stage_publication_prepared", "result": "results/1793386269871844383_direct-factor-export_d9ec60", "parent": "2ce73430f0dfc9bd5c90c57cca24fca760da3d8e", "progress": "progress/stage_1793386269871844383_direct-factor-export_d9ec60_1793387080870947842.json"}
+{"utc": "2026-10-30T19:04:53.422077+00:00", "event": "published_stage", "commit": "d64ecd155b6e098c95dc9922953f92f43a7aecdc", "result": "results/1793386269871844383_direct-factor-export_d9ec60"}
+{"utc": "2026-10-30T19:04:53.558482+00:00", "event": "stage_publication_prepared", "result": "results/1793386275640950404_direct-factor-export_a4b431", "parent": "d64ecd155b6e098c95dc9922953f92f43a7aecdc", "progress": "progress/stage_1793386275640950404_direct-factor-export_a4b431_1793387093558296658.json"}
+{"utc": "2026-10-30T19:05:05.779733+00:00", "event": "published_stage", "commit": "a030610deee7a5364165c05b846d1877d279e7ec", "result": "results/1793386275640950404_direct-factor-export_a4b431"}
+{"utc": "2026-10-30T19:05:05.926175+00:00", "event": "stage_publication_prepared", "result": "results/1793386281452577064_direct-factor-export_4af7d1", "parent": "a030610deee7a5364165c05b846d1877d279e7ec", "progress": "progress/stage_1793386281452577064_direct-factor-export_4af7d1_1793387105926021934.json"}
+{"utc": "2026-10-30T19:05:18.877775+00:00", "event": "published_stage", "commit": "66d4384b3142c0de75f900a14a38604406406016", "result": "results/1793386281452577064_direct-factor-export_4af7d1"}
+{"utc": "2026-10-30T19:05:19.041508+00:00", "event": "stage_publication_prepared", "result": "results/1793386287510830367_direct-factor-export_20dca5", "parent": "66d4384b3142c0de75f900a14a38604406406016", "progress": "progress/stage_1793386287510830367_direct-factor-export_20dca5_1793387119041249946.json"}
+{"utc": "2026-10-30T19:05:30.190806+00:00", "event": "published_stage", "commit": "514c6ff44e4346733f59373d9d5ffdbcd928fc5f", "result": "results/1793386287510830367_direct-factor-export_20dca5"}
+{"utc": "2026-10-30T19:05:30.317072+00:00", "event": "stage_publication_prepared", "result": "results/1793386293226495740_direct-factor-export_b1c64a", "parent": "514c6ff44e4346733f59373d9d5ffdbcd928fc5f", "progress": "progress/stage_1793386293226495740_direct-factor-export_b1c64a_1793387130316931973.json"}
+{"utc": "2026-10-30T19:05:43.817850+00:00", "event": "published_stage", "commit": "3459ee74adb55dc6f96eb1f9cd2dadf0cb210e25", "result": "results/1793386293226495740_direct-factor-export_b1c64a"}
+{"utc": "2026-10-30T19:07:04.627419+00:00", "event": "stage_start", "stage": "report", "result": "results/1793387224627222075_report_6f5c5f"}
+{"utc": "2026-10-30T19:07:06.461775+00:00", "event": "report_written", "path": "reports/005_20261030T190704Z.md"}
+{"utc": "2026-10-30T19:07:06.596681+00:00", "event": "stage_exit", "stage": "report", "exit_code": 0, "result": "results/1793387224627222075_report_6f5c5f"}
+{"utc": "2026-10-30T19:08:35.699071+00:00", "event": "integrity_verified", "path": "reports/integrity_1793387315697757608.json", "staged": false}
+{"utc": "2026-10-30T19:14:20.816274+00:00", "event": "first_pass_scientific_execution_complete", "summary": "reports/006_20261030T191420Z_SUMMARY.md", "handoff": "RESUME_PROMPT_006.md"}
+{"utc": "2026-10-30T19:15:53.963526+00:00", "event": "stage_publication_prepared", "result": "results/1793386298932015483_direct-factor-export_01afcc", "parent": "3459ee74adb55dc6f96eb1f9cd2dadf0cb210e25", "progress": "progress/stage_1793386298932015483_direct-factor-export_01afcc_1793387753962901680.json"}
+{"utc": "2026-10-30T19:16:10.083652+00:00", "event": "published_stage", "commit": "7a02a916be03ecd9e3e20a69f9f7d1e7166bf950", "result": "results/1793386298932015483_direct-factor-export_01afcc"}
+{"utc": "2026-10-30T19:16:10.209615+00:00", "event": "stage_publication_prepared", "result": "results/1793386304623938289_direct-factor-export_01ba0c", "parent": "7a02a916be03ecd9e3e20a69f9f7d1e7166bf950", "progress": "progress/stage_1793386304623938289_direct-factor-export_01ba0c_1793387770209470253.json"}
+{"utc": "2026-10-30T19:16:22.388858+00:00", "event": "published_stage", "commit": "dfe08f7d3f16b766546c22962cf36aab63d2a176", "result": "results/1793386304623938289_direct-factor-export_01ba0c"}
+{"utc": "2026-10-30T19:16:22.576123+00:00", "event": "stage_publication_prepared", "result": "results/1793386310331467869_direct-factor-export_bcb4fa", "parent": "dfe08f7d3f16b766546c22962cf36aab63d2a176", "progress": "progress/stage_1793386310331467869_direct-factor-export_bcb4fa_1793387782575982541.json"}
+{"utc": "2026-10-30T19:16:34.349123+00:00", "event": "published_stage", "commit": "bf3056c3ca9afec5901408b14226080fbf6fcaaa", "result": "results/1793386310331467869_direct-factor-export_bcb4fa"}
+{"utc": "2026-10-30T19:16:34.479907+00:00", "event": "stage_publication_prepared", "result": "results/1793386316042766999_direct-factor-export_20d479", "parent": "bf3056c3ca9afec5901408b14226080fbf6fcaaa", "progress": "progress/stage_1793386316042766999_direct-factor-export_20d479_1793387794479740214.json"}
+{"utc": "2026-10-30T19:16:48.213428+00:00", "event": "published_stage", "commit": "0f20900f3df9905b5eeae347078fc38e6c45be44", "result": "results/1793386316042766999_direct-factor-export_20d479"}
+{"utc": "2026-10-30T19:16:48.361437+00:00", "event": "stage_publication_prepared", "result": "results/1793386321738816029_direct-factor-export_5b6440", "parent": "0f20900f3df9905b5eeae347078fc38e6c45be44", "progress": "progress/stage_1793386321738816029_direct-factor-export_5b6440_1793387808361291108.json"}
+{"utc": "2026-10-30T19:17:00.785432+00:00", "event": "published_stage", "commit": "134241573bd2a72699e28ed4409fed744158f5c4", "result": "results/1793386321738816029_direct-factor-export_5b6440"}
+{"utc": "2026-10-30T19:17:00.936266+00:00", "event": "stage_publication_prepared", "result": "results/1793386327401905501_direct-factor-export_d9bf17", "parent": "134241573bd2a72699e28ed4409fed744158f5c4", "progress": "progress/stage_1793386327401905501_direct-factor-export_d9bf17_1793387820936075214.json"}
+{"utc": "2026-10-30T19:17:16.134851+00:00", "event": "published_stage", "commit": "1b5b2caef53583e90196d32b6d6d0e70520bb707", "result": "results/1793386327401905501_direct-factor-export_d9bf17"}
+{"utc": "2026-10-30T19:17:16.279919+00:00", "event": "stage_publication_prepared", "result": "results/1793386333063063224_direct-factor-export_d9a4ac", "parent": "1b5b2caef53583e90196d32b6d6d0e70520bb707", "progress": "progress/stage_1793386333063063224_direct-factor-export_d9a4ac_1793387836279771020.json"}
+{"utc": "2026-10-30T19:17:29.744949+00:00", "event": "published_stage", "commit": "a48afe9b786ad87b7bf70a99f674b666b853b973", "result": "results/1793386333063063224_direct-factor-export_d9a4ac"}
+{"utc": "2026-10-30T19:17:29.911685+00:00", "event": "stage_publication_prepared", "result": "results/1793386338733658715_direct-factor-export_85ee1a", "parent": "a48afe9b786ad87b7bf70a99f674b666b853b973", "progress": "progress/stage_1793386338733658715_direct-factor-export_85ee1a_1793387849911541032.json"}
+{"utc": "2026-10-30T19:17:43.582509+00:00", "event": "published_stage", "commit": "450cecbcdc470e702f6ae71933280fffca549ad4", "result": "results/1793386338733658715_direct-factor-export_85ee1a"}
+{"utc": "2026-10-30T19:17:43.771119+00:00", "event": "stage_publication_prepared", "result": "results/1793386344495112288_direct-factor-export_e11c93", "parent": "450cecbcdc470e702f6ae71933280fffca549ad4", "progress": "progress/stage_1793386344495112288_direct-factor-export_e11c93_1793387863770969760.json"}
+{"utc": "2026-10-30T19:17:56.807540+00:00", "event": "published_stage", "commit": "f855003c76fc3706119b391940c03fa318e6d504", "result": "results/1793386344495112288_direct-factor-export_e11c93"}
+{"utc": "2026-10-30T19:17:56.929484+00:00", "event": "stage_publication_prepared", "result": "results/1793386350678058389_native-runtime_7b6dae", "parent": "f855003c76fc3706119b391940c03fa318e6d504", "progress": "progress/stage_1793386350678058389_native-runtime_7b6dae_1793387876929321482.json"}
+{"utc": "2026-10-30T19:18:11.691592+00:00", "event": "published_stage", "commit": "4409d5e15df42687285c1ec954093b7f283a004b", "result": "results/1793386350678058389_native-runtime_7b6dae"}
+{"utc": "2026-10-30T19:18:11.818979+00:00", "event": "stage_publication_prepared", "result": "results/1793386450860009760_interleaved-runtime_1ea86c", "parent": "4409d5e15df42687285c1ec954093b7f283a004b", "progress": "progress/stage_1793386450860009760_interleaved-runtime_1ea86c_1793387891818732034.json"}
+{"utc": "2026-10-30T19:18:28.399588+00:00", "event": "published_stage", "commit": "aa58aada1572a655d4a363fd4a78c0db0e4aafa4", "result": "results/1793386450860009760_interleaved-runtime_1ea86c"}
+{"utc": "2026-10-30T19:18:28.544750+00:00", "event": "stage_publication_prepared", "result": "results/1793387224627222075_report_6f5c5f", "parent": "aa58aada1572a655d4a363fd4a78c0db0e4aafa4", "progress": "progress/stage_1793387224627222075_report_6f5c5f_1793387908544493198.json"}
+{"utc": "2026-10-30T19:18:41.745532+00:00", "event": "published_stage", "commit": "db62e415977fbbac1e99bed36324806359dbd53a", "result": "results/1793387224627222075_report_6f5c5f"}
+{"utc": "2026-10-30T19:22:32.840645+00:00", "event": "publication_final_audit_complete", "scientific_head": "db62e415977fbbac1e99bed36324806359dbd53a", "audit": "reports/007_FINAL_AUDIT_1793388152837439969.json", "published_results": 179}

@@ -1,0 +1,6 @@
+Qwen/Qwen3.8-27B model.language_model.layers.4.mlp.gate_proj.weight [17408, 5120] 13.952358391302958
+Qwen/Qwen3.8-27B model.language_model.layers.28.mlp.up_proj.weight [17408, 5120] 13.941362569922989
+Qwen/Qwen3.8-27B model.language_model.layers.52.mlp.down_proj.weight [5120, 17408] 13.93582858959843
+Qwen/Qwen3.8-Flash-Next model.language_model.layers.0.mlp.experts.gate_up_proj [1280, 2560] 13.987227079270363
+Qwen/Qwen3.8-Flash-Next model.language_model.layers.24.mlp.experts.gate_up_proj [1280, 2560] 13.985791587840602
+Qwen/Qwen3.8-Flash-Next model.language_model.layers.47.mlp.experts.down_proj [2560, 640] 14.012636306888488

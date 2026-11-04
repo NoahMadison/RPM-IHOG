@@ -1,0 +1,53 @@
+{
+  "identity": {
+    "base": "d50eec79832e6b3ec9ee943f45ac63d7e3f38b50",
+    "plan_sha256": "bfc205324fbded08da3161a3b3f8b2e3f9be7486eb90bfd18f8a15485fe74441",
+    "sources": {
+      "src/analysis_stats.py": "9868386f601438832350980501638d923d03a7cce2081d7b9a5d881fdd992aa0",
+      "src/audit_stage.py": "60e47dc4a24c70bd3bd56ed0ec15c8f23739d9c507c13f93c26832ecc1ef9367",
+      "src/bank_runtime.py": "4068ac56607c1e80e90a812ca73c380c4ac7929997300d65b2b0fd788492c538",
+      "src/bitrate.py": "acdb4eb8c10e4a2ae269ac58a01876b0df7082b4752399d0962528dfaa9fe066",
+      "src/common.py": "4de668f5b2654d7f77aa0a7e17be0fee90868a9711401991c26711fd88f6e359",
+      "src/correctness.py": "7e2771a7ff791441328a1075b2f8473112904e8c35030006a621761f93698535",
+      "src/data_audit.py": "df09697db4b9a7a2480ce2949cc74ef6be34a3cc625d282a405164f86e99668d",
+      "src/distributed.py": "81aa1d8238941a08e48186f51f2b9111dccedc166f06cbedd4c06dee13579192",
+      "src/legacy_reference.py": "3cc8f3b559b6484109963f673236706b3afd1da85184b5bb7e6644f870f74587",
+      "src/legacy_run.py": "a4422b776f5d1f70802987a7ee2ec7af37b25ed51ab823c115e1c300b40bb6f7",
+      "src/math_codec.py": "a1071b80e495964b2e42152f3540c86254845697ac23c5252e983f76e7e44558",
+      "src/mechanism.py": "9fd619f8468ef8a93cb630ad59088b4f3a81471181d2c8734e6bc6853d5c0c49",
+      "src/models.py": "3cb7390c57e7e0255c2c79099e298efaa221afbf14fd56491ff2de59e708aff0",
+      "src/optimizers.py": "e96665355cdcb9bee3d570e3881028356ea660ddc3c893fc7034605146a6c888",
+      "src/packed_kernel.py": "121adb996aa2b9445a7e3679dad37104957c27ddc4d7a82e2351afc79abb5cc4",
+      "src/pretrained.py": "b6f4ed6403480f5fd94384512b43060d138035596a47a23f5f64a5584f7afa94",
+      "src/reporting.py": "c5005de267d118e7b4750aadf7cdefe0aa1edc9bb5fafaeaa1ebe285e8bf86ab",
+      "src/runtime.py": "74eb68e7e22b9191af0ea155a1d72d6b7da01193d46414dad17a000bafad1dd6",
+      "src/streaming.py": "6c9e2e89bd06f3dc544e0c21a6648ed0ffdb5a5a46c215244aaa4c83ab8c8d43",
+      "src/training.py": "32e30b516586de8ef6c0a2dfe44ddb50da8707a9fd6ba8666b6dd7c388c264f7"
+    }
+  },
+  "arguments": {
+    "stage": "report",
+    "tier": "main",
+    "dry_run": false,
+    "resume": null,
+    "seed": null,
+    "arm": null,
+    "model": null,
+    "codec": "ternary",
+    "steps": null,
+    "checkpoint": null,
+    "lr": 0.0003,
+    "rank": 8,
+    "tail_decay": 0.003,
+    "function_matched": false,
+    "selection_only": false,
+    "worker": false,
+    "out": null
+  },
+  "command": [
+    "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/run_verification.py",
+    "--stage",
+    "report"
+  ],
+  "budget_remaining_seconds": 80494.093642239
+}

@@ -1,0 +1,195 @@
+[
+  {
+    "id": "A",
+    "statement": "Training induces useful compressibility at equal quality",
+    "primary_metric": "paired test NLL and compression delta",
+    "acceptance_criterion": "upper 95% paired CI <= +0.02 NLL; compressed delta <= +0.01",
+    "protocol": "EXPERIMENT_PLAN.json",
+    "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+    "status": "contradicted_in_tested_scope",
+    "evidence": [
+      "results/1793385048306382735_train-select_f91d7a/selected_training_results.json",
+      "results/1793385054803556851_train-select_ff2f80/selected_training_results.json",
+      "results/1793385061202170082_train-select_f2be50/selected_training_results.json",
+      "results/1793385067997385038_train-select_90951d/selected_training_results.json",
+      "results/1793385074493329892_train-select_98d037/selected_training_results.json",
+      "results/1793385081201935583_train-select_7cdf2c/selected_training_results.json",
+      "results/1793385087715626406_train-select_551498/selected_training_results.json",
+      "results/1793385094345588129_train-select_a9fa85/selected_training_results.json",
+      "results/1793385101553478303_train-select_6cf0c3/selected_training_results.json",
+      "results/1793385108444841995_train-select_d4b0b4/selected_training_results.json",
+      "results/1793385115397241479_train-select_de0671/selected_training_results.json",
+      "results/1793385122239231239_train-select_b3bb27/selected_training_results.json",
+      "results/1793385128985734286_train-select_11e780/selected_training_results.json",
+      "results/1793385135727180545_train-select_f739d9/selected_training_results.json",
+      "results/1793385142485113730_train-select_aa5109/selected_training_results.json",
+      "results/1793385149549488923_train-select_c4947c/selected_training_results.json",
+      "results/1793385156300812095_train-select_b643d7/selected_training_results.json",
+      "results/1793385162956256952_train-select_61ef37/selected_training_results.json",
+      "results/1793385169927523362_train-select_d2c6af/selected_training_results.json",
+      "results/1793385177016696076_train-select_57f382/selected_training_results.json",
+      "results/1793385183842385030_train-select_0dca0f/selected_training_results.json",
+      "results/1793385486490901850_train-select_c696ef/selected_training_results.json",
+      "results/1793385742073999200_train-select_522ead/selected_training_results.json",
+      "results/1793385989318823224_train-select_1b98cc/selected_training_results.json",
+      "results/1793386240933022802_train-select_82af61/selected_training_results.json"
+    ],
+    "reason": "Joint +.02 original-model noninferiority and+.01 same-model compression tolerance assessed against validation-selected dense within equal6000-update tuning budget; see per-arm intervals and seed coverage"
+  },
+  {
+    "id": "B",
+    "statement": "AdamW entropy/null-space explanation is causal",
+    "primary_metric": "projected gradients and actual updates",
+    "acceptance_criterion": "controlled null-space effects across geometry/init/optimizer controls; marginal entropy alone insufficient",
+    "protocol": "EXPERIMENT_PLAN.json",
+    "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+    "status": "inconclusive",
+    "evidence": [
+      "results/1793369304154885202_mechanism_b1979c/mechanism.json"
+    ],
+    "reason": "The limited preconditioning/null-update mechanism is observed; the stronger universal entropy/useless-null-space causal explanation is not established"
+  },
+  {
+    "id": "C",
+    "statement": "Competitive pretrained compression fidelity",
+    "primary_metric": "same-model test NLL delta",
+    "acceptance_criterion": "upper block-bootstrap 95% CI <= +0.01 vs untouched; matched-byte INT4 and lowrank controls",
+    "protocol": "EXPERIMENT_PLAN.json",
+    "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+    "status": "contradicted_in_tested_scope",
+    "evidence": [
+      "results/1793371508260674874_distillation_519e84/distillation_results.json"
+    ],
+    "reason": "One-shot plus bounded full Granite functional fitting were tested. Fitting improves NLL, but acceptance concerns the same-model +.01 tolerance; this is not a universal verdict on stronger PTQ recipes"
+  },
+  {
+    "id": "D",
+    "statement": "Advertised bitrates match storage and memory",
+    "primary_metric": "measured serialized/resident bytes",
+    "acceptance_criterion": "all factors/codes/scales/metadata counted; historical names not budgets",
+    "protocol": "EXPERIMENT_PLAN.json",
+    "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+    "status": "contradicted_in_tested_scope",
+    "evidence": [
+      "results/1793369816128440199_bitrate_9b7ee8/bitrate.json"
+    ],
+    "reason": "Measured payload/framing and complete archive totals differ from historical bitrate labels; native/generic/ternary/sign budgets are explicitly distinguished"
+  },
+  {
+    "id": "E",
+    "statement": "Complete compressed inference is faster",
+    "primary_metric": "full-path paired latency CI",
+    "acceptance_criterion": "CI resolves lower latency for same payload with fidelity reported jointly",
+    "protocol": "EXPERIMENT_PLAN.json",
+    "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+    "status": "contradicted_in_tested_scope",
+    "evidence": [
+      "results/1793386450860009760_interleaved-runtime_1ea86c/interleaved_runtime_results.json"
+    ],
+    "reason": "No resolved complete-model acceleration in the declared interleaved conditions; see per-model/precision/workload intervals and same-payload fidelity. Negative verdict applies only where quality equivalence and higher latency resolve."
+  },
+  {
+    "id": "F",
+    "statement": "Streaming bounds memory and covers sources",
+    "primary_metric": "peak memory, range/coverage/hash checks",
+    "acceptance_criterion": "complete manifest restoration and bounded live source buffer as source size increases",
+    "protocol": "EXPERIMENT_PLAN.json",
+    "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+    "status": "supported_in_tested_scope",
+    "evidence": [
+      "results/1793371020953143857_streaming_7da6a8/streaming.json"
+    ],
+    "reason": "Complete fixture archives have full manifest coverage, bounded per-tensor source ranges, interruption/resume, raw fallback and fresh-process restoration; remote real matrices remain samples"
+  },
+  {
+    "id": "G",
+    "statement": "Distributed training reduces time to quality",
+    "primary_metric": "actual multi-GPU time to common quality",
+    "acceptance_criterion": "measured complete training with identical global batches; single GPU cannot satisfy",
+    "protocol": "EXPERIMENT_PLAN.json",
+    "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+    "status": "blocked",
+    "evidence": [
+      "results/1793377060825279344_distributed_c9a9a3/distributed.json"
+    ],
+    "reason": "Actual multi-GPU time-to-quality requires additional authorized devices; single-GPU algebra and bandwidth projections do not satisfy it"
+  },
+  {
+    "id": "H13",
+    "statement": "Historical 13x stable-rank reduction",
+    "primary_metric": "paired multi-layer spectra",
+    "acceptance_criterion": "reproduce on declared task; separate quality",
+    "protocol": "EXPERIMENT_PLAN.json",
+    "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+    "status": "inconclusive",
+    "evidence": [
+      "results/1793370878877666800_legacy_487b39/legacy_results.json"
+    ],
+    "reason": "Legacy diagnostics reproduce improved Kronecker compressibility with worse uncompressed NLL; exact historical 13x configuration differs and one middle bank is not a multi-layer equal-quality result"
+  },
+  {
+    "id": "H05",
+    "statement": "Historical 0.5 bpw without degradation",
+    "primary_metric": "actual bytes + NLL",
+    "acceptance_criterion": "measured complete payload plus +0.01 tolerance",
+    "protocol": "EXPERIMENT_PLAN.json",
+    "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+    "status": "contradicted_in_tested_scope",
+    "evidence": [
+      "results/1793369816128440199_bitrate_9b7ee8/bitrate.json"
+    ],
+    "reason": "At the supplied 256x256 rank-8 shapes, generic/native factors alone exceed 0.5 bpw before framing; no 0.5-bpw no-loss result was reproduced"
+  },
+  {
+    "id": "H998",
+    "statement": "Historical 99.8% activation R-squared",
+    "primary_metric": "real held-out block activations",
+    "acceptance_criterion": "same configuration and actual expert computation",
+    "protocol": "EXPERIMENT_PLAN.json",
+    "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+    "status": "inconclusive",
+    "evidence": [
+      "results/1793371508260674874_distillation_519e84/distillation_results.json"
+    ],
+    "reason": "Some individual fitted banks approach/exceed99.8% R\u00b2; the all-layer values vary and complete-model NLL still changes. Historical full-cascade fidelity is not established"
+  },
+  {
+    "id": "HCPU",
+    "statement": "Historical 5x-10x CPU core speedup",
+    "primary_metric": "core timing",
+    "acceptance_criterion": "core-only scope explicitly",
+    "protocol": "EXPERIMENT_PLAN.json",
+    "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+    "status": "inconclusive",
+    "evidence": [
+      "results/1793376475849530707_runtime_326021/runtime.json"
+    ],
+    "reason": "CPU component ratios measured at actual shapes; no full-path 5x\u201310x claim or historical-workload identity established"
+  },
+  {
+    "id": "H83",
+    "statement": "Historical 8.3x GPU cascade speedup",
+    "primary_metric": "complete-model latency",
+    "acceptance_criterion": "same fidelity representation, full forward",
+    "protocol": "EXPERIMENT_PLAN.json",
+    "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+    "status": "inconclusive",
+    "evidence": [
+      "results/1793376481249984697_full-runtime_9f4c36/full_runtime_results.json"
+    ],
+    "reason": "No8.3x complete-model speed claim supported by this actual saved payload/implementation; different historical synthetic cascades are not equivalent workloads"
+  },
+  {
+    "id": "H27",
+    "statement": "Historical 27 GB large MoE GPU footprint",
+    "primary_metric": "full archive residency",
+    "acceptance_criterion": "verified actual complete model resident",
+    "protocol": "EXPERIMENT_PLAN.json",
+    "controls": "dense, ordinary lowrank, simple packed quantization where applicable",
+    "status": "not_run",
+    "evidence": [
+      "results/1793369017797097725_data_eb73ea/model_identities.json"
+    ],
+    "reason": "Large-model identities/configs verified, but full archive/coverage/load/residency and full execution were not produced"
+  }
+]

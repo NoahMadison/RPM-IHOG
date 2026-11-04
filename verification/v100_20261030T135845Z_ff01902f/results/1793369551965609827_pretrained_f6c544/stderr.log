@@ -1,0 +1,14 @@
+Loading weights:   0%|          | 0/218 [00:00<?, ?it/s]Loading weights:  30%|███       | 66/218 [00:00<00:00, 607.93it/s]Loading weights:  67%|██████▋   | 147/218 [00:00<00:00, 712.94it/s]Loading weights: 100%|██████████| 218/218 [00:00<00:00, 741.74it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (2568237 > 8192). Running this sequence through the model will result in indexing errors
+Traceback (most recent call last):
+  File "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/run_verification.py", line 46, in <module>
+    if __name__=='__main__': main()
+                             ~~~~^^
+  File "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/run_verification.py", line 22, in main
+    module=importlib.import_module(STAGES[args.stage]);module.main(out,args)
+                                                       ~~~~~~~~~~~^^^^^^^^^^
+  File "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/src/pretrained.py", line 116, in main
+    for n,p in first:p.copy_(reconstruct(compress_parameter(n,original[n].to('cuda:0'),codec,rms)).to(p.dtype))
+                     ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: a leaf Variable that requires grad is being used in an in-place operation.

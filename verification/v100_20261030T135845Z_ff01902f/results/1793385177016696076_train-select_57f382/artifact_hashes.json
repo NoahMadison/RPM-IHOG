@@ -1,0 +1,12 @@
+{
+  "stdout.log": "3702dd45f03e0001062bf59b2fea26b65e5391ce6cc12ee26a3786b2147ad5e5",
+  "gpu.json": "baab3679e7271620ca95485e1ed6e0dd19ca61748780fcd1af5bdd6fcf946af8",
+  "process.json": "f8c7678393ee597fe991a2f729449293bfc0dae6eeb8fb503a31ebc47c2861f3",
+  "config.json": "b7a19823beb7a8251357e9a4742a029cdc0b4a13ad825c49aa44af32a785c036",
+  "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "selected_training_results.json": "f1cd51b47d68ca65e47e7c9daa0887099b6687406bfad8d6f00d01dbabc41627",
+  "data_lineage.json": "229012daeb4333920ed97dfe2d91a230f50d7a3f7df38c7b735a50304db3293a",
+  "exit.json": "6627ef52eb1b47e358d393e0063d0f36e16da8e07dfac355638ebe37eb3c98d4",
+  "worker_identity.json": "d5a71f60a04518c140165c3b4093b6988dda061cd22c3811e220c5d9bc2a5544",
+  "selection_before_test.json": "a6266df450dff41155209422967beee9850967514d0f1326634ec09cd196243f"
+}

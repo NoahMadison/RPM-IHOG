@@ -1,0 +1,12 @@
+{
+  "observed_first_continuation_stage_seconds": 187.54183532699972,
+  "cumulative6000_training_seconds": 227.20553914099946,
+  "additional_updates": 4500,
+  "remaining_equal_budget_continuations": 26,
+  "estimated_remaining_continuation_wall_seconds": 4876.087718501993,
+  "additional_selection_exports_estimate_seconds": 1200,
+  "maximum_conditional_extra_seed_training_estimate_seconds": 3000,
+  "conservative_charged_completed_stage_seconds": 32176.073924037006,
+  "ceiling_seconds": 86400,
+  "note": "wall estimates include observed validation/checkpoint/reload; source/library setup completed; shared GPU lock waits inflate conservative charged budget. Estimates are not scientific speed results."
+}

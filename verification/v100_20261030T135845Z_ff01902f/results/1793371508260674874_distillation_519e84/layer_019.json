@@ -1,0 +1,50 @@
+{
+  "layer": 19,
+  "calibration_input_scope": "actual compressed prefix; train128x128, held-out validation16x128",
+  "before": {
+    "mse": 0.03557690978050232,
+    "target_variance": 0.3851205110549927,
+    "r_squared": 0.9076213580963436,
+    "cosine_mean": 0.9578508734703064,
+    "relative_l2": 0.30393078923225403
+  },
+  "after_float": {
+    "mse": 0.02651151269674301,
+    "target_variance": 0.3851205110549927,
+    "r_squared": 0.9311604759141033,
+    "cosine_mean": 0.9640315771102905,
+    "relative_l2": 0.2623661756515503
+  },
+  "after_FP16_storage_reload_into_layer": {
+    "mse": 0.02651197463274002,
+    "target_variance": 0.3851205110549927,
+    "r_squared": 0.9311592764557941,
+    "cosine_mean": 0.964030385017395,
+    "relative_l2": 0.26236847043037415
+  },
+  "curve": [
+    {
+      "step": 20,
+      "normalized_training_mse": 0.053581494837999344,
+      "gradient_norm": 0.013062896206974983
+    },
+    {
+      "step": 40,
+      "normalized_training_mse": 0.04906235262751579,
+      "gradient_norm": 0.009288571774959564
+    },
+    {
+      "step": 60,
+      "normalized_training_mse": 0.04353182017803192,
+      "gradient_norm": 0.009507679380476475
+    },
+    {
+      "step": 80,
+      "normalized_training_mse": 0.04150107502937317,
+      "gradient_norm": 0.009345750324428082
+    }
+  ],
+  "seconds": 22.45931614500023,
+  "parameters_trained": 1917024,
+  "seed": 19188
+}

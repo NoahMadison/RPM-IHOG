@@ -1,0 +1,32 @@
+{
+  "model": "verifiedGranite1b",
+  "initial_payload": "complete int2_sign one-shot archive, same rank8/fixed codes",
+  "sequential_layers": 24,
+  "calibration": "128 train sequences length128 per layer; collect actual compressed-prefix inputs",
+  "validation_functional": "16 validation sequences length128; original teacher bank on same current inputs",
+  "optimization": {
+    "steps_per_layer": 80,
+    "lr": 0.003,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "weight_decay": 0,
+    "clip_norm": 1,
+    "minibatch_rows": 256,
+    "seed": 17,
+    "seed_layer_stride": 1009,
+    "multipliers_bounds": [
+      0.2,
+      5
+    ]
+  },
+  "trained": "A/B factors, row/col multipliers, one scalar residual gain per matrix folded into existing scales; original routers/shared weights unchanged",
+  "primary": "fresh-process complete-model testNLL delta vs untouched",
+  "acceptance_delta_nll": 0.01,
+  "secondary": "held-out real complete gated-bank R2 before/after storage rounding",
+  "selection": "single fixed recipe; no final-test tuning",
+  "controls": "original and independent one-shot; closed-loop vs fitting causation remains confounded without another fitted control",
+  "execution": "reference_decompressed quality, not optimized runtime proof",
+  "budget_estimate_gpu_minutes": 15
+}

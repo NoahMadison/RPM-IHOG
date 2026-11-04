@@ -1,0 +1,1 @@
+{"piqa": {"name": "piqa", "alias": "piqa", "sample_len": 4, "acc,none": 0.5, "acc_stderr,none": 0.28867513459481287, "acc_norm,none": 0.5, "acc_norm_stderr,none": 0.28867513459481287}, "arc_easy": {"name": "arc_easy", "alias": "arc_easy", "sample_len": 4, "acc,none": 0.75, "acc_stderr,none": 0.25, "acc_norm,none": 0.75, "acc_norm_stderr,none": 0.25}}

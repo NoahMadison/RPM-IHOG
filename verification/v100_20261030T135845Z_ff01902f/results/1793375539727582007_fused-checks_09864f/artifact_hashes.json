@@ -1,0 +1,10 @@
+{
+  "fused_checks.json": "5861401c4a67cfe18421311a12b68eaf00cda4972e5d1dc619a8bea75fd8baa1",
+  "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "gpu.json": "baab3679e7271620ca95485e1ed6e0dd19ca61748780fcd1af5bdd6fcf946af8",
+  "process.json": "9dd270a1766207a1a6fbc7a0c2adeb0b48d3012badb9c478e6626ae18380250e",
+  "config.json": "25b6cf251ac5f3a66f2cb12b6a3fd31a4e34279c586c872734713833658e9bc4",
+  "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "exit.json": "e0347db4dceaab7f10f090f47c01b73ef364f217d85b801a424c9888e7d92a62",
+  "worker_identity.json": "c9bd3bf6bd04d5c929c5e98f87298a41bbf11c4512d50ca1ae0ba7b8c5d8845e"
+}

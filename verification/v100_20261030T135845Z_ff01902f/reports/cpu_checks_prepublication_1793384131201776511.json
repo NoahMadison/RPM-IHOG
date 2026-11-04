@@ -1,0 +1,7 @@
+{
+  "command": "python -B -m unittest discover -s \"$VERIFY_PREFIX/tests\" -v",
+  "passed": 16,
+  "exit_code": 0,
+  "elapsed_seconds": 1.727,
+  "phase": "initialdraftprepublication"
+}

@@ -1,0 +1,5 @@
+{
+  "reason": "Untouched Granite FP16 eager evaluation produced nonfinite logits; this is a runtime/precision issue before compression, not evidence against compression. SmolLM2 FP16 baseline finite. Explicit no_grad scope fixes a conversion leaf-parameter mutation error.",
+  "protocol_before_rerun": "Granite: FP32 parameters and eager attention for original and reloaded variants. SmolLM2: FP16 and eager attention for both. Retain same data/context/stride. Count stored shared dtype in each archive. Fail on nonfinite logits immediately.",
+  "historical_scope": "no FP16 Granite fidelity/performance claim from this fallback"
+}

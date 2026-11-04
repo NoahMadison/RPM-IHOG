@@ -1,0 +1,17 @@
+{
+  "completed": [
+    "audit",
+    "source and data pinning",
+    "8 GPU correctness groups",
+    "5 protocol failure tests",
+    "full 300-step legacy",
+    "5-seed mechanism",
+    "streaming fixtures/remote sampling"
+  ],
+  "active": "serial main training campaign and two pretrained reruns; runtime/bitrate/distributed queued",
+  "task_root": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f",
+  "prefix": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f",
+  "base": "d50eec79832e6b3ec9ee943f45ac63d7e3f38b50",
+  "next": "inspect each stage exit.json; continue failed stage in NEW result directory; source code changes may require explicit new training lineage rather than resume",
+  "publication": "not yet staged/pushed"
+}

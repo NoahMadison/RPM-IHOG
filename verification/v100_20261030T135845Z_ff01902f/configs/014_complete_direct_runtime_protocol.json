@@ -1,0 +1,40 @@
+{
+  "target": "completeGranite distilled int2_sign archive; exact fixed savedpayload already tested for fidelity",
+  "direct": "replaceall24expertbanks with directFP32 Kronecker contractions pluson-chip packedCUDA residual kernel,activation/outputFWHT,scales,routing,gating; removeall denseexpertparameters beforeGPUmove",
+  "reference": "samepayload fullFP32 dense reconstruction, freshprocess; no original expertweights consulted",
+  "quality": "fullWikiText2test with same tokenizer/context/scoring; direct-vs-decompressedNLL tolerance.001",
+  "performance": {
+    "prompt_source": "fixedvalidationtokenprefix, no textpublished",
+    "contexts": [
+      32,
+      128
+    ],
+    "generated_tokens": 16,
+    "modes": [
+      "greedy",
+      "identical-input teacherforced"
+    ],
+    "timing_groups": 20,
+    "warmup_percondition": 1,
+    "precision": "consistentFP32 Granitefallback",
+    "freshprocess_order": [
+      "reference_decompressed",
+      "direct"
+    ],
+    "order_limitation": "notinterleavedacrossprocesses; verylargeeffectsneededforstrongspeedclaims"
+  },
+  "metrics": [
+    "prefill",
+    "TTFT",
+    "decodeTPS",
+    "endtoend",
+    "steadyallocated/reserved",
+    "loadpeak",
+    "inferencepeak",
+    "KVbytes",
+    "hostRAM",
+    "complete-decoderprofiler"
+  ],
+  "budget_estimate_gpu_minutes": 25,
+  "no_claim": "does not transfer small-model footprint to largeMoE or imply quality meets+.01; no optimizedINT4 fullmodelcomparator"
+}

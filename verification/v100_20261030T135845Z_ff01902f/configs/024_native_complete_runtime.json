@@ -1,0 +1,9 @@
+{
+  "source": "validation-selected seed11 native expertFP16/sharedFP32 archive,afterallfactor exports",
+  "comparison": "original checkpoint mathematicalFP32 model,roundedfactorpayload denseFP32 reconstruction,directmatrix-free roundedfactorsFP32",
+  "quality": "entireWikiText test underfixed FP32 execution,reportedseparatelyfrom primaryAMPtraining; samepayload .001NLL/storage .01NLL tolerances; contiguous128blockbootstrap",
+  "timing": "freshprocess fixedorder; contexts32/96;16greedy/teacherforcednewtokens;20groups andequalwarmup; noKVcache available, prefixrecomputationcounted;includesallmodelcomponents; finalD2H/hash excluded",
+  "memory": "uniqueactualGPUstorage/allocated/load/inferencepeaks; residentFP32factorcopiescounted",
+  "limits": "one learnedmodelseedforruntime, notanadditionalindependenttrainingreplication; no network/distributed inference claim; bounded fewmin estimate",
+  "status": "not_run"
+}

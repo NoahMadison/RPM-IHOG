@@ -1,0 +1,10 @@
+{
+  "trigger": "component/full-modelprofiling identifiesmanysmallTorchFWHT/scalelaunches in readablepath; no hypothesis rejecteduniversally",
+  "implementation": "sm70warp-shuffle block16FWHT fusedwithinputcolumnscale/padding andoutputinverse/core-sum/rowscale; same savedfactors/codes/scales; FP32math",
+  "correctness_beforetiming": "120matrixcases acrossodd/non-square/fullshapes, fivecodecs,FP16/32inputs,batches1/4; blocktransformandpadding exactreference; actualpayloadoperators same tests",
+  "performance": "repeat same matrix/bank protocols using--codec fused; then completeGranite protocol usingfusedoperator ifchecks pass",
+  "representation": "unchanged archive andqualitytarget; residentFP32factorcopies counted",
+  "preserve": "originalreadablev1 results and code retained; newcompilerextensionname/cache directory",
+  "newshapehandling": "packedINT4 kernelcounts64-entrygroup padding foroddmatrixsizes; originalactualshape resultsunchanged",
+  "budget_estimate_gpu_minutes": 15
+}

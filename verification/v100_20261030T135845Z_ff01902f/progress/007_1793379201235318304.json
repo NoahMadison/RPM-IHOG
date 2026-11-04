@@ -1,0 +1,26 @@
+{
+  "completed": "Full v1/fused Granite and INT4 fullpacked generation/test, all7full downstreammodelvariants, bothteacherdiagnostics, correctednonzero-gradientaudit",
+  "full_INT4_direct": {
+    "allocated_MiB": 1095.1923828125,
+    "median_decode_tokens_per_second": 15.00637,
+    "dense_samepayload_tokens_per_second": 19.76666,
+    "NLLmatchdelta": 3.6614e-07
+  },
+  "fused_core_direct": {
+    "allocated_MiB": 1091.0673828125,
+    "median_decode_tokens_per_second": 8.51174,
+    "dense_samepayload_tokens_per_second": 20.60398,
+    "NLLmatchdelta": 9.9415e-07
+  },
+  "gradient_sample": {
+    "expert": 15,
+    "frobenius": 0.5609206,
+    "ordinary_rank8_relative_error": 0.1425708,
+    "Kronecker_rank8_relative_error": 0.8438754,
+    "coefficient_bytes_per_worker": 8192,
+    "scope": "one real48-token traineddensegradient sample;20repeatedgradienterrorfeedbacksteps,notcommunicationorpopulationclaim"
+  },
+  "pending": "residualcontrol; finishfunctionmatched then27equal6000continuations,validationselection,conditionalreplication,directfactor/FP16exports,finalreports/tests/integrity/publication",
+  "conservative_charged_wall_seconds": 31443.075330992004,
+  "budget_note": "24h ceiling conservatively sums stages including queuewaits; this is not GPU-activehours. Actual physical elapsed since initialrootcreation about3h."
+}

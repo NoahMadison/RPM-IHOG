@@ -1,0 +1,15 @@
+{
+  "stdout.log": "1628dc4f8d947f71baf23007097a28a088aa9adfd4d4316be7d61c265d964cd5",
+  "gpu.json": "baab3679e7271620ca95485e1ed6e0dd19ca61748780fcd1af5bdd6fcf946af8",
+  "process.json": "c204dc5048af3cbccaad1da9862b55979a56280a2e32394ead1209747a14ede5",
+  "calibration_coverage.json": "a6487809188c14783d4a7641e07973e046eaa2afcfa648a4e3778de0accd582a",
+  "config.json": "4ae6b058421aba68b8410f341ae4979e3478e88d1127ca85174e5fb63aec83c7",
+  "stderr.log": "29adbb327b3cc4fc5e757a954280a12124db3dbef527d6171386b32a23a7eacd",
+  "baseline.json": "e5eebd4a9505cf8afa405224806ab80d665ca9dd37c03b9133e02816be146901",
+  "fresh_reload_int4.json": "5f475e685951819163628301fd572ba5300526605e6cfc84a2a639da670bcf26",
+  "exit.json": "c63c79e647090af6e5445a3b2e5f2c070723b3392394faeccbbe6212bc274c29",
+  "architecture.json": "02203a3b4cdb04b6695dd4f2c623772ba874728ab3e373cd28acbfe3172ca7fb",
+  "pretrained_results.json": "4c58e9e52e804edd039bb569198e1db461b8b7f027a4774652dd5350b7770972",
+  "validation_pilots.json": "872a027630453e390e4af524c324a8110b5938c333957a4ffbeb35ceba021b3e",
+  "fresh_reload_int2_sign.json": "3c0b2ac7a0d86555a1af52df906776875e7b153e4dad4dce14825e3ceca5a876"
+}

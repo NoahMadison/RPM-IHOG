@@ -1,0 +1,23 @@
+{
+  "kind": "adamw",
+  "variant": "all_fp16",
+  "seed": 55,
+  "selected_steps": 6000,
+  "function_matched": false,
+  "selected_source": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/results/1793385989318823224_train-select_1b98cc/selected_training_results.json",
+  "source_checkpoint_sha256": "7f804ce67527a24dee00455e90638846706fd40dd9d727a0a95b1da248956516",
+  "original_test_nll": 5.49707249275143,
+  "reloaded_test_nll": 5.497083573008199,
+  "delta_nll": 1.1080256768991603e-05,
+  "expert_tensor_bytes": 16777216,
+  "expert_bpw": 16.0,
+  "whole_model_tensor_bytes": 44754432,
+  "whole_model_bpw": 16.011723356268675,
+  "serialized_bytes": 44769104,
+  "archive_sha256": "bc2647aec5714d790e19f403ef7aebed43e09f80754c2c3f22f48d1ab6253869",
+  "archive": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/artifacts/direct_factor_1793386310331467869_direct-factor-export_bcb4fa/adamw_direct.pt",
+  "fresh_process_evaluation": true,
+  "execution": "factors materialized by training-model forward, no optimized speed claim",
+  "learned_expert_scalars": 8388608,
+  "containers_matched": true
+}

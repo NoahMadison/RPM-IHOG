@@ -1,0 +1,11 @@
+{
+  "stdout.log": "43955a84cdd1a848bb8b18e7c30d506633a8dc523f39824a3bda740c759e04e7",
+  "gpu.json": "baab3679e7271620ca95485e1ed6e0dd19ca61748780fcd1af5bdd6fcf946af8",
+  "process.json": "b8034a4238639e1cfec10ffcfc2df5dab88482b67650aed7365be2153d1c3edc",
+  "config.json": "441204094bc325b119193d5bee3f1f9b4a3610e651968301253d0bf038401272",
+  "stderr.log": "89f615e91c34b272322dbb64afeeefc69ac8fb4216432ba4afdef1e5db5c7cee",
+  "baseline.json": "553c34462623a40ab1bf84bd1714d800b684759d2fadae7ad02f61aad58e8d05",
+  "error.json": "9dd30382527a626871295fdd50c5013a676b18f36bd48f2cadb3f35416680a16",
+  "exit.json": "bb6895eb77b351046b0d275f94f6cebfb7254412d07ed9b77da766dd0cec29ef",
+  "architecture.json": "833def43b83f6fb465a4b47e7d038ef3c6cc414356eadfef2ab8340e6fb86658"
+}

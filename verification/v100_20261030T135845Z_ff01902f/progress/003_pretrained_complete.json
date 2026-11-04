@@ -1,0 +1,11 @@
+{
+  "pretrained_models": [
+    "ibm-granite/granite-3.1-1b-a400m-base",
+    "HuggingFaceTB/SmolLM2-1.7B"
+  ],
+  "full_model_quality": "both selected3-bit+core and simpleINT4 miss+.01 NLL tolerance; exact numbers in raw results",
+  "runtime": "first attempt blocked only by missing ninja; dependency being installed in task venv; retry next",
+  "distributed": "unequal-shard aggregation/update passed for dense/native/lowrank; actual multiGPU blocked",
+  "training": "campaign still active; continuation process waits for all27 endpoints and applies validation-only criterion",
+  "root": "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f"
+}

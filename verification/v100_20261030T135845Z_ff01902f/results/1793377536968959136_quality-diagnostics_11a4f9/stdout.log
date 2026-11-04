@@ -1,0 +1,3 @@
+int4 {'teacher_KL_to_student_per_token': 0.08724027220159769, 'top1_teacher_agreement': 0.8713307231664658, 'teacher_top1_in_student_top5': 0.9899706467986107}
+int2_sign {'teacher_KL_to_student_per_token': 0.27426501736044884, 'top1_teacher_agreement': 0.7923189848661423, 'teacher_top1_in_student_top5': 0.967710368335247}
+distilled {'teacher_KL_to_student_per_token': 0.15155513398349285, 'top1_teacher_agreement': 0.8419765084981918, 'teacher_top1_in_student_top5': 0.9823874682188034}

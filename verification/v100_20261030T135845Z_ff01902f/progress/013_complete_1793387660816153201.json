@@ -1,0 +1,18 @@
+{
+  "all_first_pass_GPU_stages_completed": true,
+  "remaining": "publish completedstagequeue, finalintegrity, additionspatch/bundle, finaldraftPRdescription",
+  "technical_report": "reports/005_20261030T190704Z.md",
+  "summary": "reports/006_20261030T191420Z_SUMMARY.md",
+  "native_payload_correctness_cases": 144,
+  "interleaved_conditions": 16,
+  "main_training_seed_counts": {
+    "adamw": 5,
+    "row": 5,
+    "tail": 3,
+    "row_tail": 3,
+    "native": 3,
+    "lowrank": 3,
+    "legacy_blend": 3
+  },
+  "PR": "https://github.com/NoahMadison/RPM-IHOG/pull/1"
+}

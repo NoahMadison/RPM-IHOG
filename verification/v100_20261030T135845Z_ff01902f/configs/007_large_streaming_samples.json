@@ -1,0 +1,38 @@
+{
+  "sources": "exact audited Qwen/Qwen3.8-27B and Qwen/Qwen3.8-Flash-Next revisions; no rename",
+  "selectors": {
+    "27B": [
+      [
+        4,
+        "gate"
+      ],
+      [
+        28,
+        "up"
+      ],
+      [
+        52,
+        "down"
+      ]
+    ],
+    "Flash": [
+      [
+        0,
+        "gate"
+      ],
+      [
+        24,
+        "up"
+      ],
+      [
+        47,
+        "down"
+      ]
+    ]
+  },
+  "expert_rule": "(13*layer+7)%512 if bank/individual key supports it; otherwise actual selected key and expert identity explicit",
+  "matrix_scope": "complete dense projection or complete expert; no crop",
+  "codec": "rank8 int2_sign, same explicit accounting; no large-model activation/PPL claim",
+  "source_bytes_ceiling_estimate_gb": 1,
+  "range_protocol": "strict206 and exactContentRange, bounded complete tensor chunk; reject unsupported interfaces/dtypes as blocked"
+}

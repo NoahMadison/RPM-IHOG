@@ -1,0 +1,38 @@
+{
+  "cases": [
+    [
+      "granite_core",
+      "FP32",
+      "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/artifacts/distillation_1793371508260674874_distillation_519e84/packed_int2_sign",
+      "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/artifacts/pretrained_1793369759921020449_pretrained_5f19ee",
+      "9612b59e5b8de9c77ae0bf6306dbb32dfb5aea517c790114d44981bc2e6888d6",
+      "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/results/1793376481249984697_full-runtime_9f4c36/full_runtime_results.json"
+    ],
+    [
+      "granite_int4",
+      "FP32",
+      "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/artifacts/pretrained_1793369759921020449_pretrained_5f19ee/packed_int4",
+      "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/artifacts/pretrained_1793369759921020449_pretrained_5f19ee",
+      "565f861f8849ceeadb95a752767c89b6b1432f4128c490b44b8b0d6dc413a91f",
+      "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/results/1793376837793103804_full-int4-runtime_66c6d9/full_runtime_results.json"
+    ],
+    [
+      "native",
+      "FP32",
+      "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/artifacts/direct_factor_1793386333063063224_direct-factor-export_d9a4ac/native_direct.pt",
+      "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/artifacts/data_1793369017797097725_data_eb73ea",
+      "927deb34bef533bcb5f0c158ec2efe27d8ab3f7b9203490206f41c3a69606133",
+      "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/results/1793386350678058389_native-runtime_7b6dae/native_runtime_results.json"
+    ],
+    [
+      "native",
+      "FP16",
+      "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/artifacts/direct_factor_1793386333063063224_direct-factor-export_d9a4ac/native_direct.pt",
+      "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/artifacts/data_1793369017797097725_data_eb73ea",
+      "927deb34bef533bcb5f0c158ec2efe27d8ab3f7b9203490206f41c3a69606133",
+      "/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/results/1793386350678058389_native-runtime_7b6dae/native_runtime_results.json"
+    ]
+  ],
+  "quality_reused": "exact saved artifact and same operator/precision; previous complete fresh-process NLL retained; new forward sanity check before timing",
+  "protocol_config": "configs/027_interleaved_complete_runtime.json"
+}

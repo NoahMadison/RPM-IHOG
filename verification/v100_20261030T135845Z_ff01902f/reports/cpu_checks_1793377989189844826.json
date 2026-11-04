@@ -1,0 +1,7 @@
+{
+  "command": "python -B -m unittest discover -s \"$VERIFY_PREFIX/tests\" -v",
+  "exit_code": 0,
+  "passed": 16,
+  "elapsed_seconds_reported": 1.71,
+  "includes": "initialization, pinned lineage, malformed payloads, HTTP retry/ETag/length/range/truncation errors"
+}

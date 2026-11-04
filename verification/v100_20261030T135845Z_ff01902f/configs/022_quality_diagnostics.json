@@ -1,0 +1,20 @@
+{
+  "models": [
+    "Granite",
+    "SmolLM2"
+  ],
+  "variants": "originalteacher versus completeint4/int2signarchives; adddistilledGranite",
+  "data": "first8 validation512-token contexts; no fitting or final-test tuning",
+  "metrics": [
+    "teacher||studentKL/token",
+    "top1teacheragreement",
+    "teacher-top1 membership instudenttop5",
+    "top5setoverlap",
+    "actual-prefix completegated/denseMLPblockR2/relativeerror",
+    "realGranite topkexpert routingoverlap/unions"
+  ],
+  "definitions": "noneofteacheragreementmetrics is taskaccuracy; blockerrors includepropagatedprefix differences",
+  "memory": "dense teacher plusdecodedstudent fitwithinV10032GB; thisdiagnostic memory isnotcompressedresidency",
+  "timing": "CPU copies/hooksdiagnosticonly, absentfromlatencybenchmark",
+  "preservation": "assert alluntargetedparameter values unchanged"
+}

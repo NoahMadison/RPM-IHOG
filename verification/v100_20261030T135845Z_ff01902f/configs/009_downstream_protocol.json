@@ -1,0 +1,36 @@
+{
+  "harness": "lm-eval0.4.13",
+  "tasks": [
+    "piqa",
+    "arc_easy"
+  ],
+  "splits": "fullPIQAvalidation and fullARC-Easytest as packaged; source revisions/content hashes pinned before evaluation",
+  "conditions": {
+    "Granite": [
+      "original",
+      "int4",
+      "int2_sign",
+      "distilled"
+    ],
+    "SmolLM2": [
+      "original",
+      "int4",
+      "int2_sign"
+    ]
+  },
+  "zero_shot": true,
+  "chat_template": false,
+  "max_length": 512,
+  "batch_size": 8,
+  "primary": "acc_norm with rawacc secondary; paired bootstrap over question decisions for deltas",
+  "seeds": {
+    "random": 0,
+    "numpy": 1234,
+    "torch": 1234,
+    "fewshot": 1234
+  },
+  "full_accuracy_claim": "only full selected split; smoke limit4 labeledpipelineonly",
+  "privacy": "no tasktext/prompts/docs saved to published outputs; numeric scores/correctness and hashes only",
+  "model_archives": "freshly constructed from complete packed archive in independent stage processes; originalweights absent fromdecoder; actual task tokenizer pinned",
+  "status_if_data_missing": "blocked source availability, not model failure"
+}

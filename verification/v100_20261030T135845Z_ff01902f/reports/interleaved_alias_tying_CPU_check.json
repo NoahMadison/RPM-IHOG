@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "scope": "CPU exactsharedparameter/buffer aliases acrossbaseline/direct copies, includingtiedembedding/head andinfcausalmask",
+  "alias_count": 2,
+  "CUDA_initialized": false
+}

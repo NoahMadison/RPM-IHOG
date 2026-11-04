@@ -1,0 +1,89 @@
+[
+  {
+    "task": "piqa",
+    "dataset": "baber/piqa",
+    "revision": "142f6d7367fd9877f0fb3b5734ea6a545f54cdd1",
+    "harness_yaml_sha256": "e874f7956ccac325b888d4a5dc600bad867b79fba2bd358fe8761ab8263270fb",
+    "config": {
+      "task": "piqa",
+      "dataset_path": "baber/piqa",
+      "dataset_name": null,
+      "output_type": "multiple_choice",
+      "training_split": "train",
+      "validation_split": "validation",
+      "test_split": null,
+      "doc_to_text": "Question: {{goal}}\nAnswer:",
+      "doc_to_target": "label",
+      "doc_to_choice": "{{[sol1, sol2]}}",
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "goal",
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "metadata": {
+        "version": 1.0
+      },
+      "dataset_kwargs": {
+        "revision": "142f6d7367fd9877f0fb3b5734ea6a545f54cdd1"
+      }
+    },
+    "status": "available",
+    "evaluation_documents": 1838,
+    "content_sha256": "c85e341b3fa35066f64f5e7838116fe1421484424e9ce20abb54496b69970ee2",
+    "split": "validation"
+  },
+  {
+    "task": "arc_easy",
+    "dataset": "allenai/ai2_arc",
+    "revision": "210d026faf9955653af8916fad021475a3f00453",
+    "harness_yaml_sha256": "96da1d9efe1df88659481cedc13985cb347dc068554a2eae561303fa39bfab3f",
+    "config": {
+      "tag": [
+        "ai2_arc"
+      ],
+      "task": "arc_easy",
+      "dataset_path": "allenai/ai2_arc",
+      "dataset_name": "ARC-Easy",
+      "output_type": "multiple_choice",
+      "training_split": "train",
+      "validation_split": "validation",
+      "test_split": "test",
+      "doc_to_text": "Question: {{question}}\nAnswer:",
+      "doc_to_target": "{{choices.label.index(answerKey)}}",
+      "doc_to_choice": "{{choices.text}}",
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "Question: {{question}}\nAnswer:",
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "metadata": {
+        "version": 1.0
+      },
+      "dataset_kwargs": {
+        "revision": "210d026faf9955653af8916fad021475a3f00453"
+      }
+    },
+    "status": "available",
+    "evaluation_documents": 2376,
+    "content_sha256": "09ab01ecb7493f88ebe45f4183360b102937d3879f566216e62f4ddeececdf56",
+    "split": "test"
+  }
+]

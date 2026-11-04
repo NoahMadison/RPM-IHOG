@@ -1,0 +1,9 @@
+{
+  "short_run_checkpoint_interval": 500,
+  "continuation_checkpoint_interval": 1500,
+  "always_final": true,
+  "reason": "Preserve every existing checkpoint and bound projected disk use; 6000-step continuations retain three additional immutable checkpoints instead of nine. No dataset/model/update count or training math change.",
+  "projected_task_disk_gb": 65,
+  "preexisting_available_gb": 109,
+  "bootstrap_reporting": "Paired block bootstrap uses ratio of token-weighted sums including final short block. Original per-block-equal raw CI retained as diagnostic; final report uses token-weighted CI from raw counts."
+}

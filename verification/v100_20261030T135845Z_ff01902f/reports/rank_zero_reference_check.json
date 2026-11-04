@@ -1,0 +1,6 @@
+{
+  "scope": "CPU synthetic rectangular17x21 rank-zero residual-only payload; empty core exactlyzero and complete reference operator matches decoded dense",
+  "passed": true,
+  "rtol": 2e-05,
+  "atol": 2e-05
+}

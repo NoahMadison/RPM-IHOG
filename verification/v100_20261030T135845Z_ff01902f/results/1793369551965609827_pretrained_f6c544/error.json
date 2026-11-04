@@ -1,0 +1,5 @@
+{
+  "type": "RuntimeError",
+  "message": "a leaf Variable that requires grad is being used in an in-place operation.",
+  "traceback": "Traceback (most recent call last):\n  File \"/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/run_verification.py\", line 22, in main\n    module=importlib.import_module(STAGES[args.stage]);module.main(out,args)\n                                                       ~~~~~~~~~~~^^^^^^^^^^\n  File \"/models/Project/generators/workingdir/rpm_ihog_verification_20261030T135845Z_ff01902f/repo/verification/v100_20261030T135845Z_ff01902f/src/pretrained.py\", line 116, in main\n    for n,p in first:p.copy_(reconstruct(compress_parameter(n,original[n].to('cuda:0'),codec,rms)).to(p.dtype))\n                     ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: a leaf Variable that requires grad is being used in an in-place operation.\n"
+}

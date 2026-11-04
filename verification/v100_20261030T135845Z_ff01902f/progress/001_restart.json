@@ -1,0 +1,8 @@
+{
+  "completed": [
+    "audit",
+    "data"
+  ],
+  "correctness": "zero scale underflow found and fixed; rerun uses new result directory",
+  "next": "bash run.sh --stage correctness"
+}
