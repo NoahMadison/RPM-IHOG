@@ -1,5 +1,7 @@
 # AdamW Weight Entropy, Ridge-Point Matched Incoherent Higher-Order Generators (RPM-IHOG), and Sub-2-Bit MoE Inference at Scale
 
+> Historical research snapshot. The [verification report](verification/v100_20261030T135845Z_ff01902f/reports/005_20261030T190704Z.md) evaluates the original claims and supersedes the conclusions below.
+
 **Technical Whitepaper & Empirical Benchmark Report**
 
 ---
