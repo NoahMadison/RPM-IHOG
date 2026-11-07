@@ -1,0 +1,198 @@
+{
+ "recipe": "torch.Generator seed 0, 10000 paired resamples over 24 eval sequences; PPL(row) - PPL(ref)",
+ "comparisons": [
+  {
+   "run": "round8_v3",
+   "row": "RTN INT4 g64",
+   "ref": "kron13_2b1b_gptq fINT8",
+   "bpw": 4.25,
+   "dppl": -0.033,
+   "ci95": [
+    -0.201,
+    0.149
+   ],
+   "p_row_worse": 0.372
+  },
+  {
+   "run": "round8_v3",
+   "row": "RTN INT3 g64",
+   "ref": "kron13_2b1b_gptq fINT8",
+   "bpw": 3.25,
+   "dppl": 1.427,
+   "ci95": [
+    1.114,
+    1.775
+   ],
+   "p_row_worse": 1.0
+  },
+  {
+   "run": "round8_v3",
+   "row": "ctrl_gptq_int3_asym d0.01",
+   "ref": "kron13_2b1b_gptq fINT8",
+   "bpw": 3.2969,
+   "dppl": 0.183,
+   "ci95": [
+    0.014,
+    0.369
+   ],
+   "p_row_worse": 0.982
+  },
+  {
+   "run": "round8_v3",
+   "row": "ctrl_gptq_int3_asym d0.1",
+   "ref": "kron13_2b1b_gptq fINT8",
+   "bpw": 3.2969,
+   "dppl": 0.081,
+   "ci95": [
+    -0.062,
+    0.242
+   ],
+   "p_row_worse": 0.861
+  },
+  {
+   "run": "round8_v3",
+   "row": "ctrl_gptq_int3_asym d1.0",
+   "ref": "kron13_2b1b_gptq fINT8",
+   "bpw": 3.2969,
+   "dppl": 0.135,
+   "ci95": [
+    -0.01,
+    0.295
+   ],
+   "p_row_worse": 0.964
+  },
+  {
+   "run": "round8_v3",
+   "row": "kron13_2b1b_gptq f16",
+   "ref": "kron13_2b1b_gptq fINT8",
+   "bpw": 3.5504,
+   "dppl": -0.002,
+   "ci95": [
+    -0.011,
+    0.008
+   ],
+   "p_row_worse": 0.358
+  },
+  {
+   "run": "round8_v3",
+   "row": "kron13_2b1b_gptq fINT4",
+   "ref": "kron13_2b1b_gptq fINT8",
+   "bpw": 3.1954,
+   "dppl": 0.055,
+   "ci95": [
+    0.004,
+    0.103
+   ],
+   "p_row_worse": 0.982
+  },
+  {
+   "run": "round8_v3",
+   "row": "lr_2b1b_gptq f16",
+   "ref": "kron13_2b1b_gptq fINT8",
+   "bpw": 3.5347,
+   "dppl": -0.38,
+   "ci95": [
+    -0.462,
+    -0.303
+   ],
+   "p_row_worse": 0.0
+  },
+  {
+   "run": "round8_v3",
+   "row": "lr_2b1b_gptq fINT8",
+   "ref": "kron13_2b1b_gptq fINT8",
+   "bpw": 3.306,
+   "dppl": -0.382,
+   "ci95": [
+    -0.473,
+    -0.296
+   ],
+   "p_row_worse": 0.0
+  },
+  {
+   "run": "round8_v3",
+   "row": "lr_2b1b_gptq fINT4",
+   "ref": "kron13_2b1b_gptq fINT8",
+   "bpw": 3.1914,
+   "dppl": 68002.844,
+   "ci95": [
+    38150.195,
+    98285.727
+   ],
+   "p_row_worse": 1.0
+  },
+  {
+   "run": "round8_v4",
+   "row": "lr_2bit_gptq fINT8",
+   "ref": "RTN INT4 g64",
+   "bpw": 2.3531,
+   "dppl": 0.172,
+   "ci95": [
+    -0.088,
+    0.425
+   ],
+   "p_row_worse": 0.899
+  },
+  {
+   "run": "round8_v4",
+   "row": "lr_2bit_gptq fINT8",
+   "ref": "RTN INT3 g64",
+   "bpw": 2.3531,
+   "dppl": -1.282,
+   "ci95": [
+    -1.622,
+    -0.99
+   ],
+   "p_row_worse": 0.0
+  },
+  {
+   "run": "round8_v4",
+   "row": "lr_2bit_gptq f16",
+   "ref": "RTN INT4 g64",
+   "bpw": 2.5818,
+   "dppl": 0.156,
+   "ci95": [
+    -0.101,
+    0.4
+   ],
+   "p_row_worse": 0.878
+  },
+  {
+   "run": "round8_v4",
+   "row": "lr_2bit_gptq f16",
+   "ref": "RTN INT3 g64",
+   "bpw": 2.5818,
+   "dppl": -1.298,
+   "ci95": [
+    -1.641,
+    -1.007
+   ],
+   "p_row_worse": 0.0
+  },
+  {
+   "run": "round8_v4",
+   "row": "kron13_2bit_gptq_sink fINT8",
+   "ref": "RTN INT4 g64",
+   "bpw": 2.361,
+   "dppl": 4.662,
+   "ci95": [
+    2.179,
+    10.936
+   ],
+   "p_row_worse": 1.0
+  },
+  {
+   "run": "round8_v4",
+   "row": "kron13_2bit_gptq_sink fINT8",
+   "ref": "RTN INT3 g64",
+   "bpw": 2.361,
+   "dppl": 3.208,
+   "ci95": [
+    0.669,
+    9.544
+   ],
+   "p_row_worse": 1.0
+  }
+ ],
+ "fp16_per_seq_nll_max_abs_diff_v3_vs_v4": 0.00535
+}

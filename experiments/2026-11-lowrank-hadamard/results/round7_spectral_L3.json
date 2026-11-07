@@ -1,0 +1,322 @@
+{
+  "layer": 3,
+  "expert": 38,
+  "configs": [
+    "kron13_2bit_gptq"
+  ],
+  "matrices": {
+    "gate": {
+      "flatness": {
+        "teacher": 0.5312,
+        "permuted": 0.5313,
+        "gaussian": 0.5619,
+        "error kron13_2bit_gptq": 0.5372
+      },
+      "compaction_at_5pct": {
+        "raw": {
+          "teacher": 0.341,
+          "permuted": 0.341,
+          "gaussian": 0.2797
+        },
+        "fft2": {
+          "teacher": 0.2453,
+          "permuted": 0.2444,
+          "gaussian": 0.1998
+        },
+        "haar": {
+          "teacher": 0.3154,
+          "permuted": 0.3143,
+          "gaussian": 0.2789
+        },
+        "wht": {
+          "teacher": 0.319,
+          "permuted": 0.3182,
+          "gaussian": 0.2791
+        },
+        "svd": {
+          "teacher": 0.2173,
+          "permuted": 0.2173,
+          "gaussian": 0.1139
+        }
+      },
+      "kron13_energy": {
+        "teacher": 0.0845,
+        "permuted": 0.0812,
+        "gaussian": 0.0552
+      },
+      "svd_top5pct_energy": {
+        "teacher": 0.2173,
+        "permuted": 0.2173,
+        "gaussian": 0.1139
+      },
+      "haar_band_energy": {
+        "teacher": {
+          "L1LH": 0.2669,
+          "L1HL": 0.234,
+          "L1HH": 0.2361,
+          "L2LH": 0.072,
+          "L2HL": 0.0588,
+          "L2HH": 0.0589,
+          "L3LH": 0.0228,
+          "L3HL": 0.0145,
+          "L3HH": 0.0148,
+          "L4LH": 0.0066,
+          "L4HL": 0.0037,
+          "L4HH": 0.0037,
+          "L5LH": 0.0033,
+          "L5HL": 0.001,
+          "L5HH": 0.0009,
+          "LL": 0.0021
+        },
+        "permuted": {
+          "L1LH": 0.2652,
+          "L1HL": 0.2353,
+          "L1HH": 0.2356,
+          "L2LH": 0.0738,
+          "L2HL": 0.0585,
+          "L2HH": 0.0579,
+          "L3LH": 0.0225,
+          "L3HL": 0.0145,
+          "L3HH": 0.0149,
+          "L4LH": 0.0067,
+          "L4HL": 0.0037,
+          "L4HH": 0.0037,
+          "L5LH": 0.0031,
+          "L5HL": 0.0009,
+          "L5HH": 0.0008,
+          "LL": 0.0029
+        },
+        "gaussian": {
+          "L1LH": 0.2497,
+          "L1HL": 0.2502,
+          "L1HH": 0.2489,
+          "L2LH": 0.0633,
+          "L2HL": 0.0627,
+          "L2HH": 0.0627,
+          "L3LH": 0.0157,
+          "L3HL": 0.0154,
+          "L3HH": 0.0155,
+          "L4LH": 0.0039,
+          "L4HL": 0.0038,
+          "L4HH": 0.004,
+          "L5LH": 0.0009,
+          "L5HL": 0.001,
+          "L5HH": 0.001,
+          "LL": 0.0009
+        }
+      }
+    },
+    "up": {
+      "flatness": {
+        "teacher": 0.5622,
+        "permuted": 0.5612,
+        "gaussian": 0.561,
+        "error kron13_2bit_gptq": 0.5613
+      },
+      "compaction_at_5pct": {
+        "raw": {
+          "teacher": 0.327,
+          "permuted": 0.327,
+          "gaussian": 0.2792
+        },
+        "fft2": {
+          "teacher": 0.1991,
+          "permuted": 0.1994,
+          "gaussian": 0.1998
+        },
+        "haar": {
+          "teacher": 0.2989,
+          "permuted": 0.2987,
+          "gaussian": 0.2806
+        },
+        "wht": {
+          "teacher": 0.2787,
+          "permuted": 0.2794,
+          "gaussian": 0.2793
+        },
+        "svd": {
+          "teacher": 0.0844,
+          "permuted": 0.0844,
+          "gaussian": 0.1145
+        }
+      },
+      "kron13_energy": {
+        "teacher": 0.0556,
+        "permuted": 0.0558,
+        "gaussian": 0.0553
+      },
+      "svd_top5pct_energy": {
+        "teacher": 0.0844,
+        "permuted": 0.0844,
+        "gaussian": 0.1145
+      },
+      "haar_band_energy": {
+        "teacher": {
+          "L1LH": 0.2497,
+          "L1HL": 0.2496,
+          "L1HH": 0.2497,
+          "L2LH": 0.0619,
+          "L2HL": 0.0627,
+          "L2HH": 0.0631,
+          "L3LH": 0.0158,
+          "L3HL": 0.0158,
+          "L3HH": 0.0159,
+          "L4LH": 0.0039,
+          "L4HL": 0.004,
+          "L4HH": 0.0041,
+          "L5LH": 0.001,
+          "L5HL": 0.001,
+          "L5HH": 0.0009,
+          "LL": 0.001
+        },
+        "permuted": {
+          "L1LH": 0.2503,
+          "L1HL": 0.2496,
+          "L1HH": 0.2499,
+          "L2LH": 0.0626,
+          "L2HL": 0.0628,
+          "L2HH": 0.0623,
+          "L3LH": 0.0155,
+          "L3HL": 0.0158,
+          "L3HH": 0.0156,
+          "L4LH": 0.0039,
+          "L4HL": 0.0039,
+          "L4HH": 0.0038,
+          "L5LH": 0.001,
+          "L5HL": 0.0011,
+          "L5HH": 0.001,
+          "LL": 0.001
+        },
+        "gaussian": {
+          "L1LH": 0.2497,
+          "L1HL": 0.25,
+          "L1HH": 0.2499,
+          "L2LH": 0.0616,
+          "L2HL": 0.0631,
+          "L2HH": 0.0623,
+          "L3LH": 0.0157,
+          "L3HL": 0.0159,
+          "L3HH": 0.0157,
+          "L4LH": 0.0039,
+          "L4HL": 0.0039,
+          "L4HH": 0.0042,
+          "L5LH": 0.001,
+          "L5HL": 0.001,
+          "L5HH": 0.001,
+          "LL": 0.001
+        }
+      }
+    },
+    "down": {
+      "flatness": {
+        "teacher": 0.5623,
+        "permuted": 0.5601,
+        "gaussian": 0.5616,
+        "error kron13_2bit_gptq": 0.5604
+      },
+      "compaction_at_5pct": {
+        "raw": {
+          "teacher": 0.3134,
+          "permuted": 0.3134,
+          "gaussian": 0.2796
+        },
+        "fft2": {
+          "teacher": 0.1996,
+          "permuted": 0.1996,
+          "gaussian": 0.1993
+        },
+        "haar": {
+          "teacher": 0.2933,
+          "permuted": 0.2927,
+          "gaussian": 0.2789
+        },
+        "wht": {
+          "teacher": 0.2793,
+          "permuted": 0.2791,
+          "gaussian": 0.2798
+        },
+        "svd": {
+          "teacher": 0.1164,
+          "permuted": 0.1165,
+          "gaussian": 0.1142
+        }
+      },
+      "kron13_energy": {
+        "teacher": 0.0555,
+        "permuted": 0.0561,
+        "gaussian": 0.0554
+      },
+      "svd_top5pct_energy": {
+        "teacher": 0.1164,
+        "permuted": 0.1165,
+        "gaussian": 0.1142
+      },
+      "haar_band_energy": {
+        "teacher": {
+          "L1LH": 0.2503,
+          "L1HL": 0.2494,
+          "L1HH": 0.2496,
+          "L2LH": 0.0624,
+          "L2HL": 0.0624,
+          "L2HH": 0.0626,
+          "L3LH": 0.0159,
+          "L3HL": 0.0157,
+          "L3HH": 0.0161,
+          "L4LH": 0.004,
+          "L4HL": 0.0038,
+          "L4HH": 0.0042,
+          "L5LH": 0.001,
+          "L5HL": 0.001,
+          "L5HH": 0.0009,
+          "LL": 0.001
+        },
+        "permuted": {
+          "L1LH": 0.2496,
+          "L1HL": 0.2499,
+          "L1HH": 0.2502,
+          "L2LH": 0.063,
+          "L2HL": 0.0622,
+          "L2HH": 0.0626,
+          "L3LH": 0.0154,
+          "L3HL": 0.0162,
+          "L3HH": 0.0154,
+          "L4LH": 0.004,
+          "L4HL": 0.0037,
+          "L4HH": 0.0039,
+          "L5LH": 0.0009,
+          "L5HL": 0.001,
+          "L5HH": 0.001,
+          "LL": 0.0011
+        },
+        "gaussian": {
+          "L1LH": 0.2505,
+          "L1HL": 0.2492,
+          "L1HH": 0.2495,
+          "L2LH": 0.0627,
+          "L2HL": 0.0636,
+          "L2HH": 0.0626,
+          "L3LH": 0.0154,
+          "L3HL": 0.0152,
+          "L3HH": 0.0159,
+          "L4LH": 0.0039,
+          "L4HL": 0.0038,
+          "L4HH": 0.0039,
+          "L5LH": 0.001,
+          "L5HL": 0.001,
+          "L5HH": 0.001,
+          "LL": 0.0009
+        }
+      }
+    }
+  },
+  "residual_kurtosis": {
+    "raw residual": 3.21,
+    "Hadamard-rotated residual": 3.117
+  },
+  "temporal_snr_db": {
+    "kron13_2bit_gptq": {
+      "low_freq": 1.48,
+      "high_freq": 1.48
+    }
+  }
+}

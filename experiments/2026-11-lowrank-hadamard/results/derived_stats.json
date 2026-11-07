@@ -1,0 +1,321 @@
+{
+ "lloyd_max_ceiling_wR2_pct": {
+  "1bit": 63.7,
+  "tern": 81.0,
+  "2bit": 88.25,
+  "2b1b": 95.7
+ },
+ "gaussian_rd_bound_2bit_wR2_pct": 93.75,
+ "layer_medians": {
+  "round5_3b:kron13_1bit": {
+   "open_r2": 41.5,
+   "closed_r2": 17.6,
+   "oneshot_closed": -7.5,
+   "wR2_gate": 63.1,
+   "wR2_up": 63.5,
+   "wR2_down": 62.2,
+   "swap_gate": 75.1,
+   "swap_up": 77.2,
+   "swap_down": 68.9
+  },
+  "round5_3b:gate2_1bit": {
+   "open_r2": 48.4,
+   "closed_r2": 20.9,
+   "oneshot_closed": -4.5,
+   "wR2_gate": 87.4,
+   "wR2_up": 63.5,
+   "wR2_down": 62.2,
+   "swap_gate": 90.6,
+   "swap_up": 77.5,
+   "swap_down": 69.2
+  },
+  "round5_3b:kron13_2bit": {
+   "open_r2": 80.0,
+   "closed_r2": 56.8,
+   "oneshot_closed": 42.3,
+   "wR2_gate": 87.8,
+   "wR2_up": 88.1,
+   "wR2_down": 87.9,
+   "swap_gate": 93.9,
+   "swap_up": 93.6,
+   "swap_down": 90.3
+  },
+  "round5_3b:kron13_2b1b": {
+   "open_r2": 92.7,
+   "closed_r2": 81.8,
+   "oneshot_closed": 75.2,
+   "wR2_gate": 95.6,
+   "wR2_up": 95.8,
+   "wR2_down": 95.8,
+   "swap_gate": 97.9,
+   "swap_up": 97.8,
+   "swap_down": 96.8
+  },
+  "round6_3b:kron13_2bit_gptq": {
+   "open_r2": 84.0,
+   "closed_r2": 60.5,
+   "oneshot_closed": 52.6,
+   "wR2_gate": 87.2,
+   "wR2_up": 87.4,
+   "wR2_down": 87.2,
+   "swap_gate": 95.9,
+   "swap_up": 95.6,
+   "swap_down": 92.8
+  },
+  "round6_3b:kron13_2b1b_gptq": {
+   "open_r2": 94.1,
+   "closed_r2": 84.4,
+   "oneshot_closed": 81.6,
+   "wR2_gate": 95.3,
+   "wR2_up": 95.5,
+   "wR2_down": 95.5,
+   "swap_gate": 98.4,
+   "swap_up": 98.4,
+   "swap_down": 97.6
+  },
+  "round8_v3:kron13_2b1b_gptq": {
+   "open_r2": 94.3,
+   "closed_r2": 85.2,
+   "oneshot_closed": 82.3,
+   "wR2_gate": 95.3,
+   "wR2_up": 95.5,
+   "wR2_down": 95.5,
+   "swap_gate": 98.5,
+   "swap_up": 98.4,
+   "swap_down": 97.6
+  },
+  "round8_v3:lr_2b1b_gptq": {
+   "open_r2": 94.5,
+   "closed_r2": 87.3,
+   "oneshot_closed": 84.6,
+   "wR2_gate": 95.9,
+   "wR2_up": 95.7,
+   "wR2_down": 95.7,
+   "swap_gate": 98.5,
+   "swap_up": 98.4,
+   "swap_down": 97.7
+  },
+  "round8_v4:lr_2bit_gptq": {
+   "open_r2": 86.3,
+   "closed_r2": 71.0,
+   "oneshot_closed": 65.6,
+   "wR2_gate": 88.4,
+   "wR2_up": 87.8,
+   "wR2_down": 87.8,
+   "swap_gate": 96.4,
+   "swap_up": 95.9,
+   "swap_down": 93.6
+  },
+  "round8_v4:kron13_2bit_gptq_sink": {
+   "open_r2": 80.4,
+   "closed_r2": 48.2,
+   "oneshot_closed": 28.4,
+   "wR2_gate": 86.9,
+   "wR2_up": 87.1,
+   "wR2_down": 86.8,
+   "swap_gate": 95.3,
+   "swap_up": 94.8,
+   "swap_down": 91.9
+  }
+ },
+ "spectral": {
+  "kron13_energy_teacher_min_max": [
+   0.0555,
+   0.0845
+  ],
+  "kron13_energy_gaussian_min_max": [
+   0.0552,
+   0.0554
+  ],
+  "residual_kurtosis_rotated_min_max": [
+   2.992,
+   3.216
+  ],
+  "residual_kurtosis_raw_min_max": [
+   3.173,
+   3.262
+  ],
+  "svd_top5pct_energy": {
+   "round8_L5": {
+    "gate": 0.2155,
+    "up": 0.0876,
+    "down": 0.1012
+   },
+   "round8_L12": {
+    "gate": 0.2927,
+    "up": 0.1539,
+    "down": 0.2212
+   }
+  },
+  "svd_top5pct_energy_gaussian": 0.1139
+ },
+ "temporal_snr": {
+  "all": [
+   {
+    "spectrum": "round5_L3",
+    "config": "kron13_1bit",
+    "low": 0.09,
+    "high": 0.09,
+    "high_minus_low": 0.0
+   },
+   {
+    "spectrum": "round5_L3",
+    "config": "gate2_1bit",
+    "low": 0.16,
+    "high": 0.16,
+    "high_minus_low": 0.0
+   },
+   {
+    "spectrum": "round5_L3",
+    "config": "kron13_2bit",
+    "low": 1.76,
+    "high": 1.76,
+    "high_minus_low": 0.0
+   },
+   {
+    "spectrum": "round5_L3",
+    "config": "kron13_2b1b",
+    "low": 3.53,
+    "high": 3.53,
+    "high_minus_low": 0.0
+   },
+   {
+    "spectrum": "round5_L12",
+    "config": "kron13_1bit",
+    "low": 5.84,
+    "high": 7.6,
+    "high_minus_low": 1.76
+   },
+   {
+    "spectrum": "round5_L12",
+    "config": "gate2_1bit",
+    "low": 6.22,
+    "high": 7.82,
+    "high_minus_low": 1.6
+   },
+   {
+    "spectrum": "round5_L12",
+    "config": "kron13_2bit",
+    "low": 10.52,
+    "high": 12.0,
+    "high_minus_low": 1.48
+   },
+   {
+    "spectrum": "round5_L12",
+    "config": "kron13_2b1b",
+    "low": 14.31,
+    "high": 15.48,
+    "high_minus_low": 1.17
+   },
+   {
+    "spectrum": "round6_L3",
+    "config": "kron13_2bit_gptq",
+    "low": 1.42,
+    "high": 1.42,
+    "high_minus_low": 0.0
+   },
+   {
+    "spectrum": "round6_L3",
+    "config": "kron13_2b1b_gptq",
+    "low": 4.38,
+    "high": 4.38,
+    "high_minus_low": 0.0
+   },
+   {
+    "spectrum": "round6_L12",
+    "config": "kron13_2bit_gptq",
+    "low": 10.19,
+    "high": 10.72,
+    "high_minus_low": 0.53
+   },
+   {
+    "spectrum": "round6_L12",
+    "config": "kron13_2b1b_gptq",
+    "low": 15.99,
+    "high": 17.78,
+    "high_minus_low": 1.79
+   },
+   {
+    "spectrum": "round7_L3",
+    "config": "kron13_2bit_gptq",
+    "low": 1.48,
+    "high": 1.48,
+    "high_minus_low": 0.0
+   },
+   {
+    "spectrum": "round7_L12",
+    "config": "kron13_2bit_gptq",
+    "low": 7.68,
+    "high": 7.23,
+    "high_minus_low": -0.45
+   },
+   {
+    "spectrum": "round8_L5",
+    "config": "lr_2b1b_gptq",
+    "low": 17.45,
+    "high": 17.46,
+    "high_minus_low": 0.01
+   },
+   {
+    "spectrum": "round8_L5",
+    "config": "kron13_2b1b_gptq",
+    "low": 15.45,
+    "high": 15.46,
+    "high_minus_low": 0.01
+   },
+   {
+    "spectrum": "round8_L12",
+    "config": "lr_2b1b_gptq",
+    "low": 15.02,
+    "high": 15.98,
+    "high_minus_low": 0.96
+   },
+   {
+    "spectrum": "round8_L12",
+    "config": "kron13_2b1b_gptq",
+    "low": 15.96,
+    "high": 17.64,
+    "high_minus_low": 1.68
+   }
+  ],
+  "L12_count": 9,
+  "L12_low_below_high": 8,
+  "L12_gap_min_max_db": [
+   0.53,
+   1.79
+  ]
+ },
+ "replicates": {
+  "kron13_2b1b_gptq_f16": {
+   "dppl_runs_r6_r8v2_r8v3": [
+    0.56,
+    0.382,
+    0.476
+   ],
+   "mean": 0.473,
+   "sd": 0.089
+  },
+  "kron13_2b1b_gptq_f8": {
+   "dppl_runs_r6_r8v2_r8v3": [
+    0.564,
+    0.39,
+    0.478
+   ],
+   "mean": 0.477,
+   "sd": 0.087
+  },
+  "kron13_2b1b_gptq_f4": {
+   "dppl_runs_r6_r8v2_r8v3": [
+    0.708,
+    0.564,
+    0.533
+   ],
+   "mean": 0.602,
+   "sd": 0.093
+  },
+  "kron13_2bit_gptq_f16_per_layer_stage": {
+   "round6": 3.132,
+   "round7_pre_e2e": 1.688
+  }
+ }
+}

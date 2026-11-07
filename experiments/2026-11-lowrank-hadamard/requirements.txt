@@ -1,0 +1,6 @@
+# Packages imported by scripts/ (versions from the environment that produced the results; Python 3.14.4).
+# torch was installed from the CUDA 12.6 wheel index (2.14.1+cu126).
+torch==2.14.1
+transformers==4.57.1
+numpy==2.5.4
+matplotlib==3.11.2
